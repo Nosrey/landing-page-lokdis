@@ -135,7 +135,7 @@
     box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
     left: 46%;
     transform: translate(-50%, -50%);
-    background-color: blue;
+    background-color: white;
     z-index: 1;
     transform: translate(-50%, -50%) rotate(-15deg);
     border-radius: 10%;
@@ -170,7 +170,7 @@
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background-color: white;
     z-index: 1;
     transform: translate(-50%, -50%) rotate(15deg);
     border-radius: 10%;
