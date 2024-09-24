@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 130vh;
     background-color: white;
 
 }
@@ -14,6 +14,8 @@
     width: 95%;
 
 }
+
+
 
 .containerTextMoreImage {
     display: flex;
@@ -44,29 +46,24 @@
 
 .leftContainer {
     display: flex;
-    margin: 12% 0% 0% 3%;
+    margin: 4% 0% 0% 3%;
     width: 58%;
-    height: 75%;
+    height: 83%;
     flex-direction: column;
     background-color: white;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
+    padding-bottom: 1.5%;
 }
 
-.additionalText {
-
-    font-weight: bolder;
-
-}
 
 .firstTextLeftContainer {
     font-family: 'Poppins-Regular';
     font-size: 64px;
     text-align: left;
     line-height: 1;
-    margin-top: 8%;
+    margin-top: 7%;
     margin-bottom: -2%;
     padding: 1rem;
 
@@ -90,5 +87,92 @@
     height: 25%;
 
     margin: 6% 6% 0% 0%;
+
+}
+
+.fourthText,
+.additionalText,
+.thirdText,
+.firstTextLeftContainer,
+.secondTextLeftContainer {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.fourthText {
+    font-family: 'Poppins-Regular';
+    font-size: 28px;
+    text-align: left;
+
+}
+
+
+.additionalText {
+    font-family: 'Poppins-Regular';
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: left;
+
+}
+
+.containerPhotos {
+    margin-top: 5%;
+    position: relative;
+    width: 42%;
+    overflow: hidden;
+
+
+}
+
+.boxTwo {
+    overflow: hidden;
+    position: absolute;
+    width: 73%;
+    height: 40%;
+    top: 68%;
+    box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+    left: 46%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    border-radius: 10%;
+}
+
+.boxTwo img {
+    position: relative;
+    width: 120%;
+    height: 135%;
+    top: 50%;
+    left: 50%;
+    /* Asegura que la imagen cubra todo el div */
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.boxOne img {
+    position: relative;
+    width: 120%;
+    height: 135%;
+    top: 50%;
+    left: 50%;
+    /* Asegura que la imagen cubra todo el div */
+    transform: translate(-50%, -50%) rotate(-11deg);
+}
+
+.boxOne {
+    box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: absolute;
+    width: 73%;
+    height: 40%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(15deg);
+    border-radius: 10%;
 
 }

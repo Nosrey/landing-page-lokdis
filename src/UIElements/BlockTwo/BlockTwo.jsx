@@ -2,6 +2,9 @@
 
 import styles from './styles/blocktwo.module.css';
 import eyesImage from '../Assets/eyes-small-size.png';
+import blockTwoImageBoxOne from '../Assets/boxOneBlockTwo.png';
+import blockTwoImageBoxTwo from '../Assets/boxTwoBlockTwo.png';
+
 
 
 const BlockTwo = () => {
@@ -32,11 +35,28 @@ const BlockTwo = () => {
                     </div>
                 </div>
 
-                <div>
-                    <span>Solicita y comparte videos, fotos <span className={styles.additionalText} >sin montajes, sin retoques, en tiempo real</span></span>
+                <div style={{ display: 'flex', width: '80%', marginRight: '13%', marginBottom: '5%' }} >
+                    <span className={styles.fourthText}>Solicita y comparte videos, fotos <span className={styles.additionalText} >sin montajes, sin retoques, en tiempo real.</span></span>
 
                 </div>
 
+                <div style={{ display: 'flex', width: '80%', marginRight: '13%' }} >
+                    <span className={styles.additionalText}>¿Quieres una experiencia 100% auténtica?
+                        ¡Únete y vive el presente con LokDis!</span>
+                </div>
+
+            </div>
+
+            <div className={styles.containerPhotos} >
+                <div className={styles.boxTwo} >
+                    <img src={blockTwoImageBoxTwo} alt="" />
+
+                </div>
+                <div className={styles.boxOne} >
+                    <img src={blockTwoImageBoxOne} alt="" />
+
+
+                </div>
             </div>
 
 
