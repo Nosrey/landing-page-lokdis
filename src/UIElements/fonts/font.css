@@ -18,3 +18,18 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'PlusJakartaSans-Regular';
+    src: url('./PlusJakartaSans-Regular.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PlusJakartaSans-Bold';
+    src: url('./PlusJakartaSans-Bold.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
