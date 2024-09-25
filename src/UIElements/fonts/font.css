@@ -33,3 +33,10 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./Roboto-Regular.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
