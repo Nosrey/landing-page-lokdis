@@ -1,11 +1,19 @@
 import React from 'react'
-import {Bloque1} from '../Bloque-1/Bloque1'
+import styles from './styles/home.module.css'
+import BlockFive from '../BlockFive/BlockFive'
+import BlockFourth from '../BlockFourth/BlockFourth'
+import BlockTwo from '../BlockTwo/BlockTwo';
+import { Bloque1 } from '../Bloque-1/Bloque1'
 
-export const Homepage = () => {
+export const Homepage = ({ language, setLanguage }) => {
   return (
-    <div>      
+
+    <div className={styles.fatherContainer}>
       <Bloque1 />
-      <p>Homepage</p>
+      <BlockTwo language={language} setLanguage={setLanguage} />
+      <BlockFourth />
+      <BlockFive />
+
     </div>
   )
 }

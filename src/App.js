@@ -1,13 +1,16 @@
 import './App.css';
 // importo Homepage
 import { Homepage } from './UIElements/Homepage/Homepage';
-
-const language = 'spanish';
+import { useState } from 'react';
+var languages = 'spanish';
 
 function App() {
+  const [language, setLanguage] = useState(languages); // Crear el estado para 'language'
+
   return (
     <div className="App">
-      <Homepage />
+
+      <Homepage language={language} setLanguage={setLanguage} />
     </div>
   );
 }

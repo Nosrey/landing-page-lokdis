@@ -1,0 +1,52 @@
+@import url('../../fonts/font.css');
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* Asegura que el contenedor ocupe al menos toda la pantalla */
+    background: linear-gradient(45deg, #161616 10%, #060661 20%, #0C0C0C 75%);
+    /* Degradado de #242244 a negro */
+    user-select: none;
+    overflow: hidden;
+    /* Evita el desbordamiento */
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.containerLetter {
+    padding: 5%;
+    color: white;
+    text-align: left;
+    width: 75%;
+
+}
+
+.h2Letter {
+    font-family: 'PlusJakartaSans-Bold';
+    font-size: 30px;
+}
+
+.paragraph {
+
+    font-family: 'PlusJakartaSans-Regular';
+    font-size: 30px;
+
+}
+
+.paragraphSmall {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+}
+
+
+.buttonCallToAction {
+    margin-left: 2%;
+    width: 35%;
+    padding: 1%;
+    font-size: 24px;
+    color: #060661;
+    font-family: 'Roboto-Regular';
+    font-weight: bold;
+    border-radius: 15px;
+}
