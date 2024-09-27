@@ -1,0 +1,275 @@
+@import url('../../fonts/font.css');
+
+.firstContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+
+}
+
+.defineContainerText {
+
+    width: 95%;
+
+}
+
+
+
+.containerTextMoreImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99%;
+
+}
+
+.containerBlueLetter {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 5vh;
+    background-color: #00FFD7;
+    border-radius: 1rem;
+    padding: 5px;
+    margin-top: 1.5%;
+    margin-left: -1%;
+    overflow: hidden;
+
+
+}
+
+
+.thirdText {
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    padding: 0% 0% 0% 1.5%;
+    color: black;
+
+
+}
+
+
+.leftContainer {
+    display: flex;
+    margin: 4% 0% 0% 3%;
+    width: 50%;
+    height: 83%;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 1.5%;
+}
+
+.textH3 {
+    text-align: left;
+    padding: 1rem;
+    font-family: 'Poppins-Regular';
+}
+
+.firstTextLeftContainer {
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    text-align: left;
+    line-height: 1;
+    margin-top: 7%;
+    margin-bottom: -2%;
+    padding: 1rem;
+
+}
+
+.secondTextLeftContainer {
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    text-align: left;
+    line-height: 1;
+    margin-top: 0%;
+    padding: 1rem;
+    margin-bottom: -8%;
+
+
+}
+
+.eyesImage {
+
+    width: 15%;
+
+    margin: 5% 13% 2% 0%;
+
+}
+
+.fourthText,
+.additionalText,
+.thirdText,
+.firstTextLeftContainer,
+.secondTextLeftContainer {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.additionalText {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+}
+
+.fourthText {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+    text-align: left;
+    color: #028470;
+
+}
+
+
+.containerPhotos {
+    margin-top: 5%;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+
+
+}
+
+.boxTwo {
+    overflow: hidden;
+    position: absolute;
+    width: 73%;
+    height: 45%;
+    top: 72%;
+    box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+    left: 62%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+    border-radius: 10%;
+}
+
+.boxTwo img {
+    position: relative;
+    width: 115%;
+    height: 101%;
+    top: 50%;
+    left: 50%;
+    /* Asegura que la imagen cubra todo el div */
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.iconoGirl {
+    width: 55%;
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+
+}
+
+.iconoUserMap {
+    width: 51%;
+    z-index: 3;
+    position: absolute;
+    bottom: 53%;
+    left: 62%;
+
+}
+
+
+.boxOne img {
+    position: relative;
+    width: 120%;
+    height: 155%;
+    top: 50%;
+    left: 50%;
+    /* Asegura que la imagen cubra todo el div */
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+.boxOne {
+    box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    width: 73%;
+    height: 45%;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1;
+    border-radius: 10%;
+
+}
+
+.contenedorLetterBlueContainer {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.letterParagraph {
+    user-select: none;
+    text-align: left;
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+
+
+}
+
+.containerLetterParagraph {
+    display: flex;
+    width: 80%;
+    margin-right: 13%;
+    margin-bottom: -3.5%;
+}
+
+
+
+@media (min-width: 880px) and (max-width: 1115px) {
+
+    .thirdText {
+        font-family: 'Poppins-Regular';
+        font-size: 23px;
+        padding: 0% 0% 0% 1.5%;
+        color: black;
+
+
+    }
+
+    .eyesImage {
+
+        width: 25%;
+
+        margin: 5% 13% 2% 0%;
+
+    }
+
+    .firstTextLeftContainer {
+        font-family: 'Poppins-Regular';
+        font-size: 22px;
+        text-align: left;
+        line-height: 1;
+        margin-top: 7%;
+        margin-bottom: -2%;
+        padding: 1rem;
+
+
+    }
+
+    .secondTextLeftContainer {
+        font-family: 'Poppins-Regular';
+        font-size: 22px;
+        text-align: left;
+        line-height: 1;
+        margin-top: 0%;
+        padding: 1rem;
+        margin-bottom: -8%;
+
+
+    }
+
+}
