@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 130vh;
+    height: 120vh;
     background-color: white;
 
 }
@@ -26,19 +26,26 @@
 }
 
 .containerBlueLetter {
-
-    width: 100%;
-    background-color: #060661;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 5vh;
+    background-color: #00FFD7;
     border-radius: 1rem;
+    padding: 5px;
+    margin-top: 1.5%;
+    margin-left: -1%;
+    overflow: hidden;
+
 
 }
 
 
 .thirdText {
     font-family: 'Poppins-Regular';
-    font-size: 64px;
+    font-size: 30px;
     padding: 0% 0% 0% 1.5%;
-    color: white;
+    color: black;
 
 
 }
@@ -47,7 +54,7 @@
 .leftContainer {
     display: flex;
     margin: 4% 0% 0% 3%;
-    width: 58%;
+    width: 50%;
     height: 83%;
     flex-direction: column;
     background-color: white;
@@ -57,10 +64,15 @@
     padding-bottom: 1.5%;
 }
 
+.textH3 {
+    text-align: left;
+    padding: 1rem;
+    font-family: 'Poppins-Regular';
+}
 
 .firstTextLeftContainer {
     font-family: 'Poppins-Regular';
-    font-size: 64px;
+    font-size: 30px;
     text-align: left;
     line-height: 1;
     margin-top: 7%;
@@ -71,7 +83,7 @@
 
 .secondTextLeftContainer {
     font-family: 'Poppins-Regular';
-    font-size: 64px;
+    font-size: 30px;
     text-align: left;
     line-height: 1;
     margin-top: 0%;
@@ -83,10 +95,9 @@
 
 .eyesImage {
 
-    width: 25%;
-    height: 25%;
+    width: 15%;
 
-    margin: 6% 6% 0% 0%;
+    margin: 5% 13% 2% 0%;
 
 }
 
@@ -101,26 +112,24 @@
     -ms-user-select: none;
 }
 
+.additionalText {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+}
+
 .fourthText {
     font-family: 'Poppins-Regular';
-    font-size: 28px;
+    font-size: 20px;
     text-align: left;
+    color: #028470;
 
 }
 
-
-.additionalText {
-    font-family: 'Poppins-Regular';
-    font-weight: bolder;
-    font-size: 28px;
-    text-align: left;
-
-}
 
 .containerPhotos {
     margin-top: 5%;
     position: relative;
-    width: 42%;
+    width: 50%;
     overflow: hidden;
 
 
@@ -130,49 +139,90 @@
     overflow: hidden;
     position: absolute;
     width: 73%;
-    height: 40%;
-    top: 68%;
+    height: 45%;
+    top: 72%;
     box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-    left: 46%;
+    left: 62%;
     transform: translate(-50%, -50%);
     background-color: white;
-    z-index: 1;
-    transform: translate(-50%, -50%) rotate(-15deg);
+    z-index: 2;
     border-radius: 10%;
 }
 
 .boxTwo img {
     position: relative;
-    width: 120%;
-    height: 135%;
+    width: 115%;
+    height: 101%;
     top: 50%;
     left: 50%;
     /* Asegura que la imagen cubra todo el div */
-    transform: translate(-50%, -50%) rotate(10deg);
+    transform: translate(-50%, -50%) rotate(0deg);
 }
+
+.iconoGirl {
+    width: 55%;
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+
+}
+
+.iconoUserMap {
+    width: 51%;
+    z-index: 3;
+    position: absolute;
+    bottom: 53%;
+    left: 62%;
+
+}
+
 
 .boxOne img {
     position: relative;
     width: 120%;
-    height: 135%;
+    height: 155%;
     top: 50%;
     left: 50%;
     /* Asegura que la imagen cubra todo el div */
-    transform: translate(-50%, -50%) rotate(-11deg);
+    transform: translate(-50%, -50%) rotate(-15deg);
 }
 
 .boxOne {
     box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
     overflow: hidden;
-    position: absolute;
+    position: relative;
     width: 73%;
-    height: 40%;
-    top: 25%;
+    height: 45%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     z-index: 1;
-    transform: translate(-50%, -50%) rotate(15deg);
     border-radius: 10%;
 
+}
+
+.contenedorLetterBlueContainer {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.letterParagraph {
+    user-select: none;
+    text-align: left;
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+
+
+}
+
+.containerLetterParagraph {
+    display: flex;
+    width: 80%;
+    margin-right: 13%;
+    margin-bottom: -3.5%;
 }
