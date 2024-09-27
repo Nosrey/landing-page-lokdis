@@ -13,7 +13,7 @@ export const Homepage = ({ language, setLanguage }) => {
       <Bloque1 />
       <BlockTwo language={language} setLanguage={setLanguage} />
       <Bloque3 />
-      <BlockFourth />
+      <BlockFourth language={language} setLanguage={setLanguage} />
       <BlockFive />
 
     </div>
