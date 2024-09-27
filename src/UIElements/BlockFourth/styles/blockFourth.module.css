@@ -3,7 +3,7 @@
 
 
 .container {
-
+    position: relative;
     width: 50%;
     height: 100vh;
     background-color: white;
@@ -13,7 +13,7 @@
 .fatherContainer {
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: row;
 }
@@ -24,7 +24,7 @@
     width: 50%;
     align-items: center;
     justify-content: center;
-    margin-top: 13.5%;
+    margin-top: 9.5%;
 
 }
 
@@ -40,33 +40,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .containerPhotos img {
-    position: absolute;
     width: 80%;
 }
 
 .imageMovilOne {
     z-index: 1;
-    width: 49%;
-    height: 60%;
-    top: 13.5%;
-    right: 45%;
+    width: 70% !important;
+    height: auto;
+    bottom: 9%;
+    left: 28%;
+    position: relative;
 }
+
 
 .containerPhotos img:nth-child(2) {
     z-index: 2;
     width: 69%;
-    top: 9%;
-    left: 9%;
+    bottom: 9%;
+    right: 12%;
+    position: relative;
 }
 
 .containerPhotos img:nth-child(3) {
     z-index: 3;
     width: 60%;
-    top: 10%;
-    left: 37%;
+    bottom: 8%;
+    right: 53%;
+    position: relative;
 }
 
 
@@ -92,24 +96,30 @@
 .containerParagraph {
     position: absolute;
     top: 82%;
-    width: 23%;
-    left: 48%;
+    width: 45%;
+    left: 1%;
 
 }
 
 .containerParagraphTwo {
     position: absolute;
     top: 0%;
-    width: 23%;
-    left: 59%;
+    width: 48%;
+    left: 20%;
+
+}
+
+.remaining {
+
+    margin-top: 0%;
 
 }
 
 .containerParagraphThree {
     position: absolute;
     top: 87%;
-    width: 23%;
-    left: 76%;
+    width: 40%;
+    left: 55%;
 
 }
 
@@ -135,18 +145,18 @@
 
 .arrowDown {
     position: absolute;
-    top: 72%;
-    left: 45.5%;
-    width: 8%;
-    transform: rotate(220deg);
+    top: 75%;
+    left: -2%;
+    width: 12%;
+    transform: rotate(210deg);
 
 }
 
 .arrowDownSecond {
     position: absolute;
     top: 10%;
-    left: 75%;
-    width: 8%;
+    left: 55%;
+    width: 12%;
     transform: rotate(27deg);
 
 }
@@ -154,8 +164,8 @@
 .arrowDownThree {
     position: absolute;
     top: 78%;
-    left: 74.5%;
-    width: 8%;
+    left: 53.5%;
+    width: 12%;
     transform: rotate(220deg);
 }
 
@@ -215,4 +225,90 @@
 
     font-family: 'Poppins-Regular';
     font-size: 20px;
+}
+
+
+
+
+@media (min-width: 880px) and (max-width: 1115px) {
+
+    .containerParagraphTwo {
+        position: absolute;
+        top: 0%;
+        width: 60%;
+        left: 20%;
+
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 12%;
+        left: 55%;
+        width: 12%;
+        transform: rotate(27deg);
+
+    }
+
+    .textTwoContainer {
+
+        font-family: 'Poppins-Regular';
+        font-size: 25px;
+        text-align: left;
+
+
+
+    }
+
+    .textOneContainer {
+        word-wrap: break-word;
+
+        font-family: 'Poppins-Regular';
+        font-size: 22px;
+        text-align: left;
+        position: relative;
+        bottom: 8%;
+
+    }
+
+    .moreTextContainer {
+        font-family: 'Poppins-Regular';
+        font-size: 22px;
+        text-align: left;
+        margin-top: -2%;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 87%;
+        bottom: 8%;
+        right: 10%;
+        position: relative;
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 87% !important;
+        height: auto;
+        bottom: 6%;
+        left: 40%;
+        position: relative;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 81%;
+        bottom: 10%;
+        right: 62%;
+        position: relative;
+    }
+
+    .arrowDownThree {
+        position: absolute;
+        top: 78%;
+        left: 56.5%;
+        width: 12%;
+        transform: rotate(220deg);
+    }
+
 }

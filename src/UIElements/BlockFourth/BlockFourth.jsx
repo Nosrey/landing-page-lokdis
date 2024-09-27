@@ -29,7 +29,7 @@ const BlockFourth = ({ language }) => {
 
                 <div className={styles.containerTextOne} >
 
-                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <p className={styles.moreTextContainer}>the moment of your choice</p></p>}
+                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.moreTextContainer}>the moment of your choice</span></p>}
 
                 </div>
 
@@ -62,7 +62,7 @@ const BlockFourth = ({ language }) => {
                 <img className={styles.arrowDown} src={arrowDown} alt="flecha abajo" />
                 <div className={styles.containerParagraphTwo} >
                     {language === 'spanish' ? <p className={styles.paragraphSecond} >
-                        Podrás pedirle momentos reales a las personas que estén en los lugares que quieres ver
+                        Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                     </p> : <p className={styles.paragraphSecond} >You will be able to request real moments
                         from people who are in the places you want to see
                     </p>}

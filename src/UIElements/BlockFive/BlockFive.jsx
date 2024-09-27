@@ -20,10 +20,9 @@ const BlockFive = () => {
         <div className={styles.container} >
 
             <div className={styles.containerLetter} >
-                <h2 className={styles.h2Letter} >¡Crea la comunidad global! 🌍</h2>
-                <p className={styles.paragraph}>🚀 Ayúdanos a crear una experiencia auténtica y sin filtros contestando una encuesta súper rápida  🎯 </p>
-                <p className={styles.paragraph}>Te aseguramos un lugar en la lista VIP 😎  para probar la app en cuanto salga.</p>
-                <p className={styles.paragraph}>¡Tu opinión es clave y queremos escucharla! 👂💬</p>
+                <h2 className={styles.h2Letter} >Vive la experiencia LokDis 🌍</h2>
+                <p className={styles.paragraph}> ¡Únete y obtén 6 meses de acceso Premium! </p>
+                <p className={styles.paragraphSmall}>Regístrate ahora respondiendo una breve encuesta y disfruta de una experiencia Premium gratuita durante 6 meses . ¡Vive el mundo en tiempo real!</p>
                 <button className={styles.buttonCallToAction} type='submit' onClick={redirectUrl} >Quiero probar LokDis</button>
             </div>
 

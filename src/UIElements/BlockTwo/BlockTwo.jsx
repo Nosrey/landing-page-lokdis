@@ -84,7 +84,7 @@ const BlockTwo = ({ language, setLanguage }) => {
                 </div>
 
                 <div style={{ display: 'flex', width: '80%', marginRight: '13%' }} >
-                    <span className={styles.additionalText}>A 100% authentic and unedited experience </span>
+                    {language !== 'spanish' ? <span className={styles.additionalText}>A 100% authentic and unedited experience </span> : <span className={styles.additionalText}>Una experiencia 100% auténtica y sin ediciones</span>}
                 </div>
 
             </div>
