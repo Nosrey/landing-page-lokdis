@@ -7,9 +7,7 @@ import BlockTwo from '../BlockTwo/BlockTwo';
 export const Homepage = ({ language, setLanguage }) => {
   return (
     <div className={styles.fatherContainer}>Homepage
-      <BlockTwo language={language} setLanguage={setLanguage} />
-      <BlockFourth />
-      <BlockFive />
+      <BlockFive language={language} />
     </div>
   )
 }

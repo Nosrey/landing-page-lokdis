@@ -8,7 +8,6 @@
     /* Degradado de #242244 a negro */
     user-select: none;
     overflow: hidden;
-    /* Evita el desbordamiento */
     position: relative;
     align-items: center;
     display: flex;
@@ -19,8 +18,11 @@
     color: white;
     text-align: left;
     width: 75%;
+    margin-top: 10%;
 
 }
+
+
 
 .h2Letter {
     font-family: 'PlusJakartaSans-Bold';
@@ -41,12 +43,24 @@
 
 
 .buttonCallToAction {
-    margin-left: 2%;
-    width: 35%;
+    margin-left: 0%;
+    width: 63%;
     padding: 1%;
     font-size: 24px;
     color: #060661;
     font-family: 'Roboto-Regular';
     font-weight: bold;
     border-radius: 15px;
+}
+
+.containerLogo {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translateX(-30%);
+    width: 25%;
+}
+
+.containerLogo img {
+    width: 100%;
 }
