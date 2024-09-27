@@ -48,13 +48,7 @@ const BlockFourth = ({ language }) => {
                         <p className={styles.textThree}>
                             Find the places you want to see on the interactive map, request real moments and get an authentic perspective in real time.
                         </p>}
-
-
-
                 </div>
-
-
-
             </div>
 
             <div className={styles.container} >
