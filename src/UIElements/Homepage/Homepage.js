@@ -11,12 +11,12 @@ export const Homepage = ({ language, setLanguage }) => {
   return (
 
     <div className={styles.fatherContainer}>
-      <Bloque1 />
+      <Bloque1 language={language} setLanguage={setLanguage} />
       <BlockTwo language={language} setLanguage={setLanguage} />
-      <Bloque3 />
+      <Bloque3 language={language} setLanguage={setLanguage} />
       <BlockFourth language={language} setLanguage={setLanguage} />
       <BlockFive />
-      <Footer />
+      <Footer language={language} setLanguage={setLanguage} />
     </div>
   )
 }
