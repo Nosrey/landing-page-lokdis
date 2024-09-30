@@ -5,6 +5,7 @@ import BlockFourth from '../BlockFourth/BlockFourth'
 import BlockTwo from '../BlockTwo/BlockTwo';
 import { Bloque1 } from '../Bloque-1/Bloque1'
 import { Bloque3 } from '../Bloque-3/Bloque3'
+import { Footer } from '../Footer/Footer'
 
 export const Homepage = ({ language, setLanguage }) => {
   return (
@@ -15,7 +16,7 @@ export const Homepage = ({ language, setLanguage }) => {
       <Bloque3 />
       <BlockFourth language={language} setLanguage={setLanguage} />
       <BlockFive />
-
+      <Footer />
     </div>
   )
 }
