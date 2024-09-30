@@ -10,7 +10,7 @@ export const Bloque1 = () => {
       className="fondo"
     >
       <div className="columnas" style={{ height: "70vh" }}>
-        <div className="columnaSingular" style={{ width: "35vw" }}>
+        <div className="columnaSingular" style={{width: "60%"}}>
 
           {/* lado de contador */}
           <div className="filaContador">
@@ -51,7 +51,7 @@ export const Bloque1 = () => {
         </div>
 
         {/* lado derecho */}
-        <div className="columnaSingular">
+        <div className="columnaSingular" style={{width: "40%"}}>
           <img
             src={phoneView}
             alt="phoneView"
@@ -62,7 +62,7 @@ export const Bloque1 = () => {
       <footer>
         <p className="textoFooter">Explora, conecta y comparte el mundo en su forma más auténtica.</p>
         <div className="arrowContainer">
-          <p className="arrowText">Look at<br />this!</p>
+          <p className="arrowText" style={{ fontSize: "20px", marginBottom: "10px" }}>Look at<br />this!</p>
           <img
             src={arrow}
             alt="arrow"
