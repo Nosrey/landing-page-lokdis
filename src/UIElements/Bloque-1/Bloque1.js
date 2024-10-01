@@ -9,9 +9,8 @@ export const Bloque1 = ({language, setLanguage}) => {
 
   return (
     <div className="fondo">
-      {/* <p>{isSpanish ? 'si' : 'no'}</p>
-      <p>{language}</p>
-      <button
+    
+      {/* <button
         onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
         className="botonIdioma"
       >
