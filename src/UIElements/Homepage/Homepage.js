@@ -42,15 +42,16 @@ export const Homepage = ({ language, setLanguage }) => {
   }, [handleScroll, scrollTimeout]);
 
   return (
-    <div className={styles.fatherContainer}>Homepage
     <div className={styles.fatherContainer}>
-      <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
-      <Bloque1 language={language} setLanguage={setLanguage} />
-      <BlockTwo language={language} setLanguage={setLanguage} />
-   <Bloque3 language={language} setLanguage={setLanguage} />
-      <BlockFourth language={language} />
-     <BlockFive language={language} />
+      <div className={styles.fatherContainer}>
+        <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
+        <Bloque1 language={language} setLanguage={setLanguage} />
+        <BlockTwo language={language} setLanguage={setLanguage} />
+        <Bloque3 language={language} setLanguage={setLanguage} />
+        <BlockFourth language={language} />
+        <BlockFive language={language} />
         <Footer language={language} setLanguage={setLanguage} />
+      </div>
     </div>
   )
 }

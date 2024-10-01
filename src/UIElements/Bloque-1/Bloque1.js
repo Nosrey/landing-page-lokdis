@@ -10,12 +10,12 @@ export const Bloque1 = ({language, setLanguage}) => {
   return (
     <div className="fondo">
     
-      {/* <button
+      <button
         onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
         className="botonIdioma"
       >
         {isSpanish ? "cambiar" : "change"}
-      </button> */}
+      </button>
       <div className="columnas" style={{ height: "70vh" }}>
         <div className="columnaSingular" style={{ width: "50%", marginRight: "10%" }}>
 
