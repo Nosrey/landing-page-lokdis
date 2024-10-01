@@ -7,6 +7,7 @@ import { Bloque1 } from '../Bloque-1/Bloque1'
 import { Bloque3 } from '../Bloque-3/Bloque3'
 import { Footer } from '../Footer/Footer'
 import { Navbar } from '../Navbar/Navbar'
+import Carrousel from '../Carrousel/Carrousel';
 
 export const Homepage = ({ language, setLanguage }) => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -41,15 +42,15 @@ export const Homepage = ({ language, setLanguage }) => {
   }, [handleScroll, scrollTimeout]);
 
   return (
-
+    <div className={styles.fatherContainer}>Homepage
     <div className={styles.fatherContainer}>
       <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
       <Bloque1 language={language} setLanguage={setLanguage} />
       <BlockTwo language={language} setLanguage={setLanguage} />
-      <Bloque3 language={language} setLanguage={setLanguage} />
-      <BlockFourth language={language} setLanguage={setLanguage} />
-      <BlockFive />
-      <Footer language={language} setLanguage={setLanguage} />
+   <Bloque3 language={language} setLanguage={setLanguage} />
+      <BlockFourth language={language} />
+     <BlockFive language={language} />
+        <Footer language={language} setLanguage={setLanguage} />
     </div>
   )
 }
