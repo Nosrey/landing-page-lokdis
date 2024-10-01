@@ -41,6 +41,8 @@ export const Homepage = ({ language, setLanguage }) => {
     };
   }, [handleScroll, scrollTimeout]);
 
+
+
   return (
     <div className={styles.fatherContainer}>
       <div className={styles.fatherContainer}>
