@@ -25,8 +25,8 @@
 }
 
 .fondo {
-    height: 100vh;
-    padding-top: 10px;
+    height: 98vh;
+    padding-top: 5vh;
     background: linear-gradient(116.31deg, #161616 9.12%, #0B0B48 37.65%, #060661 47.42%, #0C0C45 65.37%, #0C0C0C 99.95%);
 }
 
@@ -43,8 +43,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 35vw;
-    margin: 0 7.5px;
+
+    margin: 0 5%;
 }
 
 .rockSaltText {
@@ -87,7 +87,9 @@
 }
 
 .phoneView {
-    width: 50%;
+    width: 68%;
+    margin: 0 auto;
+
 }
 
 .boton {
@@ -125,7 +127,7 @@
 
 .arrow {
     /* gira la image 90 grados a la derecha     */
-    transform: rotate(120deg);
+    transform: rotate(90deg);
 }
 
 .contador {
@@ -221,7 +223,7 @@
 
 .textoFooter {
     font-family: Alkatra;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25px;
     text-align: center;
@@ -234,20 +236,19 @@ footer {
     margin: 0 auto;
 }
 
-.arrowText {
-    color: #ffffff;
-    /* rock belt */
-    font-family: 'Rock Salt', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-
-}
-
 .arrowContainer {
     /* lo pongo en horizontal */
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.arrowText {
+    color: #ffffff;
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 500px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
 }

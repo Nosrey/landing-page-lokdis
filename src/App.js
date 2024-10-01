@@ -2,7 +2,8 @@ import './App.css';
 // importo Homepage
 import { Homepage } from './UIElements/Homepage/Homepage';
 import { useState } from 'react';
-var languages = 'spanish';
+// var languages = 'spanish';
+var languages = 'english';
 
 function App() {
   const [language, setLanguage] = useState(languages); // Crear el estado para 'language'
