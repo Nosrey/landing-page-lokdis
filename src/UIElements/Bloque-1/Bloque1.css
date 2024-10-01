@@ -25,7 +25,7 @@
 }
 
 .fondo {
-    height: 95vh;
+    height: 98vh;
     padding-top: 5vh;
     background: linear-gradient(116.31deg, #161616 9.12%, #0B0B48 37.65%, #060661 47.42%, #0C0C45 65.37%, #0C0C0C 99.95%);
 }
@@ -87,7 +87,7 @@
 }
 
 .phoneView {
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
 
 }

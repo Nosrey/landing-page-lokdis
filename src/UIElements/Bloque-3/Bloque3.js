@@ -9,7 +9,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
     const isSpanish = language === "spanish";
 
     return (
-        <div className='fondo'>
+        <div className='fondo3'>
             <div className='bloqueCabecera'>
                 <h2 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}

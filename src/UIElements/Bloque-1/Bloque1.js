@@ -9,36 +9,36 @@ export const Bloque1 = ({language, setLanguage}) => {
 
   return (
     <div className="fondo">
-    <p>{isSpanish ? 'si' : 'no'}</p>
-    <p>{language}</p>
-    <button
-      onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
-      className="botonIdioma"
-    >
-      cambiar
-    </button>
+      {/* <p>{isSpanish ? 'si' : 'no'}</p>
+      <p>{language}</p>
+      <button
+        onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
+        className="botonIdioma"
+      >
+        {isSpanish ? "cambiar" : "change"}
+      </button> */}
       <div className="columnas" style={{ height: "70vh" }}>
-        <div className="columnaSingular" style={{width: "60%"}}>
+        <div className="columnaSingular" style={{ width: "50%", marginRight: "10%" }}>
 
           {/* lado de contador */}
           <div className="filaContador">
-            <p className="contador">LokDis llega en </p>
+            <p className="contador">{isSpanish ? "LokDis llega en" : "LokDis arrives in"}</p>
             {/* ahora 5 dias */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">5</p></div>
-              <div><p className="contadorSubtitulo">dias</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "dias" : "days"}</p></div>
             </div>
 
             {/* ahora 2 horas */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">2</p></div>
-              <div><p className="contadorSubtitulo">horas</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "horas" : "hours"}</p></div>
             </div>
 
             {/* ahora 20 minutos */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">20</p></div>
-              <div><p className="contadorSubtitulo">minutos</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "minutos" : "minutes"}</p></div>
             </div>
           </div>
 
