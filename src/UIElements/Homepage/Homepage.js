@@ -9,7 +9,8 @@ import Carrousel from '../Carrousel/Carrousel';
 export const Homepage = ({ language, setLanguage }) => {
   return (
     <div className={styles.fatherContainer}>Homepage
-      <Carrousel />
+
+      <BlockFourth language={language} />
       <BlockFive language={language} />
     </div>
   )
