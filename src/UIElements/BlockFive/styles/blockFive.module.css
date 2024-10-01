@@ -1,17 +1,39 @@
 @import url('../../fonts/font.css');
 
 .container {
+    z-index: 2;
+    background-image: url('../../Assets/block-5-background.png');
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     /* Asegura que el contenedor ocupe al menos toda la pantalla */
-    background: linear-gradient(45deg, #161616 10%, #060661 20%, #0C0C0C 75%);
     /* Degradado de #242244 a negro */
     user-select: none;
     overflow: hidden;
-    /* Evita el desbordamiento */
+    background-color: white;
     position: relative;
     align-items: center;
     display: flex;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.carrousel {
+    width: 100%;
+    position: relative;
+    top: 35.5vh;
+    z-index: 1;
+}
+
+.blockFiveContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -10%;
+
+
 }
 
 .containerLetter {
@@ -19,8 +41,11 @@
     color: white;
     text-align: left;
     width: 75%;
+    margin-top: 15%;
 
 }
+
+
 
 .h2Letter {
     font-family: 'PlusJakartaSans-Bold';
@@ -41,12 +66,24 @@
 
 
 .buttonCallToAction {
-    margin-left: 2%;
-    width: 35%;
+    margin-left: 0%;
+    width: 63%;
     padding: 1%;
     font-size: 24px;
     color: #060661;
     font-family: 'Roboto-Regular';
     font-weight: bold;
     border-radius: 15px;
+}
+
+.containerLogo {
+    position: absolute;
+    top: 9%;
+    left: 65%;
+    transform: translateX(-30%);
+    width: 25%;
+}
+
+.containerLogo img {
+    width: 100%;
 }

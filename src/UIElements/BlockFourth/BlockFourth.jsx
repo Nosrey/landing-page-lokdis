@@ -29,7 +29,7 @@ const BlockFourth = ({ language }) => {
 
                 <div className={styles.containerTextOne} >
 
-                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.moreTextContainer}><br />the moment of your choice</span></p>}
+                {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world  at <span className={styles.moreTextContainer}> <br />the moment of your choice</span></p>}
 
                 </div>
 
