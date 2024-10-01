@@ -4,54 +4,63 @@ import "./Bloque1.css";
 import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
 
-export const Bloque1 = () => {
+export const Bloque1 = ({language, setLanguage}) => {
+  const isSpanish = language === "spanish";
+
   return (
-    <div
-      className="fondo"
-    >
+    <div className="fondo">
+    
+      {/* <button
+        onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
+        className="botonIdioma"
+      >
+        {isSpanish ? "cambiar" : "change"}
+      </button> */}
       <div className="columnas" style={{ height: "70vh" }}>
-        <div className="columnaSingular" style={{ width: "35vw" }}>
+        <div className="columnaSingular" style={{ width: "50%", marginRight: "10%" }}>
 
           {/* lado de contador */}
           <div className="filaContador">
-            <p className="contador">LokDis llega en </p>
+            <p className="contador">{isSpanish ? "LokDis llega en" : "LokDis arrives in"}</p>
             {/* ahora 5 dias */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">5</p></div>
-              <div><p className="contadorSubtitulo">dias</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "dias" : "days"}</p></div>
             </div>
 
             {/* ahora 2 horas */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">2</p></div>
-              <div><p className="contadorSubtitulo">horas</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "horas" : "hours"}</p></div>
             </div>
 
             {/* ahora 20 minutos */}
             <div className="fechaContenedor">
               <div><p className="contadorNumero">20</p></div>
-              <div><p className="contadorSubtitulo">minutos</p></div>
+              <div><p className="contadorSubtitulo">{isSpanish ? "minutos" : "minutes"}</p></div>
             </div>
           </div>
 
           {/* lado izquierdo inferior */}
-          <div >
+          <div>
             <div className="cajaVertical">
-              <p className="subtitulo">LokDis: Conéctate con la realidad</p>
-              <p className="bloqueVerde">Explora el mundo sin filtros</p>
-              <p className="textoPoppinsDefault" style={{ fontSize: "15px", marginBottom: "2.5vh" }}>Descubre LokDis, una app para ver el mundo real en la que podrás solicitar momentos y <span>vivir experiencias auténticas.</span></p>
+              <p className="subtitulo">{isSpanish ? "LokDis: Conéctate con la realidad" : "LokDis: Connect with reality"}</p>
+              <p className="bloqueVerde">{isSpanish ? "Explora el mundo sin filtros" : "Explore the world without filters"}</p>
+              <p className="textoPoppinsDefault" style={{ fontSize: "15px", marginBottom: "2.5vh" }}>
+                {isSpanish ? "Descubre LokDis, una app para ver el mundo real en la que podrás solicitar momentos y " : "Discover LokDis, an app to view the real world in which you can request unfiltered moments and "}
+                <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
+              </p>
             </div>
 
             <p className="textoBienvenida">
-              Regístrate, si estás entre las 1000 primeras personas
-              obtendrás 6 meses Premium de LokDis
+              {isSpanish ? "Regístrate, si estás entre las 1000 primeras personas obtendrás 6 meses Premium de LokDis" : "3647 people are already impatient to join this collaborative community"}
             </p>
-            <button className="boton">¡Únete ahora!</button>
+            <button className="boton">{isSpanish ? "¡Únete ahora!" : "Join the waiting list!"}</button>
           </div>
         </div>
 
         {/* lado derecho */}
-        <div className="columnaSingular">
+        <div className="columnaSingular" style={{width: "40%"}}>
           <img
             src={phoneView}
             alt="phoneView"
@@ -60,9 +69,9 @@ export const Bloque1 = () => {
         </div>
       </div>
       <footer>
-        <p className="textoFooter">Explora, conecta y comparte el mundo en su forma más auténtica.</p>
+        <p className="textoFooter">{isSpanish ? "Explora, conecta y comparte el mundo en su forma más auténtica." : "Explore, connect and share the world in its most authentic form."}</p>
         <div className="arrowContainer">
-          <p className="arrowText">Look at<br />this!</p>
+          <p className="arrowText" style={{ fontSize: "20px", marginBottom: "10px" }}>Look at<br />this!</p>
           <img
             src={arrow}
             alt="arrow"
