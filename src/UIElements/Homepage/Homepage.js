@@ -4,14 +4,18 @@ import BlockFive from '../BlockFive/BlockFive'
 import BlockFourth from '../BlockFourth/BlockFourth'
 import BlockTwo from '../BlockTwo/BlockTwo';
 import { Bloque1 } from '../Bloque-1/Bloque1'
+import { Bloque3 } from '../Bloque-3/Bloque3'
 import Carrousel from '../Carrousel/Carrousel';
 
 export const Homepage = ({ language, setLanguage }) => {
   return (
     <div className={styles.fatherContainer}>Homepage
-
+    <div className={styles.fatherContainer}>
+      <Bloque1 />
+      <BlockTwo language={language} setLanguage={setLanguage} />
+      <Bloque3 />
       <BlockFourth language={language} />
-      <BlockFive language={language} />
+     <BlockFive language={language} />
     </div>
   )
 }
