@@ -104,6 +104,13 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 33px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #00FFD7;
+    transform: scale(1.05);
 }
 
 .footerText {

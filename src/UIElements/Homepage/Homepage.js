@@ -53,6 +53,7 @@ export const Homepage = ({ language, setLanguage }) => {
 
         {/* Carrusel */}
         <div style={{
+          marginTop: '-45vh',
           width: '100%',          
           position: 'relative',
           top: '50vh',

@@ -16,6 +16,7 @@
     height: 120vh;
     display: flex;
     flex-direction: row;
+    margin-top: -30vh;
 }
 
 .letterContainer {

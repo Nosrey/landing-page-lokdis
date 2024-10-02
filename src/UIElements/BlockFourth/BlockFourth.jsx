@@ -23,7 +23,7 @@ const BlockFourth = ({ language }) => {
 
 
     return (
-        <div className={styles.fatherContainer} style={{ position: 'relative', top: "-5vh"}} >
+        <div className={styles.fatherContainer} >
 
             <div className={styles.letterContainer} >
 
