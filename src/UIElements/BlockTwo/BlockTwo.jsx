@@ -18,7 +18,7 @@ const BlockTwo = ({ language, setLanguage }) => {
         setLanguage('spanish')
         console.log(language); // Verás el valor actualizado de 'lang' aquí
 
-    }, []);
+    }, [language, setLanguage]);
 
 
     return (

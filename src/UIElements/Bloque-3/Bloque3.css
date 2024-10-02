@@ -78,6 +78,7 @@ b {
 .bloqueCabecera {
     width: 40vw;
     margin-left: 5vw;
+    margin-bottom: 10vh;
 }
 
 .textoNormalPoppins {
@@ -112,7 +113,7 @@ b {
 
 .arrow1 {
     position: absolute;
-    top: 0;
+    top: -10vh;
     right: 38vw;
 
 
@@ -169,4 +170,100 @@ b {
     transform: rotate(-90deg);
     margin: 0;
     padding: 0;
+}
+
+
+
+
+
+
+
+@media (min-width: 1600px) {
+    .arrow1 {
+        top: 0vh;
+        right: 38vw;
+    }
+}
+
+
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    .arrowText3 {
+        font-size: 12px;
+    }
+
+    .bloqueCabecera {
+        margin-top: 10vh;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .arrowText3 {
+        font-size: 8px
+    }
+
+    .arrow4 {
+        top: 170.5vh;
+        right: 53vw;
+   
+    }
+
+    .arrowImage4 {
+        /* gira 25 grados */
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloqueCabecera {
+        margin-top: 20vh;
+
+    }
+    
+}
+
+@media (max-width: 900px) and (max-height: 415px) {
+    .arrowText3 {
+        font-size: 8px
+    }
+
+    .arrow4 {
+        top: 187.5vh;
+        right: 53vw;
+    }
+
+    .arrowImage4 {
+        /* gira 25 grados */
+        transform: rotate(-110deg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloqueCabecera {
+        margin-top: 20vh;
+        
+    }
+}
+
+@media (max-width: 700px)  {
+    .arrowText3 {
+        font-size: 8px
+    }
+
+    .arrow4 {
+        top: 150.5vh;
+        right: 53vw;
+    }
+
+    .arrowImage4 {
+        /* gira 25 grados */
+        transform: rotate(-110deg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloqueCabecera {
+        margin-top: 20vh;
+    }
 }

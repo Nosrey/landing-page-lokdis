@@ -53,6 +53,18 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
+      {/* <div style={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        color: 'white',
+        padding: '0.5rem',
+        zIndex: 100
+      }}>
+        {`Current screen resolution: ${window.innerWidth} x ${window.innerHeight}`}
+      </div> */}
+      
       <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
       <Bloque1 language={language} setLanguage={setLanguage} />
       <BlockTwo language={language} setLanguage={setLanguage} />
