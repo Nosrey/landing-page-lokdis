@@ -1,4 +1,3 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react'
 import styles from './styles/home.module.css'
 import BlockFive from '../BlockFive/BlockFive'
 import BlockFourth from '../BlockFourth/BlockFourth'
@@ -8,10 +7,12 @@ import { Bloque3 } from '../Bloque-3/Bloque3'
 import { Footer } from '../Footer/Footer'
 import { Navbar } from '../Navbar/Navbar'
 import Carrousel from '../Carrousel/Carrousel';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 export const Homepage = ({ language, setLanguage }) => {
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollTimeout = useRef(null);
+  const mainDivRef = useRef(null); // Ref para el contenedor principal
 
   const handleScroll = useCallback(() => {
     // Si ya estaba en estado "desplazando", limpiamos el timeout anterior
@@ -26,58 +27,62 @@ export const Homepage = ({ language, setLanguage }) => {
     scrollTimeout.current = setTimeout(() => {
       setIsScrolling(false);
     }, 1000); // Tiempo en milisegundos (1 segundo en este caso)
-  }, [scrollTimeout]);
+  }, []);
 
   useEffect(() => {
-    // Añade el evento de scroll cuando el componente se monta
-    window.addEventListener('scroll', handleScroll);
+    const mainDiv = mainDivRef.current;
+
+    if (mainDiv) {
+      // Añade el evento de scroll al div principal
+      mainDiv.addEventListener('scroll', handleScroll);
+    }
 
     // Limpia el evento de scroll cuando el componente se desmonta
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
+      if (mainDiv) {
+        mainDiv.removeEventListener('scroll', handleScroll);
+      }
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
       }
     };
-  }, [handleScroll, scrollTimeout]);
+  }, [handleScroll]);
 
   return (
-    <div className={styles.fatherContainer}>
-      <div className={styles.fatherContainer}>
+    <div
+      ref={mainDivRef}
+      className={styles.fatherContainer}
+    >
+      <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
+      <Bloque1 language={language} setLanguage={setLanguage} />
+      <BlockTwo language={language} setLanguage={setLanguage} />
 
-
-
-        <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
-        <Bloque1 language={language} setLanguage={setLanguage} />
-        <BlockTwo language={language} setLanguage={setLanguage} />
-
-        {/* Carrusel */}
-        <div style={{
-          marginTop: '-45vh',
-          width: '100%',          
-          position: 'relative',
-          top: '50vh',
-          zIndex: 1
-        }}>
-          <Carrousel />
-        </div>
-
-        <Bloque3 language={language} setLanguage={setLanguage} />
-
-          {/* Carrusel */}
-          <div style={{
-          width: '100%',
-          position: 'relative',
-          top: '-35vh',
-          zIndex: 1
-        }}>
-          <Carrousel />
-        </div>
-        
-        <BlockFourth language={language} />
-        <BlockFive language={language} />
-        <Footer language={language} setLanguage={setLanguage} />
+      {/* Carrusel */}
+      <div style={{
+        marginTop: '-45vh',
+        width: '100%',
+        position: 'relative',
+        top: '50vh',
+        zIndex: 1
+      }}>
+        <Carrousel />
       </div>
+
+      <Bloque3 language={language} setLanguage={setLanguage} />
+
+      {/* Carrusel */}
+      <div style={{
+        width: '100%',
+        position: 'relative',
+        top: '-35vh',
+        zIndex: 1
+      }}>
+        <Carrousel />
+      </div>
+
+      <BlockFourth language={language} />
+      <BlockFive language={language} />
+      <Footer language={language} setLanguage={setLanguage} />
     </div>
   )
 }

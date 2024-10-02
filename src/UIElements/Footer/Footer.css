@@ -38,13 +38,24 @@
     flex-direction: row;
 }
 
-.tiktok,
-.ig {
+.tiktok img,
+.ig img {
     width: 5vw;
 }
 
-.tiktok {
+.tiktok img {
     margin-left: 1vw;
+}
+
+.tiktok, .ig {
+    /* quita los estilos de estos dos botones */
+    background-color: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tiktok:hover, .ig:hover {
+    transform: scale(1.1);
 }
 
 .logo {

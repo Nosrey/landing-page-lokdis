@@ -20,8 +20,12 @@ export const Footer = ({ language, setLanguage }) => {
                     {isSpanish ? "¡Síguenos!" : "Follow us!"}
                 </p>
                 <div className='rightSideSocialIcons'>
-                    <img src={ig} alt="instagram" className='ig' />
-                    <img src={tiktok} alt="tiktok" className='tiktok' />
+                    <button className='ig'>
+                        <img src={ig} alt="instagram"  />
+                    </button>
+                    <button className='tiktok'>
+                        <img src={tiktok} alt="tiktok" />
+                    </button>
                 </div>
             </div>
         </div>
