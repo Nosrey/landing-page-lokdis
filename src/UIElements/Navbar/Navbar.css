@@ -97,7 +97,7 @@
     color: #000;
     margin: 0;
     font-family: 'Poppins Regular', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0.01em;
@@ -110,7 +110,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 00px;
-    width: 40%;
+    width: 35%;
     margin: auto;
     background-color: #A8FFF1;
     border-radius: 10px;
@@ -134,4 +134,84 @@
 .navBarButton:hover {
     background-color: #00001b;
     transform: scale(1.05);
+}
+
+@media (min-width: 1600px) {
+    .navBarButton {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+
+    .contadorNumero1 {
+        font-size: 30px;
+        margin: 0 5px;
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contadorNumero1 {
+        font-size: 15px;
+        margin: 0 5px;
+        
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        width: 32%;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .contadorNumero1 {
+        font-size: 14px;
+        margin: 0 5px;
+        
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        width: 35%;
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .contadorNumero1 {
+        font-size: 14px;
+        margin: 0 5px;
+        
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        display: none;
+        
+    }
+
+    .navBarButton {
+        font-size: 15px;
+        padding: 5px 40px;
+  
+    }
+
+    .rightNav {
+        width: 50%;
+    }
 }
