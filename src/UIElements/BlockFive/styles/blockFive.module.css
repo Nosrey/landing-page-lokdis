@@ -96,3 +96,23 @@
     width: 100%;
     margin-top: 10%;
 }
+
+.carrousel {
+    width: 100%;
+    position: relative;
+    top: 33.5vh;
+    z-index: 1;
+}
+
+@media (min-width: 1600px) {
+    .carrousel {
+
+        top: 30.5vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .carrousel {
+        top: 40.5vh;
+    }
+}

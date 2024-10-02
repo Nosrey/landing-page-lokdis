@@ -70,25 +70,14 @@ export const Homepage = ({ language, setLanguage }) => {
       <BlockTwo language={language} setLanguage={setLanguage} />
 
       {/* Carrusel */}
-      <div style={{
-        marginTop: '-45vh',
-        width: '100%',
-        position: 'relative',
-        top: '50vh',
-        zIndex: 1
-      }}>
+      <div className={styles.carrusel1}>
         <Carrousel />
       </div>
 
       <Bloque3 language={language} setLanguage={setLanguage} />
 
       {/* Carrusel */}
-      <div style={{
-        width: '100%',
-        position: 'relative',
-        top: '-35vh',
-        zIndex: 1
-      }}>
+      <div className={styles.carrusel2}>
         <Carrousel />
       </div>
 
