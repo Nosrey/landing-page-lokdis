@@ -17,7 +17,7 @@ export const Bloque1 = ({language, setLanguage}) => {
         {isSpanish ? "cambiar" : "change"}
       </button> */}
       <div className="columnas" style={{ height: "70vh" }}>
-        <div className="columnaSingular" style={{ width: "50%", marginRight: "10%" }}>
+        <div className="columnaSingular leftBloq1" style={{ width: "50%", marginRight: "10%" }}>
 
           {/* lado de contador */}
           <div className="filaContador">
@@ -46,7 +46,7 @@ export const Bloque1 = ({language, setLanguage}) => {
             <div className="cajaVertical">
               <p className="subtitulo">{isSpanish ? "LokDis: Conéctate con la realidad" : "LokDis: Connect with reality"}</p>
               <p className="bloqueVerde">{isSpanish ? "Explora el mundo sin filtros" : "Explore the world without filters"}</p>
-              <p className="textoPoppinsDefault" style={{ fontSize: "15px", marginBottom: "2.5vh" }}>
+              <p className="textoPoppinsDefault" style={{}}>
                 {isSpanish ? "Descubre LokDis, una app para ver el mundo real en la que podrás solicitar momentos y " : "Discover LokDis, an app to view the real world in which you can request unfiltered moments and "}
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
               </p>
@@ -71,12 +71,12 @@ export const Bloque1 = ({language, setLanguage}) => {
       <footer>
         <p className="textoFooter">{isSpanish ? "Explora, conecta y comparte el mundo en su forma más auténtica." : "Explore, connect and share the world in its most authentic form."}</p>
         <div className="arrowContainer">
-          <p className="arrowText" style={{ fontSize: "20px", marginBottom: "10px" }}>Look at<br />this!</p>
+          <p className="arrowText">Look at<br />this!</p>
           <img
             src={arrow}
             alt="arrow"
-            className="arrow"
-            height={"100px"}
+            className="arrow"  
+            
           />
         </div>
       </footer>
