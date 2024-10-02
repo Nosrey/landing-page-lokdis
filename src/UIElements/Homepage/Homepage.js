@@ -44,10 +44,35 @@ export const Homepage = ({ language, setLanguage }) => {
   return (
     <div className={styles.fatherContainer}>
       <div className={styles.fatherContainer}>
+
+
+
         <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
         <Bloque1 language={language} setLanguage={setLanguage} />
         <BlockTwo language={language} setLanguage={setLanguage} />
+
+        {/* Carrusel */}
+        <div style={{
+          width: '100%',          
+          position: 'relative',
+          top: '50vh',
+          zIndex: 1
+        }}>
+          <Carrousel />
+        </div>
+
         <Bloque3 language={language} setLanguage={setLanguage} />
+
+          {/* Carrusel */}
+          <div style={{
+          width: '100%',
+          position: 'relative',
+          top: '-35vh',
+          zIndex: 1
+        }}>
+          <Carrousel />
+        </div>
+        
         <BlockFourth language={language} />
         <BlockFive language={language} />
         <Footer language={language} setLanguage={setLanguage} />

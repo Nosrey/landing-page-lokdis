@@ -42,7 +42,28 @@ b {
 .fondo3 {
     background: radial-gradient(84.06% 70.03% at 19.16% -2.84%, #060659 0%, #03033D 34.54%, #000000 63.01%, #000000 97.48%);
     height: auto;
-    padding: 2.5vh 0 10vh 0;
+    padding: 50vh 0 40vh 0;
+
+
+
+    /* z-index: 2; */
+    /* width: 100%;
+        min-height: 120vh; */
+    /* align-items: center;
+        display: flex;
+        z-index: 0; */
+    /* user-select: none;
+        overflow: hidden; */
+
+    background-image: url('../Assets/block-3-background.png');
+    /* Asegura que el contenedor ocupe al menos toda la pantalla */
+    /* Degradado de #242244 a negro */
+    background-color: white;
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .subtituloPoppins {
@@ -121,7 +142,7 @@ b {
     top: 80vh;
 
     right: 82vw;
- 
+
 }
 
 .arrowImage3 {
@@ -136,7 +157,7 @@ b {
 
 .arrow4 {
     position: absolute;
-    top: 170vh;
+    top: 172.5vh;
     margin: 0;
     right: 53vw;
 

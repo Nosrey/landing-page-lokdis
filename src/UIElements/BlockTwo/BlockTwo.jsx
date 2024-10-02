@@ -22,7 +22,7 @@ const BlockTwo = ({ language, setLanguage }) => {
 
 
     return (
-        <div className={styles.firstContainer}>
+        <div className={styles.firstContainer} style={{ position: 'relative', top: "20vh"}}>
 
             <div className={styles.containerPhotos} >
                 <img className={styles.iconoGirl} src={iconoImageBlockTwo} alt="icono" />
