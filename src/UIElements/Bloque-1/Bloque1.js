@@ -4,12 +4,12 @@ import "./Bloque1.css";
 import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
 
-export const Bloque1 = ({language, setLanguage}) => {
+export const Bloque1 = ({ language, setLanguage }) => {
   const isSpanish = language === "spanish";
 
   return (
     <div className="fondo">
-    
+
       {/* <button
         onClick={() => setLanguage(isSpanish ? "english" : "spanish")}
         className="botonIdioma"
@@ -60,7 +60,7 @@ export const Bloque1 = ({language, setLanguage}) => {
         </div>
 
         {/* lado derecho */}
-        <div className="columnaSingular" style={{width: "40%"}}>
+        <div className="columnaSingular" style={{ width: "40%" }}>
           <img
             src={phoneView}
             alt="phoneView"
