@@ -6,29 +6,31 @@
     font-style: normal;
 }
 
-.main {
+.mainFooter {
     min-height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-
+    padding-bottom: 5vh
 }
 
-.leftSide {
+.leftSideFooter {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin: 5px 5vw;
+    width: 30%;
 }
 
-.rightSide {
+.rightSideFooter {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     margin: 5px 5vw;
+    width: 30%;
 }
 
 .rightSideSocialIcons {
@@ -47,14 +49,16 @@
     margin-left: 1vw;
 }
 
-.tiktok, .ig {
+.tiktok,
+.ig {
     /* quita los estilos de estos dos botones */
     background-color: none;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.tiktok:hover, .ig:hover {
+.tiktok:hover,
+.ig:hover {
     transform: scale(1.1);
 }
 
@@ -64,7 +68,7 @@
 }
 
 .textFooter {
-    margin: 0;
+    margin: 0 auto;
 
     font-family: Plus Jakarta Sans;
     font-size: 16px;
@@ -72,4 +76,128 @@
     line-height: 22.4px;
     text-align: left;
 
+}
+
+.centerFooter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.languageSwitch {
+    display: flex;
+    align-items: center;
+}
+
+.switchLabel {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(0, 10, 36, 0.9);
+    padding: 0.5rem 0.5rem;
+    border-top-right-radius: 80rem;
+    border-bottom-right-radius: 80rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000
+}
+
+.switchLabelInFooter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(0, 10, 36, 0.9);
+    padding: 0.5rem 0.5rem;
+    border-radius: 80rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+span.active {
+    color: #2196F3;
+
+}
+
+span.inactive {
+    color: #aaa;
+}
+
+.columnFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerFlag {
+    width: 4vw;
+    margin: 0.1rem 0.25rem 0.1rem 0.25rem;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Transición suave para el tamaño y el filtro */
+    filter: grayscale(100%);
+    /* Por defecto en escala de grises */
+}
+
+.footerFlag.active {
+    transform: scale(1.1);
+    /* Escala 10% más grande */
+    filter: grayscale(0%);
+    /* Vuelve a color completo */
+}
+
+.footerFlag.inactive {
+    transform: scale(1);
+    /* Mantén el tamaño normal */
+    filter: grayscale(100%);
+    /* Mantén la imagen en gris */
 }

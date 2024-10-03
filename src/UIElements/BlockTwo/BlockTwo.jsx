@@ -6,19 +6,19 @@ import blockTwoImageBoxOne from '../Assets/boxOneBlockTwo.png';
 import blockTwoImageBoxTwo from '../Assets/boxTwoBlockTwo.png';
 import iconoImageBlockTwo from '../Assets/icono-block-2.png';
 import userMapImageBlockTwo from '../Assets/usuario-mapa-block-2.png';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const BlockTwo = ({ language, setLanguage }) => {
 
 
 
 
-    useEffect(() => {
-        // Este useEffect se ejecuta cuando 'lang' cambia
-        setLanguage('spanish')
-        console.log(language); // Verás el valor actualizado de 'lang' aquí
+    // useEffect(() => {
+    //     // Este useEffect se ejecuta cuando 'lang' cambia
+    //     setLanguage('spanish')
+    //     console.log(language); // Verás el valor actualizado de 'lang' aquí
 
-    }, [language, setLanguage]);
+    // }, [language, setLanguage]);
 
 
     return (
