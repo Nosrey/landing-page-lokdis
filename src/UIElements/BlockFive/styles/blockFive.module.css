@@ -104,15 +104,21 @@
     z-index: 1;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 700px) and (max-width:1100px) {
     .carrousel {
-
-        top: 30.5vh;
+        width: 100%;
+        position: relative;
+        top: 32.5vh;
+        z-index: 1;
     }
 }
 
-@media (max-width: 900px) {
+
+@media (min-width: 700px) and (min-height:813.75px) {
     .carrousel {
-        top: 40.5vh;
+        width: 100%;
+        position: relative;
+        top: 27.5vh;
+        z-index: 1;
     }
 }
