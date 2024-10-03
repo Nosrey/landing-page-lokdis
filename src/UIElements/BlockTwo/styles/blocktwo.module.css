@@ -1215,6 +1215,12 @@
 
     }
 
+    .containerPhotos {
+        margin-top: 15vh;
+        height: 100%;
+    }
+
+
     .containerTextMoreImage {
         margin-top: -25px;
     }
