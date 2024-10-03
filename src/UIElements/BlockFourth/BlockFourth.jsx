@@ -4,7 +4,9 @@ import movilOne from '../Assets/movil-one.png';
 import movilTwo from '../Assets/phone-two-block-4.png';
 import movilThree from '../Assets/phone-three-block-4.png'
 import elipse from '../Assets/elipse.png';
-import arrowDown from '../Assets/arrow-down.png';
+import arrowDown from '../Bloque-3/Images/curvedArrow.gif';
+import arrowUp from '../Bloque-3/Images/curvedArrow3.gif';
+
 import { useEffect } from 'react';
 
 const BlockFourth = ({ language }) => {
@@ -29,26 +31,33 @@ const BlockFourth = ({ language }) => {
 
                 <div className={styles.containerTextOne} >
 
-                {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world  at <span className={styles.moreTextContainer}> <br />the moment of your choice</span></p>}
+                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world  at <span className={styles.moreTextContainer}> <br />the moment of your choice</span></p>}
 
                 </div>
+                <div className={styles.containerTextTwoForMoreText} >
 
-                <div className={styles.containerTextTwo} >
+                    <div className={styles.containerTextTwo} >
 
-                    {language === 'spanish' ? <span className={styles.textTwoContainer} >Explora lo que quieras, cuando</span> : <span className={styles.textTwoContainer} >Explore where you want, when</span>}
-
+                        {language === 'spanish' ? <span className={styles.textTwoContainer} >Explora lo que quieras,</span> : <span className={styles.textTwoContainer} >Explore where you want, when</span>}
+                    </div>
+                    <span className={styles.textTwoContainer} >cuando</span>
                 </div>
                 <div className={styles.leftOverTextContainer} >
 
                     {language === 'spanish' ? <span className={styles.textTwoContainer} >quieras</span> :
                         <span className={styles.textTwoContainer} >you want</span>}
 
+                    <div className={styles.containerTextThree} >
 
-                    {language === 'spanish' ? <p className={styles.textThree}> Busca los lugares que quieres ver en el mapa interactivo del mundo, solicita momentos reales y obtén una perspectiva auténtica en tiempo real.</p> :
-                        <p className={styles.textThree}>
-                            Find the places you want to see on the interactive map, request real moments and get an authentic perspective in real time.
-                        </p>}
+                        {language === 'spanish' ? <p className={styles.textThree}> Busca los lugares que quieres ver en el mapa interactivo del mundo, solicita momentos reales y obtén una perspectiva auténtica en tiempo real.</p> :
+                            <p className={styles.textThree}>
+                                Find the places you want to see on the interactive map, request real moments and get an authentic perspective in real time.
+                            </p>}
+
+                    </div>
+
                 </div>
+
             </div>
 
             <div className={styles.container} >
@@ -73,7 +82,7 @@ const BlockFourth = ({ language }) => {
                     </p> :
                         <p className={styles.paragraphSecond} >Explore the places you want when you want</p>}
                 </div>
-                <img className={styles.arrowDownThree} src={arrowDown} alt="flecha abajo" />
+                <img className={styles.arrowDownThree} src={arrowUp} alt="flecha abajo" />
 
                 <img className={styles.arrowDownSecond} src={arrowDown} alt="flecha abajo" />
 
@@ -90,6 +99,7 @@ const BlockFourth = ({ language }) => {
                 </div>
 
             </div>
+
 
 
         </div >

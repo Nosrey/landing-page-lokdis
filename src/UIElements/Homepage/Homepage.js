@@ -81,6 +81,8 @@ export const Homepage = ({ language, setLanguage }) => {
     };
   }, [handleScroll]);
 
+
+
   return (
     <div
       ref={mainDivRef}
