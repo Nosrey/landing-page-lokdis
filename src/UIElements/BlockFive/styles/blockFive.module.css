@@ -4,7 +4,7 @@
     z-index: 2;
     background-image: url('../../Assets/block-5-background.png');
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     /* Asegura que el contenedor ocupe al menos toda la pantalla */
     /* Degradado de #242244 a negro */
     user-select: none;
@@ -21,17 +21,19 @@
 
 
 .carrousel {
-    width: 100%;
+    width: 100vw;
     position: relative;
-    top: 35.5vh;
+    top: 12.5rem;
     z-index: 1;
+    display: flex;
+    align-items: flex-end;
 }
 
 .blockFiveContainer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: -10%;
+    margin-top: -5%;
 
 
 }
@@ -87,3 +89,7 @@
 .containerLogo img {
     width: 100%;
 }
+
+@media (min-width: 743.33px) and (max-width: 800px) {}
+
+@media (min-width: 600px) and (max-width: 700px) {}

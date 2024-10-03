@@ -20,7 +20,7 @@ const BlockFive = ({ language }) => {
         <div className={styles.blockFiveContainer}>
             <div className={styles.carrousel} >
 
-                <Carrousel />
+                <Carrousel language={language} />
             </div>
 
             <div className={styles.container} >
