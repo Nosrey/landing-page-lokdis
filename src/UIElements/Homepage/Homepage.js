@@ -88,6 +88,18 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
+      {/* <div style={{
+        position: 'fixed',
+        bottom: 0,
+        right: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        color: 'white',
+        padding: '0.5rem',
+        zIndex: 100
+      }}>
+        {`Current screen resolution: ${window.innerWidth} x ${window.innerHeight}`}
+      </div> */}
+
       {/* Componente Navbar */}
       <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
       <Bloque1 language={language} setLanguage={setLanguage} />
@@ -99,6 +111,10 @@ export const Homepage = ({ language, setLanguage }) => {
       </div>
 
       <Bloque3 language={language} setLanguage={setLanguage} />
+      {/* Carrusel */}
+      <div className={styles.carrusel2}>
+        <Carrousel />
+      </div>
       <BlockFourth language={language} />
 
 
@@ -108,7 +124,7 @@ export const Homepage = ({ language, setLanguage }) => {
 
       <div ref={observedRef} className={styles.observedBlock}>
         {/* Este es el bloque que queremos observar */}
-        <Footer language={language} setLanguage={setLanguage} isVisible={isVisible}/>
+        <Footer language={language} setLanguage={setLanguage} isVisible={isVisible} />
 
         {/* Marcador para observar el final */}
         <div style={{ height: '1px' }} />
