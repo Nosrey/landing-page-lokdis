@@ -28,35 +28,35 @@ export const Bloque3 = ({ language, setLanguage }) => {
             <div className="placesContainer">
                 <div className='bloqueFlechas'>
                     <div className='arrowBox arrow1'>
-                        <p className="arrowText" style={{ marginBottom: "0vh" }}>
+                        <p className="arrowText3" style={{ marginBottom: "0vh" }}>
                             {isSpanish
                                 ? <>¿Está funcionando la <br />noria de la fuente de <br />Neptuno en Berlín?</>
                                 : <>Is the Neptune Fountain <br />Ferris wheel in Berlin working?</>
                             }
                         </p>
-                        <img src={curvedArrow2} alt="curvedArrow" className="arrow arrowImage1" />
+                        <img src={curvedArrow2} alt="curvedArrow" className="arrowbloque2 arrowImage1" />
                     </div>
                     <div className='arrowBox arrow2'>
-                        <p className="arrowText" style={{ marginBottom: "1vh", transform: "rotate(-15deg)" }}>
+                        <p className="arrowText3" style={{ marginBottom: "1vh", transform: "rotate(-15deg)" }}>
                             {isSpanish
                                 ? <>¿Hay sitios de <br />souvenirs en <br />Victoria, <br />Malta?</>
                                 : <>How does the souvenir <br />market in Victoria, <br />Malta look like now?</>
                             }
                         </p>
-                        <img src={curvedArrow} alt="curvedArrow" className="arrow arrowImage2" />
+                        <img src={curvedArrow} alt="curvedArrow" className="arrowbloque2 arrowImage2" />
                     </div>
                     <div className='arrowBox arrow3'>
-                        <p className="arrowText" style={{ marginBottom: "1vh", transform: "rotate(-8deg)" }}>
+                        <p className="arrowText3" style={{ marginBottom: "1vh", transform: "rotate(-8deg)" }}>
                             {isSpanish
                                 ? <>¿Hay mucha gente <br />paseando por <br />Burdeos?</>
                                 : <>Is it a good time <br />to be in Bordeaux?</>
                             }
                         </p>
-                        <img src={curvedArrow3} alt="curvedArrow" className="arrow arrowImage3" />
+                        <img src={curvedArrow3} alt="curvedArrow" className="arrowbloque2 arrowImage3" />
                     </div>
                     <div className='arrowBox arrow4'>
-                        <img src={curvedArrow2} alt="curvedArrow" className="arrow arrowImage4" />
-                        <p className="arrowText">
+                        <img src={curvedArrow2} alt="curvedArrow" className="arrowbloque2 arrowImage4" />
+                        <p className="arrowText3">
                             {isSpanish
                                 ? <>¿Hay mucha gente <br />en la playa?</>
                                 : <>Are there many <br />people on the beach?</>
