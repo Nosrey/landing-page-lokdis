@@ -4,7 +4,7 @@
     z-index: 2;
     background-image: url('../../Assets/block-5-background.png');
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     /* Asegura que el contenedor ocupe al menos toda la pantalla */
     /* Degradado de #242244 a negro */
     user-select: none;
@@ -16,24 +16,23 @@
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
 
 .carrousel {
-    width: 100vw;
+    width: 100%;
     position: relative;
-    top: 12.5rem;
+    top: 35.5vh;
     z-index: 1;
-    display: flex;
-    align-items: flex-end;
 }
 
 .blockFiveContainer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: -5%;
+    margin-top: -30vh;
 
 
 }
@@ -76,6 +75,13 @@
     font-family: 'Roboto-Regular';
     font-weight: bold;
     border-radius: 15px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonCallToAction:hover {
+    background-color: #b0fcff;
+    transform: scale(1.05);
 }
 
 .containerLogo {
@@ -88,8 +94,25 @@
 
 .containerLogo img {
     width: 100%;
+    margin-top: 10%;
 }
 
-@media (min-width: 743.33px) and (max-width: 800px) {}
+.carrousel {
+    width: 100%;
+    position: relative;
+    top: 33.5vh;
+    z-index: 1;
+}
 
-@media (min-width: 600px) and (max-width: 700px) {}
+@media (min-width: 1600px) {
+    .carrousel {
+
+        top: 30.5vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .carrousel {
+        top: 40.5vh;
+    }
+}

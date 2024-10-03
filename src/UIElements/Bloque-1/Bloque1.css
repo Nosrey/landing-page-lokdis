@@ -89,7 +89,6 @@
 .phoneView {
     width: 68%;
     margin: 0 auto;
-
 }
 
 .boton {
@@ -104,6 +103,13 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 33px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #00FFD7;
+    transform: scale(1.05);
 }
 
 .footerText {
@@ -127,7 +133,10 @@
 
 .arrow {
     /* gira la image 90 grados a la derecha     */
-    transform: rotate(90deg);
+    transform: rotate(100deg);
+    height: 9vh;
+    margin-left: 0;
+    margin-top: 20px;
 }
 
 .contador {
@@ -214,11 +223,13 @@
 
 .textoPoppinsDefault {
     font-family: 'Poppins Regular', sans-serif;
-    font-size: 20px;
+
     font-weight: 400;
     text-align: left;
     color: #ffffff;
     margin: 0;
+    font-size: 15px;
+    margin-bottom: 2.5vh;
 }
 
 .textoFooter {
@@ -246,9 +257,330 @@ footer {
 .arrowText {
     color: #ffffff;
     font-family: 'Rock Salt', sans-serif;
-    font-size: 500px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px)  {
+    .contador {
+        font-size: 1rem;
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .bloqueVerde {
+        font-size: 0.8rem;
+        
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.6rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.6rem;
+    }
+
+    .boton {
+        font-size: 0.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 50%;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin-top: 4vh
+    }
+
+    .arrowText {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-top: 0;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-top: 0px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .fondo {
+        padding-top: 1vh;
+    }
+
+    .phoneView {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 25%;
+        margin-left: 65%;
+        
+    }
+
+    .leftBloq1 {
+        margin-top: 15vh
+    }
 
 }
+
+@media (max-width: 900px) and (min-width: 701px)  {
+    .contador {
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 25%;
+        margin-left: 65%;
+        
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .bloqueVerde {
+        font-size: 0.8rem;
+        
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.6rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.6rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 60%;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin-top: 4vh
+    }
+
+    .arrowText {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-top: 0;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-top: 0px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .fondo {
+        padding-top: 1vh;
+    }
+
+    .phoneView {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    .contador {
+        font-size: 0.8rem;
+ 
+    }
+
+ 
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin-bottom: 5vh;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.8rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.8rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+
+    .arrowText {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .arrow {
+        height: 9vh;
+        margin-top: 15px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+    
+    
+}
+
+@media (min-width: 1600px) {
+    .contador {
+        font-size: 30px;
+        line-height: 46.8px;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+    }
+
+    .bloqueVerde {
+        font-size: 35px;
+        margin-bottom: 5vh;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 20px;
+    }
+
+    .textoBienvenida {
+        font-size: 20px;
+    }
+
+    .boton {
+        font-size: 30px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .textoFooter {
+        font-size: 20px;
+    }
+
+    .arrowText {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+/* @media (max-width: 1100px) and (max-height: 600px) {
+    .contador {
+        font-size: 0.8rem;
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin-bottom: 5vh;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.8rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.8rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+
+    .arrowText {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .arrow {
+        height: 9vh;
+        margin-top: 15px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+
+} */
+
