@@ -70,7 +70,8 @@
     font-family: 'Poppins-Regular';
 }
 
-.firstTextLeftContainer {
+.firstTextLeftContainer,
+.firstTextLeftContainerEnglish {
     font-family: 'Poppins-Regular';
     font-size: 30px;
     text-align: left;
@@ -105,6 +106,7 @@
 .additionalText,
 .thirdText,
 .firstTextLeftContainer,
+.firstTextLeftContainerEnglish,
 .secondTextLeftContainer {
     user-select: none;
     -webkit-user-select: none;
@@ -131,7 +133,7 @@
     position: relative;
     width: 50%;
     overflow: hidden;
-
+    height: 120%;
 
 }
 
@@ -243,7 +245,7 @@
         position: relative;
         width: 50%;
         z-index: 2;
-
+        background-color: red;
     }
 
     .containerLetterParagraph {
@@ -274,7 +276,11 @@
 }
 
 
-@media (min-width: 700px) and (max-width: 776px) {
+@media (min-width: 600px) and (max-width: 776px) {
+
+    .firstContainer {
+        padding-top: 5vh;
+    }
 
     .defineContainerText {
 
@@ -288,18 +294,21 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 1rem;
         font-size: 1.12rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
+    }
 
-
+    .firstTextLeftContainerEnglish {
+        font-size: 1rem
     }
 
     .containerBlueLetter {
         display: flex;
-
+        
         margin-top: 0.7rem;
 
         height: 1rem;
@@ -356,11 +365,11 @@
     }
 
     .eyesImage {
-
+        
         width: 13%;
 
         position: relative;
-        margin: 8% 8% 5% 0%;
+        margin: 12% 8% 5% 0%;
         transform: rotate(7deg);
 
     }
@@ -464,7 +473,8 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 1rem;
         font-size: 1.25rem;
         font-family: 'Poppins-Regular';
@@ -643,13 +653,18 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 1rem;
         font-size: 1.3rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
 
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 1.2rem
     }
 
     .containerBlueLetter {
@@ -838,12 +853,17 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 2rem;
         font-size: 1.6rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 1.5rem
     }
 
     .containerBlueLetter {
@@ -1034,7 +1054,8 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 2rem;
         font-size: 1.9rem;
         font-family: 'Poppins-Regular';
@@ -1237,12 +1258,17 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 2rem;
         font-size: 2.1rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 1.7rem
     }
 
     .containerBlueLetter {
@@ -1434,12 +1460,17 @@
 
     }
 
-    .firstTextLeftContainer {
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
         line-height: 2rem;
         font-size: 2.35rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 2.0rem
     }
 
     .containerBlueLetter {
@@ -1456,19 +1487,29 @@
 
     }
 
-    .thirdText {
+    .thirdText, .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
         font-size: 2rem;
         line-height: 0px;
     }
 
-    .secondTextLeftContainer {
+    .thirdTextEnglish {
+        font-size: 1.7rem;
+    }
+
+    .secondTextLeftContainer, .secondTextLeftContainerEnglish {
         font-size: 2.35rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
 
+    }
+
+   
+
+    .secondTextLeftContainerEnglish {
+        font-size: 2.0rem
     }
 
     .leftContainer {

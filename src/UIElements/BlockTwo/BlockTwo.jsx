@@ -48,7 +48,7 @@ const BlockTwo = ({ language, setLanguage }) => {
 
                         {language === 'spanish' ? <h2 className={styles.firstTextLeftContainer}>
                             Una app para descubrir
-                        </h2> : <h2 className={styles.firstTextLeftContainer}>
+                        </h2> : <h2 className={styles.firstTextLeftContainerEnglish}>
                             An application to discover                        </h2>}
                         <img className={styles.eyesImage} src={eyesImage} alt='eyes-small-image' />
                     </div>

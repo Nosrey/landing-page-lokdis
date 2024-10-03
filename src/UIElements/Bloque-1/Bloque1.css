@@ -266,7 +266,7 @@ footer {
 
 @media (max-width: 700px)  {
     .contador {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .contadorSubtitulo {
@@ -295,10 +295,10 @@ footer {
     }
 
     .boton {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         padding-top: 0;
         padding-bottom: 0;
-        width: 50%;
+        width: 75%;
     }
 
     .textoFooter {
@@ -380,10 +380,10 @@ footer {
     }
 
     .boton {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding-top: 0;
         padding-bottom: 0;
-        width: 60%;
+        width: 70%;
     }
 
     .textoFooter {
