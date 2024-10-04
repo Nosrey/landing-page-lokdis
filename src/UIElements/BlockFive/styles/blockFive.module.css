@@ -123,3 +123,14 @@
     }
 
 }
+
+@media (min-width: 1300px) and (min-height:766px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 31.5vh;
+        z-index: 1;
+    }
+
+}
