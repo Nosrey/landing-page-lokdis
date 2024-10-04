@@ -108,7 +108,7 @@
     .carrousel {
         width: 100%;
         position: relative;
-        top: 32.5vh;
+        top: 42vh;
         z-index: 1;
     }
 }

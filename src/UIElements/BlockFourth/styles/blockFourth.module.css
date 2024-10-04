@@ -14,7 +14,7 @@
 .fatherContainer {
     align-items: center;
     justify-content: center;
-    margin-top: -30vh;
+    margin-top: -50vh;
     width: 100%;
     height: 150vh;
     display: flex;
@@ -215,7 +215,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 3rem;
 }
 
@@ -275,7 +275,7 @@
 
 
 
-@media (min-width:700px) and (max-width:831px) {
+@media (min-width:600px) and (max-width:831px) {
 
     .fatherContainer {
 
@@ -553,7 +553,37 @@
 
     }
 
+    .paragraphSecond, .paragraphOne {
+        font-size: 0.7rem;
+    }
 
+    .arrowDown {
+        top: 90%;
+    }
+
+    .arrowDownSecond {
+        top: 8%;
+    }
+
+    .containerParagraphTwo {
+        top: -9%;
+    }
+
+    .containerParagraph {
+        top: 95%;
+    }
+
+    .arrowDownThree {
+        top: 90%;
+    }
+
+    .containerParagraphThree {
+        top: 95%;
+    }
+
+    .textOneContainer {
+        font-size: 18px;
+    }
 
 }
 
@@ -589,14 +619,44 @@
 
     .arrowDownSecond {
         position: absolute;
-        top: 22vh;
+        top: 10vh;
         left: 25vw;
         width: 8%;
         transform: rotate(155deg);
         filter: brightness(0);
-
-
     }
+
+    .containerParagraphTwo {
+        position: absolute;
+        top: -5%;
+        width: 48%;
+        left: 20%;
+    }
+
+    .paragraphSecond {
+        font-size: 0.8rem;
+    }
+
+    .arrowDownThree {
+        top: 88%;
+    }
+
+    .containerParagraphThree {
+        top: 93%;
+    }
+
+    .containerParagraph {
+        top: 90%;
+    }
+
+    .paragraphOne {
+        font-size: 0.8rem;
+    }
+
+    .arrowDown {
+        top: 83%;
+    }
+
 
     .containerTextOne {
         width: 60%;
@@ -635,6 +695,7 @@
         justify-content: start;
         margin-left: 8vw;
         width: 240px;
+      
     }
 
     .containerTextTwoForMoreText {
@@ -716,7 +777,7 @@
 
     .arrowDownThree {
         position: absolute;
-        top: 85%;
+        top: 82%;
         left: 54.5%;
         width: 8%;
         transform: rotate(150deg) scaleY(-1);
@@ -750,7 +811,7 @@
         word-wrap: break-word;
         line-height: 2rem;
         font-family: 'Poppins-Regular';
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         text-align: left;
         position: relative;
         bottom: 10%;
@@ -832,12 +893,103 @@
     }
 
     .containerParagraph {
-        margin-top: 15vh;
+        margin-top: 10vh;
     }
 
     .containerParagraphThree {
 
-        margin-top: 5vh;
+        margin-top: 0vh;
     }
 
+    .textOneContainer {
+        font-size: 24px;
+
+    }
+
+    
+
 }
+
+@media (min-width: 1401px) {
+    .elipseContainer {
+        display: flex;
+        position: absolute;
+        width: 130%;
+        height: 50%;
+        background-color: transparent;
+        left: -10%;
+        overflow: hidden;
+    }
+
+    .fatherContainer {
+        margin-top: -70vh;
+    }
+
+    .textTwoContainer {
+        font-size: 35px;
+
+    }
+
+    .paragraphOne, .paragraphSecond {
+        font-size: 1rem;
+    }
+
+    .containerParagraphTwo{
+        margin-top: -02vh;
+
+    }
+
+    .textTwoContainer {
+        font-size: 2rem;
+   
+    }
+
+    .containerParagraphThree {
+        top: 85%;
+    }
+
+    .containerTextTwoForMoreText {
+        margin-left: 15vw;
+        justify-content: flex-start;
+
+    }
+
+    .arrowDown {
+        right: 50%;
+    }
+
+    .textTwoContainer {
+        font-size: 25px;
+
+    }
+ 
+}   
+
+@media (min-width: 1501px) {
+    .elipseContainer {
+        display: flex;
+        position: absolute;
+        width: 130%;
+        height: 50%;
+        background-color: transparent;
+        left: -10%;
+        overflow: hidden;
+    }
+
+    .fatherContainer {
+        margin-top: -70vh;
+    }
+
+    .textTwoContainer {
+        font-size: 30px;
+
+    }
+
+    .paragraphOne, .paragraphSecond {
+        font-size: 1.2rem;
+    }
+
+    .containerParagraphTwo{
+        margin-top: -02vh;
+    }
+}   

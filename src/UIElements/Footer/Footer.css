@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-bottom: 5vh
+    
 }
 
 .leftSideFooter {
@@ -31,6 +31,7 @@
     flex-direction: column;
     margin: 5px 5vw;
     width: 30%;
+ 
 }
 
 .rightSideSocialIcons {
@@ -200,4 +201,11 @@ span.inactive {
     /* Mantén el tamaño normal */
     filter: grayscale(100%);
     /* Mantén la imagen en gris */
+}
+
+.footerArrow {
+    width: 50px;
+    filter: brightness(0);
+    transform: rotate(-90deg);
+    margin: 0 5px
 }

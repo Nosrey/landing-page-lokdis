@@ -1,6 +1,6 @@
 
 
-import styles from './styles/blockTwo.module.css';
+import styles from './styles/blocktwo.module.css';
 import eyesImage from '../Assets/eyes-small-size.png';
 import blockTwoImageBoxOne from '../Assets/boxOneBlockTwo.png';
 import blockTwoImageBoxTwo from '../Assets/boxTwoBlockTwo.png';

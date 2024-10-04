@@ -5,6 +5,8 @@ import ig from './Images/ig.webp'
 import tiktok from './Images/tiktok.webp'
 import usaFlag from './Images/usaFlag.webp'
 import spanishFlag from './Images/spanishFlag.webp'
+import arrow from './Images/curvedArrow2.gif'
+
 
 export const Footer = ({ language, setLanguage, isVisible }) => {
     const isSpanish = language === "spanish";
@@ -51,10 +53,12 @@ export const Footer = ({ language, setLanguage, isVisible }) => {
                 </div>
             </div>
             <div className="rightSideFooter">
-                <p className="textFooter" style={{ marginBottom: "10px" }}>
-                    {isSpanish ? "¡Síguenos!" : "Follow us!"}
-                </p>
+            
                 <div className='rightSideSocialIcons'>
+                {/* <p className="textFooter" style={{ marginBottom: "10px" }}>
+                    {isSpanish ? "¡Síguenos!" : "Follow us!"}
+                </p> */}
+                <img src={arrow} alt='arrow' className='footerArrow' />
                     <button className='ig'>
                         <img src={ig} alt="instagram" />
                     </button>
