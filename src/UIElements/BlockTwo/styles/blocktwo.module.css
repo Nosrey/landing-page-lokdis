@@ -775,6 +775,129 @@
 
 }
 
+@media only screen and (min-width: 776px) and (min-height:1024px) {
+
+    .containerPhotos {
+        display: none;
+    }
+
+    .leftContainer {
+        margin-top: -45vh;
+        width: 90%;
+
+
+    }
+
+    .containerPhotosMovil {
+        margin-top: 5vh;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 80%;
+        height: 45%;
+        top: 72%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 125%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 130%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 45%;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .firstTextLeftContainer {
+        font-size: 45px;
+        font-family: 'Poppins-Regular';
+
+    }
+
+    .secondTextLeftContainer {
+        font-size: 35px;
+        font-family: 'Poppins-Regular';
+        margin-bottom: 0.1vh;
+    }
+
+    .textH3 {
+
+        font-size: 30px;
+
+    }
+
+    .thirdText {
+
+        font-size: 35px;
+        font-family: 'Poppins-Regular';
+    }
+
+    .contenedorLetterBlueContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .containerBlueLetter {
+        width: 60%;
+        height: 5vh;
+    }
+
+    .firstContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 5% 15% 5% 0%;
+        transform: rotate(7deg);
+
+    }
+}
+
 @media (min-width: 776px) and (max-width: 874px) {
 
     .defineContainerText {
@@ -1135,6 +1258,9 @@
 
 
 }
+
+
+
 
 
 @media (min-width: 1000px) and (max-width: 1200px) {
