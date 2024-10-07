@@ -553,7 +553,8 @@
 
     }
 
-    .paragraphSecond, .paragraphOne {
+    .paragraphSecond,
+    .paragraphOne {
         font-size: 0.7rem;
     }
 
@@ -695,7 +696,7 @@
         justify-content: start;
         margin-left: 8vw;
         width: 240px;
-      
+
     }
 
     .containerTextTwoForMoreText {
@@ -787,7 +788,7 @@
 
     .arrowDownSecond {
         position: absolute;
-        top: 5vh;
+        top: 2vh;
         left: 25vw;
         width: 8%;
         transform: rotate(155deg);
@@ -803,7 +804,7 @@
     }
 
     .containerParagraphTwo {
-        margin-top: -12vh;
+        margin-top: -15vh;
     }
 
 
@@ -853,7 +854,7 @@
     .imageMovilOne {
         z-index: 1;
         width: 75% !important;
-        bottom: 5vh;
+        bottom: 12vh;
         left: 32%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
@@ -864,7 +865,7 @@
     .containerPhotos img:nth-child(2) {
         z-index: 2;
         width: 75%;
-        bottom: 5%;
+        bottom: 13%;
         right: 14%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
@@ -874,7 +875,7 @@
     .containerPhotos img:nth-child(3) {
         z-index: 3;
         width: 72%;
-        bottom: 6%;
+        bottom: 14%;
         right: 62%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
@@ -906,7 +907,18 @@
 
     }
 
-    
+
+
+}
+
+
+@media(min-width:1366px) and (min-height:768px) {
+
+    .containerParagraphTwo {
+
+        margin-top: -10vh;
+
+    }
 
 }
 
@@ -930,18 +942,19 @@
 
     }
 
-    .paragraphOne, .paragraphSecond {
+    .paragraphOne,
+    .paragraphSecond {
         font-size: 1rem;
     }
 
-    .containerParagraphTwo{
+    .containerParagraphTwo {
         margin-top: -02vh;
 
     }
 
     .textTwoContainer {
         font-size: 2rem;
-   
+
     }
 
     .containerParagraphThree {
@@ -962,8 +975,16 @@
         font-size: 25px;
 
     }
- 
-}   
+
+}
+
+@media(min-width:1419px) and (min-height:976px) {
+
+    .container {
+        margin-top: 10%;
+    }
+
+}
 
 @media (min-width: 1501px) {
     .elipseContainer {
@@ -985,11 +1006,12 @@
 
     }
 
-    .paragraphOne, .paragraphSecond {
+    .paragraphOne,
+    .paragraphSecond {
         font-size: 1.2rem;
     }
 
-    .containerParagraphTwo{
+    .containerParagraphTwo {
         margin-top: -02vh;
     }
-}   
+}
