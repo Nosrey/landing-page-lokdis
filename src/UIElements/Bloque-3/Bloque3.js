@@ -14,13 +14,25 @@ export const Bloque3 = ({ language, setLanguage }) => {
                 <h2 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
                 </h2>
-                <p className="textoNormalPoppins" style={{ lineHeight: "45px" }}>
-                    {isSpanish ? 'Conecta con la realidad que te importa' : 'Connect with the reality that matters to you'}
+                <p className="textoNormalPoppins texto1Bloque3">
+                    {isSpanish ? <>Conecta con<span className='fondoAzulBloque3'>la realidad que te importa</span></> : <>Connect with<span className='fondoAzulBloque3'>the reality that matters to you</span></>}
                 </p>
-                <p className="textoNormalPoppins" style={{ fontSize: "16px", marginTop: "0" }}>
+                <p className="textoNormalPoppins">
                     {isSpanish
                         ? 'Explora cualquier rincón del mundo conectando con personas que te muestran lo que están viendo. ¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.'
                         : 'Explore any corner of the world by connecting with people who are willing to show you what they are seeing. Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.'
+                    }
+                </p>
+                <p className="textoNormalPoppinsMobile">
+                    {isSpanish
+                        ? <>Explora <span className='colorGreenTextBloq3'>cualquier rincón del mundo</span> conectando con personas que te muestran lo que están viendo.</>                    
+                        : <>Explore <span className='colorGreenTextBloq3'>any corner of the world</span> by connecting with people who are willing to show you what they are seeing.</>
+                    }
+                </p>
+                <p className="textoNormalPoppinsMobile texto2Bloque3">
+                    {isSpanish
+                        ? <>¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.</>                    
+                        : <>Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.</>
                     }
                 </p>
             </div>
