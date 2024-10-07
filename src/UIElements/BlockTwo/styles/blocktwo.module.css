@@ -245,7 +245,6 @@
         position: relative;
         width: 50%;
         z-index: 2;
-        background-color: red;
     }
 
     .containerLetterParagraph {
@@ -308,7 +307,7 @@
 
     .containerBlueLetter {
         display: flex;
-        
+
         margin-top: 0.7rem;
 
         height: 1rem;
@@ -365,7 +364,7 @@
     }
 
     .eyesImage {
-        
+
         width: 13%;
 
         position: relative;
@@ -1487,7 +1486,8 @@
 
     }
 
-    .thirdText, .thirdTextEnglish {
+    .thirdText,
+    .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
         font-size: 2rem;
@@ -1498,7 +1498,8 @@
         font-size: 1.7rem;
     }
 
-    .secondTextLeftContainer, .secondTextLeftContainerEnglish {
+    .secondTextLeftContainer,
+    .secondTextLeftContainerEnglish {
         font-size: 2.35rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
@@ -1506,7 +1507,7 @@
 
     }
 
-   
+
 
     .secondTextLeftContainerEnglish {
         font-size: 2.0rem
@@ -1633,8 +1634,5 @@
         font-family: 'Poppins-Regular';
         font-size: 35px;
         color: #028470;
-
     }
-
-
 }
