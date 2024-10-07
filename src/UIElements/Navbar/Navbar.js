@@ -7,7 +7,7 @@ export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage }) =
     const isSpanish = language === "spanish";
 
     return (
-        <div className={`scrollNav ${!isScrolling ? 'hidden' : ''}`}>
+        <div className={`scrollNav ${!true ? 'hidden' : ''}`}>
             <div className='leftNav'>
                 <img src={simpleLogo} alt="simpleLogo" className="simpleLogo" />
                 <img src={logoName} alt="logoName" className="logoName" />

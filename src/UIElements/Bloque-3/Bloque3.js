@@ -1,5 +1,6 @@
 import React from 'react'
 import places from './Images/places.png'
+import tabletImage from './Images/tabletImage.png'
 import curvedArrow from './Images/curvedArrow.gif'
 import curvedArrow2 from './Images/curvedArrow2.gif'
 import curvedArrow3 from './Images/curvedArrow3.gif'
@@ -25,13 +26,13 @@ export const Bloque3 = ({ language, setLanguage }) => {
                 </p>
                 <p className="textoNormalPoppinsMobile">
                     {isSpanish
-                        ? <>Explora <span className='colorGreenTextBloq3'>cualquier rincón del mundo</span> conectando con personas que te muestran lo que están viendo.</>                    
+                        ? <>Explora <span className='colorGreenTextBloq3'>cualquier rincón del mundo</span> conectando con personas que te muestran lo que están viendo.</>
                         : <>Explore <span className='colorGreenTextBloq3'>any corner of the world</span> by connecting with people who are willing to show you what they are seeing.</>
                     }
                 </p>
                 <p className="textoNormalPoppinsMobile texto2Bloque3">
                     {isSpanish
-                        ? <>¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.</>                    
+                        ? <>¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.</>
                         : <>Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.</>
                     }
                 </p>
@@ -77,6 +78,10 @@ export const Bloque3 = ({ language, setLanguage }) => {
                     </div>
                 </div>
                 <img src={places} alt="places" className="places" />
+            </div>
+
+            <div className='placesContainerMobile'>
+                <img src={tabletImage} alt="places" className="placesMobile" />
             </div>
         </div>
     )

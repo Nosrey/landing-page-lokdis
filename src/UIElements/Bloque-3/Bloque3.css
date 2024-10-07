@@ -39,6 +39,10 @@ b {
 
 }
 
+.placesContainerMobile {
+    display: none;
+}
+
 .fondo3 {
     background: radial-gradient(84.06% 70.03% at 19.16% -2.84%, #060659 0%, #03033D 34.54%, #000000 63.01%, #000000 97.48%);
     height: auto;
@@ -71,7 +75,7 @@ b {
     font-family: 'Poppins Regular', sans-serif;
     /* font-size: 28px; */
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     color: #ffffff;
     font-size: 16px;
     margin-top: 0;
@@ -264,9 +268,7 @@ b {
         font-weight: 500;
     }
 
-    .fondo3 {
-        padding-top: 40vh;
-    }
+
 
     .textoNormalPoppinsMobile {
         display: block;
@@ -282,7 +284,9 @@ b {
         margin-top: 2rem;
     }
 
-    .colorGreenTextBloq3 {}
+    .colorGreenTextBloq3 {
+        color: rgb(37, 150, 190);
+    }
 
     .texto1Bloque3 {
         font-size: 1.1rem;
@@ -299,5 +303,20 @@ b {
         border-radius: 6px;
         font-weight: 600;
     }
+    
+    .fondo3 {
+        background-image: url('../Assets/block-3-backgroundMobile.png');
+        padding-top: 40vh;
+        padding-bottom: 25vh;
+    }
 
+
+    .placesContainer {
+        display: none;
+    }
+
+    .placesContainerMobile {
+        display: block;
+        margin: 2.5rem 0;
+    }
 }

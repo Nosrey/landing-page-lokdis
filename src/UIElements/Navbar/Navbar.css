@@ -136,6 +136,8 @@
     transform: scale(1.05);
 }
 
+
+
 @media (min-width: 1600px) {
     .navBarButton {
         font-size: 24px;
@@ -213,5 +215,35 @@
 
     .rightNav {
         width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .centerNav {
+        display: none;
+    }
+
+    .leftNav {
+        width: 60%;
+        
+    }
+
+    .rightNav {
+        width: 40%;
+        
+    }
+
+    .scrollNav {
+        padding: 0px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 1%;
+    }
+
+    .navBarButton {
+        font-size: 14px;
+        padding: 0.2rem 0;
+        text-align: center;
+        width: 98%;
     }
 }
