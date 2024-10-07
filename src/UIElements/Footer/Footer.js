@@ -17,56 +17,61 @@ export const Footer = ({ language, setLanguage, isVisible }) => {
     };
 
     return (
-        <div className="mainFooter">
-            <div className="leftSideFooter">
-                <img src={logo} alt="logo" className="logo" />
-                <p className="textFooter">
-                    © 2024 LokDis. {isSpanish ? "Todos los derechos reservados." : "All rights reserved."}
-                </p>
-            </div>
-            <div className="centerFooter">
-                <div className="languageSwitch">
-                    <label className={isVisible ? 'switchLabelInFooter' : 'switchLabel'}>
-                        <div className='columnFooter'>
-                            <img
-                                src={spanishFlag}
-                                alt="spanishFlag"
-                                className={`footerFlag ${isSpanish ? 'active' : 'inactive'}`}
-                            />
-                        </div>
-                        <label className="switch">
-                            <input
-                                type="checkbox"
-                                checked={!isSpanish}
-                                onChange={handleLanguageChange}
-                            />
-                            <span className="slider round"></span>
-                        </label>
-                        <div className='columnFooter'>
-                            <img
-                                src={usaFlag}
-                                alt="usaFlag"
-                                className={`footerFlag ${isSpanish ? 'inactive' : 'active'}`}
-                            />
-                        </div>
-                    </label>
+        <div>
+            <div className="mainFooter">
+                <div className="leftSideFooter">
+                    <img src={logo} alt="logo" className="logo" />
+                    <p className="textFooter">
+                        © 2024 LokDis. {isSpanish ? "Todos los derechos reservados." : "All rights reserved."}
+                    </p>
                 </div>
-            </div>
-            <div className="rightSideFooter">
-            
-                <div className='rightSideSocialIcons'>
-                {/* <p className="textFooter" style={{ marginBottom: "10px" }}>
+                <div className="centerFooter">
+                    <div className="languageSwitch">
+                        <label className={isVisible ? 'switchLabelInFooter' : 'switchLabel'}>
+                            <div className='columnFooter'>
+                                <img
+                                    src={spanishFlag}
+                                    alt="spanishFlag"
+                                    className={`footerFlag ${isSpanish ? 'active' : 'inactive'}`}
+                                />
+                            </div>
+                            <label className="switch">
+                                <input
+                                    type="checkbox"
+                                    checked={!isSpanish}
+                                    onChange={handleLanguageChange}
+                                />
+                                <span className="slider round"></span>
+                            </label>
+                            <div className='columnFooter'>
+                                <img
+                                    src={usaFlag}
+                                    alt="usaFlag"
+                                    className={`footerFlag ${isSpanish ? 'inactive' : 'active'}`}
+                                />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div className="rightSideFooter">
+                    <div className='rightSideSocialIcons'>
+                        {/* <p className="textFooter" style={{ marginBottom: "10px" }}>
                     {isSpanish ? "¡Síguenos!" : "Follow us!"}
                 </p> */}
-                <img src={arrow} alt='arrow' className='footerArrow' />
-                    <button className='ig'>
-                        <img src={ig} alt="instagram" />
-                    </button>
-                    <button className='tiktok'>
-                        <img src={tiktok} alt="tiktok" />
-                    </button>
+                        <img src={arrow} alt='arrow' className='footerArrow' />
+                        <button className='ig'>
+                            <img src={ig} alt="instagram" />
+                        </button>
+                        <button className='tiktok'>
+                            <img src={tiktok} alt="tiktok" />
+                        </button>
+                    </div>
                 </div>
+
             </div>
+            <p className="textFooterMobile">
+                © 2024 LokDis. {isSpanish ? "Todos los derechos reservados." : "All rights reserved."}
+            </p>
         </div>
     )
 }

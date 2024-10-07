@@ -12,7 +12,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
 }
 
 .leftSideFooter {
@@ -31,7 +30,7 @@
     flex-direction: column;
     margin: 5px 5vw;
     width: 30%;
- 
+
 }
 
 .rightSideSocialIcons {
@@ -68,7 +67,8 @@
     margin: 0;
 }
 
-.textFooter {
+.textFooter,
+.textFooterMobile {
     margin: 0 auto;
 
     font-family: Plus Jakarta Sans;
@@ -208,4 +208,50 @@ span.inactive {
     filter: brightness(0);
     transform: rotate(-90deg);
     margin: 0 5px
+}
+
+.textFooterMobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    .rightSideFooter {
+        width: auto;
+    }
+
+    .leftSideFooter {
+        width: auto;
+    }
+
+    .footerArrow {
+        display: none;
+    }
+
+    .textFooter {
+        display: none;
+    }
+
+    .textFooterMobile {
+        display: block;
+        margin: 0 5vh;
+    }
+
+    .tiktok img,
+    .ig img {
+        width: 15vw;
+    }
+
+    .logo {
+        width: 24vw;
+    }
+
+    .mainFooter {
+        min-height: 5vh;
+    }
+
+    .switchLabelInFooter {
+        display: none;
+    }
+
 }

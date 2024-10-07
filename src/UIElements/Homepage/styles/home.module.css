@@ -88,8 +88,18 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 501px) {
     .carrusel1 {
         top: 85vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .carrusel1 {
+        top: 45vh;
+    }
+
+    .carrusel2 {
+        top: -24vh;
     }
 }

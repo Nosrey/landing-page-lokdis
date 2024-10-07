@@ -249,6 +249,10 @@
 
 @media only screen and (max-width: 479px) {
 
+    .leftContainer {
+        width: 100%
+    }
+
     .containerPhotos {
 
         display: none;
@@ -379,10 +383,6 @@
         border-radius: 10%;
     }
 
-    .leftContainer {
-        width: 100%;
-    }
-
     .containerLetterParagraph {
         display: flex;
         width: 90%;
@@ -425,7 +425,172 @@
 
 
 
+@media only screen and (min-width: 640px) and (min-height: 360px) {
 
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 80%;
+        height: 45%;
+        top: 72%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 125%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 130%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 45%;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .firstContainer {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .leftContainer {
+        height: 150vh;
+
+    }
+
+    .textH3 {
+        font-size: 15px;
+        margin-bottom: -5vh;
+    }
+
+    .letterParagraph {
+        font-size: 10px;
+    }
+
+    .secondTextLeftContainer {
+        font-size: 15px;
+    }
+
+    .thirdText {
+        font-size: 14px;
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -4vh;
+    }
+
+    .containerTextMoreImage {
+        width: 100%;
+        margin-left: -0.5vw;
+    }
+
+    .firstTextLeftContainer {
+        line-height: 1rem;
+        font-size: 0.8rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+    }
+
+    .secondTextLeftContainer {
+        line-height: 0rem;
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
+
+    .firstTextLeftContainerEnglish {
+
+        line-height: 1rem;
+        font-size: 0.75rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 10% 16% 6% 0%;
+        transform: rotate(10deg);
+
+    }
+
+    .containerTextMoreImage {
+        margin-top: 27vh;
+        width: 100%;
+    }
+
+    .containerLetterParagraph {
+        width: 35vw;
+        height: 150vh;
+        text-align: left;
+        margin-left: 1vw;
+    }
+
+    .letterParagraph {
+        text-align: justify;
+        font-size: 1rem;
+
+
+    }
+
+    .fourthText {
+        font-size: 1rem;
+
+    }
+
+    .additionalText {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 1vw;
+    }
+
+    .iconoUserMap {
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        bottom: 73%;
+        left: 62%;
+
+    }
+
+    .iconoGirl {
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        top: 42%;
+        left: 1%;
+
+    }
+
+}
 
 
 @media (min-width: 600px) and (max-width: 776px) and (min-height: 500px) {
@@ -2135,8 +2300,5 @@
         font-family: 'Poppins-Regular';
         font-size: 35px;
         color: #028470;
-
     }
-
-
 }
