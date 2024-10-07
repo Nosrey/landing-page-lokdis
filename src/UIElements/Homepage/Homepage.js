@@ -103,7 +103,7 @@ export const Homepage = ({ language, setLanguage }) => {
       {/* Componente Navbar */}
       <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
       <Bloque1 language={language} setLanguage={setLanguage} />
-      <BlockTwo language={language} setLanguage={setLanguage} />
+      <BlockTwo language={language} />
 
       {/* Carrusel */}
       <div className={styles.carrusel1}>

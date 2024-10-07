@@ -6,12 +6,40 @@ import blockTwoImageBoxOne from '../Assets/boxOneBlockTwo.png';
 import blockTwoImageBoxTwo from '../Assets/boxTwoBlockTwo.png';
 import iconoImageBlockTwo from '../Assets/icono-block-2.png';
 import userMapImageBlockTwo from '../Assets/usuario-mapa-block-2.png';
-// import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
-const BlockTwo = ({ language, setLanguage }) => {
+const BlockTwo = ({ language }) => {
 
 
+    const containerRef = useRef(null);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(styles.active);
+                    }
+                });
+            },
+            {
+                root: null,
+                threshold: 0.1,
+            }
+        );
+
+        const container = containerRef.current;
+        if (container) {
+            observer.observe(container);
+        }
+
+        return () => {
+            if (container) {
+                observer.unobserve(container);
+            }
+        };
+    }, []);
 
     // useEffect(() => {
     //     // Este useEffect se ejecuta cuando 'lang' cambia
@@ -70,7 +98,23 @@ const BlockTwo = ({ language, setLanguage }) => {
                         <h3 className={styles.textH3}>What you see is what it is!</h3>}
                 </div>
 
-                <div className={styles.containerLetterParagraph} >
+                <div className={styles.containerPhotosMovil}>
+
+                    <img className={styles.iconoGirl} src={iconoImageBlockTwo} alt="icono" />
+                    <img className={styles.iconoUserMap} src={userMapImageBlockTwo} alt="user-map" />
+
+
+                    <div className={styles.boxTwo} >
+                        <img src={blockTwoImageBoxTwo} alt="" />
+
+                    </div>
+                    <div className={styles.boxOne} >
+                        <img src={blockTwoImageBoxOne} alt="" />
+                    </div>
+
+                </div>
+
+                <div ref={containerRef} className={styles.containerLetterParagraph} >
                     {language === 'spanish' ? <p className={styles.letterParagraph} >En LokDis podrás
                         <span className={styles.fourthText}> solicitar y compartir videos y fotos </span>
                         de lugares <span className={styles.fourthText}> en tiempo real </span>

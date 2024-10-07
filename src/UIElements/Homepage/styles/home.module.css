@@ -19,6 +19,9 @@
     z-index: 1
 }
 
+
+
+
 @media (min-width: 1600px) {
     .carrusel1 {
         top: 50vh;
@@ -27,6 +30,42 @@
     .carrusel2 {
         top: -30vh;
     }
+}
+
+@media(min-width:1366px) and (min-height:768px) {
+
+    .carrusel1 {
+        top: 55vh;
+    }
+
+    .carrusel2 {
+        top: -29vh;
+    }
+
+}
+
+@media(min-width:1419px) and (min-height:976px) {
+
+    .carrusel1 {
+        top: 45vh;
+    }
+
+    .carrusel2 {
+        top: -27vh;
+    }
+
+}
+
+@media(min-width:1821px) and (min-height:868px) {
+
+    .carrusel1 {
+        top: 55vh;
+    }
+
+    .carrusel2 {
+        top: -29vh;
+    }
+
 }
 
 @media (max-width: 1100px) {
