@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    height: 70vh;
 }
 
 .columnaSingular {
@@ -42,8 +43,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
     margin: 0 5%;
 }
 
@@ -264,7 +263,108 @@ footer {
     margin-bottom: 10px;
 }
 
-@media (max-width: 700px)  {
+.leftBloq1 {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.phoneView2Bloq1 {
+    display: none;
+}
+
+
+/* diseño mobile */
+@media (max-width: 500px) {
+
+    .phoneView2Bloq1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .textoFooter {
+        
+        margin-bottom: 1rem;
+    }
+
+    .columnas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .leftBloq1 {
+        margin: 0;
+        width: 90%;
+    }
+
+    .subtitulo {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin: 0;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .phoneView {
+        display: none;
+    }
+
+    .fondo {
+        height: 150vh;
+        padding: 0;
+    }
+
+    .textoBienvenida {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .columnaSingular {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 5%;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    .columnas {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .arrowText {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        margin: 0;
+    }
+
+    .arrow {
+        height: 15vh;
+        margin-top: 0px;
+    }
+
+    .boton {
+        margin-bottom: 8vh;
+    }
+}
+
+
+/* diseño computadora */
+@media (max-width: 700px) and (min-width: 501px) {
     .contador {
         font-size: 0.9rem;
     }
@@ -283,7 +383,7 @@ footer {
 
     .bloqueVerde {
         font-size: 0.8rem;
-        
+
     }
 
     .textoPoppinsDefault {
@@ -334,16 +434,17 @@ footer {
     footer {
         width: 25%;
         margin-left: 65%;
-        
+
     }
 
     .leftBloq1 {
-        margin-top: 15vh
+        margin-top: 15vh;
+
     }
 
 }
 
-@media (max-width: 900px) and (min-width: 701px)  {
+@media (max-width: 900px) and (min-width: 701px) {
     .contador {
         font-size: 1rem;
     }
@@ -351,7 +452,7 @@ footer {
     footer {
         width: 25%;
         margin-left: 65%;
-        
+
     }
 
     .contadorSubtitulo {
@@ -368,7 +469,7 @@ footer {
 
     .bloqueVerde {
         font-size: 0.8rem;
-        
+
     }
 
     .textoPoppinsDefault {
@@ -420,10 +521,10 @@ footer {
 @media (min-width: 901px) and (max-width: 1100px) {
     .contador {
         font-size: 0.8rem;
- 
+
     }
 
- 
+
 
     .contadorSubtitulo {
         font-size: 0.5rem;
@@ -474,8 +575,8 @@ footer {
     .filaContador {
         margin-bottom: 0vh;
     }
-    
-    
+
+
 }
 
 @media (min-width: 1600px) {
@@ -521,6 +622,8 @@ footer {
         margin-left: 0;
     }
 }
+
+
 
 
 
@@ -583,4 +686,3 @@ footer {
 
 
 } */
-

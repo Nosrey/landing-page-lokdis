@@ -3,6 +3,7 @@ import "./Bloque1.css";
 
 import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
+import phoneSquare from './Images/phoneSquare.png';
 
 export const Bloque1 = ({ language, setLanguage }) => {
   const isSpanish = language === "spanish";
@@ -16,8 +17,8 @@ export const Bloque1 = ({ language, setLanguage }) => {
       >
         {isSpanish ? "cambiar" : "change"}
       </button> */}
-      <div className="columnas" style={{ height: "70vh" }}>
-        <div className="columnaSingular leftBloq1" style={{ width: "50%", marginRight: "10%" }}>
+      <div className="columnas">
+        <div className="columnaSingular leftBloq1">
 
           {/* lado de contador */}
           <div className="filaContador">
@@ -50,6 +51,12 @@ export const Bloque1 = ({ language, setLanguage }) => {
                 {isSpanish ? "Descubre LokDis, una app para ver el mundo real en la que podrás solicitar momentos y " : "Discover LokDis, an app to view the real world in which you can request unfiltered moments and "}
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
               </p>
+
+              <img
+                src={phoneSquare}
+                alt="phoneView"
+                className="phoneView2Bloq1"
+              />
             </div>
 
             <p className="textoBienvenida">
@@ -75,8 +82,7 @@ export const Bloque1 = ({ language, setLanguage }) => {
           <img
             src={arrow}
             alt="arrow"
-            className="arrow"  
-            
+            className="arrow"
           />
         </div>
       </footer>
