@@ -376,11 +376,7 @@
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
-        border-radius: 10%;
-    }
-
-    .leftContainer {
-        width: 100%;
+              border-radius: 10%;
     }
 
     .containerLetterParagraph {
@@ -2299,8 +2295,5 @@
         font-family: 'Poppins-Regular';
         font-size: 35px;
         color: #028470;
-
     }
-
-
 }
