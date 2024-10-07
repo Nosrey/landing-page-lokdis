@@ -249,6 +249,10 @@
 
 @media only screen and (max-width: 479px) {
 
+    .leftContainer {
+        width: 100%
+    }
+
     .containerPhotos {
 
         display: none;
@@ -481,6 +485,7 @@
 
     .leftContainer {
         height: 150vh;
+ 
     }
 
     .textH3 {
