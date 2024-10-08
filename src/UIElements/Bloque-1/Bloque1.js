@@ -5,8 +5,9 @@ import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
 import phoneSquare from './Images/phoneSquare.png';
 
-export const Bloque1 = ({ language, setLanguage }) => {
+export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const isSpanish = language === "spanish";
+
 
   return (
     <div className="fondo">
@@ -22,24 +23,11 @@ export const Bloque1 = ({ language, setLanguage }) => {
 
           {/* lado de contador */}
           <div className="filaContador">
-            <p className="contador">{isSpanish ? "LokDis llega en" : "LokDis arrives in"}</p>
-            {/* ahora 5 dias */}
-            <div className="fechaContenedor">
-              <div><p className="contadorNumero">5</p></div>
-              <div><p className="contadorSubtitulo">{isSpanish ? "dias" : "days"}</p></div>
-            </div>
+          
+            {/* <p className="contador">{isSpanish ? `${numberOfPerson} personas ya forman parte de Lokdis` : `${numberOfPerson} people are already part of Lokdis`}</p> */}
 
-            {/* ahora 2 horas */}
-            <div className="fechaContenedor">
-              <div><p className="contadorNumero">2</p></div>
-              <div><p className="contadorSubtitulo">{isSpanish ? "horas" : "hours"}</p></div>
-            </div>
+            <p className="contador">{isSpanish ? <><span className="numberBloq1">{numberOfPerson}</span>  personas ya forman parte de Lokdis</> : <><span className="numberBloq1">{numberOfPerson}</span>  people are already part of Lokdis</>}</p>
 
-            {/* ahora 20 minutos */}
-            <div className="fechaContenedor">
-              <div><p className="contadorNumero">20</p></div>
-              <div><p className="contadorSubtitulo">{isSpanish ? "minutos" : "minutes"}</p></div>
-            </div>
           </div>
 
           {/* lado izquierdo inferior */}

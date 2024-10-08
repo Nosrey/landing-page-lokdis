@@ -16,6 +16,8 @@ export const Homepage = ({ language, setLanguage }) => {
   const mainDivRef = useRef(null); // Ref para el contenedor principal
   const observedRef = useRef(null); // Ref para el componente a observar
 
+  const numberOfPerson = 214;
+
   const handleScroll = useCallback(() => {
     // Si ya estaba en estado "desplazando", limpiamos el timeout anterior
     if (scrollTimeout.current) {
@@ -88,7 +90,7 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
-      {/* <div style={{
+      <div style={{
         position: 'fixed',
         bottom: 0,
         right: 0,
@@ -98,11 +100,11 @@ export const Homepage = ({ language, setLanguage }) => {
         zIndex: 100
       }}>
         {`Current screen resolution: ${window.innerWidth} x ${window.innerHeight}`}
-      </div> */}
+      </div>
 
       {/* Componente Navbar */}
-      <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} />
-      <Bloque1 language={language} setLanguage={setLanguage} />
+      <Navbar setIsScrolling={setIsScrolling} isScrolling={isScrolling} language={language} setLanguage={setLanguage} numberOfPerson={numberOfPerson} />
+      <Bloque1 language={language} setLanguage={setLanguage} numberOfPerson={numberOfPerson} />
       <BlockTwo language={language} />
 
       {/* Carrusel */}
