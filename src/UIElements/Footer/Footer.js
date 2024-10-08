@@ -41,7 +41,7 @@ export const Footer = ({ language, setLanguage, isVisible }) => {
                                     checked={!isSpanish}
                                     onChange={handleLanguageChange}
                                 />
-                                <span className="slider round"></span>
+                                <span className="sliderFooter round"></span>
                             </label>
                             <div className='columnFooter'>
                                 <img

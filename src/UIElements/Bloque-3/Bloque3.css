@@ -166,6 +166,10 @@ b {
     display: none;
 }
 
+.slider {
+    display: none;
+}
+
 @media (min-width: 1600px) {
     .arrow1 {
         top: 0vh;
@@ -318,5 +322,11 @@ b {
     .placesContainerMobile {
         display: block;
         margin: 2.5rem 0;
+    }
+
+    .sliderBloq3 {
+        display: inline-block;
+        width: 85%;
+        height: auto;
     }
 }

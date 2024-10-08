@@ -4,14 +4,49 @@ import tabletImage from './Images/tabletImage.png'
 import curvedArrow from './Images/curvedArrow.gif'
 import curvedArrow2 from './Images/curvedArrow2.gif'
 import curvedArrow3 from './Images/curvedArrow3.gif'
+
+import f1 from './Images/f1.webp'
+import f2 from './Images/f2.webp'
+import f3 from './Images/f3.webp'
+import f4 from './Images/f4.webp'
 import './Bloque3.css'
+import CustomSlider from '../Slider/Slider';
+
 
 export const Bloque3 = ({ language, setLanguage }) => {
     const isSpanish = language === "spanish";
+    const images = [
+        {
+            imgURL: f1,
+            imgAlt: "img-1"
+        },
+        {
+            imgURL: f2,
+            imgAlt: "img-2"
+        },
+        {
+            imgURL: f3,
+            imgAlt: "img-3"
+        },
+        {
+            imgURL: f4,
+            imgAlt: "img-4"
+        }
+    ];
 
     return (
         <div className='fondo3'>
-            <div className='bloqueCabecera'>
+            <div className="sliderBloq3">
+
+                <CustomSlider>
+                    {images.map((image, index) => {
+                        return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+                    })}
+                </CustomSlider>
+            </div>
+
+
+             <div className='bloqueCabecera'>
                 <h2 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
                 </h2>
@@ -78,11 +113,10 @@ export const Bloque3 = ({ language, setLanguage }) => {
                     </div>
                 </div>
                 <img src={places} alt="places" className="places" />
-            </div>
+            </div> 
 
-            <div className='placesContainerMobile'>
-                <img src={tabletImage} alt="places" className="placesMobile" />
-            </div>
+
+        
         </div>
     )
 }

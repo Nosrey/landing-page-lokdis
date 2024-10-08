@@ -132,7 +132,7 @@
     height: 0;
 }
 
-.slider {
+.sliderFooter {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -144,7 +144,7 @@
     border-radius: 34px;
 }
 
-.slider:before {
+.sliderFooter:before {
     position: absolute;
     content: "";
     height: 16px;
@@ -156,11 +156,11 @@
     border-radius: 50%;
 }
 
-input:checked+.slider {
+input:checked+.sliderFooter {
     background-color: #2196F3;
 }
 
-input:checked+.slider:before {
+input:checked+.sliderFooter:before {
     transform: translateX(26px);
 }
 
