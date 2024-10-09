@@ -22,6 +22,10 @@ h2 {
     text-align: left;
 }
 
+.sliderBloq3 {
+    display: none;
+}
+
 b {
     font-family: 'Poppins Bold', sans-serif;
     font-size: 42.69px;
@@ -57,9 +61,9 @@ b {
 .subtituloPoppins {
     font-family: 'Poppins Regular', sans-serif;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 45px;
-    text-align: left;
+    text-align: justify;
     color: #ffffff;
 }
 
@@ -68,6 +72,18 @@ b {
     margin-left: 5vw;
     margin-bottom: 10vh;
     margin-top: 10vh;
+
+
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+}
+
+
+
+.bloqueCabecera.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .textoNormalPoppins,
@@ -80,6 +96,7 @@ b {
     font-size: 16px;
     margin-top: 0;
 }
+
 .placesContainer {
     display: flex;
     justify-content: flex-end;
@@ -264,6 +281,9 @@ b {
     .bloqueCabecera {
         width: auto;
         margin: 0 20px;
+
+        transform: none;
+        transition: none;
     }
 
     .subtituloPoppins {
@@ -284,7 +304,8 @@ b {
         display: none;
     }
 
-    .texto2Bloque3, .textoNormalPoppinsMobile {
+    .texto2Bloque3,
+    .textoNormalPoppinsMobile {
         margin-top: 2rem;
     }
 
@@ -307,7 +328,7 @@ b {
         border-radius: 6px;
         font-weight: 600;
     }
-    
+
     .fondo3 {
         background-image: url('../Assets/block-3-backgroundMobile.png');
         padding-top: 40vh;
@@ -325,8 +346,10 @@ b {
     }
 
     .sliderBloq3 {
+        margin-top: 10vh;
         display: inline-block;
         width: 85%;
         height: auto;
+
     }
 }

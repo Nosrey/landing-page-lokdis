@@ -138,7 +138,8 @@
     margin-top: 20px;
 }
 
-.contador, .numberBloq1 {
+.contador,
+.numberBloq1 {
     color: #00FFD7;
 
     font-family: 'Poppins Regular', sans-serif;
@@ -227,9 +228,8 @@
 
 .textoPoppinsDefault {
     font-family: 'Poppins Regular', sans-serif;
-
+    text-align: justify;
     font-weight: 400;
-    text-align: left;
     color: #ffffff;
     margin: 0;
     font-size: 15px;
@@ -277,9 +277,26 @@ footer {
     display: none;
 }
 
+.rightBloq1 {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+}
+
+.rightBloq1.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 
 /* diseño mobile */
 @media (max-width: 500px) {
+
+    .rightBloq1 {
+        transform: none;
+        transition: none;
+    }
 
     .phoneView2Bloq1 {
         display: block;
@@ -292,7 +309,7 @@ footer {
     }
 
     .textoFooter {
-        
+
         margin-bottom: 1rem;
     }
 
@@ -355,6 +372,8 @@ footer {
         font-size: 1.5rem;
         line-height: 1.7rem;
         margin: 0;
+        margin-left: 10px;
+        margin-right: -10px;
     }
 
     .arrow {
@@ -366,7 +385,8 @@ footer {
         margin-bottom: 8vh;
     }
 
-    .contador, .numberBloq1 {
+    .contador,
+    .numberBloq1 {
         font-size: 0.9rem;
     }
 
@@ -379,7 +399,9 @@ footer {
 
 /* diseño computadora */
 @media (max-width: 700px) and (min-width: 501px) {
-    .contador, .numberBloq1 {
+
+    .contador,
+    .numberBloq1 {
         font-size: 0.8rem;
     }
 
@@ -464,7 +486,9 @@ footer {
 }
 
 @media (max-width: 900px) and (min-width: 701px) {
-    .contador, .numberBloq1 {
+
+    .contador,
+    .numberBloq1 {
         font-size: 0.9rem;
     }
 
@@ -538,7 +562,9 @@ footer {
 }
 
 @media (min-width: 901px) and (max-width: 1100px) {
-    .contador, .numberBloq1 {
+
+    .contador,
+    .numberBloq1 {
         font-size: 1rem;
     }
 
@@ -604,7 +630,9 @@ footer {
 }
 
 @media (min-width: 1600px) {
-    .contador, .numberBloq1 {
+
+    .contador,
+    .numberBloq1 {
         font-size: 2rem;
     }
 

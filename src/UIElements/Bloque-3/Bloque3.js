@@ -1,6 +1,5 @@
 import React from 'react'
 import places from './Images/places.png'
-import tabletImage from './Images/tabletImage.png'
 import curvedArrow from './Images/curvedArrow.gif'
 import curvedArrow2 from './Images/curvedArrow2.gif'
 import curvedArrow3 from './Images/curvedArrow3.gif'
@@ -11,42 +10,65 @@ import f3 from './Images/f3.webp'
 import f4 from './Images/f4.webp'
 import './Bloque3.css'
 import CustomSlider from '../Slider/Slider';
-
+import { useEffect, useRef } from 'react';
 
 export const Bloque3 = ({ language, setLanguage }) => {
     const isSpanish = language === "spanish";
     const images = [
         {
             imgURL: f1,
-            imgAlt: "img-1"
+            imgAlt: "img-1",
+            imgInfo: "texto de prueba",
         },
         {
             imgURL: f2,
-            imgAlt: "img-2"
+            imgAlt: "img-2",
+            imgInfo: "texto de prueba",
         },
         {
             imgURL: f3,
-            imgAlt: "img-3"
+            imgAlt: "img-3",
+            imgInfo: "texto de prueba",
         },
         {
             imgURL: f4,
-            imgAlt: "img-4"
+            imgAlt: "img-4",
+            imgInfo: "texto de prueba",
         }
     ];
 
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');                        
+                    }
+                });
+            },
+            {
+                root: null,
+                threshold: 0.1,
+            }
+        );
+
+        const container = containerRef.current;
+        if (container) {
+            observer.observe(container);
+        }
+
+        return () => {
+            if (container) {
+                observer.unobserve(container);
+            }
+        };
+    }, []);
+
     return (
         <div className='fondo3'>
-            <div className="sliderBloq3">
-
-                <CustomSlider>
-                    {images.map((image, index) => {
-                        return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
-                    })}
-                </CustomSlider>
-            </div>
-
-
-             <div className='bloqueCabecera'>
+            <div className='bloqueCabecera' ref={containerRef}>
                 <h2 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
                 </h2>
@@ -65,12 +87,21 @@ export const Bloque3 = ({ language, setLanguage }) => {
                         : <>Explore <span className='colorGreenTextBloq3'>any corner of the world</span> by connecting with people who are willing to show you what they are seeing.</>
                     }
                 </p>
+
                 <p className="textoNormalPoppinsMobile texto2Bloque3">
                     {isSpanish
                         ? <>¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.</>
                         : <>Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.</>
                     }
                 </p>
+            </div>
+
+            <div className="sliderBloq3">
+                <CustomSlider isSpanish={isSpanish}>
+                    {images.map((image, index) => {
+                        return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+                    })}
+                </CustomSlider>
             </div>
 
             <div className="placesContainer">
@@ -113,10 +144,8 @@ export const Bloque3 = ({ language, setLanguage }) => {
                     </div>
                 </div>
                 <img src={places} alt="places" className="places" />
-            </div> 
+            </div>
 
-
-        
         </div>
     )
 }

@@ -4,9 +4,39 @@ import "./Bloque1.css";
 import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
 import phoneSquare from './Images/phoneSquare.png';
+import { useEffect, useRef } from "react";
 
 export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const isSpanish = language === "spanish";
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    const container = containerRef.current;
+    if (container) {
+      observer.observe(container);
+    }
+
+    return () => {
+      if (container) {
+        observer.unobserve(container);
+      }
+    };
+  }, []);
 
 
   return (
@@ -23,7 +53,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
           {/* lado de contador */}
           <div className="filaContador">
-          
+
             {/* <p className="contador">{isSpanish ? `${numberOfPerson} personas ya forman parte de Lokdis` : `${numberOfPerson} people are already part of Lokdis`}</p> */}
 
             <p className="contador">{isSpanish ? <><span className="numberBloq1">{numberOfPerson}</span>  personas ya forman parte de Lokdis</> : <><span className="numberBloq1">{numberOfPerson}</span>  people are already part of Lokdis</>}</p>
@@ -55,7 +85,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
         </div>
 
         {/* lado derecho */}
-        <div className="columnaSingular" style={{ width: "40%" }}>
+        <div className="columnaSingular rightBloq1" style={{ width: "40%" }} ref={containerRef}>
           <img
             src={phoneView}
             alt="phoneView"

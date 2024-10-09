@@ -3,11 +3,26 @@ import React, { useState, useEffect } from "react";
 import "./custom.slider.css";
 import rightArrowSlider from '../Bloque-3/Images/rightArrowSlider.png'
 import leftArrowSlider from '../Bloque-3/Images/leftArrowSlider.png'
+import arrow from '../Bloque-3/Images/curvedArrow2.gif'
 
-function CustomCarousel({ children }) {
+function CustomCarousel({ children, isSpanish }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
+
+  const textsSpanish = [  
+    <>¿Está funcionando la noria de la fuente de Neptuno en Berlín?</>,
+    <>¿Hay sitios de souvenirs en Victoria, Malta?</>,
+    <>¿Hay mucha gente paseando por Burdeos?</>,
+    <>¿Hay mucha gente en la playa?</>
+]
+
+const textsEnglish = [
+    <>Is the Neptune Fountain Ferris wheel in Berlin working?</>,
+    <>How does the souvenir market in Victoria, Malta look like now?</>,
+    <>Is it a good time to be in Bordeaux?</>,
+    <>Are there many people on the beach?</>
+]
 
   useEffect(() => {
     if (slideDone) {
@@ -19,6 +34,7 @@ function CustomCarousel({ children }) {
         }, 5000)
       );
     }
+
   }, [slideDone]);
 
   const slideNext = () => {
@@ -60,12 +76,19 @@ function CustomCarousel({ children }) {
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
+
       {children.map((item, index) => {
         return (
           <div
             className={"slider__item slider__item-active-" + (activeIndex + 1)}
             key={index}
           >
+            <div className="rowSlider">
+              <p className="sliderTitleText">
+                {isSpanish ? textsSpanish[index] : textsEnglish[index]}
+              </p>
+              <img src={arrow} alt="arrow" id="arrowSlider" />
+            </div>
             {item}
           </div>
         );
