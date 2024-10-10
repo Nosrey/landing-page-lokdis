@@ -3,7 +3,7 @@ import './Navbar.css'; // Asegúrate de que la ruta es correcta
 import simpleLogo from './Images/simple-logo.png'
 import logoName from './Images/logo-name.png'
 
-export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage }) => {
+export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage, numberOfPerson }) => {
     const isSpanish = language === "spanish";
 
     return (
@@ -13,23 +13,10 @@ export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage }) =
                 <img src={logoName} alt="logoName" className="logoName" />
             </div>
             <div className='centerNav'>
-                <div className="filaContador1">
-                    <div className="fechaContenedor1">
-                        <div><p className="contadorNumero1">5</p></div>
-                        <div><p className="contadorSubtitulo1">{isSpanish ? 'dias' : 'days'}</p></div>
-                    </div>
-
-                    {/* ahora 2 horas */}
-                    <div className="fechaContenedor1">
-                        <div><p className="contadorNumero1">2</p></div>
-                        <div><p className="contadorSubtitulo1">{isSpanish ? 'horas' : 'hours'}</p></div>
-                    </div>
-
-                    {/* ahora 20 minutos */}
-                    <div className="fechaContenedor1">
-                        <div><p className="contadorNumero1">20</p></div>
-                        <div><p className="contadorSubtitulo1">{isSpanish ? 'minutos' : 'minutes'}</p></div>
-                    </div>
+                <div className='grupoTextoNumberNav'>
+                    <p className="numberPersonNav">+ {numberOfPerson}</p>
+                    <p className='navbarText textLargoNav'>{isSpanish ? 'ya forman parte de LokDis' : 'are already part of LokDis'}</p>
+                    <p className='navbarText textCortoNav'>{isSpanish ? 'ya se han unido' : 'have joined'}</p>
                 </div>
             </div>
             <div className='rightNav'>
