@@ -247,7 +247,7 @@
 
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 500px) {
 
     .leftContainer {
         width: 100%
@@ -263,9 +263,10 @@
         margin-top: -10%;
         position: relative;
         width: 90%;
-        overflow: hidden;
+        margin-top: 1;
         height: 120%;
         right: 6%;
+        padding-top: 2vh;
     }
 
     .textH3 {
@@ -297,7 +298,7 @@
 
     .eyesImage {
 
-        width: 15%;
+        width: 13%;
 
         margin: 7% 14% 3% 0%;
         transform: rotate(10deg);
@@ -380,7 +381,7 @@
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
-              border-radius: 10%;
+        border-radius: 10%;
     }
 
     .containerLetterParagraph {
@@ -424,68 +425,75 @@
 }
 
 
+@media only screen and (min-width: 500px) and (max-height: 740px) {
+    .fourthText {
+        font-size: 1rem;
 
-@media only screen and (min-width: 640px) and (min-height: 360px) {
+
+    }
+
+    .containerBlueLetter {
+        margin-top: 2.5vh;
+        height: 1vh;
+
+    }
 
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 80%;
-        height: 45%;
-        top: 72%;
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        width: 50%;
+        height: 15%;
+        top: 53%;
         left: 58%;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
         border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
     }
 
     .boxTwo img {
-        position: relative;
-        width: 125%;
-        height: 101%;
+        width: 120%;
+        height: 100%;
         top: 50%;
         left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%);
     }
 
     .boxOne img {
-        position: relative;
-        width: 130%;
-        height: 155%;
+        width: 120%;
+        height: 130%;
         top: 50%;
         left: 50%;
-        /* Asegura que la imagen cubra todo el div */
         transform: translate(-50%, -50%) rotate(-15deg);
+
     }
 
     .boxOne {
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 80%;
-        height: 45%;
-        top: 33%;
+        width: 50%;
+        height: 15%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 1;
         border-radius: 10%;
-
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
     }
 
     .firstContainer {
-        margin-top: 80px;
-        align-items: center;
-        justify-content: center;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
     }
 
     .leftContainer {
-        height: 150vh;
- 
+        height: 100vh;
+        margin-top: -15vh;
     }
 
     .textH3 {
@@ -494,15 +502,19 @@
     }
 
     .letterParagraph {
-        font-size: 10px;
+        font-size: 1rem;
+        text-align: justify;
     }
 
-    .secondTextLeftContainer {
-        font-size: 15px;
+    .secondTextLeftContainer,
+    .additionalText {
+        font-size: 0.75rem;
+        font-weight: bold;
     }
 
     .thirdText {
-        font-size: 14px;
+        font-weight: bolder;
+        font-size: 0.7rem;
     }
 
     .contenedorLetterBlueContainer {
@@ -514,754 +526,397 @@
         margin-left: -0.5vw;
     }
 
-    .firstTextLeftContainer {
-        line-height: 1rem;
-        font-size: 0.8rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-    }
-
-    .secondTextLeftContainer {
-        line-height: 0rem;
-        font-size: 0.8rem;
-        font-weight: bolder;
-    }
-
+    .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
-
-        line-height: 1rem;
         font-size: 0.75rem;
-        font-family: 'Poppins-Regular';
+        line-height: 1.2rem;
         font-weight: bold;
     }
 
     .eyesImage {
         width: 15%;
-        margin: 10% 16% 6% 0%;
+        margin: 15% 3% 6% 0;
         transform: rotate(10deg);
-
     }
 
-    .containerTextMoreImage {
-        margin-top: 27vh;
-        width: 100%;
+    .iconoGirl {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        top: 42%;
+        left: 9%;
+        z-index: 3;
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        bottom: 60%;
+        left: 62%;
+        z-index: 3;
     }
 
     .containerLetterParagraph {
         width: 35vw;
-        height: 150vh;
-        text-align: left;
+        height: auto;
         margin-left: 1vw;
     }
-
-    .letterParagraph {
-        text-align: justify;
-        font-size: 1rem;
-
-
-    }
-
-    .fourthText {
-        font-size: 1rem;
-
-    }
-
-    .additionalText {
-        font-size: 1rem;
-        text-align: left;
-        margin-left: 1vw;
-    }
-
-    .iconoUserMap {
-        width: 50%;
-        z-index: 3;
-        position: absolute;
-        bottom: 73%;
-        left: 62%;
-
-    }
-
-    .iconoGirl {
-        width: 50%;
-        z-index: 3;
-        position: absolute;
-        top: 42%;
-        left: 1%;
-
-    }
-
 }
 
 
-@media (min-width: 600px) and (max-width: 776px) and (min-height: 500px) {
 
-    .firstContainer {
-        padding-top: 5vh;
-    }
 
-    .defineContainerText {
-
-        width: 100%;
-
-    }
-
-    .leftContainer {
-
-        margin-top: 0rem;
-
-    }
-
-    .firstTextLeftContainer,
-    .firstTextLeftContainerEnglish {
-        line-height: 1rem;
-        font-size: 1.12rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-    }
-
-    .firstTextLeftContainerEnglish {
-        font-size: 1rem
-    }
-
-    .containerBlueLetter {
-        display: flex;
-
-        margin-top: 0.7rem;
-
-        height: 1rem;
-
-    }
-
-    .contenedorLetterBlueContainer {
-        margin-top: -0.9rem;
-
-    }
-
-    .thirdText {
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-    .secondTextLeftContainer {
-        font-size: 1.12rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-
-    }
-
-    .leftContainer {
-
-        width: 50%;
-        height: 95%;
-
-    }
-
-    .textH3 {
-        font-family: 'Poppins-Regular';
-
-        font-size: 1.2rem;
-        line-height: 0rem;
-    }
-
-    .letterParagraph {
-        font-size: 0.9rem;
-        text-align: justify;
-    }
-
+@media only screen and (min-width: 740px) and (max-height: 1000px) {
     .fourthText {
-        font-size: 0.9rem;
-        font-family: 'Poppins-Regular';
+        font-size: 1rem;
 
-    }
-
-    .additionalText {
-        font-size: 110%;
-        text-align: left;
-        margin-top: 1rem;
-    }
-
-    .eyesImage {
-
-        width: 13%;
-
-        position: relative;
-        margin: 12% 8% 5% 0%;
-        transform: rotate(7deg);
 
     }
 
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 80%;
-        height: 30%;
-        top: 58%;
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        left: 60%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 2;
-        border-radius: 10%;
-    }
-
-    .boxTwo img {
-        position: relative;
-        width: 115%;
-        height: 101%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    .boxOne img {
-        position: relative;
-        width: 130%;
-        height: 155%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(-15deg);
-    }
-
-    .boxOne {
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        overflow: hidden;
-        position: relative;
-        width: 80%;
-        height: 30%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 1;
-        border-radius: 10%;
-
-    }
-
-    .iconoUserMap {
-        width: 50%;
-        z-index: 3;
-        position: absolute;
-        bottom: 73%;
-        left: 62%;
-
-    }
-
-    .iconoGirl {
-        width: 50%;
-        z-index: 3;
-        position: absolute;
-        top: 35%;
-        left: 2%;
-
-    }
-
-    .letterParagraph {
-        user-select: none;
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-
-
-    }
-
-    .fourthText {
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-        color: #028470;
-
-    }
-
-
-}
-
-@media only screen and (min-width: 776px) and (min-height:1024px) {
-
-    .containerPhotos {
-        display: none;
-    }
-
-    .leftContainer {
-        margin-top: -45vh;
-        width: 90%;
-
-
-    }
-
-    .containerPhotosMovil {
-        margin-top: 5vh;
-        display: flex;
-        position: relative;
-        width: 100%;
-    }
-
-    .boxTwo {
-        overflow: hidden;
-        position: absolute;
-        width: 80%;
-        height: 45%;
-        top: 72%;
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        width: 70%;
+        height: 25%;
+        top: 46%;
         left: 58%;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
         border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
     }
 
     .boxTwo img {
-        position: relative;
-        width: 125%;
-        height: 101%;
+        width: 120%;
+        height: 100%;
         top: 50%;
         left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%);
     }
 
     .boxOne img {
-        position: relative;
-        width: 130%;
-        height: 155%;
+        width: 120%;
+        height: 135%;
         top: 50%;
         left: 50%;
-        /* Asegura que la imagen cubra todo el div */
         transform: translate(-50%, -50%) rotate(-15deg);
+
     }
 
     .boxOne {
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 80%;
-        height: 45%;
-        top: 33%;
+        width: 70%;
+        height: 25%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 1;
         border-radius: 10%;
-
-    }
-
-    .firstTextLeftContainer {
-        font-size: 45px;
-        font-family: 'Poppins-Regular';
-
-    }
-
-    .secondTextLeftContainer {
-        font-size: 35px;
-        font-family: 'Poppins-Regular';
-        margin-bottom: 0.1vh;
-    }
-
-    .textH3 {
-
-        font-size: 30px;
-
-    }
-
-    .thirdText {
-
-        font-size: 35px;
-        font-family: 'Poppins-Regular';
-    }
-
-    .contenedorLetterBlueContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .containerBlueLetter {
-        width: 60%;
-        height: 5vh;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
     }
 
     .firstContainer {
+        margin-top: 80px;
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        overflow: hidden;
-    }
-
-    .eyesImage {
-
-        width: 13%;
-
-        position: relative;
-        margin: 5% 15% 5% 0%;
-        transform: rotate(7deg);
-
-    }
-}
-
-@media (min-width: 776px) and (max-width: 874px) {
-
-    .defineContainerText {
-
-        width: 100%;
-
+        justify-content: center;
+        align-items: center;
     }
 
     .leftContainer {
+        height: 100vh;
+    }
 
-        margin-top: 0rem;
+    .textH3 {
+        font-size: 15px;
+        margin-bottom: -5vh;
+    }
 
+    .letterParagraph {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .secondTextLeftContainer,
+    .thirdText,
+    .additionalText {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -4vh;
+    }
+
+    .containerTextMoreImage {
+        width: 100%;
+        margin-left: -0.5vw;
     }
 
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
-        line-height: 1rem;
-        font-size: 1.25rem;
-        font-family: 'Poppins-Regular';
+        font-size: 1rem;
+        line-height: 1.2rem;
         font-weight: bold;
-
-
-    }
-
-    .containerBlueLetter {
-        display: flex;
-
-        margin-top: 0.7rem;
-
-        height: 1rem;
-
-    }
-
-    .contenedorLetterBlueContainer {
-        margin-top: -0.9rem;
-
-    }
-
-    .thirdText {
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
-    .secondTextLeftContainer {
-        font-size: 1.25rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-
-    }
-
-    .leftContainer {
-
-        width: 50%;
-        height: 95%;
-
-    }
-
-    .textH3 {
-        font-family: 'Poppins-Regular';
-
-        font-size: 1.3rem;
-        line-height: 0rem;
-    }
-
-    .letterParagraph {
-        font-size: 0.9rem;
-        text-align: justify;
-    }
-
-    .fourthText {
-        font-size: 0.9rem;
-        font-family: 'Poppins-Regular';
-
-    }
-
-    .additionalText {
-        font-size: 110%;
-        text-align: left;
-        margin-top: 1rem;
     }
 
     .eyesImage {
-
-        width: 13%;
-
-        position: relative;
-        margin: 8% 10% 5% 0%;
-        transform: rotate(7deg);
-
-    }
-
-    .boxTwo {
-        overflow: hidden;
-        position: absolute;
-        width: 80%;
-        height: 30%;
-        top: 58%;
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        left: 60%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 2;
-        border-radius: 10%;
-    }
-
-    .boxTwo img {
-        position: relative;
-        width: 115%;
-        height: 101%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    .boxOne img {
-        position: relative;
-        width: 125%;
-        height: 155%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(-15deg);
-    }
-
-    .boxOne {
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        overflow: hidden;
-        position: relative;
-        width: 80%;
-        height: 30%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 1;
-        border-radius: 10%;
-
-    }
-
-    .iconoUserMap {
-        width: 50%;
-        z-index: 3;
-        position: absolute;
-        bottom: 73%;
-        left: 62%;
-
+        width: 15%;
+        margin: 10% 16% 6% 0;
+        transform: rotate(10deg);
     }
 
     .iconoGirl {
-        width: 50%;
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        top: 25%;
+        left: 1%;
         z-index: 3;
-        position: absolute;
-        top: 35%;
-        left: 2%;
-
-    }
-
-    .letterParagraph {
-        user-select: none;
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-
-
-    }
-
-    .fourthText {
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-        color: #028470;
-
-    }
-
-
-
-}
-
-
-
-@media (min-width: 874px) and (max-width: 1000px) {
-
-    .defineContainerText {
-
-        width: 100%;
-
-    }
-
-    .leftContainer {
-
-        margin-top: 0rem;
-
-    }
-
-    .firstTextLeftContainer,
-    .firstTextLeftContainerEnglish {
-        line-height: 1rem;
-        font-size: 1.3rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-
-
-    }
-
-    .firstTextLeftContainerEnglish {
-        font-size: 1.2rem
-    }
-
-    .containerBlueLetter {
-        display: flex;
-
-        margin-top: 0.7rem;
-
-        height: 1rem;
-
-    }
-
-    .contenedorLetterBlueContainer {
-        margin-top: -0.9rem;
-
-    }
-
-    .thirdText {
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    .secondTextLeftContainer {
-        font-size: 1.3rem;
-        font-family: 'Poppins-Regular';
-        font-weight: bold;
-
-    }
-
-    .leftContainer {
-
-        width: 50%;
-        height: 95%;
-
-    }
-
-    .textH3 {
-        font-family: 'Poppins-Regular';
-
-        font-size: 1.4rem;
-        line-height: 0rem;
-    }
-
-    .letterParagraph {
-        font-size: 0.9rem;
-        text-align: justify;
-    }
-
-    .fourthText {
-        font-size: 0.9rem;
-        font-family: 'Poppins-Regular';
-
-    }
-
-    .additionalText {
-        font-size: 110%;
-        text-align: left;
-        margin-top: 1.2rem;
-    }
-
-    .eyesImage {
-
-        width: 13%;
-
-        position: relative;
-        margin: 8% 14% 5% 0%;
-        transform: rotate(7deg);
-
-    }
-
-    .boxTwo {
-        overflow: hidden;
-        position: absolute;
-        width: 80%;
-        height: 30%;
-        top: 58%;
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        left: 60%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 2;
-        border-radius: 10%;
-    }
-
-    .boxTwo img {
-        position: relative;
-        width: 115%;
-        height: 101%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    .boxOne img {
-        position: relative;
-        width: 120%;
-        height: 155%;
-        top: 50%;
-        left: 50%;
-        /* Asegura que la imagen cubra todo el div */
-        transform: translate(-50%, -50%) rotate(-15deg);
-    }
-
-    .boxOne {
-        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        overflow: hidden;
-        position: relative;
-        width: 80%;
-        height: 30%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 1;
-        border-radius: 10%;
-
     }
 
     .iconoUserMap {
         width: 40%;
-        z-index: 3;
+        /* Reducido para mejor ajuste */
         position: absolute;
         bottom: 73%;
         left: 62%;
-
-    }
-
-    .iconoGirl {
-        width: 50%;
         z-index: 3;
-        position: absolute;
-        top: 35%;
-        left: 2%;
-
     }
 
-    .letterParagraph {
-        user-select: none;
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-
-
+    .containerLetterParagraph {
+        width: 35vw;
+        height: auto;
+        margin-left: 1vw;
     }
-
-    .fourthText {
-        font-family: 'Poppins-Regular';
-        font-size: 20px;
-        color: #028470;
-
-    }
-
-
 }
 
 
 
+
+
+@media only screen and (min-width: 800px) and (min-height: 1100px) {
+    .fourthText {
+        font-size: 1rem;
+
+
+    }
+
+    .defineContainerText {
+        width: 100%;
+        margin-top: -55vh;
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 20%;
+        top: 46%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .boxTwo img {
+        width: 120%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .boxOne img {
+        width: 120%;
+        height: 135%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+
+    }
+
+    .boxOne {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 20%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .firstContainer {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftContainer {
+        height: 100vh;
+    }
+
+    .textH3 {
+        font-size: 15px;
+        margin-bottom: -5vh;
+    }
+
+    .letterParagraph {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .secondTextLeftContainer,
+    .thirdText,
+    .additionalText {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -4vh;
+    }
+
+    .containerTextMoreImage {
+        width: 100%;
+        margin-left: -0.5vw;
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 10% 16% 6% 0;
+        transform: rotate(10deg);
+    }
+
+    .iconoGirl {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        top: 25%;
+        left: 1%;
+        z-index: 3;
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        bottom: 73%;
+        left: 62%;
+        z-index: 3;
+    }
+
+    .containerLetterParagraph {
+        width: 35vw;
+        height: auto;
+        margin-left: 1vw;
+    }
+}
+
+
+
+
+@media only screen and (min-width:800px) and (min-height:1236px) {
+    .firstTextLeftContainer {
+        line-height: 5rem;
+
+    }
+
+    .firstContainer {
+        margin-bottom: -90vh;
+    }
+
+    .thirdText {
+        font-size: 20;
+    }
+
+    .containerBlueLetter {
+        height: 2vh;
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 15% 15% 15% 0;
+        transform: rotate(10deg);
+    }
+
+    .textH3 {
+
+        line-height: 5rem;
+        margin-top: -2vh;
+    }
+
+    .containerLetterParagraph {
+        margin-left: -3vw;
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        top: 33%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .boxTwo img {
+        width: 120%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .boxOne img {
+        width: 120%;
+        height: 135%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+
+    }
+
+    .boxOne {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 10%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .iconoGirl {
+        left: 5vw;
+    }
+
+}
 
 
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -1355,6 +1010,8 @@
     .letterParagraph {
         font-size: 0.9rem;
         text-align: justify;
+        margin-left: -2vw;
+        margin-top: 8vh;
     }
 
     .fourthText {
@@ -1465,6 +1122,138 @@
 }
 
 
+
+@media only screen and (min-width:1000px) and (min-height:1340px) {
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 15%;
+        top: 43%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 15%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 15%;
+        top: 43%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 15%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoGirl {
+        top: 45vh;
+        left: 8vw;
+    }
+
+    .containerBlueLetter {
+        margin-top: 1vh;
+        height: 2vh;
+
+    }
+
+    .textH3 {
+        line-height: 5rem;
+        margin-top: -3vh;
+    }
+
+    .containerLetterParagraph {
+        margin-left: -3vw;
+    }
+
+    .firstContainer {
+        margin-bottom: -55vh;
+    }
+
+}
+
 @media (min-width: 1200px) and (max-width: 1301px) {
     .containerBlueLetter {
         display: flex;
@@ -1552,6 +1341,8 @@
     .letterParagraph {
         font-size: 1.2rem;
         text-align: justify;
+        margin-left: -2.5vw;
+        margin-top: 8vh;
     }
 
     .fourthText {
@@ -1665,7 +1456,7 @@
 
 @media (min-width: 1300px) and (max-width: 1422px) {
     .containerBlueLetter {
-        display: flex;
+        display: block;
         align-items: center;
         width: 55%;
         height: 8vh;
@@ -1680,7 +1471,7 @@
     }
 
     .containerLetterParagraph {
-        margin-top: 12vh;
+        margin-top: 9vh;
         width: 85%;
 
     }
@@ -1864,6 +1655,8 @@
 
     }
 
+
+
     .fourthText {
         font-family: 'Poppins-Regular';
         font-size: 30px;
@@ -1888,6 +1681,12 @@
         margin-left: -1%;
         overflow: hidden;
 
+
+    }
+
+    .containerLetterParagraph {
+        margin-top: 9vh;
+        width: 85%;
 
     }
 
@@ -2301,4 +2100,101 @@
         font-size: 35px;
         color: #028470;
     }
+}
+
+
+@media only screen and (min-width:2400px) and (min-height:1600px) {
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 20%;
+        top: 48%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 20%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+
+    .iconoGirl {
+        top: 35vh;
+    }
+
+    .firstContainer {
+
+        padding-bottom: 25vh;
+
+    }
+
+    .containerLetterParagraph {
+
+        margin-left: 0vw;
+
+    }
+
+    .textH3 {
+        line-height: 3rem;
+        margin-bottom: -10vh;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 7% 42% 5% 0%;
+        transform: rotate(7deg);
+
+    }
+
+    .containerTextMoreImage {
+        margin-bottom: -4vh;
+        margin-left: -0.3vw;
+
+    }
+
+    .containerBlueLetter {
+        width: 15vw;
+    }
+
+
 }
