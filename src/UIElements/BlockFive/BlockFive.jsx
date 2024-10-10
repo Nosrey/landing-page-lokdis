@@ -7,23 +7,13 @@ import Carrousel from '../Carrousel/Carrousel';
 
 const BlockFive = ({ language }) => {
 
-
-
-
     const redirectUrl = () => {
         if (language === 'spanish') {
-
-
             window.location.assign('https://b6j96f1eelu.typeform.com/to/b0NPKpIT');
         } else {
             window.location.assign('https://b6j96f1eelu.typeform.com/to/mlppGgt6');
-
         }
-
-
-
     }
-
 
     return (
         <div className={styles.blockFiveContainer}>

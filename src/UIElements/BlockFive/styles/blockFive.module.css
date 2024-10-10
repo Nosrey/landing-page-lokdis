@@ -221,16 +221,8 @@
 
 }
 
-@media (min-width: 1300px) and (min-height:766px) {
 
-    .carrousel {
-        width: 100%;
-        position: relative;
-        top: 31.5vh;
-        z-index: 1;
-    }
 
-}
 
 
 @media only screen and (min-width:800px) and (min-height:360px) {
@@ -291,6 +283,29 @@
     }
 
 }
+
+@media (min-width: 1300px) and (min-height:600px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 31.5vh;
+        z-index: 1;
+    }
+
+}
+
+@media (min-width: 1300px) and (min-height:766px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 31.5vh;
+        z-index: 1;
+    }
+
+}
+
 
 @media only screen and (min-width:2400px) and (min-height:1600px) {
 

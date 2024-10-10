@@ -11,6 +11,14 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
   const containerRef = useRef(null);
 
+  const redirectUrl = () => {
+    if (language === 'spanish') {
+      window.location.assign('https://b6j96f1eelu.typeform.com/to/b0NPKpIT');
+    } else {
+      window.location.assign('https://b6j96f1eelu.typeform.com/to/mlppGgt6');
+    }
+  }
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -80,7 +88,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
             <p className="textoBienvenida">
               {isSpanish ? "Regístrate, si estás entre las 1000 primeras personas obtendrás 6 meses Premium de LokDis" : "3647 people are already impatient to join this collaborative community"}
             </p>
-            <button className="boton">{isSpanish ? "¡Únete ahora!" : "Join the waiting list!"}</button>
+            <button onClick={redirectUrl} className="boton">{isSpanish ? "¡Únete ahora!" : "Join the waiting list!"}</button>
           </div>
         </div>
 

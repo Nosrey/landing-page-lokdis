@@ -6,6 +6,14 @@ import logoName from './Images/logo-name.png'
 export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage, numberOfPerson }) => {
     const isSpanish = language === "spanish";
 
+    const redirectUrl = () => {
+        if (language === 'spanish') {
+            window.location.assign('https://b6j96f1eelu.typeform.com/to/b0NPKpIT');
+        } else {
+            window.location.assign('https://b6j96f1eelu.typeform.com/to/mlppGgt6');
+        }
+    }
+
     return (
         <div className={`scrollNav ${!isScrolling ? 'hidden' : ''}`}>
             <div className='leftNav'>
@@ -20,7 +28,7 @@ export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage, num
                 </div>
             </div>
             <div className='rightNav'>
-                <button className='navBarButton'>{isSpanish ? 'Quiero probar LokDis' : 'I want to try LokDis'}</button>
+                <button onClick={redirectUrl} className='navBarButton'>{isSpanish ? 'Quiero probar LokDis' : 'I want to try LokDis'}</button>
             </div>
         </div>
     );
