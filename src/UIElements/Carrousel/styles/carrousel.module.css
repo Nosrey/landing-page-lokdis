@@ -5,7 +5,6 @@
     width: 100%;
     height: 16rem;
     position: relative;
-    /* Necesario para el posicionamiento absoluto del nuevo div */
 }
 
 
@@ -19,21 +18,15 @@
     /* background: linear-gradient(45deg, #080846 8%, #0C0C0C 50.8%); */
 }
 
-/* Nuevo estilo para el fondo blanco inclinado */
 .whiteBackground {
     position: absolute;
-    /* Permite que el fondo blanco esté por detrás del texto */
     top: 0;
-    /* Comienza desde la parte superior */
     left: 0;
     width: 100%;
     height: 100%;
-    /* Asegura que cubra todo el contenedor */
     background-color: white;
     transform: skewY(-5deg);
-    /* Inclina el fondo */
     z-index: 1;
-    /* Asegura que esté detrás del texto */
 }
 
 .textContainer {
@@ -45,7 +38,6 @@
     background-color: #242424;
     transform: rotate(-7deg);
     z-index: 2;
-    /* Asegura que el texto esté por encima del fondo blanco */
 }
 
 .movingContent {
@@ -84,5 +76,48 @@
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .fatherContainer {
+        height: 12rem;
+    }
+
+    .banner {
+        width: 120%;
+        height: 100%;
+    }
+
+    .whiteBackground {
+        transform: skewY(-3deg);
+    }
+
+    .textContainer {
+        height: 2.5rem;
+        transform: rotate(-9deg);
+    }
+
+    .textCarrousel,
+    .textCarrouselTwo {
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    .movingContent img {
+        width: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
     }
 }

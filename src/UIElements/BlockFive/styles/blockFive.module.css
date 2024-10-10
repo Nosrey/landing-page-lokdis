@@ -104,11 +104,108 @@
     z-index: 1;
 }
 
+@media only screen and (max-width:500px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+    .container {
+        z-index: 2;
+        background-image: url('../../Assets/fondo-block-five-movil-design.png');
+        width: 100%;
+        min-height: 120vh;
+        /* Asegura que el contenedor ocupe al menos toda la pantalla */
+        /* Degradado de #242244 a negro */
+        user-select: none;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        align-items: center;
+        display: flex;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -25vh;
+
+    }
+
+    .containerLetter {
+        margin-top: -15vh;
+    }
+
+    .containerLogo {
+        display: none;
+    }
+
+    .h2Letter {
+        font-size: 19px;
+    }
+
+    .h2LetterEnglish {
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        color: black;
+        font-family: 'Poppins-Bold';
+    }
+
+    .colorCyanBackground {
+
+        background-color: cyan;
+        width: 58vw;
+        margin-top: 1vh;
+        border-radius: 15px;
+        padding: 5px;
+
+    }
+
+    .colorCyanBackgroundTwo {
+
+        background-color: cyan;
+        width: 58vw;
+        line-height: 4rem;
+        border-radius: 15px;
+        padding: 5px;
+
+
+    }
+
+
+
+
+    .paragraphSmall {
+        font-size: 16px;
+    }
+
+    .buttonCallToAction {
+        width: 87vw;
+        padding: 5%;
+        font-size: 14.06px;
+        color: #060661;
+        font-family: 'Roboto-Regular';
+        font-weight: bold;
+        border-radius: 15px;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .buttonCallToAction:hover {
+        background-color: #b0fcff;
+        transform: scale(1.05);
+    }
+}
+
 @media (min-width: 700px) and (max-width:1100px) {
     .carrousel {
         width: 100%;
         position: relative;
-        top: 42vh;
+        top: 34vh;
         z-index: 1;
     }
 }
@@ -136,6 +233,43 @@
 }
 
 
+@media only screen and (min-width:800px) and (min-height:360px) {
+
+    .carrousel {
+        top: 55vh;
+    }
+
+}
+
+@media only screen and (min-width:750px) and (min-height:390px) {
+
+    .carrousel {
+        top: 45vh;
+    }
+
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .carrousel {
+        top: 24vh;
+    }
+
+}
+
+
+@media only screen and (min-width:800px) and (min-height:1236px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+
+}
+
 @media(min-width:1419px) and (min-height:976px) {
 
     .carrousel {
@@ -144,5 +278,26 @@
         top: 24.5vh;
         z-index: 1;
     }
+
+}
+
+@media only screen and (min-width:1000px) and (min-height:1000px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (min-width:2400px) and (min-height:1600px) {
+
+
+    .carrousel {
+        top: 18vh;
+    }
+
 
 }

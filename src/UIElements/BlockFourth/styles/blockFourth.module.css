@@ -11,6 +11,8 @@
 }
 
 
+
+
 .fatherContainer {
     align-items: center;
     justify-content: center;
@@ -253,6 +255,10 @@
 }
 
 
+.containerBannerPhotoMovil {
+    display: none;
+}
+
 
 
 @keyframes elipse {
@@ -272,15 +278,244 @@
     }
 }
 
+.textNew {
+    display: none;
+}
 
+.firstArrowMovil {
+    display: none;
+}
 
+.containerPhoneMoreParagraph {
+    display: none;
+}
 
-@media (min-width:600px) and (max-width:831px) {
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0) rotate(10deg);
+        /* Posición inicial */
+    }
+
+    50% {
+        transform: translateX(-10px) rotate(10deg);
+        /* Subir la flecha */
+    }
+
+    100% {
+        transform: translateX(0) rotate(10deg);
+        /* Volver a la posición original */
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        display: none;
+    }
+
+    .arrowDown {
+        display: none;
+    }
+
+    .arrowDownSecond {
+        display: none;
+    }
+
+    .arrowDownThree {
+        display: none;
+    }
+
+    .containerParagraph {
+        display: none;
+    }
+
+    .containerParagraphTwo {
+        display: none;
+    }
+
+    .containerParagraphThree {
+        display: none;
+    }
+
+    .containerBannerPhotoMovil {
+
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 28vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerPhotos {
+        display: none;
+    }
 
     .fatherContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 45vh;
+    }
 
+    .containerTextTwoForMoreText {
+        width: 100%;
+        padding-left: 36vw;
+    }
+
+    .containerTextTwo {
+        height: 3vh;
+        width: 190px;
+        background-color: cyan;
+        border-radius: 25px;
+        padding-right: 3%;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+    }
+
+    .letterContainer {
+        margin-top: -35vh;
+        width: 100%;
+    }
+
+    .textTwoContainer {
+        font-size: 15px;
+        font-family: 'Poppins-Bold';
+    }
+
+    .textOneContainer {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: -1vh;
+    }
+
+    .textThree {
+        font-size: 16px;
+        margin-bottom: -4vh;
+    }
+
+    .textNew {
+        display: flex;
+        font-size: 16px;
+        font-family: 'Poppins-Bold';
+
+    }
+
+    .smallMovilOne {
+
+        width: 20vw;
+        height: 20vh;
+
+        position: relative;
+    }
+
+    .containerSmallPhotoMap {
+        border-radius: 10px;
+        width: 25vw;
+        height: 20vh;
+        background-color: #9FFFF0;
+
+    }
+
+    .selected {
+        width: 28vw;
+        height: 22vh;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 3px rgb(0, 0, 0, 0.3);
+    }
+
+    .contaimerSmallPhotoNotSelect {
+
+        border-radius: 10px;
+        width: 25vw;
+        height: 20vh;
+        background-color: #E0DFDF;
+        margin-left: 15px;
+
+    }
+
+    .firstArrowMovil {
+        display: flex;
+        width: 15vw;
+        position: relative;
+        top: -5vh;
+        left: -15vw;
+        transform: rotate(10deg);
+        animation: moveArrow 2s ease-in-out infinite;
+
+    }
+
+    .containerPhoneMoreParagraph {
+        margin: -20px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80vh;
+        background-color: white;
+        flex-direction: column;
+
+    }
+
+    .paragraphOneMovilDesign {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'RockSalt-Regular';
+        line-height: 1.6;
+        padding: 0px 0px 20px 20px;
+
+    }
+
+    .paragraphTwoMovilDesign {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'RockSalt-Regular';
+        line-height: 1.6;
+        padding: 0px 0px 20px 20px;
+        margin-top: -2vh;
+
+    }
+
+    .secondArrowMovil {
+        display: flex;
+        width: 15vw;
+        position: relative;
+        top: -5vh;
+        left: 10vw;
+        transform: rotate(10deg);
+        animation: moveArrow 2s ease-in-out infinite;
+
+    }
+
+    .thirdArrowMovil {
+        display: flex;
+        width: 15vw;
+        position: relative;
+        top: -5vh;
+        left: 25vw;
+        transform: rotate(10deg);
+        animation: moveArrow 2s ease-in-out infinite;
+
+    }
+
+}
+
+
+@media (min-width:500px) and (max-width:831px) {
+
+    .fatherContainer {
         margin-top: -65vh;
+    }
 
+    .paragraphOne {
+        font-size: 10px;
+    }
+
+    .paragraphSecond {
+        font-size: 10px;
     }
 
     .arrowDownSecond {
@@ -389,9 +624,9 @@
 
     .arrowDown {
         position: absolute;
-        top: 75%;
+        top: 90%;
         left: -2%;
-        width: 10%;
+        width: 8%;
         transform: rotate(-35deg);
         filter: brightness(0);
 
@@ -399,9 +634,9 @@
 
     .arrowDownThree {
         position: absolute;
-        top: 78%;
+        top: 89%;
         left: 54.5%;
-        width: 15%;
+        width: 8%;
         transform: rotate(150deg) scaleY(-1);
         filter: brightness(0);
 
@@ -409,7 +644,7 @@
 
     .arrowDownSecond {
         position: absolute;
-        top: 25vh;
+        top: 10vh;
         left: 25vw;
         width: 8%;
         transform: rotate(155deg);
@@ -418,7 +653,26 @@
 
     }
 
+    .containerParagraph {
+
+        margin-top: 15vh;
+    }
+
+    .containerParagraphThree {
+        margin-top: 11vh;
+
+    }
+
+    .containerParagraphTwo {
+
+        margin-top: -8vh;
+    }
+
 }
+
+
+
+
 
 
 @media (min-width: 831px) and (max-width:966px) {
@@ -567,11 +821,12 @@
     }
 
     .containerParagraphTwo {
-        top: -9%;
+        top: -10%;
     }
 
     .containerParagraph {
         top: 95%;
+        right: 15%;
     }
 
     .arrowDownThree {
@@ -590,13 +845,8 @@
 
 
 
-@media (min-width: 966px) and (max-width:1100px) {
+@media (min-width: 966px) and (max-width:1100px) and (max-height:600px) {
 
-    .fatherContainer {
-
-        margin-top: -65vh;
-
-    }
 
     .arrowDown {
         position: absolute;
@@ -756,7 +1006,74 @@
 
 }
 
+@media only screen and (min-width:800px) and (min-height:1236px) {
+    .container {
+        margin-top: 50vh;
+    }
 
+    .containerParagraph {
+        background-color: white;
+        margin-top: -19vh;
+    }
+
+    .containerPhotos {
+        margin-top: -13vh;
+    }
+
+    .arrowDown {
+        top: 58vh
+    }
+
+    .arrowDownThree {
+        top: 65vh
+    }
+
+    .containerParagraphThree {
+        margin-top: -19vh;
+    }
+
+}
+
+@media only screen and (min-width:1000px) and (min-height:1340px) {
+
+    .containerTextTwoForMoreText {
+        padding-left: 15vw;
+    }
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .container {
+        margin-top: 25vh
+    }
+
+    .containerParagraphTwo {
+        top: 15vh
+    }
+
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .arrowDown {
+        top: 65vh
+    }
+
+    .containerParagraph {
+        top: 69vh;
+    }
+
+    .arrowDownThree {
+        top: 75vh;
+    }
+
+    .containerParagraphThree {
+        top: 78vh;
+    }
+
+
+}
 
 @media (min-width: 1100px) and (max-width:1400px) {
 
@@ -1014,4 +1331,78 @@
     .containerParagraphTwo {
         margin-top: -02vh;
     }
+}
+
+
+@media only screen and (min-width:2400px) and (min-height:1660px) {
+
+
+    .container {
+
+        margin-top: 40vh;
+
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 75% !important;
+        bottom: 0vh;
+        left: 15%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 0%;
+        right: 14%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: -0%;
+        right: 43%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .arrowDownThree {
+
+        top: 58vh;
+    }
+
+    .containerTextTwoForMoreText {
+
+        margin-left: -22vw;
+        width: 29vw;
+
+    }
+
+    .containerParagraph {
+        top: 85vh;
+    }
+
+    .arrowDown {
+        top: 60vh;
+        left: 5vw;
+    }
+
+    .containerParagraphTwo {
+
+        top: 5vh;
+    }
+
+    .arrowDownSecond {
+        top: 10vh;
+        left: 20vw;
+    }
+
 }
