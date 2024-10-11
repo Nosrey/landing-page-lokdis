@@ -341,7 +341,7 @@ footer {
     }
 
     .fondo {
-        height: 150vh;
+        height: 140vh;
         padding: 0;
     }
 
@@ -360,6 +360,7 @@ footer {
 
     footer {
         width: 80%;
+        padding-top: 1vh;
     }
 
     .columnas {

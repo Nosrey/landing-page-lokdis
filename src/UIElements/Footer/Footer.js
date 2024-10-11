@@ -3,6 +3,8 @@ import './Footer.css'
 import logo from './Images/logo.png'
 import ig from './Images/ig.webp'
 import tiktok from './Images/tiktok.webp'
+// facebook from './Images/facebook.webp';
+// reddit from './Images/reddit.webp';
 import usaFlag from './Images/usaFlag.webp'
 import spanishFlag from './Images/spanishFlag.webp'
 import arrow from './Images/curvedArrow2.gif'
@@ -58,7 +60,7 @@ export const Footer = ({ language, setLanguage, isVisible }) => {
                         {/* <p className="textFooter" style={{ marginBottom: "10px" }}>
                     {isSpanish ? "¡Síguenos!" : "Follow us!"}
                 </p> */}
-                        <img src={arrow} alt='arrow' className='footerArrow' />
+                        {/* <img src={arrow} alt='arrow' className='footerArrow' /> */}
                         <button className='ig'>
                             <img src={ig} alt="instagram" />
                         </button>
