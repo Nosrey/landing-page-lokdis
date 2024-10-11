@@ -312,6 +312,10 @@
 
 }
 
+
+
+
+
 @media (min-width: 1300px) and (min-height:600px) {
 
     .carrousel {
@@ -342,5 +346,25 @@
         top: 18vh;
     }
 
+
+}
+
+@media only screen and (min-width:1150px) and (max-height:700px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 34.5vh;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (min-width:1050px) and (max-height:700px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 34.5vh;
+        z-index: 1;
+    }
 
 }
