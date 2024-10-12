@@ -30,7 +30,7 @@
     flex-direction: column;
     margin: 5px 5vw;
     width: 30%;
-    background-color: red;
+
 
 }
 
@@ -41,26 +41,29 @@
     flex-direction: row;
 }
 
-.tiktok img,
-.ig img {
+.fb img,
+.ig img,
+.reddit img {
     width: 3vw;
 }
 
 
-.tiktok img {
+.reddit img, .ig img {
     margin-left: 1vw;
 }
 
-.tiktok,
-.ig {
+.fb,
+.ig,
+.reddit {
     /* quita los estilos de estos dos botones */
-    background-color: none;
+    background-color: transparent;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.tiktok:hover,
-.ig:hover {
+.fb:hover,
+.ig:hover,
+.reddit:hover {
     transform: scale(1.1);
 }
 
@@ -188,12 +191,13 @@ span.inactive {
 }
 
 .footerFlag {
-    width: 3vw;
+    width: 2vw;
     margin: 0.1rem 0.05 0.1rem 0.05;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     /* Transición suave para el tamaño y el filtro */
     filter: grayscale(100%);
     /* Por defecto en escala de grises */
+    padding: 0.5rem 0.5rem;
 }
 
 .footerFlag.active {
@@ -253,8 +257,9 @@ span.inactive {
         margin: 0 5vh;
     }
 
-    .tiktok img,
-    .ig img {
+    .fb img,
+    .ig img,
+    .reddit img {
         width: 10vw;
     }
 
@@ -277,6 +282,6 @@ span.inactive {
         height: 20px;
         margin: 0 5px;
     }
-    
+
 
 }

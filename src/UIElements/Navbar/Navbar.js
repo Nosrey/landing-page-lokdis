@@ -8,9 +8,9 @@ export const Navbar = ({ isScrolling, setIsScrolling, language, setLanguage, num
 
     const redirectUrl = () => {
         if (language === 'spanish') {
-            window.location.assign('https://b6j96f1eelu.typeform.com/to/b0NPKpIT');
+            window.open('https://b6j96f1eelu.typeform.com/to/b0NPKpIT', '_blank');
         } else {
-            window.location.assign('https://b6j96f1eelu.typeform.com/to/mlppGgt6');
+            window.open('https://b6j96f1eelu.typeform.com/to/mlppGgt6', '_blank');
         }
     }
 
