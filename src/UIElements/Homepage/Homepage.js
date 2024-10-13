@@ -9,15 +9,18 @@ import { Navbar } from '../Navbar/Navbar';
 import Carrousel from '../Carrousel/Carrousel';
 import { useState, useEffect, useCallback, useRef } from 'react';
 
+
 export const Homepage = ({ language, setLanguage }) => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isVisible, setIsVisible] = useState(false); // Nueva variable para la visibilidad del 10% inferior del componente
   const [isHovering, setIsHovering] = useState(false); // Nueva variable para detectar el mouse
+  const [numberOfPerson, setNumberOfPerson] = useState(0);
+  const [newPerson, setNewPerson] = useState(true);
   const scrollTimeout = useRef(null);
   const mainDivRef = useRef(null); // Ref para el contenedor principal
   const observedRef = useRef(null); // Ref para el componente a observar
 
-  const numberOfPerson = 214;
+  const URL = 'lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app';
 
   const handleScroll = useCallback(() => {
     // Si ya estaba en estado "desplazando", limpiamos el timeout anterior
@@ -58,6 +61,33 @@ export const Homepage = ({ language, setLanguage }) => {
     if (observedElement) {
       observer.observe(observedElement); // Observamos el elemento
     }
+
+    // pide a URL/numero y en el objeto.numero asigna eso +1 a setNumberOfPerson
+    // luego SOLO UNA VEZ al abrir la pagina SI Y SOLO SI newPerson es true (es decir al inicio, luego no mas) pide a URL/incrementar en un .post sin enviar nada mas, luego setea newPerson a false
+
+
+
+    if (newPerson) {
+      fetch(`https://lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app/numero`)
+        .then((response) => response.json())
+        .then((data) => {
+          setNumberOfPerson(data.numero);
+        })
+        .catch((error) => {
+          console.error('Error fetching number of persons:', error);
+        });
+
+      fetch(`https://lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app/incrementar`, {
+        method: 'POST',
+      })
+        .catch((error) => {
+          console.error('Error incrementing number of persons:', error);
+        });
+
+      setNewPerson(false);
+    }
+
+
 
     return () => {
       if (observedElement) {

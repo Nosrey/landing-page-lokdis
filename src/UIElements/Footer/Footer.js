@@ -20,13 +20,13 @@ export const Footer = ({ language, setLanguage, isVisible }) => {
 
         switch (objective) {
             case 'instagram':
-                window.open('https://www.instagram.com');
+                window.open('https://www.instagram.com/heylokdis/');
                 break;
             case 'facebook':
-                window.open('https://www.facebook.com');
+                window.open('https://www.facebook.com/profile.php?id=61563963720953');
                 break;
             case 'reddit':
-                window.open('https://www.reddit.com');
+                window.open('https://www.reddit.com/user/Heylokdis/');
                 break;
             default:
                 window.open('https://b6j96f1eelu.typeform.com/to/mlppGgt6', '_blank');
