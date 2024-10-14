@@ -31,6 +31,7 @@
     margin: 5px 5vw;
     width: 30%;
 
+
 }
 
 .rightSideSocialIcons {
@@ -40,25 +41,29 @@
     flex-direction: row;
 }
 
-.tiktok img,
-.ig img {
-    width: 5vw;
+.fb img,
+.ig img,
+.reddit img {
+    width: 3vw;
 }
 
-.tiktok img {
+
+.reddit img, .ig img {
     margin-left: 1vw;
 }
 
-.tiktok,
-.ig {
+.fb,
+.ig,
+.reddit {
     /* quita los estilos de estos dos botones */
-    background-color: none;
+    background-color: transparent;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.tiktok:hover,
-.ig:hover {
+.fb:hover,
+.ig:hover,
+.reddit:hover {
     transform: scale(1.1);
 }
 
@@ -72,11 +77,16 @@
     margin: 0 auto;
 
     font-family: Plus Jakarta Sans;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 22.4px;
     text-align: left;
 
+}
+
+.textFooter {
+    margin: 0;
+    margin-left: 10px;
 }
 
 .centerFooter {
@@ -96,7 +106,7 @@
     font-size: 16px;
     font-weight: 600;
     background-color: rgba(0, 10, 36, 0.9);
-    padding: 0.5rem 0.5rem;
+    padding: 0.1rem 0.2rem;
     border-top-right-radius: 80rem;
     border-bottom-right-radius: 80rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -113,7 +123,7 @@
     font-size: 16px;
     font-weight: 600;
     background-color: rgba(0, 10, 36, 0.9);
-    padding: 0.5rem 0.5rem;
+    padding: 0.1rem 0.2rem;
     border-radius: 80rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -121,8 +131,8 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 24px;
+    width: 40px;
+    height: 20px;
     margin: 0 10px;
 }
 
@@ -149,8 +159,8 @@
     content: "";
     height: 16px;
     width: 16px;
-    left: 4px;
-    bottom: 4px;
+    left: 0px;
+    bottom: 2px;
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
@@ -161,7 +171,7 @@ input:checked+.sliderFooter {
 }
 
 input:checked+.sliderFooter:before {
-    transform: translateX(26px);
+    transform: translateX(24px);
 }
 
 span.active {
@@ -181,12 +191,13 @@ span.inactive {
 }
 
 .footerFlag {
-    width: 4vw;
-    margin: 0.1rem 0.25rem 0.1rem 0.25rem;
+    width: 2vw;
+    margin: 0.1rem 0.05 0.1rem 0.05;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     /* Transición suave para el tamaño y el filtro */
     filter: grayscale(100%);
     /* Por defecto en escala de grises */
+    padding: 0.5rem 0.5rem;
 }
 
 .footerFlag.active {
@@ -216,6 +227,15 @@ span.inactive {
 
 @media (max-width: 500px) {
 
+    .footerFlag {
+        width: 4vw;
+        margin: 0.1rem 0.05 0.1rem 0.05;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        /* Transición suave para el tamaño y el filtro */
+        filter: grayscale(100%);
+        /* Por defecto en escala de grises */
+    }
+
     .rightSideFooter {
         width: auto;
     }
@@ -237,9 +257,10 @@ span.inactive {
         margin: 0 5vh;
     }
 
-    .tiktok img,
-    .ig img {
-        width: 15vw;
+    .fb img,
+    .ig img,
+    .reddit img {
+        width: 10vw;
     }
 
     .logo {
@@ -253,5 +274,14 @@ span.inactive {
     .switchLabelInFooter {
         display: none;
     }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
 
 }
