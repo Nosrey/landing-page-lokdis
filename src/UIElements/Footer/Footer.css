@@ -255,6 +255,7 @@ span.inactive {
     .textFooterMobile {
         display: block;
         margin: 0 5vh;
+        font-size: 0.6rem;
     }
 
     .fb img,
