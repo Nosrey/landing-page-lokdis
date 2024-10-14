@@ -9,6 +9,8 @@ import { Navbar } from '../Navbar/Navbar';
 import Carrousel from '../Carrousel/Carrousel';
 import { useState, useEffect, useCallback, useRef } from 'react';
 
+let increase = true;
+
 
 export const Homepage = ({ language, setLanguage }) => {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -67,22 +69,26 @@ export const Homepage = ({ language, setLanguage }) => {
 
 
 
-    if (newPerson) {
+    if (newPerson && increase) {
       fetch(`https://lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app/numero`)
         .then((response) => response.json())
         .then((data) => {
-          setNumberOfPerson(data.numero);
+          setNumberOfPerson(Number(data.numero) + Number(1));
+          increase = false;
+        })
+        .then(() => {
+          fetch(`https://lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app/incrementar`, {
+            method: 'POST',
+          })
+            .catch((error) => {
+              console.error('Error incrementing number of persons:', error);
+            });
         })
         .catch((error) => {
           console.error('Error fetching number of persons:', error);
         });
 
-      fetch(`https://lokdis-contador-usuarios-git-main-nosreys-projects.vercel.app/incrementar`, {
-        method: 'POST',
-      })
-        .catch((error) => {
-          console.error('Error incrementing number of persons:', error);
-        });
+
 
       setNewPerson(false);
     }
