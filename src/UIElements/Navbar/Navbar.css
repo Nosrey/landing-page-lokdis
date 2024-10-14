@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../Bloque-1/Fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+/* mismo sitio, Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Bloque-1/Fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+.scrollNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 95%;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+    /* Agregamos la transición para animar el movimiento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2.5%;
+}
+
+.scrollNav.hidden {
+    transform: translateY(-100%);
+    /* Mueve la Navbar hacia arriba fuera de la pantalla */
+}
+
+.simpleLogo {
+    width: 4vw;
+    margin-right: 10px;
+}
+
+.logoName {
+    width: 8vw;
+}
+
+.leftNav {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightNav {
+    width: 25%;
+}
+
+.centerNav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbarText,
+.numberPersonNav {
+    display: inline;
+    text-align: center;
+    font-family: 'Poppins Regular', sans-serif;
+    color: #060661;
+}
+
+.numberPersonNav {
+    font-size: 1.1rem;
+    background-color: #D0E2FF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.6rem;
+    border: 0.98px solid #060661;
+    margin-right: 0.6rem;
+}
+
+.grupoTextoNumberNav {
+    margin: 0 auto;
+}
+
+.centerBlock {
+    background-color: #A8FFF1;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.dateBlock {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDate {
+    font-size: 30px;
+}
+
+.fechaContenedor1 {
+    margin: 0 10px;
+}
+
+.contadorSubtitulo1 {
+    color: #000;
+    margin: 0;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.98px;
+    text-align: center;
+}
+
+.contadorNumero1 {
+    color: #000;
+    margin: 0;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.filaContador1 {
+    padding: 2.5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 00px;
+    width: 35%;
+    margin: auto;
+    background-color: #A8FFF1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navBarButton {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: left;
+    background-color: #060661;
+    color: #fff;
+    padding: 6px 25px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navBarButton:hover {
+    background-color: #00001b;
+    transform: scale(1.05);
+}
+
+.textCortoNav {
+    display: none;
+}
+
+.textLargoNav {
+    display: inline;
+}
+
+
+@media (min-width: 1600px) {
+    .navBarButton {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+
+    .contadorNumero1 {
+        font-size: 30px;
+        margin: 0 5px;
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 15px;
+    }
+
+    .navbarText {
+        font-size: 1.3rem;
+    }
+
+    .numberPersonNav {
+        font-size: 1.5rem;
+
+    }
+}
+
+@media (max-width: 1100px) {
+    .contadorNumero1 {
+        font-size: 15px;
+        margin: 0 5px;
+
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        width: 32%;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .contadorNumero1 {
+        font-size: 14px;
+        margin: 0 5px;
+
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        width: 35%;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .contadorNumero1 {
+        font-size: 14px;
+        margin: 0 5px;
+
+    }
+
+    .contadorSubtitulo1 {
+        font-size: 8px;
+    }
+
+    .filaContador1 {
+        padding: 0px 0;
+        display: none;
+
+    }
+
+    .navBarButton {
+        font-size: 15px;
+        padding: 5px 40px;
+
+    }
+
+    .rightNav {
+        width: 50%;
+    }
+
+    .navbarText {
+        font-size: 0.8rem;
+    }
+
+    .numberPersonNav {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .leftNav {
+        display: none;
+    }
+
+    .textLargoNav {
+        display: none;
+    }
+
+    .textCortoNav {
+        display: inline;
+    }
+
+    .navbarText,
+    .numberPersonNav {
+        font-size: 0.8rem;
+    }
+
+    .numberPersonNav {
+        padding: 5px 8px;
+    }
+
+    /* .centerNav {
+        width: 60%;
+
+    }
+
+    .rightNav {
+        width: 40%;
+        
+    } */
+
+    .scrollNav {
+        padding: 0px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 1%;
+    }
+
+    .navBarButton {
+        font-size: 14px;
+        padding: 0.2rem 0;
+        text-align: center;
+        width: 98%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,748 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('./Fonts/RockSalt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('./Fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('./Fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+/* trae Alkatra-Regular.ttf */
+@font-face {
+    font-family: 'Alkatra';
+    src: url('./Fonts/Alkatra-Regular.ttf') format('truetype');
+}
+
+.fondo {
+    height: 98vh;
+    padding-top: 5vh;
+    background: linear-gradient(116.31deg, #161616 9.12%, #0B0B48 37.65%, #060661 47.42%, #0C0C45 65.37%, #0C0C0C 99.95%);
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 70vh;
+}
+
+.columnaSingular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.rockSaltText {
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.icon1 {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    margin-right: 15px;
+}
+
+.textoBienvenida {
+    color: #ffffff;
+    font-family: 'Poppins Regular', sans-serif;
+    /* justifica el texto */
+    text-align: justify;
+}
+
+.textoBienvenidaBold {
+    color: #ffffff;
+    font-family: 'Poppins Bold', sans-serif;
+}
+
+.textoBienvenidaContraste {
+    color: black;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0 2px;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+.phoneView {
+    width: 68%;
+    margin: 0 auto;
+}
+
+.boton {
+    color: #060661;
+    background-color: #ffffff;
+    border-radius: 12.5px;
+    padding: 5px 40px;
+    width: 100%;
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 33px;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #00FFD7;
+    transform: scale(1.05);
+}
+
+.footerText {
+    font-family: Rock Salt;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-flex;
+    margin-bottom: 120px;
+    margin-left: 20px;
+    transform: rotate(-5deg);
+}
+
+.fila {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.arrow {
+    /* gira la image 90 grados a la derecha     */
+    transform: rotate(100deg);
+    height: 9vh;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.contador,
+.numberBloq1 {
+    color: #00FFD7;
+
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.numberBloq1 {
+    font-size: 1.6rem;
+    margin-right: 0;
+}
+
+.contadorNumero {
+    color: #00FFD7;
+
+    margin: 0;
+
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+}
+
+.contadorSubtitulo {
+    color: #00FFD7;
+    margin: 0;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.98px;
+    text-align: center;
+
+}
+
+.filaContador {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 00px;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.fechaContenedor {
+    margin: 0 10px;
+}
+
+.subtitulo {
+    color: #ffffff;
+    /* poppins; */
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: left;
+    margin: 0;
+}
+
+.bloqueVerde {
+    /* poppins */
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
+    color: #000000;
+    background-color: var(--Color-acento-landing, #00FFD7);
+    display: inline;
+    padding: 0 5px;
+    margin: 5px 0 20px 0;
+    border-radius: 10px;
+}
+
+.cajaVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0px;
+}
+
+.textoPoppinsDefault {
+    font-family: 'Poppins Regular', sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 2.5vh;
+}
+
+.textoFooter {
+    font-family: Alkatra;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+}
+
+footer {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.arrowContainer {
+    /* lo pongo en horizontal */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrowText {
+    color: #ffffff;
+    font-family: 'Rock Salt', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.leftBloq1 {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.phoneView2Bloq1 {
+    display: none;
+}
+
+.rightBloq1 {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+}
+
+.rightBloq1.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/* diseño mobile */
+@media (max-width: 500px) {
+
+    .rightBloq1 {
+        transform: none;
+        transition: none;
+    }
+
+    .phoneView2Bloq1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .textoFooter {
+
+        margin-bottom: 1rem;
+    }
+
+    .columnas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .leftBloq1 {
+        margin: 0;
+        width: 90%;
+    }
+
+    .subtitulo {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin: 0;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .phoneView {
+        display: none;
+    }
+
+    .fondo {
+        height: 140vh;
+        padding: 0;
+    }
+
+    .textoBienvenida {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .columnaSingular {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 5%;
+    }
+
+    footer {
+        width: 80%;
+        padding-top: 1vh;
+    }
+
+    .columnas {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .arrowText {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+
+    .arrow {
+        height: 15vh;
+        margin-top: 0px;
+    }
+
+    .boton {
+        margin-bottom: 8vh;
+    }
+
+    .contador,
+    .numberBloq1 {
+        font-size: 0.9rem;
+    }
+
+    .numberBloq1 {
+        font-size: 1.1rem;
+        margin-right: 0;
+    }
+}
+
+
+/* diseño computadora */
+@media (max-width: 700px) and (min-width: 501px) {
+
+    .contador,
+    .numberBloq1 {
+        font-size: 0.8rem;
+    }
+
+    .numberBloq1 {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .bloqueVerde {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.6rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.6rem;
+    }
+
+    .boton {
+        font-size: 0.8rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 75%;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin-top: 4vh
+    }
+
+    .arrowText {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-top: 0;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-top: 0px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .fondo {
+        padding-top: 1vh;
+    }
+
+    .phoneView {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 25%;
+        margin-left: 65%;
+
+    }
+
+    .leftBloq1 {
+        margin-top: 15vh;
+
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 701px) {
+
+    .contador,
+    .numberBloq1 {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        width: 25%;
+        margin-left: 65%;
+
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .bloqueVerde {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.6rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.6rem;
+    }
+
+    .boton {
+        font-size: 0.9rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 70%;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin-top: 4vh
+    }
+
+    .arrowText {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin-top: 0;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-top: 0px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+    .fondo {
+        padding-top: 1vh;
+    }
+
+    .phoneView {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+    .contador,
+    .numberBloq1 {
+        font-size: 1rem;
+    }
+
+    .numberBloq1 {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+
+
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin-bottom: 5vh;
+        line-height: 1.5rem;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.8rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.8rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+
+    .arrowText {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .arrow {
+        height: 9vh;
+        margin-top: 15px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+
+}
+
+@media (min-width: 1600px) {
+
+    .contador,
+    .numberBloq1 {
+        font-size: 2rem;
+    }
+
+    .numberBloq1 {
+        font-size: 2.2rem;
+        margin-right: 0;
+    }
+
+
+
+    .subtitulo {
+        font-size: 40px;
+    }
+
+    .bloqueVerde {
+        font-size: 35px;
+        margin-bottom: 5vh;
+        line-height: 3rem;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 20px;
+    }
+
+    .textoBienvenida {
+        font-size: 20px;
+    }
+
+    .boton {
+        font-size: 30px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .textoFooter {
+        font-size: 20px;
+    }
+
+    .arrowText {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .arrow {
+        height: 10vh;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+/* @media (max-width: 1100px) and (max-height: 600px) {
+    .contador, .numberBloq1 {
+        font-size: 0.8rem;
+    }
+
+    .contadorSubtitulo {
+        font-size: 0.5rem;
+    }
+
+    .contadorNumero {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .bloqueVerde {
+        font-size: 1rem;
+        margin-bottom: 5vh;
+    }
+
+    .textoPoppinsDefault {
+        font-size: 0.8rem;
+    }
+
+    .textoBienvenida {
+        font-size: 0.8rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .textoFooter {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+
+    .arrowText {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .arrow {
+        height: 9vh;
+        margin-top: 15px;
+    }
+
+    .filaContador {
+        margin-bottom: 0vh;
+    }
+
+
+} */

@@ -1,0 +1,123 @@
+.fatherContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16rem;
+    position: relative;
+}
+
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 120%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #080846 8%, #0C0C0C 50.8%); */
+}
+
+.whiteBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: skewY(-5deg);
+    z-index: 1;
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 3rem;
+    background-color: #242424;
+    transform: rotate(-7deg);
+    z-index: 2;
+}
+
+.movingContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: max-content;
+    animation: slide 25s linear infinite;
+}
+
+.textCarrousel,
+.textCarrouselTwo {
+    font-family: 'Poppins-Regular';
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #00FFD7, #75FFE9, #B8FFF4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+.movingContent img {
+    width: 3rem;
+    /* Cambia el ancho a rem */
+    height: auto;
+    margin-right: 3rem;
+    /* Ajusta también el margen */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .fatherContainer {
+        height: 12rem;
+    }
+
+    .banner {
+        width: 120%;
+        height: 100%;
+    }
+
+    .whiteBackground {
+        transform: skewY(-3deg);
+    }
+
+    .textContainer {
+        height: 2.5rem;
+        transform: rotate(-9deg);
+    }
+
+    .textCarrousel,
+    .textCarrouselTwo {
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    .movingContent img {
+        width: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}

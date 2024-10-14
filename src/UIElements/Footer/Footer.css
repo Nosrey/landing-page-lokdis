@@ -1,0 +1,287 @@
+/* trae esta fuente PlusJakartaSans-Regular.ttf de ./Fonts*/
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./Fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainFooter {
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftSideFooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5px 5vw;
+    width: 30%;
+}
+
+.rightSideFooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 5px 5vw;
+    width: 30%;
+
+
+}
+
+.rightSideSocialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fb img,
+.ig img,
+.reddit img {
+    width: 3vw;
+}
+
+
+.reddit img, .ig img {
+    margin-left: 1vw;
+}
+
+.fb,
+.ig,
+.reddit {
+    /* quita los estilos de estos dos botones */
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fb:hover,
+.ig:hover,
+.reddit:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 8vw;
+    margin: 0;
+}
+
+.textFooter,
+.textFooterMobile {
+    margin: 0 auto;
+
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+
+}
+
+.textFooter {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.centerFooter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.languageSwitch {
+    display: flex;
+    align-items: center;
+}
+
+.switchLabel {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(0, 10, 36, 0.9);
+    padding: 0.1rem 0.2rem;
+    border-top-right-radius: 80rem;
+    border-bottom-right-radius: 80rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000
+}
+
+.switchLabelInFooter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(0, 10, 36, 0.9);
+    padding: 0.1rem 0.2rem;
+    border-radius: 80rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sliderFooter {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.sliderFooter:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 0px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.sliderFooter {
+    background-color: #2196F3;
+}
+
+input:checked+.sliderFooter:before {
+    transform: translateX(24px);
+}
+
+span.active {
+    color: #2196F3;
+
+}
+
+span.inactive {
+    color: #aaa;
+}
+
+.columnFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerFlag {
+    width: 2vw;
+    margin: 0.1rem 0.05 0.1rem 0.05;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Transición suave para el tamaño y el filtro */
+    filter: grayscale(100%);
+    /* Por defecto en escala de grises */
+    padding: 0.5rem 0.5rem;
+}
+
+.footerFlag.active {
+    transform: scale(1.1);
+    /* Escala 10% más grande */
+    filter: grayscale(0%);
+    /* Vuelve a color completo */
+}
+
+.footerFlag.inactive {
+    transform: scale(1);
+    /* Mantén el tamaño normal */
+    filter: grayscale(100%);
+    /* Mantén la imagen en gris */
+}
+
+.footerArrow {
+    width: 50px;
+    filter: brightness(0);
+    transform: rotate(-90deg);
+    margin: 0 5px
+}
+
+.textFooterMobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    .footerFlag {
+        width: 4vw;
+        margin: 0.1rem 0.05 0.1rem 0.05;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        /* Transición suave para el tamaño y el filtro */
+        filter: grayscale(100%);
+        /* Por defecto en escala de grises */
+    }
+
+    .rightSideFooter {
+        width: auto;
+    }
+
+    .leftSideFooter {
+        width: auto;
+    }
+
+    .footerArrow {
+        display: none;
+    }
+
+    .textFooter {
+        display: none;
+    }
+
+    .textFooterMobile {
+        display: block;
+        margin: 0 5vh;
+    }
+
+    .fb img,
+    .ig img,
+    .reddit img {
+        width: 10vw;
+    }
+
+    .logo {
+        width: 24vw;
+    }
+
+    .mainFooter {
+        min-height: 5vh;
+    }
+
+    .switchLabelInFooter {
+        display: none;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+
+}

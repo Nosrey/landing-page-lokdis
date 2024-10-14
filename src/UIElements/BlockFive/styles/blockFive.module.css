@@ -1,0 +1,393 @@
+@import url('../../fonts/font.css');
+
+.container {
+    z-index: 2;
+    background-image: url('../../Assets/block-5-background.png');
+    width: 100%;
+    min-height: 120vh;
+    /* Asegura que el contenedor ocupe al menos toda la pantalla */
+    /* Degradado de #242244 a negro */
+    user-select: none;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    align-items: center;
+    display: flex;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.carrousel {
+    width: 100%;
+    position: relative;
+    top: 35.5vh;
+    z-index: 1;
+}
+
+.blockFiveContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -30vh;
+
+
+}
+
+.containerLetter {
+    padding: 5%;
+    color: white;
+    text-align: left;
+    width: 75%;
+    margin-top: 15%;
+
+}
+
+
+
+.h2Letter {
+    font-family: 'PlusJakartaSans-Bold';
+    font-size: 30px;
+}
+
+.paragraph {
+
+    font-family: 'PlusJakartaSans-Regular';
+    font-size: 30px;
+
+}
+
+.paragraphSmall {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+}
+
+
+.buttonCallToAction {
+    margin-left: 0%;
+    width: 63%;
+    padding: 1%;
+    font-size: 24px;
+    color: #060661;
+    font-family: 'Roboto-Regular';
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonCallToAction:hover {
+    background-color: #b0fcff;
+    transform: scale(1.05);
+}
+
+.containerLogo {
+    position: absolute;
+    top: 9%;
+    left: 65%;
+    transform: translateX(-30%);
+    width: 25%;
+}
+
+.containerLogo img {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.carrousel {
+    width: 100%;
+    position: relative;
+    top: 33.5vh;
+    z-index: 1;
+}
+
+@media only screen and (max-width:500px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+    .container {
+        z-index: 2;
+        background-image: url('../../Assets/fondo-block-five-movil-design.png');
+        width: 100%;
+        min-height: 120vh;
+        /* Asegura que el contenedor ocupe al menos toda la pantalla */
+        /* Degradado de #242244 a negro */
+        user-select: none;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        align-items: center;
+        display: flex;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -25vh;
+
+    }
+
+    .containerLetter {
+        margin-top: -15vh;
+        width: 280px;
+
+    }
+
+    .containerLogo {
+        display: none;
+    }
+
+    .h2Letter {
+        font-size: 18px;
+    }
+
+    .h2LetterEnglish {
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        color: black;
+        font-family: 'Poppins-Bold';
+    }
+
+    .colorCyanBackground {
+
+        background-color: cyan;
+        width: 58vw;
+        margin-top: 1vh;
+        border-radius: 15px;
+        padding: 5px;
+
+    }
+
+    .colorCyanBackgroundTwo {
+
+        background-color: cyan;
+        width: 58vw;
+        line-height: 4rem;
+        border-radius: 15px;
+        padding: 5px;
+
+
+    }
+
+
+
+
+    .paragraphSmall {
+        font-size: 16px;
+    }
+
+    .buttonCallToAction {
+        width: 87vw;
+        padding: 5%;
+        font-size: 14.06px;
+        color: #060661;
+        font-family: 'Roboto-Regular';
+        font-weight: bold;
+        border-radius: 15px;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .buttonCallToAction:hover {
+        background-color: #b0fcff;
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 700px) and (max-width:1100px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 34vh;
+        z-index: 1;
+    }
+}
+
+
+@media (min-width: 700px) and (min-height:813.75px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 27.5vh;
+        z-index: 1;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:750px) and (min-height:390px) {
+
+    .carrousel {
+        top: 45vh;
+    }
+
+
+}
+
+@media only screen and (min-width:750px) and (min-height:651px) {
+
+    .carrousel {
+        top: 30vh;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (min-height:360px) {
+
+    .carrousel {
+        top: 55vh;
+    }
+
+}
+
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .carrousel {
+        top: 24vh;
+    }
+
+}
+
+
+@media only screen and (min-width:800px) and (min-height:1236px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+
+}
+
+
+@media only screen and (min-width:1000px) and (min-height:1000px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 23.5vh;
+        z-index: 1;
+    }
+
+
+
+}
+
+@media only screen and (min-width:1050px) and (max-height:700px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 34.5vh;
+        z-index: 1;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 1300px) and (min-height:600px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 31.5vh;
+        z-index: 1;
+    }
+
+}
+
+@media (min-width: 1300px) and (min-height:766px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 31.5vh;
+        z-index: 1;
+    }
+
+}
+
+
+@media (min-width: 1366px) and (min-height:651px) {
+
+    .carrousel {
+        top: 35vh;
+    }
+
+    .containerLogo {
+
+        left: 75vw;
+        top: 5vh;
+    }
+
+}
+
+@media(min-width:1419px) and (min-height:976px) {
+
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 24.5vh;
+        z-index: 1;
+    }
+
+}
+
+
+
+@media only screen and (min-width:1150px) and (max-height:700px) {
+    .carrousel {
+        width: 100%;
+        position: relative;
+        top: 34.5vh;
+        z-index: 1;
+    }
+
+}
+
+@media (min-width: 1501px) {
+
+
+    .carrousel {
+        top: 23vh;
+    }
+
+}
+
+
+@media screen and (min-width:2000px) {
+
+    .carrousel {
+        top: 18vh;
+    }
+
+}
+
+@media only screen and (min-width:2400px) and (min-height:1600px) {
+
+
+    .carrousel {
+        top: 18vh;
+    }
+
+
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+// importo Homepage
+import { Homepage } from './UIElements/Homepage/Homepage';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [language, setLanguage] = useState('spanish'); // Estado inicial
+
+  useEffect(() => {
+    const userLanguage = navigator.language || navigator.userLanguage;
+    if (userLanguage.startsWith('es')) {
+      setLanguage('spanish');
+    } else {
+      setLanguage('english');
+    }
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Homepage language={language} setLanguage={setLanguage} />
     </div>
   );
 }
