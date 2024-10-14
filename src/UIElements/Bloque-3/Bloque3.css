@@ -331,8 +331,9 @@ b {
 
     .fondo3 {
         background-image: url('../Assets/block-3-backgroundMobile.png');
+        background-position: center top;
         padding-top: 40vh;
-        padding-bottom: 25vh;
+        padding-bottom: 29vh;
     }
 
 

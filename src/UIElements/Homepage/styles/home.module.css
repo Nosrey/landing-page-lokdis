@@ -96,10 +96,27 @@
 
 @media (max-width: 500px) {
     .carrusel1 {
-        top: 47vh;
+        top: 34vh;
     }
 
     .carrusel2 {
-        top: -24vh;
+        top: -31vh;
+        transform: rotate(1.9deg);
     }
+}
+
+
+@media (min-width: 360px) and (min-height:776px) {
+
+    .carrusel1 {
+        top: 28vh;
+        transform: rotate(1.9deg);
+    }
+
+    .carrusel2 {
+        top: -28vh;
+        transform: rotate(1.9deg);
+    }
+
+
 }

@@ -145,6 +145,7 @@
 
     .h2Letter {
         font-size: 18px;
+        margin-bottom: -4vh;
     }
 
     .h2LetterEnglish {
@@ -183,13 +184,16 @@
 
     .paragraphSmall {
         font-size: 16px;
+        text-align: justify;
+        margin-bottom: 5vh;
     }
 
     .buttonCallToAction {
         width: 87vw;
         padding: 5%;
-        font-size: 14.06px;
+        font-size: 17.06px;
         color: #060661;
+        font-weight: bolder;
         font-family: 'Roboto-Regular';
         font-weight: bold;
         border-radius: 15px;
@@ -200,6 +204,7 @@
     .buttonCallToAction:hover {
         background-color: #b0fcff;
         transform: scale(1.05);
+        color: black
     }
 }
 

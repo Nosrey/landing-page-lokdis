@@ -15,7 +15,7 @@ import movilSmallThreNotSelect from '../Assets/foto-small-movil-thre.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
-import arrowMovilDesign from '../Assets/flecha-movil-design.png';
+import arrowMovilDesign from '../Bloque-3/Images/curvedArrow2.gif';
 
 import { useEffect, useState } from 'react';
 
@@ -115,9 +115,9 @@ const BlockFourth = ({ language }) => {
 
 
             </div>
-            {selectedImage === 'image1' ? <img src={arrowMovilDesign} className={styles.firstArrowMovil} alt='imagen arrowDown' /> : null}
-            {selectedImage === 'image2' ? <img src={arrowMovilDesign} className={styles.secondArrowMovil} alt='imagen arrowDown' /> : null}
-            {selectedImage === 'image3' ? <img src={arrowMovilDesign} className={styles.thirdArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image1' ? <img src={arrowDown} className={styles.firstArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image2' ? <img src={arrowUp} className={styles.secondArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image3' ? <img src={arrowDown} className={styles.thirdArrowMovil} alt='imagen arrowDown' /> : null}
 
             <div className={styles.containerPhoneMoreParagraph}>
 
