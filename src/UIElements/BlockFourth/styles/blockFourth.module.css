@@ -232,6 +232,17 @@
     align-items: center;
 }
 
+.containerTextThreee {
+    height: 7%;
+    width: 38%;
+    background-color: cyan;
+    border-radius: 25px;
+    padding-right: 3%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
 .textTwoContainer {
 
     font-family: 'Poppins-Regular';
@@ -260,6 +271,9 @@
 }
 
 
+.containerTextThreee {
+    width: 245px;
+}
 
 @keyframes elipse {
     0% {
@@ -358,24 +372,41 @@
     }
 
     .containerTextTwoForMoreText {
-        width: 100%;
-        padding-left: 36vw;
+        width: 64%;
     }
 
     .containerTextTwo {
         height: 3vh;
-        width: 190px;
+        width: 179px;
         background-color: cyan;
         border-radius: 25px;
-        padding-right: 3%;
-        padding: 1%;
         display: flex;
+        margin-top: 1vh;
+
         align-items: center;
     }
+
+    .containerTextThreee {
+        height: 3vh;
+        width: 189px;
+        background-color: cyan;
+        border-radius: 25px;
+        display: flex;
+        margin-top: 1vh;
+        margin-left: 1vw;
+        padding: 5px;
+
+        align-items: center;
+    }
+
+
 
     .letterContainer {
         margin-top: -35vh;
         width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left;
     }
 
     .textTwoContainer {
@@ -386,6 +417,7 @@
     .textOneContainer {
         font-size: 20px;
         font-weight: bold;
+        line-height: 1.6rem;
         margin-bottom: -1vh;
     }
 
@@ -396,8 +428,17 @@
 
     .textNew {
         display: flex;
+        justify-content: center;
         font-size: 16px;
         font-family: 'Poppins-Bold';
+        line-height: 10vh;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    .containerTextThree {
+        width: 100%;
 
     }
 
@@ -439,17 +480,18 @@
 
     .firstArrowMovil {
         display: flex;
-        width: 15vw;
+        width: 8vw;
         position: relative;
-        top: -5vh;
-        left: -15vw;
-        transform: rotate(10deg);
-        animation: moveArrow 2s ease-in-out infinite;
+        top: -4vh;
+        left: -25vw;
+        transform: rotate(51deg) scaleY(-1);
+        filter: grayscale(1) brightness(0.5);
+
 
     }
 
     .containerPhoneMoreParagraph {
-        margin: -20px 0px 0px 0px;
+        margin: -15px 0px 0px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -481,23 +523,28 @@
 
     .secondArrowMovil {
         display: flex;
-        width: 15vw;
+        width: 8vw;
         position: relative;
-        top: -5vh;
-        left: 10vw;
-        transform: rotate(10deg);
-        animation: moveArrow 2s ease-in-out infinite;
+        top: -4vh;
+        left: 3vw;
+        transform: rotate(-135deg);
+        filter: grayscale(1) brightness(0.5);
 
     }
 
     .thirdArrowMovil {
         display: flex;
-        width: 15vw;
+        width: 8vw;
         position: relative;
-        top: -5vh;
-        left: 25vw;
-        transform: rotate(10deg);
-        animation: moveArrow 2s ease-in-out infinite;
+        top: -4vh;
+        left: 29vw;
+        transform: rotate(145deg);
+        filter: grayscale(1) brightness(0.5);
+    }
+
+    .leftOverTextContainer {
+
+        margin-bottom: -3vh;
 
     }
 
@@ -508,6 +555,12 @@
 
     .fatherContainer {
         margin-top: -65vh;
+    }
+
+    .containerTextThreee {
+        width: 180px;
+        margin-left: 8vw;
+
     }
 
     .paragraphOne {
@@ -683,6 +736,7 @@
 
     }
 
+
     .arrowDown {
         position: absolute;
         top: 75%;
@@ -841,11 +895,14 @@
         font-size: 18px;
     }
 
+    .containerTextThreee {
+        width: 180px;
+        margin-left: 8vw;
+    }
 }
 
 
-
-@media (min-width: 966px) and (max-width:1100px) and (max-height:600px) {
+@media (min-width: 966px) and (max-width:1100px) and (max-height:800px) {
 
 
     .arrowDown {
@@ -1002,7 +1059,10 @@
 
     }
 
-
+    .containerTextThreee {
+        width: 245px;
+        margin-left: 8vw;
+    }
 
 }
 
@@ -1038,6 +1098,33 @@
 
     .containerTextTwoForMoreText {
         padding-left: 15vw;
+    }
+
+    .containerTextThreee {
+
+        width: 380px;
+
+    }
+
+    .containerTextTwo {
+        width: 350px;
+    }
+
+    .containerParagraph {
+        margin-top: 0vh;
+    }
+
+    .containerParagraphThree {
+
+        margin-top: 2vh;
+    }
+
+    .containerParagraphTwo {
+        margin-top: -15vh;
+    }
+
+    .arrowDownSecond {
+        margin-top: -15vh;
     }
 
 }
@@ -1081,6 +1168,11 @@
 
         margin-top: -65vh;
 
+    }
+
+    .containerTextThreee {
+        margin-left: 8vw;
+        width: 260px;
     }
 
     .arrowDown {
@@ -1236,6 +1328,8 @@
         margin-top: -10vh;
 
     }
+
+
 
 }
 
@@ -1404,5 +1498,21 @@
         top: 10vh;
         left: 20vw;
     }
+
+}
+
+@media screen and (min-width:2000px) {
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .containerParagraph {
+        top: 65vh;
+    }
+
+    .containerParagraphThree {
+        top: 67vh;
+    }
+
 
 }
