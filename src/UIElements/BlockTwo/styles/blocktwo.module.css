@@ -248,6 +248,9 @@
 
 
 @media only screen and (max-width: 500px) {
+    .firstContainer {
+        margin-bottom: -45vh;
+    }
 
     .leftContainer {
         width: 100%
@@ -290,6 +293,7 @@
         padding: 1.2rem;
         font-weight: bolder;
 
+
     }
 
     .containerTextMoreImage {
@@ -308,12 +312,14 @@
     .containerBlueLetter {
         width: 50%;
         height: 2vh;
+        margin-left: -3vw;
     }
 
     .secondTextLeftContainer {
         margin-bottom: -0.3rem;
         margin-left: 0.2rem;
         font-weight: bolder;
+
     }
 
     .contenedorLetterBlueContainer {
@@ -324,13 +330,14 @@
     }
 
     .thirdText {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .additionalText {
 
         font-size: 15px;
+        margin-top: 2vh;
         text-align: left;
 
     }
@@ -347,6 +354,7 @@
         padding: 10px;
         z-index: 2;
         justify-content: start;
+        padding: 1vw;
 
 
     }
@@ -399,6 +407,7 @@
 
     .letterParagraph {
         font-size: 18px;
+        text-align: justify;
     }
 
     .fourthText {
@@ -421,6 +430,10 @@
         bottom: 55%;
         left: 68%;
 
+    }
+
+    .containerBlueLetter {
+        width: 155px;
     }
 }
 
@@ -2102,6 +2115,13 @@
     }
 }
 
+@media screen and (min-width:2000px) {
+
+    .firstContainer {
+        margin-bottom: -90vh;
+    }
+
+}
 
 @media only screen and (min-width:2400px) and (min-height:1600px) {
 
@@ -2194,6 +2214,16 @@
 
     .containerBlueLetter {
         width: 15vw;
+    }
+
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .firstContainer {
+
+        margin-bottom: -85vh;
     }
 
 

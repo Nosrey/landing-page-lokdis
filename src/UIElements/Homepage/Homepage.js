@@ -139,6 +139,19 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
+
+      {/* <div style={{
+        position: 'fixed',
+        bottom: 0,
+        right: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        color: 'white',
+        padding: '0.5rem',
+        zIndex: 100
+      }}>
+        {`Current screen resolution: ${window.innerWidth} x ${window.innerHeight}`}
+      </div> */}
+
       {/* Componente Navbar */}
       <div
         onMouseEnter={handleMouseEnter} // Asegúrate de que los eventos estén directamente aquí

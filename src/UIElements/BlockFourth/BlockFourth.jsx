@@ -15,7 +15,7 @@ import movilSmallThreNotSelect from '../Assets/foto-small-movil-thre.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
-import arrowMovilDesign from '../Assets/flecha-movil-design.png';
+import arrowMovilDesign from '../Bloque-3/Images/curvedArrow2.gif';
 
 import { useEffect, useState } from 'react';
 
@@ -55,13 +55,16 @@ const BlockFourth = ({ language }) => {
 
                 <div className={styles.containerTextOne} >
 
-                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.textOneContainer}> <br />the moment of your choice</span></p>}
+                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.textOneContainer}> the moment of your choice</span></p>}
 
                 </div>
                 <div className={styles.containerTextTwoForMoreText} >
-                    <div className={styles.containerTextTwo} >
-                        {language === 'spanish' ? <span className={styles.textTwoContainer} >Explora lo que quieras,</span> : <span className={styles.textTwoContainer} >Explore where you want</span>}
-                    </div>
+                    {language === 'spanish' ? <div className={styles.containerTextTwo} >
+                        <span className={styles.textTwoContainer} >Explora lo que quieras,</span>
+                    </div> : null}
+                    {language !== 'spanish' ? <div className={styles.containerTextThreee} >
+                        <span className={styles.textTwoContainer} >Explore where you want,</span>
+                    </div> : null}
                 </div>
                 <div className={styles.leftOverTextContainer} >
 
@@ -115,9 +118,9 @@ const BlockFourth = ({ language }) => {
 
 
             </div>
-            {selectedImage === 'image1' ? <img src={arrowMovilDesign} className={styles.firstArrowMovil} alt='imagen arrowDown' /> : null}
-            {selectedImage === 'image2' ? <img src={arrowMovilDesign} className={styles.secondArrowMovil} alt='imagen arrowDown' /> : null}
-            {selectedImage === 'image3' ? <img src={arrowMovilDesign} className={styles.thirdArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image1' ? <img src={arrowDown} className={styles.firstArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image2' ? <img src={arrowUp} className={styles.secondArrowMovil} alt='imagen arrowDown' /> : null}
+            {selectedImage === 'image3' ? <img src={arrowDown} className={styles.thirdArrowMovil} alt='imagen arrowDown' /> : null}
 
             <div className={styles.containerPhoneMoreParagraph}>
 
