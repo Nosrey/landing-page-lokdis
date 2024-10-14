@@ -55,13 +55,16 @@ const BlockFourth = ({ language }) => {
 
                 <div className={styles.containerTextOne} >
 
-                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.textOneContainer}> <br />the moment of your choice</span></p>}
+                    {language === 'spanish' ? <h2 className={styles.textOneContainer} >Tu ventana al mundo en el momento que elijas</h2> : <p className={styles.textOneContainer} >Your window to the world at <span className={styles.textOneContainer}> the moment of your choice</span></p>}
 
                 </div>
                 <div className={styles.containerTextTwoForMoreText} >
-                    <div className={styles.containerTextTwo} >
-                        {language === 'spanish' ? <span className={styles.textTwoContainer} >Explora lo que quieras,</span> : <span className={styles.textTwoContainer} >Explore where you want</span>}
-                    </div>
+                    {language === 'spanish' ? <div className={styles.containerTextTwo} >
+                        <span className={styles.textTwoContainer} >Explora lo que quieras,</span>
+                    </div> : null}
+                    {language !== 'spanish' ? <div className={styles.containerTextThreee} >
+                        <span className={styles.textTwoContainer} >Explore where you want,</span>
+                    </div> : null}
                 </div>
                 <div className={styles.leftOverTextContainer} >
 

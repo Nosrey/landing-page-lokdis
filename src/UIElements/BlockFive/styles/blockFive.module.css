@@ -349,3 +349,21 @@
 
 
 }
+
+
+@media (min-width: 1501px) {
+
+
+    .carrousel {
+        top: 23vh;
+    }
+
+}
+
+@media screen and (min-width:2000px) {
+
+    .carrousel {
+        top: 18vh;
+    }
+
+}

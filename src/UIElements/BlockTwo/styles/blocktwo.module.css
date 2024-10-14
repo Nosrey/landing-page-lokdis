@@ -2115,6 +2115,13 @@
     }
 }
 
+@media screen and (min-width:2000px) {
+
+    .firstContainer {
+        margin-bottom: -90vh;
+    }
+
+}
 
 @media only screen and (min-width:2400px) and (min-height:1600px) {
 
@@ -2207,6 +2214,16 @@
 
     .containerBlueLetter {
         width: 15vw;
+    }
+
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .firstContainer {
+
+        margin-bottom: -85vh;
     }
 
 
