@@ -128,19 +128,19 @@ const BlockFourth = ({ language }) => {
                     On the map you will see the people who are available in the app and their locations
                 </p>) : null}
 
-                {selectedImage === 'image1' ? <img style={{ width: '650px' }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
+                {selectedImage === 'image1' ? <img style={{ width: '870px' }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
                 {selectedImage === 'image2' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                 </p> : <p className={styles.paragraphTwoMovilDesign} >You will be able to request real moments
                     from people who are in the places you want to see
                 </p>) : null}
-                {selectedImage === 'image2' ? <img src={movilLargeTwo} alt="Imagen grande del movil dos" /> : null}
+                {selectedImage === 'image2' ? <img style={{ width: '870px' }} src={movilLargeTwo} alt="Imagen grande del movil dos" /> : null}
 
                 {selectedImage === 'image3' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     ¡Explora los lugares que quieras, cuando quieras!
                 </p> :
                     <p className={styles.paragraphTwoMovilDesign} >Explore the places you want when you want</p>) : null}
-                {selectedImage === 'image3' ? <img src={movilLargeThre} alt="Imagen grande del movil tres" /> : null}
+                {selectedImage === 'image3' ? <img style={{ width: '870px' }} src={movilLargeThre} alt="Imagen grande del movil tres" /> : null}
 
 
             </div>
