@@ -1400,6 +1400,25 @@
 }
 
 @media (min-width: 1501px) {
+
+    .containerTextTwoForMoreText {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .containerTextTwo {
+        width: 340px;
+    }
+
+    .letterContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
     .elipseContainer {
         display: flex;
         position: absolute;
@@ -1426,6 +1445,7 @@
 
     .containerParagraphTwo {
         margin-top: -02vh;
+        background-color: black;
     }
 }
 
