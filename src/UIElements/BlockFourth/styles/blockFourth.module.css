@@ -304,6 +304,16 @@
     display: none;
 }
 
+
+.secondArrowMovil {
+    display: none;
+}
+
+.thirdArrowMovil {
+
+    display: none;
+}
+
 @keyframes moveArrow {
     0% {
         transform: translateX(0) rotate(10deg);
@@ -506,10 +516,10 @@
         text-align: center;
         font-size: 1rem;
         font-family: 'RockSalt-Regular';
-        line-height: 1.6;
-        top: 5vh;
+        line-height: 1.5;
+        top: 3vh;
         position: relative;
-        padding: 0px 0px 20px 20px;
+        padding: 0px 0px 30px 20px;
 
     }
 
@@ -518,6 +528,8 @@
         font-size: 1rem;
         font-family: 'RockSalt-Regular';
         line-height: 1.6;
+        top: 3vh;
+        position: relative;
         padding: 0px 0px 20px 20px;
         margin-top: -2vh;
 
@@ -1598,3 +1610,22 @@
     }
 
 }
+
+@media screen and (min-width:2000px) and (min-height: 1600px) {
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .containerParagraph {
+        top: 65vh;
+    }
+
+    .containerParagraphThree {
+        top: 67vh;
+    }
+
+
+}
+
+
+@media (min-width:2000px) {}
