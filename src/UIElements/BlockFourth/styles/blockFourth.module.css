@@ -491,7 +491,7 @@
     }
 
     .containerPhoneMoreParagraph {
-        margin: -15px 0px 0px 0px;
+        margin: 25px 0px 0px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -507,6 +507,8 @@
         font-size: 1rem;
         font-family: 'RockSalt-Regular';
         line-height: 1.6;
+        top: 5vh;
+        position: relative;
         padding: 0px 0px 20px 20px;
 
     }

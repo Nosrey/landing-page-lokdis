@@ -15,7 +15,6 @@ import movilSmallThreNotSelect from '../Assets/foto-small-movil-thre.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
-import arrowMovilDesign from '../Bloque-3/Images/curvedArrow2.gif';
 
 import { useEffect, useState } from 'react';
 
@@ -129,7 +128,7 @@ const BlockFourth = ({ language }) => {
                     On the map you will see the people who are available in the app and their locations
                 </p>) : null}
 
-                {selectedImage === 'image1' ? <img src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
+                {selectedImage === 'image1' ? <img style={{ width: '650px' }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
                 {selectedImage === 'image2' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                 </p> : <p className={styles.paragraphTwoMovilDesign} >You will be able to request real moments

@@ -96,11 +96,12 @@
 
 @media (max-width: 500px) {
     .carrusel1 {
-        top: 45vh;
+        top: 42vh;
+        transform: rotate(1.9deg);
     }
 
     .carrusel2 {
-        top: -22vh;
+        top: -18vh;
         transform: rotate(1.9deg);
     }
 }
