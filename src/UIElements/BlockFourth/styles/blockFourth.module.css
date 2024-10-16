@@ -1522,7 +1522,7 @@
 
 }
 
-@media screen and (min-width:2000px) {
+@media screen and (min-width:2000px) and (min-height: 1600px) {
     .arrowDownSecond {
         top: 25vh
     }
@@ -1537,3 +1537,6 @@
 
 
 }
+
+
+@media (min-width:2000px) {}
