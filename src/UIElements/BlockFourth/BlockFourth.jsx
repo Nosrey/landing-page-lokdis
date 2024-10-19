@@ -128,7 +128,7 @@ const BlockFourth = ({ language }) => {
                     On the map you will see the people who are available in the app and their locations
                 </p>) : null}
 
-                {selectedImage === 'image1' ? <img style={{ width: '870px' }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
+                {selectedImage === 'image1' ? <img style={{ width: '870px', }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
                 {selectedImage === 'image2' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                 </p> : <p className={styles.paragraphTwoMovilDesign} >You will be able to request real moments

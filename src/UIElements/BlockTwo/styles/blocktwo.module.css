@@ -834,6 +834,7 @@
         margin-left: 1vw;
     }
 }
+
 @media only screen and (min-width:800px) and (min-height:1236px) {
     .firstTextLeftContainer {
         line-height: 5rem;
@@ -2083,7 +2084,7 @@
     }
 
     .iconoUserMap {
-        width: 50%;
+        width: 40%;
         z-index: 3;
         position: absolute;
         bottom: 68%;
@@ -2092,7 +2093,7 @@
     }
 
     .iconoGirl {
-        width: 50%;
+        width: 40%;
         z-index: 3;
         position: absolute;
         top: 35%;
@@ -2123,6 +2124,7 @@
     }
 
 }
+
 
 @media only screen and (min-width:2400px) and (min-height:1600px) {
 
@@ -2178,6 +2180,7 @@
 
     .iconoGirl {
         top: 35vh;
+        left: 5vw;
     }
 
     .firstContainer {
@@ -2220,3 +2223,105 @@
 
 }
 
+
+
+@media screen and (min-width:2600px) {
+
+    .firstContainer {
+        margin-bottom: -50vh;
+    }
+
+    .boxOne {
+        width: 500px;
+    }
+
+    .containerBlueLetter {
+        width: 350px;
+        display: flex;
+
+
+    }
+
+    .containerTextMoreImage {
+        margin-top: 8vh;
+        margin-bottom: -6vh;
+    }
+
+    .contenedorLetterBlueContainer {
+        display: flex;
+        width: 70%;
+        align-items: left;
+        justify-content: left;
+        margin-bottom: 4vh;
+        margin-left: -0.5vh;
+    }
+
+    .containerLetterParagraph {
+        width: 80%;
+    }
+
+    .boxTwo {
+        width: 500px;
+    }
+
+    .iconoUserMap {
+        left: 25vw;
+        top: 3vh;
+    }
+
+    .iconoGirl {
+        left: 9vw;
+    }
+
+    .letterParagraph {
+        width: 100%;
+    }
+
+    .additionalText {
+        margin-left: -3vh;
+    }
+
+
+}
+
+@media screen and (min-width:3900px) {
+
+
+    .iconoUserMap {
+        left: 25vw;
+        top: 18vh;
+        width: 450px;
+    }
+
+    .iconoGirl {
+        left: 17vw;
+        top: 48vh;
+        width: 450px;
+    }
+}
+
+
+@media screen and (min-width:5000px) {
+    .boxOne {
+        width: 60%;
+        height: 55vh;
+    }
+
+    .boxTwo {
+        top: 95vh;
+        width: 60%;
+        height: 55vh;
+    }
+
+    .iconoUserMap {
+        width: 50%;
+        top: 1vh;
+    }
+
+    .iconoGirl {
+        top: 65vh;
+        left: 2vw;
+        width: 50%;
+    }
+
+}

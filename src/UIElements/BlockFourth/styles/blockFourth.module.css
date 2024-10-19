@@ -378,7 +378,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 45vh;
+        padding-top: 55vh;
     }
 
     .containerTextTwoForMoreText {
@@ -501,7 +501,7 @@
     }
 
     .containerPhoneMoreParagraph {
-        margin: 25px 0px 0px 0px;
+        margin: 55px 0px 110px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -517,7 +517,7 @@
         font-size: 1rem;
         font-family: 'RockSalt-Regular';
         line-height: 1.5;
-        top: 3vh;
+        top: 10vh;
         position: relative;
         padding: 0px 0px 30px 20px;
 
@@ -528,7 +528,7 @@
         font-size: 1rem;
         font-family: 'RockSalt-Regular';
         line-height: 1.6;
-        top: 3vh;
+        top: 10vh;
         position: relative;
         padding: 0px 0px 20px 20px;
         margin-top: -2vh;
@@ -1152,7 +1152,7 @@
 
     .containerParagraphTwo {
         top: 05vh;
-        
+
     }
 
     .arrowDownSecond {
@@ -1174,12 +1174,16 @@
     .arrowDownThree {
         top: 78vh;
     }
-  
+
 }
 
 @media only screen and (min-width:1000px) and (min-height:1340px) {
     .containerTextTwoForMoreText {
         padding-left: 15vw;
+    }
+
+    .fatherContainer {
+        margin-top: -40vh;
     }
 
     .containerTextThreee {
@@ -1193,20 +1197,28 @@
     }
 
     .containerParagraph {
-        margin-top: 0vh;
+        margin-top: -8vh;
+    }
+
+    .arrowDown {
+        top: 65vh;
     }
 
     .containerParagraphThree {
 
-        margin-top: 2vh;
+        margin-top: -9vh;
     }
 
     .containerParagraphTwo {
-        margin-top: -15vh;
+        margin-top: 5vh;
     }
 
     .arrowDownSecond {
-        margin-top: -15vh;
+        margin-top: 5vh;
+    }
+
+    .arrowDownThree {
+        top: 70vh;
     }
 
 }
@@ -1372,7 +1384,7 @@
 @media(min-width:1366px) and (min-height:768px) {
 
     .containerParagraphTwo {
-        
+
         margin-top: -10vh;
 
     }
@@ -1515,6 +1527,8 @@
     .fatherContainer {
         margin-top: -45vh;
     }
+
+
 }
 
 
@@ -1522,6 +1536,36 @@
     .fatherContainer {
         margin-top: -60vh;
     }
+
+
+}
+
+@media (min-width:1900px) {
+
+
+    .imageMovilOne {
+        left: 12vw;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        left: -6vw;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        margin-left: 1.5vw;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
 }
 
 @media screen and (min-width:2000px) {
@@ -1628,4 +1672,118 @@
 }
 
 
-@media (min-width:2000px) {}
+@media (min-width:2000px) {
+
+    .containerParagraph {
+        top: 80vh;
+    }
+
+    .arrowDown {
+        top: 55vh;
+        left: 2vw;
+    }
+
+    .arrowDownSecond {
+        top: 5vh;
+        left: 25vw;
+    }
+
+    .containerParagraphTwo {
+        top: 0vh;
+    }
+
+    .containerParagraphThree {
+        top: 85vh;
+    }
+
+    .arrowDownThree {
+        top: 62vh
+    }
+
+    .imageMovilOne {
+        top: -4vh;
+        left: 8vw;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 4%;
+        right: 17%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: 3%;
+        right: 44%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+}
+
+@media only screen and (min-width:3900px) {
+
+    .containerParagraph {
+        top: 67vh;
+    }
+
+    .arrowDown {
+        top: 50vh;
+        left: 2vw;
+    }
+
+    .arrowDownSecond {
+        top: 5vh;
+        left: 18vw;
+    }
+
+    .containerParagraphTwo {
+        top: 5vh;
+    }
+
+    .containerParagraphThree {
+        top: 68vh;
+    }
+
+    .elipseContainer {
+        width: 80%;
+        left: 2vw;
+
+    }
+
+    .arrowDownThree {
+        top: 52vh
+    }
+
+    .imageMovilOne {
+        top: -0.5vh;
+        left: 0vw;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 82%;
+        bottom: 0%;
+        right: 15%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 82%;
+        bottom: 1%;
+        right: 30%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+}
