@@ -168,7 +168,7 @@ const BlockFourth = ({ language }) => {
                     </p> :
                         <p className={styles.paragraphSecond} >Explore the places you want when you want</p>}
                 </div>
-                <img className={styles.arrowDownThree} src={arrowUp} alt="flecha abajo" />
+                <img className={styles.arrowDownThree} src={arrowDown} alt="flecha abajo" />
 
                 <img className={styles.arrowDownSecond} src={arrowDown} alt="flecha abajo" />
 
