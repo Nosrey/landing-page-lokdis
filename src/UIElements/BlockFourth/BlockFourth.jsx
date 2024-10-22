@@ -6,12 +6,12 @@ import movilThree from '../Assets/phone-three-block-4.png'
 import elipse from '../Assets/elipse.png';
 import arrowDown from '../Bloque-3/Images/curvedArrow.gif';
 import arrowUp from '../Bloque-3/Images/curvedArrow3.gif';
-import movilSmallOne from '../Assets/foto-mapa-small.png';
-import movilSmallOneNotSelect from '../Assets/foto-mapa-not-select.png';
-import movilSmallTwo from '../Assets/phone-two-small.png';
-import movilSmallTwoNotSelect from '../Assets/phone-two-small-incline.png';
-import movilSmallThre from '../Assets/foto-small-movilthre.png';
-import movilSmallThreNotSelect from '../Assets/foto-small-movil-thre.png';
+import movilSmallOne from '../Assets/image-incline-one.png';
+import movilSmallOneNotSelect from '../Assets/image-small-one.png';
+import movilSmallTwo from '../Assets/image-small-two.png';
+import movilSmallTwoNotSelect from '../Assets/image-incline-two.png';
+import movilSmallThre from '../Assets/movil-large-thre.png';
+import movilSmallThreNotSelect from '../Assets/image-incline-three.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
@@ -128,19 +128,19 @@ const BlockFourth = ({ language }) => {
                     On the map you will see the people who are available in the app and their locations
                 </p>) : null}
 
-                {selectedImage === 'image1' ? <img style={{ width: '870px', }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
+                {selectedImage === 'image1' ? <img style={{ width: '770px', }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
                 {selectedImage === 'image2' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                 </p> : <p className={styles.paragraphTwoMovilDesign} >You will be able to request real moments
                     from people who are in the places you want to see
                 </p>) : null}
-                {selectedImage === 'image2' ? <img style={{ width: '870px' }} src={movilLargeTwo} alt="Imagen grande del movil dos" /> : null}
+                {selectedImage === 'image2' ? <img style={{ width: '770px' }} src={movilLargeTwo} alt="Imagen grande del movil dos" /> : null}
 
                 {selectedImage === 'image3' ? (language === 'spanish' ? <p className={styles.paragraphTwoMovilDesign} >
                     ¡Explora los lugares que quieras, cuando quieras!
                 </p> :
                     <p className={styles.paragraphTwoMovilDesign} >Explore the places you want when you want</p>) : null}
-                {selectedImage === 'image3' ? <img style={{ width: '870px' }} src={movilLargeThre} alt="Imagen grande del movil tres" /> : null}
+                {selectedImage === 'image3' ? <img style={{ width: '770px' }} src={movilLargeThre} alt="Imagen grande del movil tres" /> : null}
 
 
             </div>
