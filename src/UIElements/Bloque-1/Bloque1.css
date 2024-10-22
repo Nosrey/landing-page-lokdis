@@ -25,8 +25,10 @@
 }
 
 .fondo {
-    height: 98vh;
+    /* height: 98vh; */
+    height: auto;
     padding-top: 5vh;
+    padding-bottom: 5vh;
     background: linear-gradient(116.31deg, #161616 9.12%, #0B0B48 37.65%, #060661 47.42%, #0C0C45 65.37%, #0C0C0C 99.95%);
 }
 
@@ -683,66 +685,17 @@ footer {
     }
 }
 
-
-
-
-
-
-
-/* @media (max-width: 1100px) and (max-height: 600px) {
-    .contador, .numberBloq1 {
-        font-size: 0.8rem;
+@media (min-width: 1910px) and (max-height: 900px) and (min-height: 560px) {
+    .phoneView {
+        width: 50%;
+    }
+    .fondo {
+        height: auto;
+        padding-bottom: 5vh;
     }
 
-    .contadorSubtitulo {
-        font-size: 0.5rem;
+    .fondo footer {
+        margin-top: 15vh;
+       
     }
-
-    .contadorNumero {
-        font-size: 1rem;
-    }
-
-    .subtitulo {
-        font-size: 1rem;
-    }
-
-    .bloqueVerde {
-        font-size: 1rem;
-        margin-bottom: 5vh;
-    }
-
-    .textoPoppinsDefault {
-        font-size: 0.8rem;
-    }
-
-    .textoBienvenida {
-        font-size: 0.8rem;
-    }
-
-    .boton {
-        font-size: 1rem;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .textoFooter {
-        font-size: 0.65rem;
-        line-height: 1rem;
-    }
-
-    .arrowText {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    .arrow {
-        height: 9vh;
-        margin-top: 15px;
-    }
-
-    .filaContador {
-        margin-bottom: 0vh;
-    }
-
-
-} */
+}

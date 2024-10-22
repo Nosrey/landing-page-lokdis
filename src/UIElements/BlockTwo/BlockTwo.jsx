@@ -41,14 +41,6 @@ const BlockTwo = ({ language }) => {
         };
     }, []);
 
-    // useEffect(() => {
-    //     // Este useEffect se ejecuta cuando 'lang' cambia
-    //     setLanguage('spanish')
-    //     console.log(language); // Verás el valor actualizado de 'lang' aquí
-
-    // }, [language, setLanguage]);
-
-
     return (
         <div className={styles.firstContainer} >
 
@@ -69,6 +61,11 @@ const BlockTwo = ({ language }) => {
             </div>
 
             <div className={styles.leftContainer}>
+
+            
+                 
+
+                
 
                 <div className={styles.defineContainerText}>
                     <div className={styles.containerTextMoreImage}>
