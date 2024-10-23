@@ -329,7 +329,7 @@ footer {
     .fondo {
         padding-top: 3vh;
         padding-bottom: 6vh;
-        margin-bottom: -25vh;
+        margin-bottom: -15vh;
     }
 
 }
@@ -733,6 +733,7 @@ footer {
     .phoneView {
         width: 50%;
     }
+
     .fondo {
         height: auto;
         padding-bottom: 5vh;
@@ -740,6 +741,6 @@ footer {
 
     .fondo footer {
         margin-top: 15vh;
-       
+
     }
 }

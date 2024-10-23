@@ -62,10 +62,8 @@ const BlockTwo = ({ language }) => {
 
             <div className={styles.leftContainer}>
 
-            
-                 
 
-                
+
 
                 <div className={styles.defineContainerText}>
                     <div className={styles.containerTextMoreImage}>
@@ -124,7 +122,7 @@ const BlockTwo = ({ language }) => {
 
                 </div>
 
-                <div style={{ display: 'flex', width: '80%', marginRight: '13%', paddingBottom: '9%' }} >
+                <div style={{ display: 'flex', width: '80%', marginRight: '13%', paddingBottom: '25%' }} >
                     {language !== 'spanish' ? <span className={styles.additionalText}>A 100% authentic and unedited experience </span> : <span className={styles.additionalText}>Una experiencia 100% auténtica y sin ediciones</span>}
                 </div>
 

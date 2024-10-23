@@ -1616,7 +1616,9 @@
     }
 
     .containerTextTwoForMoreText {
-        width: 64%;
+        width: 100%;
+        padding-left: calc(30vw * 1);
+        background-color: transparent;
 
     }
 
