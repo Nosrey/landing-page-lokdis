@@ -252,11 +252,12 @@
 @media only screen and (max-width:500px) and (max-height:800px) {
 
     .firstContainer {
-        margin-bottom: -45vh;
+        margin-bottom: -55vh;
     }
 
     .leftContainer {
-        width: 100%
+        width: 100%;
+        padding-bottom: 5vh;
     }
 
     .containerPhotos {
@@ -284,6 +285,7 @@
 
         width: 100%;
         background-color: white;
+        padding-top: 8vh;
     }
 
     .firstTextLeftContainer {
@@ -313,7 +315,9 @@
     }
 
     .containerBlueLetter {
-        width: 55%;
+        width: 165px;
+        align-items: center;
+        justify-content: center;
         height: 2vh;
         margin-left: -3vw;
     }
@@ -358,6 +362,7 @@
         z-index: 2;
         justify-content: start;
         padding: 1vw;
+        padding-bottom: 15vh;
 
 
     }
@@ -370,9 +375,9 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 57%;
-        height: 45%;
-        top: 33%;
+        width: calc(50vw * 1);
+        height: calc(55vh * 0.50);
+        top: 65%;
         left: 45%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -385,9 +390,9 @@
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 57%;
-        height: 45%;
-        top: 72%;
+        width: calc(50vw * 1);
+        height: calc(55vh * 0.50);
+        top: calc(100% - -13vh);
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         left: 58%;
         transform: translate(-50%, -50%);
@@ -407,6 +412,7 @@
         justify-content: center;
         transform: none;
         transition: none;
+        margin-top: 25vh;
     }
 
     .letterParagraph {
@@ -419,26 +425,24 @@
     }
 
     .iconoGirl {
-        width: 35%;
+        width: calc(50vh * 0.4);
         z-index: 3;
         position: absolute;
-        top: 40%;
-        left: 13%;
+        top: calc(60% - -5vh);
+        left: calc(30% - 15vw);
 
     }
 
     .iconoUserMap {
-        width: 35%;
+        width: calc(50vh * 0.4);
         z-index: 3;
         position: absolute;
-        bottom: 55%;
+        bottom: calc(20vh * 0.5);
         left: 55%;
 
     }
 
-    .containerBlueLetter {
-        width: 155px;
-    }
+
 
 }
 
@@ -564,8 +568,8 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 57%;
-        height: 45%;
+        width: calc(55vw * 1);
+        height: calc(50vh * 0.50);
         top: 33%;
         left: 45%;
         transform: translate(-50%, -50%);
@@ -579,8 +583,8 @@
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 57%;
-        height: 45%;
+        width: calc(55vw * 1);
+        height: calc(50vh * 0.50);
         top: 72%;
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         left: 58%;
@@ -2313,13 +2317,14 @@
         width: 35vw;
         height: calc(35vw * 0.76);
     }
+
     .iconoGirl {
         width: 25vw;
         height: 25vw;
     }
 
     .boxTwo {
-        width: 35vw;        
+        width: 35vw;
         height: calc(35vw * 0.65);
         top: 60%;
     }
@@ -2557,6 +2562,7 @@
         width: 35vw;
         height: calc(35vw * 0.76);
     }
+
     .iconoGirl {
         width: 20vw;
         height: 20vw;
@@ -2569,10 +2575,11 @@
     }
 
     .boxTwo {
-        width: 35vw;        
+        width: 35vw;
         height: calc(35vw * 0.65);
         top: 60%;
     }
+
     .defineContainerText {
         margin-top: 10%;
     }
@@ -2591,6 +2598,7 @@
         width: 35vw;
         height: calc(35vw * 0.76);
     }
+
     .iconoGirl {
         width: 20vw;
         height: 20vw;
@@ -2603,7 +2611,7 @@
     }
 
     .boxTwo {
-        width: 35vw;        
+        width: 35vw;
         height: calc(35vw * 0.65);
         top: 60%;
     }
@@ -2628,13 +2636,14 @@
         width: 35vw;
         height: calc(35vw * 0.76);
     }
+
     .iconoGirl {
         width: 25vw;
         height: 25vw;
     }
 
     .boxTwo {
-        width: 35vw;        
+        width: 35vw;
         height: calc(35vw * 0.65);
         top: 60%;
     }

@@ -1365,7 +1365,12 @@
     }
 
     .containerTextTwoForMoreText {
-        width: 64%;
+        width: 66%;
+        margin-left: calc(0vh * 1);
+        background-color: transparent;
+        display: flex;
+        align-items: left;
+        justify-content: left;
     }
 
     .containerTextTwo {
@@ -1395,7 +1400,7 @@
 
 
     .letterContainer {
-        margin-top: -55vh;
+        margin-top: -70vh;
         width: 100%;
         display: flex;
         justify-content: left;
@@ -1482,16 +1487,15 @@
         display: flex;
         width: 12vw;
         position: relative;
-        top: -1vh;
-        left: -25vw;
+        top: calc(50% - 80vh);
+        left: calc(50% - 75vw);
         transform: rotate(51deg) scaleY(-1);
         filter: grayscale(1) brightness(0.5);
-
-
     }
 
+
     .containerPhoneMoreParagraph {
-        margin: 110px 0px 140px 0px;
+        margin: calc(50% - 21vh) 0px 140px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1531,8 +1535,8 @@
         display: flex;
         width: 12vw;
         position: relative;
-        top: -2vh;
-        left: 3vw;
+        top: calc(50% - 80vh);
+        left: calc(50% - 45vw);
         transform: rotate(-135deg);
         filter: grayscale(1) brightness(0.5);
 
@@ -1542,8 +1546,8 @@
         display: flex;
         width: 12vw;
         position: relative;
-        top: -1vh;
-        left: 29vw;
+        top: calc(50% - 80vh);
+        left: calc(50% - 15vw);
         transform: rotate(145deg);
         filter: grayscale(1) brightness(0.5);
     }
@@ -1613,6 +1617,7 @@
 
     .containerTextTwoForMoreText {
         width: 64%;
+
     }
 
     .containerTextTwo {
@@ -1622,7 +1627,7 @@
         border-radius: 25px;
         display: flex;
         margin-top: 1vh;
-        margin-left: 1vw;
+        margin-left: 2vw;
         align-items: center;
     }
 
@@ -2351,6 +2356,11 @@
 
     .containerTextTwoForMoreText {
         width: 64%;
+        display: block;
+        align-items: left;
+        justify-content: left;
+        margin-left: calc(-3vw * 1);
+
     }
 
     .containerTextTwo {
