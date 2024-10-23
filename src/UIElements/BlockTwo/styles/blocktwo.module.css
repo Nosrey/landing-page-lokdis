@@ -1660,7 +1660,6 @@
 
 @media (min-width: 1024px) and (min-height: 748px) {
     .firstContainer {
-        margin-top: 0;
         margin-bottom: 0;
     }
 }
@@ -1905,7 +1904,8 @@
 
     .leftContainer {
 
-        margin-top: 0rem;
+        padding-top: 5rem;
+        margin-top: 5vh;
 
     }
 
@@ -2065,8 +2065,6 @@
 
 
     }
-
-
 
     .fourthText {
         font-family: 'Poppins-Regular';

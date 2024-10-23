@@ -43,32 +43,19 @@ const BlockTwo = ({ language }) => {
 
     return (
         <div className={styles.firstContainer} >
-
             <div className={styles.containerPhotos} >
                 <img className={styles.iconoGirl} src={iconoImageBlockTwo} alt="icono" />
                 <img className={styles.iconoUserMap} src={userMapImageBlockTwo} alt="user-map" />
-
-
                 <div className={styles.boxTwo} >
                     <img src={blockTwoImageBoxTwo} alt="" />
-
                 </div>
                 <div className={styles.boxOne} >
                     <img src={blockTwoImageBoxOne} alt="" />
                 </div>
-
-
             </div>
-
             <div className={styles.leftContainer}>
-
-
-
-
                 <div className={styles.defineContainerText}>
                     <div className={styles.containerTextMoreImage}>
-
-
                         {language === 'spanish' ? <h2 className={styles.firstTextLeftContainer}>
                             Una app para descubrir
                         </h2> : <h2 className={styles.firstTextLeftContainerEnglish}>
