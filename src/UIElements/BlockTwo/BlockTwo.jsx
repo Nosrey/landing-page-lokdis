@@ -63,18 +63,18 @@ const BlockTwo = ({ language }) => {
                         <img className={styles.eyesImage} src={eyesImage} alt='eyes-small-image' />
                     </div>
                     <div className={styles.contenedorLetterBlueContainer} >
-                        {language === 'spanish' ? <h2 className={styles.secondTextLeftContainer}>
+                        {language === 'spanish' ? <span className={styles.secondTextLeftContainer}>
                             el mundo
-                        </h2> : <h2 className={styles.secondTextLeftContainer}>
+                        </span> : <span className={styles.secondTextLeftContainer}>
                             the world
-                        </h2>}
-                        <div className={styles.containerBlueLetter} >
-                            {language === 'spanish' ? <h2 className={styles.thirdText} >
-                                sin filtros ni ediciones
-                            </h2> : <h2 className={styles.thirdText} >
-                                without filters or edits
-                            </h2>}
-                        </div>
+                        </span>}
+
+                        {language === 'spanish' ? <span className={styles.thirdText} >
+                            sin filtros ni ediciones
+                        </span> : <span className={styles.thirdText} >
+                            without filters or edits
+                        </span>}
+
                     </div>
                     {language === 'spanish' ? <h3 className={styles.textH3}>¡Lo que ves es lo que es!</h3> :
                         <h3 className={styles.textH3}>What you see is what it is!</h3>}

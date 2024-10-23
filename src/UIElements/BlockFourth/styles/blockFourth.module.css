@@ -3006,6 +3006,7 @@
 
     .arrowDownThree {
         top: 88%;
+        transform: rotate(-25deg);
     }
 
     .containerParagraphThree {
@@ -3244,7 +3245,7 @@
         top: 82%;
         left: 54.5%;
         width: 8%;
-        transform: rotate(150deg) scaleY(-1);
+        transform: rotate(310deg) scaleY(1);
         filter: brightness(0);
 
     }

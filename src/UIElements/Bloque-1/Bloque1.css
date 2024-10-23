@@ -310,7 +310,7 @@ footer {
 @media (min-width:375px) and (min-height:667px) {
 
     .fondo {
-        padding-top: 0vh !important;
+        padding-top: 0vh;
     }
 
 }
