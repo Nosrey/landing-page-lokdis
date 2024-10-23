@@ -388,7 +388,8 @@ footer {
     .fondo {
         height: 140vh;
         padding: 0;
-        padding-bottom: 15vh;
+        /* padding-bottom: 15vh; */
+        padding-bottom: 100px;
     }
 
     .textoBienvenida {
