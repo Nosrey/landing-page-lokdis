@@ -11,17 +11,17 @@ function CustomCarousel({ children, isSpanish }) {
   const [timeID, setTimeID] = useState(null);
 
   const textsSpanish = [
-    <>¿Está funcionando la noria de la fuente de Neptuno en Berlín?</>,
+    <>¿Hay mucha gente en la playa?</>,
     <>¿Hay sitios de souvenirs en Victoria, Malta?</>,
+    <>¿Está funcionando la noria de la fuente de Neptuno en Berlín?</>,
     <>¿Hay mucha gente paseando por Burdeos?</>,
-    <>¿Hay mucha gente en la playa?</>
   ]
 
   const textsEnglish = [
-    <>Is the Neptune Fountain Ferris wheel in Berlin working?</>,
+    <>Are there many people on the beach?</>,
     <>How does the souvenir market in Victoria, Malta look like now?</>,
+    <>Is the Neptune Fountain Ferris wheel in Berlin working?</>,
     <>Is it a good time to be in Bordeaux?</>,
-    <>Are there many people on the beach?</>
   ]
 
   useEffect(() => {

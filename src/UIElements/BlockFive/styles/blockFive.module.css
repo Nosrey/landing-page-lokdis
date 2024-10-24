@@ -63,7 +63,7 @@
     padding: 1%;
     font-size: 24px;
     color: #060661;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Bold';
     font-weight: bold;
     border-radius: 15px;
     background-color: #ffffff;
@@ -183,9 +183,9 @@
     .buttonCallToAction {
         width: 87vw;
         padding: 5%;
-        font-size: 14.06px;
+        font-size: 20px;
         color: #060661;
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Bold';
         font-weight: bold;
         border-radius: 15px;
         background-color: #ffffff;
@@ -285,9 +285,9 @@
     .buttonCallToAction {
         width: 87vw;
         padding: 5%;
-        font-size: 14.06px;
+        font-size: 20px;
         color: #060661;
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Bold';
         font-weight: bold;
         border-radius: 15px;
         background-color: #ffffff;
@@ -386,10 +386,10 @@
     .buttonCallToAction {
         width: 87vw;
         padding: 5%;
-        font-size: 14.06px;
+        font-size: 20px;
         color: #060661;
-        font-family: 'Roboto-Regular';
-        font-weight: bold;
+        font-family: 'Roboto-Bold';
+        font-weight: bolder;
         border-radius: 15px;
         background-color: #ffffff;
         transition: background-color 0.3s ease, transform 0.3s ease;

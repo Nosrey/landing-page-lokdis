@@ -40,3 +40,10 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./Roboto-Bold.ttf');
+    font-weight: 100;
+    font-style: normal;
+}

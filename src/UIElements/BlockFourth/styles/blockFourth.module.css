@@ -2368,7 +2368,7 @@
     .containerTextTwo {
         height: 3vh;
         width: 179px;
-        background-color: cyan;
+        background-color: #00FFD7;
         border-radius: 25px;
         display: flex;
         margin-top: 1vh;
@@ -2379,7 +2379,7 @@
     .containerTextThreee {
         height: 3vh;
         width: 189px;
-        background-color: cyan;
+        background-color: #00FFD7;
         border-radius: 25px;
         display: flex;
         margin-top: 1vh;
