@@ -2949,6 +2949,218 @@
 
 }
 
+
+@media (min-width: 1600px) and (max-width:1821px) and (min-height: 1000px) {
+    .containerLetterParagraph {
+        margin-top: 9vh;
+        width: 85%;
+
+    }
+
+    .containerAdditionalText {
+        width: 78%;
+        padding-bottom: 25vh;
+    }
+
+    .containerTextMoreImage {
+        margin-top: -10px;
+    }
+
+    .defineContainerText {
+
+        width: 100%;
+        margin-bottom: -80px;
+
+    }
+
+    .leftContainer {
+
+        margin-top: 5rem;
+        padding-top: 50px;
+
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        line-height: 4rem;
+        font-size: 2.35rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+
+
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 2.0rem
+    }
+
+    .containerBlueLetter {
+        display: flex;
+        align-items: center;
+        margin-top: 0.4rem;
+
+        height: 2rem;
+
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -0.9rem;
+
+    }
+
+    .thirdText,
+    .thirdTextEnglish {
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: #00FFD7;
+    }
+
+
+
+    .secondTextLeftContainer,
+    .secondTextLeftContainerEnglish {
+        font-size: 2.35rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        line-height: 1rem;
+        margin-bottom: 5px;
+
+    }
+
+
+
+    .secondTextLeftContainerEnglish {
+        font-size: 2.0rem
+    }
+
+    .leftContainer {
+
+        width: 50%;
+        height: 95%;
+
+    }
+
+    .textH3 {
+        font-family: 'Poppins-Regular';
+
+        font-size: 2.35rem;
+        line-height: 0rem;
+        margin-top: 25px;
+    }
+
+    .letterParagraph {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .fourthText {
+        font-size: 0.9rem;
+        font-family: 'Poppins-Regular';
+
+    }
+
+    .additionalText {
+        font-size: 35px;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 7% 20% 5% 0%;
+        transform: rotate(7deg);
+
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        top: 58%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+        height: 30%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        bottom: 68%;
+        left: 62%;
+
+    }
+
+    .iconoGirl {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+
+    }
+
+
+    .letterParagraph {
+        user-select: none;
+        font-family: 'Poppins-Regular';
+        font-size: 35px;
+
+
+    }
+
+    .fourthText {
+        font-family: 'Poppins-Regular';
+        font-size: 35px;
+        color: #028470;
+
+    }
+
+}
+
 @media (min-width: 1822px) and (max-width: 1909px) {
 
 
@@ -3579,23 +3791,133 @@
     }
 }
 
-@media screen and (min-width:2000px) {
-
-    .firstContainer {
-        margin-bottom: -90vh;
-    }
-
-}
-
 
 @media only screen and (min-width:2400px) and (min-height:1600px) {
+
+
+
+    .containerLetterParagraph {
+        margin-top: 5vh;
+        width: 85%;
+
+    }
+
+    .containerTextMoreImage {
+        margin-top: -10px;
+    }
+
+    .defineContainerText {
+
+        width: 100%;
+
+    }
+
+    .leftContainer {
+
+        margin-top: 30rem;
+        padding-top: 250px;
+
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        line-height: 7rem;
+        font-size: 2.35vw;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+
+    }
+
+
+    .containerBlueLetter {
+        display: flex;
+        align-items: center;
+        margin-top: 0.4rem;
+
+        height: 2rem;
+
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -0.9rem;
+
+    }
+
+    .thirdText,
+    .thirdTextEnglish {
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        font-size: 2.35vw;
+        background-color: #00FFD7;
+        border-radius: 25px;
+    }
+
+
+
+    .secondTextLeftContainer,
+    .secondTextLeftContainerEnglish {
+        font-size: 2.35vw;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        line-height: 1rem;
+        margin-bottom: 5px;
+
+    }
+
+
+
+    .secondTextLeftContainerEnglish {
+        font-size: 2.0rem
+    }
+
+    .leftContainer {
+
+        width: 50%;
+        height: 95%;
+
+    }
+
+    .textH3 {
+        font-family: 'Poppins-Regular';
+
+        font-size: 2.35vw;
+        line-height: 0rem;
+        margin-top: 50px;
+    }
+
+    .letterParagraph {
+        font-size: 2.35vw;
+        text-align: justify;
+    }
+
+    .fourthText {
+        font-size: 2.35vw;
+        font-family: 'Poppins-Regular';
+
+    }
+
+    .additionalText {
+        font-size: 2.15vw;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 8% 13% 5% 0%;
+        transform: rotate(7deg);
+
+    }
 
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 50%;
-        height: 20%;
-        top: 48%;
+        width: 70%;
+        height: 30%;
+        top: 58%;
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         left: 62%;
         transform: translate(-50%, -50%);
@@ -3628,8 +3950,8 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 50%;
-        height: 20%;
+        width: 70%;
+        height: 30%;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -3639,48 +3961,27 @@
 
     }
 
+    .iconoUserMap {
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        bottom: 68%;
+        left: 62%;
+
+    }
 
     .iconoGirl {
-        top: 35vh;
-        left: 5vw;
-    }
-
-    .firstContainer {
-
-        padding-bottom: 25vh;
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        top: 35%;
+        left: 2%;
 
     }
 
-    .containerLetterParagraph {
 
-        margin-left: 0vw;
 
-    }
 
-    .textH3 {
-        line-height: 3rem;
-        margin-bottom: -10vh;
-    }
-
-    .eyesImage {
-
-        width: 13%;
-
-        position: relative;
-        margin: 7% 42% 5% 0%;
-        transform: rotate(7deg);
-
-    }
-
-    .containerTextMoreImage {
-        margin-bottom: -4vh;
-        margin-left: -0.3vw;
-
-    }
-
-    .containerBlueLetter {
-        width: 15vw;
-    }
 
 
 }
