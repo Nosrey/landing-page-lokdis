@@ -135,7 +135,7 @@
     }
 
     .containerLogo {
-        display: none;
+        display: flex;
     }
 
     .h2Letter {
@@ -156,7 +156,7 @@
 
         background-color: cyan;
         width: 58vw;
-        margin-top: 1vh;
+        margin-top: 5vh;
         border-radius: 15px;
         padding: 5px;
 
@@ -231,17 +231,19 @@
     }
 
     .containerLetter {
-        margin-top: -45vh;
+        margin-top: -35vh;
         width: 280px;
 
     }
 
     .containerLogo {
-        display: none;
+        display: flex;
+        margin-left: calc(15vh * 0.30);
     }
 
     .h2Letter {
         font-size: 18px;
+        line-height: 15px;
     }
 
     .h2LetterEnglish {
@@ -258,9 +260,10 @@
 
         background-color: cyan;
         width: 58vw;
-        margin-top: 1vh;
+        margin-top: 2vh;
         border-radius: 15px;
-        padding: 5px;
+        padding: 3px;
+        line-height: 55px;
 
     }
 
@@ -268,9 +271,10 @@
 
         background-color: cyan;
         width: 58vw;
-        line-height: 4rem;
+        line-height: 0rem;
         border-radius: 15px;
-        padding: 5px;
+        padding: 3px;
+        color: black;
 
 
     }
@@ -332,13 +336,13 @@
     }
 
     .containerLetter {
-        margin-top: -25vh;
+        margin-top: -15vh;
         width: 280px;
 
     }
 
     .containerLogo {
-        display: none;
+        display: flex;
     }
 
     .h2Letter {
@@ -369,7 +373,7 @@
 
         background-color: cyan;
         width: 58vw;
-        line-height: 4rem;
+        line-height: 2rem;
         border-radius: 15px;
         padding: 5px;
 

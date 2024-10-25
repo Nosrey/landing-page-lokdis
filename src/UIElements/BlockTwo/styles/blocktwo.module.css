@@ -271,9 +271,7 @@
 
 @media only screen and (max-width:500px) and (max-height:800px) {
 
-    .firstContainer {
-        margin-bottom: -55vh;
-    }
+
 
     .leftContainer {
         width: 100%;
@@ -298,20 +296,22 @@
     }
 
     .textH3 {
-        font-size: 17px;
+        /* font-size: 17px; */
+        font-size: 4.4vw;
         line-height: 0px;
+        margin-bottom: 5vh;
     }
 
     .defineContainerText {
 
         width: 100%;
         background-color: white;
-        padding-top: 8vh;
+        padding-top: 80px;
     }
 
     .firstTextLeftContainer {
         font-family: 'Poppins-Regular';
-        font-size: 17px;
+        font-size: 4.6vw;
         text-align: left;
         line-height: 1;
         margin-top: 7%;
@@ -330,7 +330,7 @@
 
         width: 13%;
 
-        margin: 7% 16% 3% 0%;
+        margin: calc(10vh * 0.5) calc(15vh * 0.5) 4% 0%;
         transform: rotate(10deg);
 
     }
@@ -347,6 +347,8 @@
         margin-bottom: -0.3rem;
         margin-left: 0.2rem;
         font-weight: bolder;
+        font-size: 4.7vw;
+
 
     }
 
@@ -358,20 +360,22 @@
     }
 
     .thirdText {
-        font-size: 14px;
+        font-size: 4.7vw;
         font-weight: bold;
+        margin-top: 4px;
+        margin-left: -12px;
     }
 
     .additionalText {
 
-        font-size: 15px;
-        margin-top: 2vh;
+        /* font-size: 15px; */
+        font-size: 4vw;
         text-align: left;
-
+        margin-top: 5px;
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 15px;
+        font-size: 4.2vw;
         font-weight: bold;
     }
 
@@ -379,23 +383,19 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
         z-index: 2;
         justify-content: start;
-        padding: 1vw;
-        height: 135vh;
+        height: 150vh;
 
     }
 
-    .secondTextLeftContainer {
-        font-size: 16px;
-    }
+
 
     .boxOne {
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: calc(50vw * 1);
+        width: calc(70vw * 1);
         height: calc(55vh * 0.50);
         top: 65%;
         left: 45%;
@@ -407,22 +407,27 @@
     }
 
     .boxOne img {
-        width: 80vw;
+        width: 130%;
     }
 
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: calc(50vw * 1);
+        width: calc(70vw * 1);
         height: calc(55vh * 0.50);
         top: calc(100% - -13vh);
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        left: 58%;
+        left: 50vw;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
         border-radius: 10%;
     }
+
+    .boxTwo img {
+        width: 120%;
+    }
+
 
     .containerLetterParagraph {
         display: flex;
@@ -439,33 +444,45 @@
     }
 
     .letterParagraph {
-        font-size: 18px;
-        text-align: justify;
+        /* font-size: 18px; */
+        font-size: 4.5vw;
+        text-align: left;
     }
 
     .fourthText {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 4.5vw;
+
     }
 
     .iconoGirl {
-        width: calc(50vh * 0.4);
+        width: calc(58vh * 0.4);
         z-index: 3;
         position: absolute;
         top: calc(60% - -5vh);
-        left: calc(30% - 15vw);
+        left: calc(20% - 15vw);
 
     }
 
     .iconoUserMap {
-        width: calc(50vh * 0.4);
+        width: calc(58vh * 0.4);
         z-index: 3;
         position: absolute;
-        bottom: calc(15vh * 0.5);
-        left: 55%;
+        bottom: calc(20vh * 0.5);
+        left: calc(70% - 5vw);
 
     }
 
+    .containerAdditionalText {
 
+        width: 75%;
+
+    }
+
+    .containerPhotosMovil {
+
+        margin-bottom: 5vh;
+    }
 
 }
 
@@ -474,6 +491,15 @@
 
     .firstContainer {
         margin-bottom: -45vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .containerAdditionalText {
+
+        width: 75%;
+
+
     }
 
     .leftContainer {
@@ -484,6 +510,8 @@
 
         display: none;
     }
+
+
 
     .containerPhotosMovil {
         display: flex;
@@ -497,7 +525,7 @@
     }
 
     .textH3 {
-        font-size: 17px;
+        font-size: 4.5vw;
         line-height: 0px;
     }
 
@@ -509,7 +537,8 @@
 
     .firstTextLeftContainer {
         font-family: 'Poppins-Regular';
-        font-size: 17px;
+        /* font-size: 17px; */
+        font-size: 4.5vw;
         text-align: left;
         line-height: 1;
         margin-top: 7%;
@@ -543,6 +572,8 @@
         margin-bottom: -0.3rem;
         margin-left: 0.2rem;
         font-weight: bolder;
+        font-size: 4.5vw;
+
 
     }
 
@@ -554,8 +585,10 @@
     }
 
     .thirdText {
-        font-size: 14px;
+        font-size: 4.5vw;
         font-weight: bold;
+        margin-top: 5px;
+        margin-left: -10px;
     }
 
     .additionalText {
@@ -567,7 +600,7 @@
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 16px;
+        font-size: 4.5vw;
         font-weight: bold;
     }
 
@@ -583,16 +616,14 @@
 
     }
 
-    .secondTextLeftContainer {
-        font-size: 17px;
-    }
+
 
     .boxOne {
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
         width: calc(55vw * 1);
-        height: calc(50vh * 0.50);
+        height: calc(45vh * 0.50);
         top: 33%;
         left: 45%;
         transform: translate(-50%, -50%);
@@ -607,7 +638,7 @@
         overflow: hidden;
         position: absolute;
         width: calc(55vw * 1);
-        height: calc(50vh * 0.50);
+        height: calc(45vh * 0.50);
         top: 72%;
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         left: 58%;
@@ -631,12 +662,12 @@
     }
 
     .letterParagraph {
-        font-size: 18px;
+        font-size: 4.5vw;
         text-align: justify;
     }
 
     .fourthText {
-        font-size: 18px;
+        font-size: 4.5vw;
     }
 
     .iconoGirl {
@@ -665,13 +696,8 @@
 
 @media only screen and (max-width:500px) and (min-height:900px) and (max-height:1000px) {
 
-    .firstContainer {
-        margin-bottom: -45vh;
-    }
-
     .leftContainer {
         width: 100%;
-
     }
 
     .containerPhotos {
@@ -687,24 +713,28 @@
         margin-top: 1;
         height: 120%;
         right: 6%;
-        padding-top: 2vh;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+
     }
 
     .textH3 {
-        font-size: 17px;
+        /* font-size: 17px; */
+        font-size: 4.4vw;
         line-height: 0px;
+        margin-bottom: 5vh;
     }
 
     .defineContainerText {
 
         width: 100%;
         background-color: white;
-        margin-top: -15vh;
+        padding-top: 80px;
     }
 
     .firstTextLeftContainer {
         font-family: 'Poppins-Regular';
-        font-size: 17px;
+        font-size: 4.6vw;
         text-align: left;
         line-height: 1;
         margin-top: 7%;
@@ -723,13 +753,15 @@
 
         width: 13%;
 
-        margin: 7% 16% 3% 0%;
+        margin: calc(10vh * 0.5) calc(16vh * 0.5) 4% 0%;
         transform: rotate(10deg);
 
     }
 
     .containerBlueLetter {
-        width: 55%;
+        width: 165px;
+        align-items: center;
+        justify-content: center;
         height: 2vh;
         margin-left: -3vw;
     }
@@ -738,6 +770,8 @@
         margin-bottom: -0.3rem;
         margin-left: 0.2rem;
         font-weight: bolder;
+        font-size: 4.7vw;
+
 
     }
 
@@ -749,20 +783,22 @@
     }
 
     .thirdText {
-        font-size: 14px;
+        font-size: 4.7vw;
         font-weight: bold;
+        margin-top: 4px;
+        margin-left: -12px;
     }
 
     .additionalText {
 
-        font-size: 15px;
-        margin-top: 2vh;
+        /* font-size: 15px; */
+        font-size: 4vw;
         text-align: left;
-
+        margin-top: 5px;
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 16px;
+        font-size: 4.2vw;
         font-weight: bold;
     }
 
@@ -770,25 +806,21 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
         z-index: 2;
         justify-content: start;
-        padding: 1vw;
-
+        height: 150vh;
 
     }
 
-    .secondTextLeftContainer {
-        font-size: 17px;
-    }
+
 
     .boxOne {
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 45%;
-        height: 15%;
-        top: 10%;
+        width: calc(70vw * 1);
+        height: calc(55vh * 0.50);
+        top: 65%;
         left: 45%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -797,20 +829,28 @@
 
     }
 
+    .boxOne img {
+        width: 130%;
+    }
 
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 45%;
-        height: 15%;
-        top: 25%;
+        width: calc(70vw * 1);
+        height: calc(55vh * 0.50);
+        top: calc(100% - -13vh);
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
-        left: 58%;
+        left: 50vw;
         transform: translate(-50%, -50%);
         background-color: white;
         z-index: 2;
         border-radius: 10%;
     }
+
+    .boxTwo img {
+        width: 120%;
+    }
+
 
     .containerLetterParagraph {
         display: flex;
@@ -823,57 +863,62 @@
         justify-content: center;
         transform: none;
         transition: none;
-        margin-top: -80vh;
-
+        margin-top: 25vh;
     }
 
     .letterParagraph {
-        font-size: 18px;
-        text-align: justify;
+        /* font-size: 18px; */
+        font-size: 4.5vw;
+        text-align: left;
     }
 
     .fourthText {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 4.5vw;
+
     }
 
     .iconoGirl {
-        width: 35%;
+        width: calc(58vh * 0.4);
         z-index: 3;
         position: absolute;
-        top: 15%;
-        left: 13%;
+        top: calc(60% - -5vh);
+        left: calc(20% - 15vw);
 
     }
-
 
     .iconoUserMap {
-        width: 35%;
+        width: calc(58vh * 0.4);
         z-index: 3;
         position: absolute;
-        bottom: 85%;
-        left: 55%;
+        bottom: calc(20vh * 0.5);
+        left: calc(70% - 5vw);
 
     }
 
-    .containerBlueLetter {
-        width: 155px;
+    .containerAdditionalText {
+
+        width: 75%;
+
     }
+
+    .containerPhotosMovil {
+
+        margin-bottom: 5vh;
+    }
+
 
 }
 
 
 @media only screen and (min-width: 500px) and (max-height: 740px) {
+
     .fourthText {
+
         font-size: 1rem;
 
-
     }
 
-    .containerBlueLetter {
-        margin-top: 2.5vh;
-        height: 1vh;
-
-    }
 
     .boxTwo {
         overflow: hidden;
@@ -883,7 +928,7 @@
         top: 53%;
         left: 58%;
         transform: translate(-50%, -50%);
-        background-color: white;
+        background-color: transparent;
         z-index: 2;
         border-radius: 10%;
         box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
