@@ -1,13 +1,15 @@
 import React from "react";
 import "./Bloque1.css";
-
-import phoneView from "./Images/phoneView.png";
+import ReactPlayer from 'react-player'
+// import phoneView from "./Images/phoneView.png";
 import arrow from './Images/arrow.gif';
-import phoneSquare from './Images/phoneSquare.png';
-import { useEffect, useRef } from "react";
+// import phoneSquare from './Images/phoneSquare.png';
+import { useEffect, useRef, useState } from "react";
+// import video from '../Assets/video.mp4';
 
 export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const isSpanish = language === "spanish";
+  const [loading, setLoading] = useState(true);
 
   const containerRef = useRef(null);
 
@@ -78,11 +80,22 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
               </p>
 
-              <img
-                src={phoneSquare}
-                alt="phoneView"
-                className="phoneView2Bloq1"
-              />
+              <div className='phoneView2Bloq1' style={{margin: '25px 0'}}>
+                {loading && <div className="spinnerBloq1"></div>}
+                <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
+                  <ReactPlayer
+                    url='https://vimeo.com/1023344517'
+                    controls
+                    playing={true}
+                    loop={true}
+                    muted={true}
+                    onReady={() => setLoading(false)}
+                    width='100%'
+                    height='100%'
+                  />
+                </div>
+              </div>
+
             </div>
 
             <p className="textoBienvenida">
@@ -94,11 +107,34 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
         {/* lado derecho */}
         <div className="columnaSingular rightBloq1" style={{ width: "40%" }} ref={containerRef}>
-          <img
+          {/* <img
             src={phoneView}
             alt="phoneView"
             className="phoneView"
-          />
+          /> */}
+          <div className='phoneDeskBloq1'>
+            {loading && <div className="spinnerBloq1"></div>}
+            <div className="phone-frame" style={{ display: loading ? 'none' : 'block' }}>
+              <ReactPlayer
+                url='https://vimeo.com/1023344517'
+                controls
+                playing={true}
+                loop={true}
+                muted={true}
+                onReady={() => setLoading(false)}
+                width='100%'
+                height='100%'
+              />
+            </div>
+          </div>
+
+          {/* <video
+            autoPlay
+            playsInline
+            className="phoneView"
+            src={video}
+            >              
+            </video>           */}
         </div>
       </div>
       <footer>
