@@ -99,7 +99,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
             <div className="sliderBloq3">
                 <CustomSlider isSpanish={isSpanish}>
                     {images.map((image, index) => {
-                        return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+                        return <img key={index} src={image.imgURL} alt={image.imgAlt} style={{width: '80%'}} />;
                     })}
                 </CustomSlider>
             </div>

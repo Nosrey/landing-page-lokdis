@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
-
 import "./custom.slider.css";
-import rightArrowSlider from '../Bloque-3/Images/rightArrowSlider.png'
-import leftArrowSlider from '../Bloque-3/Images/leftArrowSlider.png'
-import arrow from '../Bloque-3/Images/curvedArrow2.gif'
+import rightArrowSlider from '../Bloque-3/Images/rightArrowSlider.png';
+import leftArrowSlider from '../Bloque-3/Images/leftArrowSlider.png';
+import arrow from '../Bloque-3/Images/curvedArrow2.gif';
 
 function CustomCarousel({ children, isSpanish }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
+  const [touchStartX, setTouchStartX] = useState(0);
 
   const textsSpanish = [
     <>¿Hay mucha gente en la playa?</>,
     <>¿Hay sitios de souvenirs en Victoria, Malta?</>,
     <>¿Está funcionando la noria de la fuente de Neptuno en Berlín?</>,
     <>¿Hay mucha gente paseando por Burdeos?</>,
-  ]
+  ];
 
   const textsEnglish = [
     <>Are there many people on the beach?</>,
     <>How does the souvenir market in Victoria, Malta look like now?</>,
     <>Is the Neptune Fountain Ferris wheel in Berlin working?</>,
     <>Is it a good time to be in Bordeaux?</>,
-  ]
+  ];
 
   useEffect(() => {
     if (slideDone) {
@@ -34,27 +34,14 @@ function CustomCarousel({ children, isSpanish }) {
         }, 5000)
       );
     }
-
   }, [slideDone]);
 
   const slideNext = () => {
-    setActiveIndex((val) => {
-      if (val >= children.length - 1) {
-        return 0;
-      } else {
-        return val + 1;
-      }
-    });
+    setActiveIndex((val) => (val >= children.length - 1 ? 0 : val + 1));
   };
 
   const slidePrev = () => {
-    setActiveIndex((val) => {
-      if (val <= 0) {
-        return children.length - 1;
-      } else {
-        return val - 1;
-      }
-    });
+    setActiveIndex((val) => (val <= 0 ? children.length - 1 : val - 1));
   };
 
   const AutoPlayStop = () => {
@@ -70,47 +57,64 @@ function CustomCarousel({ children, isSpanish }) {
     }
   };
 
+  // Manejador para el inicio del toque (touchstart)
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  // Manejador para el fin del toque (touchend)
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchEndX - touchStartX;
+
+    // Determina si es un deslizamiento hacia la derecha o izquierda
+    if (Math.abs(distance) > 50) { // solo reacciona a deslizamientos largos
+      if (distance > 0) {
+        slidePrev();
+      } else {
+        slideNext();
+      }
+    }
+  };
+
   return (
     <div
       className="container__slider"
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
-
-      {children.map((item, index) => {
-        return (
-          <div
-            className={"slider__item slider__item-active-" + (activeIndex + 1)}
-            key={index}
-          >
-            <div className="rowSlider">
-              <p className="sliderTitleText">
-                {isSpanish ? textsSpanish[index] : textsEnglish[index]}
-              </p>
-              <img src={arrow} alt="arrow" id="arrowSlider" />
-            </div>
-            {item}
+      {children.map((item, index) => (
+        <div
+          className={"slider__item slider__item-active-" + (activeIndex + 1)}
+          key={index}
+        >
+          <div className="rowSlider">
+            <p className="sliderTitleText">
+              {isSpanish ? textsSpanish[index] : textsEnglish[index]}
+            </p>
+            <img src={arrow} alt="arrow" id="arrowSlider" />
           </div>
-        );
-      })}
+          {item}
+        </div>
+      ))}
 
       <div className="container__slider__links">
-        {children.map((item, index) => {
-          return (
-            <button
-              key={index}
-              className={
-                activeIndex === index
-                  ? "container__slider__links-small container__slider__links-small-active"
-                  : "container__slider__links-small"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveIndex(index);
-              }}
-            ></button>
-          );
-        })}
+        {children.map((_, index) => (
+          <button
+            key={index}
+            className={
+              activeIndex === index
+                ? "container__slider__links-small container__slider__links-small-active"
+                : "container__slider__links-small"
+            }
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveIndex(index);
+            }}
+          ></button>
+        ))}
       </div>
 
       <button
@@ -120,7 +124,6 @@ function CustomCarousel({ children, isSpanish }) {
           slideNext();
         }}
       >
-        {/* {">"} */}
         <img src={rightArrowSlider} alt="rightArrowSlider" className="sliderArrow rightSlider" />
       </button>
       <button
@@ -130,7 +133,6 @@ function CustomCarousel({ children, isSpanish }) {
           slidePrev();
         }}
       >
-        {/* {"<"} */}
         <img src={leftArrowSlider} alt="leftArrowSlider" className="sliderArrow leftSlider" />
       </button>
     </div>
