@@ -15,6 +15,8 @@ import movilSmallThreNotSelect from '../Assets/image-incline-three.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
+import avatar1 from '../Assets/avatar1.png';
+import avatar2 from '../Assets/avatar2.png';
 
 import { useEffect, useState } from 'react';
 
@@ -50,6 +52,11 @@ const BlockFourth = ({ language }) => {
     return (
         <div className={styles.fatherContainer} >
 
+            <div className={styles.containerAvatar2} >
+                <img src={avatar2} alt="avatar uno" className={`${styles.avatar2} ${styles.avatarStyle}`} />
+            </div>
+
+
             <div className={styles.letterContainer} >
 
                 <div className={styles.containerTextOne} >
@@ -82,6 +89,8 @@ const BlockFourth = ({ language }) => {
                 </div>
 
             </div>
+
+      
 
             <div className={styles.containerBannerPhotoMovil} >
 
@@ -145,7 +154,10 @@ const BlockFourth = ({ language }) => {
 
             </div>
 
-
+            <div className={styles.containerAvatar1} >
+                <img src={avatar1} alt="avatar uno" className={`${styles.avatar1} ${styles.avatarStyle}`} />
+           
+            </div>
             <div className={styles.container} >
                 <div className={styles.containerParagraph} >
                     {language === 'spanish' ? <p className={styles.paragraphOne} >En el mapa verás las personas que
