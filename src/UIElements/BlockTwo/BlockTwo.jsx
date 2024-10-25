@@ -7,6 +7,7 @@ import blockTwoImageBoxTwo from '../Assets/boxTwoBlockTwo.png';
 import iconoImageBlockTwo from '../Assets/icono-block-2.png';
 import userMapImageBlockTwo from '../Assets/usuario-mapa-block-2.png';
 import { useEffect, useRef } from 'react';
+import avatar3 from '../Assets/avatar3.png';
 
 const BlockTwo = ({ language }) => {
 
@@ -43,6 +44,7 @@ const BlockTwo = ({ language }) => {
 
     return (
         <div className={styles.firstContainer} >
+
             <div className={styles.containerPhotos} >
                 <img className={styles.iconoGirl} src={iconoImageBlockTwo} alt="icono" />
                 <img className={styles.iconoUserMap} src={userMapImageBlockTwo} alt="user-map" />
@@ -113,8 +115,14 @@ const BlockTwo = ({ language }) => {
                     {language !== 'spanish' ? <span className={styles.additionalText}>A 100% authentic and unedited experience </span> : <span className={styles.additionalText}>Una experiencia 100% auténtica y sin ediciones</span>}
                 </div>
 
-            </div>
 
+            </div>
+            <div className={styles.avatares}>
+
+                <div className={styles.containerAvatar3} >
+                    <img src={avatar3} alt="avatar tres" className={`${styles.avatar3} ${styles.avatarStyle}`} />
+                </div>
+            </div>
 
 
 
