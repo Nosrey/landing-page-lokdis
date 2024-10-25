@@ -107,8 +107,6 @@ const BlockTwo = ({ language }) => {
                         <span className={styles.fourthText}> request videos and photos </span>
                         of places <span className={styles.fourthText}> in real time </span>
                         from people around the world. There is no room for editing or retouching, what you see is what it is. </p>}
-
-
                 </div>
 
                 <div className={styles.containerAdditionalText} >

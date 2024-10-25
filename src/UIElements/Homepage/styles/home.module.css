@@ -193,6 +193,20 @@
     }
 }
 
+
+@media(min-width:1366px) and (min-height:600px) {
+    .carrusel1 {
+        top: 55vh;
+        transform: rotate(-0.5deg);
+    }
+
+    .carrusel2 {
+        top: -35vh;
+        transform: rotate(-0.5deg);
+
+    }
+}
+
 @media(min-width:1366px) and (min-height:768px) {
     .carrusel1 {
         top: 55vh;
