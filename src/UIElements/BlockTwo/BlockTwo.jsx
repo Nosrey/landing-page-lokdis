@@ -45,6 +45,12 @@ const BlockTwo = ({ language }) => {
     return (
         <div className={styles.firstContainer} >
 
+            <div className={styles.avatares}>
+                <div className={styles.containerAvatar3Desk} >
+                    <img src={avatar3} alt="avatar tres" className={`${styles.avatar3} ${styles.avatarStyle}`} />
+                </div>
+            </div>
+
             <div className={styles.containerPhotos} >
                 <img className={styles.iconoGirl} src={iconoImageBlockTwo} alt="icono" />
                 <img className={styles.iconoUserMap} src={userMapImageBlockTwo} alt="user-map" />
@@ -121,6 +127,7 @@ const BlockTwo = ({ language }) => {
                     <img src={avatar3} alt="avatar tres" className={`${styles.avatar3} ${styles.avatarStyle}`} />
                 </div>
             </div>
+
 
 
 

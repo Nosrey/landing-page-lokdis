@@ -80,11 +80,12 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
               </p>
 
-              <div className='phoneView2Bloq1' style={{margin: '25px 0'}}>
+              <div className='phoneView2Bloq1' style={{ margin: '25px 0' }}>
                 {loading && <div className="spinnerBloq1"></div>}
                 <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
+                  {/* url='https://vimeo.com/1023344517' */}
                   <ReactPlayer
-                    url='https://vimeo.com/1023344517'
+                    url='https://lokdis.com/multimedia/Video_landing_LokDis.mp4'
                     controls
                     playing={true}
                     loop={true}
@@ -116,7 +117,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
             {loading && <div className="spinnerBloq1"></div>}
             <div className="phone-frame" style={{ display: loading ? 'none' : 'block' }}>
               <ReactPlayer
-                url='https://vimeo.com/1023344517'
+                url='https://lokdis.com/multimedia/Video_landing_LokDis.mp4'
                 controls
                 playing={true}
                 loop={true}

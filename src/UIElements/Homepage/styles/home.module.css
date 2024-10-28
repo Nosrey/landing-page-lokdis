@@ -8,7 +8,7 @@
     margin-top: -45vh;
     width: 100%;
     position: relative;
-    top: 59vh;
+    top: 49vh;
     z-index: 1;
 }
 
@@ -108,27 +108,37 @@
 
 @media (max-width: 700px) and (min-width: 501px) {
     .carrusel1 {
-        top: 85vh;
+        top: 55vh;
     }
 }
 
-@media (max-width: 900px) and (min-width: 701px) {
+@media (max-width: 900px) and (max-height: 415px) {
     .carrusel1 {
-        top: 78vh;
+        top: 65vh;
     }
 
     .carrusel2 {
         top: -45vh;
     }
+ }
+
+@media (max-width: 900px) and (min-width: 701px) and (min-height: 416px) {
+    .carrusel1 {
+        top: 52vh;
+    }
+
+    .carrusel2 {
+        top: -30vh;
+    }
 }
 
 @media (max-width: 1100px) and (min-width: 901px) {
     .carrusel1 {
-        top: 67vh;
+        top: 47vh;
     }
 
     .carrusel2 {
-        top: -37vh;
+        top: -32vh;
     }
 }
 
@@ -147,7 +157,7 @@
 
 @media only screen and (min-width: 900px) and (min-height: 1156px) {
     .carrusel1 {
-        top: 40vh;
+        top: 35vh;
         transform: rotate(0.5deg);
     }
 
@@ -159,7 +169,7 @@
 
 @media only screen and (min-width: 1000px) and (min-height: 1340px) {
     .carrusel1 {
-        top: 37vh;
+        top: 33vh;
         transform: rotate(0.5deg);
     }
 
@@ -171,7 +181,7 @@
 
 @media (min-width: 1004px) and (min-height: 748px) {
     .carrusel1 {
-        top: 49vh;
+        top: 46vh;
         transform: rotate(0.5deg);
     }
 
@@ -183,7 +193,7 @@
 
 @media screen and (min-width: 1024px) and (min-height: 1300px) {
     .carrusel1 {
-        top: 35vh;
+        top: 33vh;
         transform: rotate(-0.5deg);
     }
 
@@ -196,12 +206,12 @@
 
 @media(min-width:1366px) and (min-height:600px) {
     .carrusel1 {
-        top: 55vh;
+        top: 45vh;
         transform: rotate(-0.5deg);
     }
 
     .carrusel2 {
-        top: -35vh;
+        top: -33vh;
         transform: rotate(-0.5deg);
 
     }
@@ -209,7 +219,7 @@
 
 @media(min-width:1366px) and (min-height:768px) {
     .carrusel1 {
-        top: 55vh;
+        top: 45vh;
     }
 
     .carrusel2 {
@@ -219,7 +229,7 @@
 
 @media (min-width: 1350px) and (min-height: 850px) {
     .carrusel1 {
-        top: 47.5vh;
+        top: 42.5vh;
     }
 
     .carrusel2 {
@@ -229,7 +239,7 @@
 
 @media (min-width: 1419px) and (min-height: 890px) {
     .carrusel1 {
-        top: 49vh
+        top: 41vh
     }
 
     .carrusel2 {
@@ -239,7 +249,7 @@
 
 @media(min-width:1419px) and (min-height:976px) {
     .carrusel1 {
-        top: 45vh;
+        top: 40vh;
     }
 
     .carrusel2 {
@@ -250,7 +260,7 @@
 /* Resoluciones grandes */
 @media (min-width: 1501px) {
     .carrusel1 {
-        top: 45vh;
+        top: 40vh;
         transform: rotate(-0.5deg);
     }
 
@@ -262,7 +272,7 @@
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 608px) and (max-height: 707px) {
     .carrusel1 {
-        top: 61vh;
+        top: 53vh;
     }
 
     .carrusel2 {
@@ -272,7 +282,7 @@
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 708px) and (max-height: 800px) {
     .carrusel1 {
-        top: 55vh;
+        top: 48vh;
     }
 
     .carrusel2 {
@@ -282,7 +292,7 @@
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 801px) and (max-height: 900px) {
     .carrusel1 {
-        top: 50vh;
+        top: 43vh;
     }
 
     .carrusel2 {
@@ -303,7 +313,7 @@
 
 @media (min-width: 1600px) {
     .carrusel1 {
-        top: 53vh;
+        top: 45vh;
     }
 
     .carrusel2 {
@@ -315,7 +325,7 @@
 
     .carrusel1 {
 
-        top: 45vh;
+        top: 38vh;
 
     }
 
@@ -327,7 +337,7 @@
 
 @media (min-width: 1821px) and (max-width: 1909px) and (min-height: 868px) {
     .carrusel1 {
-        top: 55vh;
+        top: 43vh;
     }
 
     .carrusel2 {
@@ -337,7 +347,7 @@
 
 @media (min-width: 1910px) and (max-height: 630px) and (min-height: 560px) {
     .carrusel1 {
-        top: 74vh;
+        top: 63vh;
     }
 
     .carrusel2 {
@@ -347,7 +357,7 @@
 
 @media (min-width: 1910px) and (max-height: 710px) and (min-height: 631px) {
     .carrusel1 {
-        top: 68vh;
+        top: 50vh;
     }
 
     .carrusel2 {
@@ -357,7 +367,7 @@
 
 @media (min-width: 1910px) and (max-height: 800px) and (min-height: 711px) {
     .carrusel1 {
-        top: 62vh;
+        top: 50vh;
     }
 
     .carrusel2 {
@@ -367,7 +377,7 @@
 
 @media (min-width: 1910px) and (max-height: 849px) and (min-height: 801px) {
     .carrusel1 {
-        top: 54vh;
+        top: 44vh;
     }
 
     .carrusel2 {
@@ -378,7 +388,7 @@
 
 @media (min-width: 1910px) and (max-height: 950px) and (min-height: 850px) {
     .carrusel1 {
-        top: 51vh;
+        top: 41vh;
     }
 
     .carrusel2 {
@@ -388,7 +398,7 @@
 
 @media (min-width: 1910px) and (min-height: 951px) and (max-height: 1099px) {
     .carrusel1 {
-        top: 46vh;
+        top: 40vh;
     }
 
     .carrusel2 {
@@ -398,7 +408,7 @@
 
 @media (min-width: 1910px) and (max-height: 1199px) and (min-height: 1100px) {
     .carrusel1 {
-        top: 43vh;
+        top: 33vh;
     }
 
     .carrusel2 {
@@ -409,7 +419,7 @@
 
 @media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1200px) {
     .carrusel1 {
-        top: 40vh;
+        top: 35vh;
     }
 
     .carrusel2 {
@@ -420,7 +430,7 @@
 
 @media screen and (min-width: 2000px) {
     .carrusel1 {
-        top: 38vh;
+        top: 33vh;
         transform: rotate(-0.5deg);
     }
 
@@ -436,7 +446,7 @@
 @media screen and (min-width:2600px) and (min-height:1300px) {
 
     .carrusel1 {
-        top: 42vh;
+        top: 36vh;
         transform: rotate(-0.5deg);
     }
 
