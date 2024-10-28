@@ -10,7 +10,8 @@
     margin-top: 5%;
 }
 
-.containerAvatar1, .containerAvatar2 {
+.containerAvatar1,
+.containerAvatar2 {
     display: none;
 }
 
@@ -1330,7 +1331,7 @@
         position: absolute;
         top: 50px;
         right: 25px;
-        margin-top: 0vh;
+        margin-top: 15px;
         transform: rotate(-5deg);
     }
 

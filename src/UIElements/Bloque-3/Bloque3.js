@@ -8,6 +8,7 @@ import f1 from './Images/f1.webp'
 import f2 from './Images/f2.webp'
 import f3 from './Images/f3.webp'
 import f4 from './Images/f4.webp'
+import logoLokdis from '../Assets/logo-lokdis.png';
 import './Bloque3.css'
 import CustomSlider from '../Slider/Slider';
 import { useEffect, useRef } from 'react';
@@ -44,7 +45,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('active');                        
+                        entry.target.classList.add('active');
                     }
                 });
             },
@@ -99,7 +100,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
             <div className="sliderBloq3">
                 <CustomSlider isSpanish={isSpanish}>
                     {images.map((image, index) => {
-                        return <img key={index} src={image.imgURL} alt={image.imgAlt} style={{width: '80%'}} />;
+                        return <img key={index} src={image.imgURL} alt={image.imgAlt} style={{ width: '80%' }} />;
                     })}
                 </CustomSlider>
             </div>
@@ -146,6 +147,11 @@ export const Bloque3 = ({ language, setLanguage }) => {
                 <img src={places} alt="places" className="places" />
             </div>
 
+            <div className='ctnLokdis' >
+
+                <img src={logoLokdis} alt='Logo Lokdis' />
+
+            </div>
         </div>
     )
 }

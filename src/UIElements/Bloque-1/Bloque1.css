@@ -29,56 +29,67 @@
     margin-top: 40px;
     width: calc(400px * 0.5);
     height: 400px;
-    border: 14.4px solid #2e2e2e; /* Reducido al 90% de 16px */
-    border-radius: 32.4px; /* Reducido al 90% de 36px */
-    padding: 18px; /* Reducido al 90% de 20px */
+    border: 14.4px solid #2e2e2e;
+    /* Reducido al 90% de 16px */
+    border-radius: 32.4px;
+    /* Reducido al 90% de 36px */
+    padding: 18px;
+    /* Reducido al 90% de 20px */
     box-shadow: 0 7.2px 18px rgba(0, 0, 0, 0.2), inset 0 0 7.2px rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
     background-color: #fafafa;
     background-image: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-  }
-  
-  /* Parte superior - Altavoz */
-  .phone-frame::before {
+}
+
+/* Parte superior - Altavoz */
+.phone-frame::before {
     content: '';
     display: block;
-    width: 54px; /* Reducido al 90% de 60px */
-    height: 4.5px; /* Reducido al 90% de 5px */
+    width: 54px;
+    /* Reducido al 90% de 60px */
+    height: 4.5px;
+    /* Reducido al 90% de 5px */
     background: #555;
-    border-radius: 9px; /* Reducido al 90% de 10px */
+    border-radius: 9px;
+    /* Reducido al 90% de 10px */
     position: absolute;
-    top: 10.8px; /* Reducido al 90% de 12px */
+    top: 10.8px;
+    /* Reducido al 90% de 12px */
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 0.9px 1.8px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Parte inferior - Botón circular */
-  .phone-frame::after {
+}
+
+/* Parte inferior - Botón circular */
+.phone-frame::after {
     content: '';
     display: block;
-    width: 31.5px; /* Reducido al 90% de 35px */
-    height: 31.5px; /* Reducido al 90% de 35px */
+    width: 31.5px;
+    /* Reducido al 90% de 35px */
+    height: 31.5px;
+    /* Reducido al 90% de 35px */
     background: #333;
-    border: 2.7px solid #666; /* Reducido al 90% de 3px */
+    border: 2.7px solid #666;
+    /* Reducido al 90% de 3px */
     border-radius: 50%;
     position: absolute;
-    bottom: 16.2px; /* Reducido al 90% de 18px */
+    bottom: 16.2px;
+    /* Reducido al 90% de 18px */
     left: 50%;
     transform: translateX(-50%);
     box-shadow: inset 0 0 4.5px rgba(0, 0, 0, 0.3), 0 2.7px 7.2px rgba(0, 0, 0, 0.4);
     transition: background 0.3s ease;
-  }
-  
-  /* Hover efecto de botón para mejorar la apariencia */
-  .phone-frame::after:hover {
+}
+
+/* Hover efecto de botón para mejorar la apariencia */
+.phone-frame::after:hover {
     background: #444;
     border-color: #555;
-  }
-  
-  /* Efecto de iluminación en los bordes del teléfono */
-  .phone-frame:before {
+}
+
+/* Efecto de iluminación en los bordes del teléfono */
+.phone-frame:before {
     content: '';
     position: absolute;
     top: 0;
@@ -87,10 +98,11 @@
     height: 100%;
     border-radius: inherit;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.3); /* Reducido al 90% de 20px */
+    box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.3);
+    /* Reducido al 90% de 20px */
     pointer-events: none;
-  }
-  
+}
+
 
 
 
@@ -106,7 +118,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 70vh;
 }
 
@@ -118,12 +130,17 @@
     height: 120px;
     animation: spin 2s linear infinite;
     margin: auto;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .columnaSingular {
     display: flex;
@@ -435,8 +452,8 @@ footer {
     .phoneView2Bloq1 {
         width: 100%;
         margin: 0 auto;
-        display: flex; 
-        justify-content: center; 
+        display: flex;
+        justify-content: center;
         align-content: center;
     }
 
@@ -477,7 +494,7 @@ footer {
     }
 
     .fondo {
-        height: 140vh;
+        height: 168vh;
         padding: 0;
         padding-bottom: 15vh;
     }
@@ -625,59 +642,74 @@ footer {
 
 @media (max-width: 900px) and (min-width: 701px) {
     .phone-frame {
-        margin-top: 20px; /* Reducido desde 40px */
-        width: calc(200px * 0.5); /* Ajusta el ancho según sea necesario */
-        height: 200px; /* Ajusta la altura según sea necesario */
-        border: 8px solid #2e2e2e; /* Reducido desde 16px */
-        border-radius: 18px; /* Reducido desde 36px */
-        padding: 10px; /* Reducido desde 20px */
+        margin-top: 20px;
+        /* Reducido desde 40px */
+        width: calc(200px * 0.5);
+        /* Ajusta el ancho según sea necesario */
+        height: 200px;
+        /* Ajusta la altura según sea necesario */
+        border: 8px solid #2e2e2e;
+        /* Reducido desde 16px */
+        border-radius: 18px;
+        /* Reducido desde 36px */
+        padding: 10px;
+        /* Reducido desde 20px */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 4px rgba(255, 255, 255, 0.1);
         position: relative;
         overflow: hidden;
-        background-color: #fafafa; /* Fondo más suave */
+        background-color: #fafafa;
+        /* Fondo más suave */
         background-image: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-      }
-      
-      /* Parte superior - Altavoz */
-      .phone-frame::before {
+    }
+
+    /* Parte superior - Altavoz */
+    .phone-frame::before {
         content: '';
         display: block;
-        width: 30px; /* Reducido desde 60px */
-        height: 2.5px; /* Reducido desde 5px */
+        width: 30px;
+        /* Reducido desde 60px */
+        height: 2.5px;
+        /* Reducido desde 5px */
         background: #555;
-        border-radius: 5px; /* Reducido desde 10px */
+        border-radius: 5px;
+        /* Reducido desde 10px */
         position: absolute;
-        top: 6px; /* Reducido desde 12px */
+        top: 6px;
+        /* Reducido desde 12px */
         left: 50%;
         transform: translateX(-50%);
         box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.3);
-      }
-      
-      /* Parte inferior - Botón circular */
-      .phone-frame::after {
+    }
+
+    /* Parte inferior - Botón circular */
+    .phone-frame::after {
         content: '';
         display: block;
-        width: 17.5px; /* Reducido desde 35px */
-        height: 17.5px; /* Reducido desde 35px */
+        width: 17.5px;
+        /* Reducido desde 35px */
+        height: 17.5px;
+        /* Reducido desde 35px */
         background: #333;
-        border: 1.5px solid #666; /* Reducido desde 3px */
+        border: 1.5px solid #666;
+        /* Reducido desde 3px */
         border-radius: 50%;
         position: absolute;
-        bottom: 9px; /* Reducido desde 18px */
+        bottom: 9px;
+        /* Reducido desde 18px */
         left: 50%;
         transform: translateX(-50%);
         box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.3), 0 1.5px 4px rgba(0, 0, 0, 0.4);
         transition: background 0.3s ease;
-      }
-      
-      /* Hover efecto de botón para mejorar la apariencia */
-      .phone-frame::after:hover {
+    }
+
+    /* Hover efecto de botón para mejorar la apariencia */
+    .phone-frame::after:hover {
         background: #444;
         border-color: #555;
-      }
-      
-      /* Efecto de iluminación en los bordes del teléfono */
-      .phone-frame:before {
+    }
+
+    /* Efecto de iluminación en los bordes del teléfono */
+    .phone-frame:before {
         content: '';
         position: absolute;
         top: 0;
@@ -686,9 +718,10 @@ footer {
         height: 100%;
         border-radius: inherit;
         background: rgba(255, 255, 255, 0.1);
-        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3); /* Reducido desde 20px */
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+        /* Reducido desde 20px */
         pointer-events: none;
-      }
+    }
 
 
     .contador,
