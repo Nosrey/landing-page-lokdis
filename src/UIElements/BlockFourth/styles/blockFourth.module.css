@@ -333,7 +333,8 @@
 
 
 .containerAvatar1 {
-    display: flex;
+    /* display: flex; */
+    display: none;
     position: absolute;
     bottom: -25px;
     left: 25px;
@@ -3668,7 +3669,7 @@
 
 @media (min-width: 1900px) {
     .containerAvatar1 {
-        display: flex;
+        display: none;
         position: absolute;
         bottom: 100px;
         left: 25px;
