@@ -1359,6 +1359,10 @@
         transform: rotate(-5deg);
     }
 
+    .fatherContainer {
+        padding-top: 5%;
+    }
+
     .containerAvatar2 {
         display: flex;
         position: absolute;

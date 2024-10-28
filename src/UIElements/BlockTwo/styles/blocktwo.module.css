@@ -309,7 +309,7 @@
     .containerAvatar3 {
         display: flex;
         position: absolute;
-        bottom: -70px;
+        bottom: -30px;
         left: 25px;
         margin-top: 0vh;
         transform: rotate(-5deg);
@@ -560,7 +560,7 @@
     .containerAvatar3 {
         display: flex;
         position: absolute;
-        bottom: -70px;
+        bottom: -30px;
         left: -150px;
         margin-top: 0vh;
         transform: rotate(-5deg);
@@ -800,7 +800,7 @@
     .containerAvatar3 {
         display: flex;
         position: absolute;
-        bottom: -70px;
+        bottom: -30px;
         left: 25px;
         margin-top: 0vh;
         transform: rotate(-5deg);
