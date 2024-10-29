@@ -471,7 +471,7 @@ footer {
     }
 
     .fondo {
-        height: 168vh;
+        height: auto;
         padding: 0;
         padding-bottom: 15vh;
     }
