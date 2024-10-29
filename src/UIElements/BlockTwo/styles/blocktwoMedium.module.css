@@ -1,0 +1,923 @@
+@media only screen and (min-width: 740px) and (max-width:1000px) and (max-height: 1000px) {
+
+    .containerPhotos {
+        margin-top: 25%;
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        height: 120%;
+
+    }
+
+    .containerAdditionalText {
+        width: 69%;
+    }
+
+
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 60%;
+        height: 30%;
+        top: 58%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 60%;
+        height: 30%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        bottom: 68%;
+        left: 62%;
+
+    }
+
+    .iconoGirl {
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+
+    }
+
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftContainer {
+        height: auto;
+        margin-top: 10vh;
+    }
+
+    .textH3 {
+        font-size: 4.2vh;
+        margin-bottom: -5vh;
+        margin-top: 0px;
+    }
+
+    .letterParagraph {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .secondTextLeftContainer,
+    .thirdText,
+    .additionalText {
+        font-size: 4.5vh;
+        font-weight: bold;
+    }
+
+    .fourthText {
+        font-size: 4.2vh;
+
+    }
+
+    .containerTextMoreImage {
+        width: 100%;
+        margin-left: -0.5vw;
+
+    }
+
+    .firstTextLeftContainer {
+        font-size: 4.5vh;
+        font-weight: bold;
+
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 4.5vh;
+        font-weight: bold;
+
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 10% 13% 7% 0;
+        transform: rotate(10deg);
+    }
+
+    .iconoGirl {
+        width: 30%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        z-index: 3;
+    }
+
+    .iconoUserMap {
+        width: 30%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        bottom: 73%;
+        left: 60%;
+        z-index: 3;
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -30px;
+    }
+
+    .containerLetterParagraph {
+        width: 35vw;
+        height: auto;
+        margin-left: 0vw;
+    }
+
+    .containerAvatar3Desk img {
+        width: 5vw;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-width: 800px) and (min-height: 1000px) {
+    .fourthText {
+        font-size: 1rem;
+
+
+    }
+
+    .defineContainerText {
+        width: 100%;
+        margin-top: -55vh;
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 20%;
+        top: 46%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .boxTwo img {
+        width: 120%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .boxOne img {
+        width: 120%;
+        height: 135%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+
+    }
+
+    .boxOne {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 20%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .firstContainer {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftContainer {
+        height: 100vh;
+    }
+
+    .textH3 {
+        font-size: 15px;
+        margin-bottom: -5vh;
+    }
+
+    .letterParagraph {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .secondTextLeftContainer,
+    .thirdText,
+    .additionalText {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -4vh;
+    }
+
+    .containerTextMoreImage {
+        width: 100%;
+        margin-left: -0.5vw;
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 10% 16% 6% 0;
+        transform: rotate(10deg);
+    }
+
+    .iconoGirl {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        top: 25%;
+        left: 1%;
+        z-index: 3;
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        /* Reducido para mejor ajuste */
+        position: absolute;
+        bottom: 73%;
+        left: 62%;
+        z-index: 3;
+    }
+
+    .containerLetterParagraph {
+        width: 35vw;
+        height: auto;
+        margin-left: 1vw;
+    }
+}
+
+@media only screen and (min-width:800px) and (min-height:1236px) and (max-width: 1300px) {
+    .firstTextLeftContainer {
+        line-height: 5rem;
+
+    }
+
+    .firstContainer {
+        margin-bottom: -90vh;
+    }
+
+    .thirdText {
+        font-size: 20;
+    }
+
+    .containerBlueLetter {
+        height: 2vh;
+    }
+
+    .eyesImage {
+        width: 15%;
+        margin: 15% 15% 15% 0;
+        transform: rotate(10deg);
+    }
+
+    .textH3 {
+
+        line-height: 5rem;
+        margin-top: -2vh;
+    }
+
+    .containerLetterParagraph {
+        margin-left: -3vw;
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        top: 33%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .boxTwo img {
+        width: 120%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .boxOne img {
+        width: 120%;
+        height: 135%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+
+    }
+
+    .boxOne {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 10%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .iconoGirl {
+        left: 5vw;
+    }
+
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) and (max-width: 1200px) {
+
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 15%;
+        top: 43%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 15%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoGirl {
+        top: 45vh;
+        left: 8vw;
+    }
+
+    .containerBlueLetter {
+        margin-top: 1vh;
+        height: 2vh;
+
+    }
+
+    .textH3 {
+        line-height: 5rem;
+        margin-top: -3vh;
+    }
+
+    .containerLetterParagraph {
+        margin-left: -3vw;
+    }
+
+    .firstContainer {
+        /* margin-bottom: -55vh; */
+        margin-bottom: -85vh;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+
+    .containerTextMoreImage {
+        margin-top: -25px;
+    }
+
+    .defineContainerText {
+
+        width: 100%;
+
+    }
+
+
+    .containerAvatar3Desk {
+        display: flex;
+        position: absolute;
+        bottom: -25vh;
+        left: 40px;
+        z-index: 3;
+        margin-top: 0vh;
+        transform: rotate(-5deg);
+    }
+
+    .leftContainer {
+
+        margin-top: 0rem;
+
+    }
+
+    .containerLetterParagraph {
+        width: 73%;
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        line-height: 2rem;
+        font-size: 1.6rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+
+    }
+
+    .firstTextLeftContainerEnglish {
+        font-size: 1.5rem
+    }
+
+    .containerBlueLetter {
+        display: flex;
+
+        margin-top: 0.7rem;
+
+        height: 1rem;
+
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -0.9rem;
+
+    }
+
+    .thirdText {
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        font-size: 1.4rem;
+        background-color: #00FFD7;
+
+    }
+
+    .secondTextLeftContainer {
+        font-size: 1.6rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        line-height: 1rem;
+
+    }
+
+    .leftContainer {
+        margin-top: 8vh;
+        width: 50%;
+        height: 95%;
+        padding-top: 8vh;
+        padding-bottom: 5vh;
+
+    }
+
+    .textH3 {
+        font-family: 'Poppins-Regular';
+
+        font-size: 1.4rem;
+        line-height: 0rem;
+    }
+
+    .letterParagraph {
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-left: -2vw;
+        margin-top: 8vh;
+    }
+
+    .fourthText {
+        font-size: 0.9rem;
+        font-family: 'Poppins-Regular';
+
+    }
+
+    .additionalText {
+        font-size: 2vw;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 8% 13% 5% 0%;
+        transform: rotate(7deg);
+
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        top: 58%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+        height: 30%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        bottom: 73%;
+        left: 62%;
+
+    }
+
+    .iconoGirl {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+
+    }
+
+    .letterParagraph {
+        user-select: none;
+        font-family: 'Poppins-Regular';
+        font-size: 2.0vw;
+
+
+    }
+
+    .fourthText {
+        font-family: 'Poppins-Regular';
+        font-size: 2.0vw;
+        color: #028470;
+
+    }
+
+    .secondTextLeftContainer,
+    .secondTextLeftContainerEnglish {
+        margin-bottom: 5px;
+    }
+
+    .containerAdditionalText {
+        width: 75%;
+    }
+
+
+}
+
+@media only screen and (min-width:1000px) and (min-height:1340px) {
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 50%;
+        height: 15%;
+        top: 43%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        height: 15%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+
+    .containerTextMoreImage {
+        margin-top: -25px;
+    }
+
+    .defineContainerText {
+
+        width: 100%;
+
+    }
+
+    .leftContainer {
+
+        margin-top: 0rem;
+
+    }
+
+    .firstTextLeftContainer,
+    .firstTextLeftContainerEnglish {
+        line-height: 2rem;
+        font-size: 1.9rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+
+    }
+
+    .contenedorLetterBlueContainer {
+        margin-top: -0.9rem;
+
+    }
+
+    .thirdText {
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 0px;
+    }
+
+    .secondTextLeftContainer {
+        font-size: 1.9rem;
+        font-family: 'Poppins-Regular';
+        font-weight: bold;
+        line-height: 1rem;
+
+    }
+
+    .leftContainer {
+
+        width: 50%;
+        height: 95%;
+
+    }
+
+    .textH3 {
+        font-family: 'Poppins-Regular';
+
+        font-size: 1.5rem;
+        line-height: 0rem;
+    }
+
+    .letterParagraph {
+        font-size: 1.2rem;
+        text-align: justify;
+        margin-left: -2.5vw;
+        margin-top: 8vh;
+    }
+
+    .fourthText {
+        font-size: 0.9rem;
+        font-family: 'Poppins-Regular';
+
+    }
+
+    .additionalText {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 1.5rem;
+    }
+
+    .eyesImage {
+
+        width: 13%;
+
+        position: relative;
+        margin: 8% 13% 5% 0%;
+        transform: rotate(7deg);
+
+    }
+
+    .boxTwo {
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        top: 58%;
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        left: 62%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 2;
+        border-radius: 10%;
+    }
+
+    .boxTwo img {
+        position: relative;
+        width: 115%;
+        height: 101%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .boxOne img {
+        position: relative;
+        width: 120%;
+        height: 155%;
+        top: 50%;
+        left: 50%;
+        /* Asegura que la imagen cubra todo el div */
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    .boxOne {
+        box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+        height: 30%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 1;
+        border-radius: 10%;
+
+    }
+
+    .iconoUserMap {
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        bottom: 68%;
+        left: 62%;
+
+    }
+
+    .iconoGirl {
+        width: 50%;
+        z-index: 3;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+
+    }
+
+
+    .letterParagraph {
+        user-select: none;
+        font-family: 'Poppins-Regular';
+        font-size: 25px;
+
+
+    }
+
+    .fourthText {
+        font-family: 'Poppins-Regular';
+        font-size: 25px;
+        color: #028470;
+
+    }
+
+
+}
