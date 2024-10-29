@@ -309,7 +309,7 @@
     .containerAvatar3 {
         display: flex;
         position: absolute;
-        bottom: -50px;
+        bottom: -23px;
         left: 25px;
         margin-top: 0vh;
         transform: rotate(-5deg);
@@ -337,6 +337,7 @@
 
     .leftContainer {
         width: 100%;
+        padding-bottom: 50px;
     }
 
     .containerPhotos {
@@ -561,7 +562,7 @@
         display: flex;
         position: absolute;
         bottom: -50px;
-        left: -150px;
+        right: calc(32vw * 1);
         margin-top: 0vh;
         transform: rotate(-5deg);
     }
