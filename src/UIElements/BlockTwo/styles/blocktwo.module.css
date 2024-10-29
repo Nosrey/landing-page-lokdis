@@ -368,7 +368,7 @@
 
         width: 100%;
         background-color: white;
-        padding-top: 80px;
+        padding-top: 0px;
     }
 
     .firstTextLeftContainer {
@@ -448,7 +448,7 @@
         /* z-index: 2; */
         z-index: 0;
         justify-content: start;
-        height: 150vh;
+        height: 130vh;
 
     }
 
@@ -860,7 +860,7 @@
 
         width: 100%;
         background-color: white;
-        padding-top: 80px;
+        padding-top: 0px;
     }
 
     .firstTextLeftContainer {
@@ -939,7 +939,7 @@
         width: 100%;
         z-index: 2;
         justify-content: start;
-        height: 150vh;
+        height: 130vh;
 
     }
 
