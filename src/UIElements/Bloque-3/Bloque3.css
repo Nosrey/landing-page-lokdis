@@ -527,13 +527,13 @@ b {
     }
 
     .ctnLokdis {
-
         display: flex;
+
     }
 
     .ctnLokdis img {
         position: absolute;
-        width: 150px;
+        width: 100px;
         top: 1160px;
         left: 30px;
     }
