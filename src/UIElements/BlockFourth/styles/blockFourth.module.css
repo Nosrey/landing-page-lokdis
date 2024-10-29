@@ -1366,7 +1366,7 @@
     .containerAvatar2 {
         display: flex;
         position: absolute;
-        top: 30px;
+        top: 50px;
         right: 25px;
         margin-top: 15px;
         transform: rotate(-5deg);
