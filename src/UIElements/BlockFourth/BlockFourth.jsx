@@ -86,11 +86,12 @@ const BlockFourth = ({ language }) => {
                         {language === 'spanish' ? <h2 className={styles.textNew} >¡Descubre con LokDis!</h2> : <h2 className={styles.textNew} >Discover with LokDis!</h2>}
                     </div>
 
+
                 </div>
 
             </div>
 
-      
+
 
             <div className={styles.containerBannerPhotoMovil} >
 
@@ -156,7 +157,7 @@ const BlockFourth = ({ language }) => {
 
             <div className={styles.containerAvatar1} >
                 <img src={avatar1} alt="avatar uno" className={`${styles.avatar1} ${styles.avatarStyle}`} />
-           
+
             </div>
             <div className={styles.container} >
                 <div className={styles.containerParagraph} >

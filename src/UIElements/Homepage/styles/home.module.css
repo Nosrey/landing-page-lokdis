@@ -120,7 +120,7 @@
     .carrusel2 {
         top: -45vh;
     }
- }
+}
 
 @media (max-width: 900px) and (min-width: 701px) and (min-height: 416px) {
     .carrusel1 {
@@ -134,11 +134,11 @@
 
 @media (max-width: 1100px) and (min-width: 901px) {
     .carrusel1 {
-        top: 47vh;
+        top: 55vh;
     }
 
     .carrusel2 {
-        top: -32vh;
+        top: -42vh;
     }
 }
 

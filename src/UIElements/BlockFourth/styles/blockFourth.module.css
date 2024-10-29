@@ -334,10 +334,10 @@
 
 .containerAvatar1 {
     /* display: flex; */
-    display: none;
+    display: flex;
     position: absolute;
     bottom: -25px;
-    left: 25px;
+    left: calc(30vh * 0.5);
     margin-top: 0vh;
     transform: rotate(-5deg);
     z-index: 999;
@@ -346,7 +346,7 @@
 .containerAvatar2 {
     display: flex;
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 25px;
     margin-top: 15px;
     transform: rotate(-5deg);
@@ -1922,7 +1922,7 @@
         bottom: 110px;
         left: 25px;
         margin-top: 0vh;
-        transform: rotate(-5deg);        
+        transform: rotate(-5deg);
     }
 
     .avatar1 {
@@ -1938,6 +1938,7 @@
         margin-top: 15px;
         transform: rotate(-5deg);
     }
+
     .container {
         display: none;
     }
@@ -2194,6 +2195,7 @@
         margin-top: 15px;
         transform: rotate(-5deg);
     }
+
     .container {
         display: none;
     }
@@ -2449,7 +2451,7 @@
         bottom: 0;
         left: 25px;
         margin-top: 0vh;
-        transform: rotate(-5deg);        
+        transform: rotate(-5deg);
     }
 
     .containerAvatar2 {
@@ -2460,6 +2462,7 @@
         margin-top: 15px;
         transform: rotate(-5deg);
     }
+
     .container {
         display: none;
     }
@@ -3748,7 +3751,7 @@
         transform: rotate(-5deg);
         z-index: 999;
     }
-    
+
     .containerAvatar2 {
         display: flex;
         position: absolute;
