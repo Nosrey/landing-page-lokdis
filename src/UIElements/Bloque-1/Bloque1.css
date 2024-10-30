@@ -39,19 +39,21 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: -50px;
+    margin-top: 10px;
     z-index: 2;
     font-size: 24px; /* Ajusta el tamaño del icono */
-    color: #fff;
+    color: black;
     line-height: 1; /* Asegura que el icono se centre verticalmente */
   }
   
   .mute-switch.muted {
     background-color: #ff4d4d; /* Color rojo para muted */
+    color: white;
   }
   
   .mute-switch.unmuted {
-    background-color: #4caf50; /* Color verde para unmuted */
+    display: none;
+    background-color: #00FFD7; /* Color verde para unmuted */
   }
   
   .mute-switch:hover {
