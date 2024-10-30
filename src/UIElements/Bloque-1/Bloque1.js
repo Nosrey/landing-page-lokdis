@@ -100,7 +100,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
               }
               <button
-                style={{ margin: '-10px auto 10px auto', zIndex: 10000, display: (!loading && window.innerWidth <= 500) ? 'block' : 'none' }}
+                style={{ margin: '0px auto 10px auto', zIndex: 10000, display: (!loading && window.innerWidth <= 500) ? 'block' : 'none' }}
                 onClick={() => setIsMuted(!isMuted)}
                 className={`botonPhone mute-switch ${isMuted ? 'muted' : 'unmuted'}`}
               >
