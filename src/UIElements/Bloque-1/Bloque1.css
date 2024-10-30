@@ -24,6 +24,50 @@
     src: url('./Fonts/Alkatra-Regular.ttf') format('truetype');
 }
 
+.botonPhone {
+    display: none;
+}
+
+.mute-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    z-index: 2;
+    font-size: 24px;
+    /* Ajusta el tamaño del icono */
+    color: black;
+    line-height: 1;
+    /* Asegura que el icono se centre verticalmente */
+}
+
+.mute-switch.muted {
+    background-color: #ff4d4d;
+    /* Color rojo para muted */
+    color: white;
+}
+
+.mute-switch.unmuted {
+    display: none;
+    background-color: #00FFD7;
+    /* Color verde para unmuted */
+}
+
+.mute-switch:hover {
+    background-color: #555;
+}
+
+.mute-switch:active {
+    transform: scale(0.9);
+}
+
 
 .phone-frame {
     margin-top: 40px;
@@ -443,6 +487,14 @@ footer {
 
 /* diseño mobile */
 @media (max-width: 500px) {
+    .botonDesk {
+        display: none;
+    }
+
+    .botonPhone {
+        display: block;
+        z-index: 2;
+    }
 
     .rightBloq1 {
         transform: none;
