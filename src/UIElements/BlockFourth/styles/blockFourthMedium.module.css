@@ -1,0 +1,842 @@
+@media (min-width:500px) and (max-width:831px) {
+
+    .fatherContainer {
+        margin-top: -65vh;
+    }
+
+    .containerTextThreee {
+        width: 180px;
+        margin-left: 8vw;
+
+    }
+
+    .paragraphOne {
+        font-size: 10px;
+    }
+
+    .paragraphSecond {
+        font-size: 10px;
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 26vh;
+        left: 25vw;
+        width: 8%;
+        transform: rotate(155deg);
+        filter: brightness(0);
+
+
+    }
+
+    .containerTextOne {
+        width: 60%;
+        position: relative;
+        left: 8vw;
+
+    }
+
+
+    .textOneContainer {
+        word-wrap: break-word;
+        line-height: 2rem;
+        font-family: 'Poppins-Regular';
+        font-size: 1.2rem;
+        text-align: left;
+        position: relative;
+        bottom: 10%;
+
+    }
+
+    .textTwoContainer {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .letterContainer {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+
+    }
+
+    .containerTextTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 8vw;
+        width: 180px;
+    }
+
+    .containerTextTwoForMoreText {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textThree {
+        font-size: 1rem;
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 77% !important;
+        height: auto;
+        bottom: 1%;
+        left: 38%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 80%;
+        bottom: 2%;
+        right: 10%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 78%;
+        bottom: 3%;
+        right: 62%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerTextThree {
+
+        width: 95%;
+
+    }
+
+    .leftOverTextContainer {
+        margin-left: 8.5vw;
+
+    }
+
+    .arrowDown {
+        position: absolute;
+        top: 90%;
+        left: -2%;
+        width: 8%;
+        transform: rotate(-35deg);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownThree {
+        position: absolute;
+        top: 89%;
+        left: 54.5%;
+        width: 8%;
+        transform: rotate(150deg) scaleY(-1);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 10vh;
+        left: 25vw;
+        width: 8%;
+        transform: rotate(155deg);
+        filter: brightness(0);
+
+
+    }
+
+    .containerParagraph {
+
+        margin-top: 15vh;
+    }
+
+    .containerParagraphThree {
+        margin-top: 11vh;
+
+    }
+
+    .containerParagraphTwo {
+
+        margin-top: -8vh;
+    }
+
+}
+
+
+@media only screen and (min-width:800px) and (min-height:1236px) and (max-width: 900px) {
+    .container {
+        margin-top: 50vh;
+    }
+
+    .containerParagraph {
+        background-color: white;
+        margin-top: -19vh;
+    }
+
+    .containerPhotos {
+        margin-top: -13vh;
+    }
+
+    .arrowDown {
+        top: 58vh
+    }
+
+    .arrowDownThree {
+        top: 65vh
+    }
+
+    .containerParagraphThree {
+        margin-top: -19vh;
+    }
+
+}
+
+@media (min-width: 831px) and (max-width:966px) {
+
+    .fatherContainer {
+
+        margin-top: -65vh;
+
+    }
+
+
+    .arrowDown {
+        position: absolute;
+        top: 75%;
+        left: -2%;
+        width: 8%;
+        transform: rotate(-30deg);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownThree {
+        position: absolute;
+        top: 78%;
+        left: 54.5%;
+        width: 8%;
+        transform: rotate(150deg) scaleY(-1);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 22vh;
+        left: 25vw;
+        width: 8%;
+        transform: rotate(155deg);
+        filter: brightness(0);
+
+
+    }
+
+    .containerTextOne {
+        width: 60%;
+        position: relative;
+        left: 8vw;
+    }
+
+
+    .textOneContainer {
+        word-wrap: break-word;
+        line-height: 2rem;
+        font-family: 'Poppins-Regular';
+        font-size: 1.2rem;
+        text-align: left;
+        position: relative;
+        bottom: 10%;
+
+    }
+
+    .textTwoContainer {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .letterContainer {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+
+    }
+
+    .containerTextTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 8vw;
+        width: 180px;
+    }
+
+    .containerTextTwoForMoreText {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textThree {
+        font-size: 1rem;
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 77% !important;
+        height: auto;
+        bottom: 1%;
+        left: 38%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 80%;
+        bottom: 2%;
+        right: 10%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 78%;
+        bottom: 3%;
+        right: 62%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerTextThree {
+
+        width: 95%;
+
+    }
+
+    .leftOverTextContainer {
+        margin-left: 8.5vw;
+
+    }
+
+    .paragraphSecond,
+    .paragraphOne {
+        font-size: 0.7rem;
+    }
+
+    .arrowDown {
+        top: 90%;
+    }
+
+    .arrowDownSecond {
+        top: 8%;
+    }
+
+    .containerParagraphTwo {
+        top: -10%;
+    }
+
+    .containerParagraph {
+        top: 95%;
+        right: 15%;
+    }
+
+    .arrowDownThree {
+        top: 90%;
+    }
+
+    .containerParagraphThree {
+        top: 95%;
+    }
+
+    .textOneContainer {
+        font-size: 18px;
+    }
+
+    .containerTextThreee {
+        width: 180px;
+        margin-left: 8vw;
+    }
+}
+
+@media only screen and (min-width:900px) and (min-height:1156px) {
+
+    .container {
+        margin-top: 25vh
+    }
+
+    .containerParagraphTwo {
+        top: 15vh
+    }
+
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .arrowDown {
+        top: 65vh
+    }
+
+    .containerParagraph {
+        top: 69vh;
+    }
+
+    .arrowDownThree {
+        top: 75vh;
+    }
+
+    .containerParagraphThree {
+        top: 78vh;
+    }
+
+
+}
+
+@media (min-width: 966px) and (max-width:1100px) and (max-height:800px) {
+    .arrowDown {
+        position: absolute;
+        top: 76%;
+        left: -2%;
+        width: 8%;
+        transform: rotate(-30deg);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownThree {
+        position: absolute;
+        top: 78%;
+        left: 54.5%;
+        width: 8%;
+        transform: rotate(150deg) scaleY(-1);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 10vh;
+        left: 25vw;
+        width: 8%;
+        transform: rotate(155deg);
+        filter: brightness(0);
+    }
+
+    .containerParagraphTwo {
+        position: absolute;
+        top: -5%;
+        width: 48%;
+        left: 20%;
+    }
+
+    .paragraphSecond {
+        font-size: 0.8rem;
+    }
+
+    .arrowDownThree {
+        top: 88%;
+        transform: rotate(-25deg);
+    }
+
+    .containerParagraphThree {
+        top: 93%;
+    }
+
+    .containerParagraph {
+        top: 90%;
+    }
+
+    .paragraphOne {
+        font-size: 0.8rem;
+    }
+
+    .arrowDown {
+        top: 83%;
+    }
+
+
+    .containerTextOne {
+        width: 60%;
+        position: relative;
+        left: 8vw;
+    }
+
+
+    .textOneContainer {
+        word-wrap: break-word;
+        line-height: 2rem;
+        font-family: 'Poppins-Regular';
+        font-size: 1.4rem;
+        text-align: left;
+        position: relative;
+        bottom: 10%;
+
+    }
+
+    .textTwoContainer {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .letterContainer {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+
+    }
+
+    .containerTextTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 8vw;
+        width: 240px;
+
+    }
+
+    .containerTextTwoForMoreText {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textThree {
+        font-size: 1.2rem;
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 75% !important;
+        bottom: 5vh;
+        left: 32%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 5%;
+        right: 14%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: 3%;
+        right: 62%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerTextThree {
+
+        width: 95%;
+
+    }
+
+    .leftOverTextContainer {
+        margin-left: 8.5vw;
+
+    }
+
+    .containerTextThreee {
+        width: 245px;
+        margin-left: 8vw;
+    }
+
+}
+
+@media (min-width: 1004px) and (min-height: 748px) and (max-width: 1100px) {
+    .fatherContainer {
+        height: 110vh;
+    }
+
+    .containerPhotos {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerParagraphTwo {
+        top: 05vh;
+
+    }
+
+    .arrowDownSecond {
+        top: 17vh;
+    }
+
+    .containerParagraph {
+        top: 79vh;
+    }
+
+    .arrowDown {
+        top: 73vh;
+    }
+
+    .containerParagraphThree {
+        top: 82vh;
+    }
+
+    .arrowDownThree {
+        top: 78vh;
+    }
+
+}
+
+@media only screen and (min-width:1000px) and (min-height:1340px) {
+    .containerTextTwoForMoreText {
+        padding-left: 15vw;
+    }
+
+    .fatherContainer {
+        margin-top: -40vh;
+    }
+
+    .containerTextThreee {
+
+        width: 380px;
+
+    }
+
+    .containerTextTwo {
+        width: 350px;
+    }
+
+    .containerParagraph {
+        margin-top: -8vh;
+    }
+
+    .arrowDown {
+        top: 65vh;
+    }
+
+    .containerParagraphThree {
+
+        margin-top: -9vh;
+    }
+
+    .containerParagraphTwo {
+        margin-top: 5vh;
+    }
+
+    .arrowDownSecond {
+        margin-top: 5vh;
+    }
+
+    .arrowDownThree {
+        top: 70vh;
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width:1400px) {
+
+    .fatherContainer {
+
+        margin-top: -65vh;
+
+    }
+
+    .containerTextThreee {
+        margin-left: 8vw;
+        width: 260px;
+    }
+
+    .arrowDown {
+        position: absolute;
+        top: 85%;
+        left: -2%;
+        width: 8%;
+        transform: rotate(-30deg);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownThree {
+        position: absolute;
+        top: 82%;
+        left: 54.5%;
+        width: 8%;
+        transform: rotate(310deg) scaleY(1);
+        filter: brightness(0);
+
+    }
+
+    .arrowDownSecond {
+        position: absolute;
+        top: 2vh;
+        left: 25vw;
+        width: 8%;
+        transform: rotate(155deg);
+        filter: brightness(0);
+
+
+    }
+
+    .containerTextOne {
+        width: 60%;
+        position: relative;
+        left: 8vw;
+    }
+
+    .containerParagraphTwo {
+        margin-top: -15vh;
+    }
+
+
+    .textOneContainer {
+        word-wrap: break-word;
+        line-height: 2rem;
+        font-family: 'Poppins-Regular';
+        font-size: 1.7rem;
+        text-align: left;
+        position: relative;
+        bottom: 10%;
+
+    }
+
+    .textTwoContainer {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .letterContainer {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+
+    }
+
+    .containerTextTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 8vw;
+        width: 250px;
+    }
+
+    .containerTextTwoForMoreText {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textThree {
+        font-size: 1.2rem;
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 75% !important;
+        bottom: 12vh;
+        left: 32%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 13%;
+        right: 14%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: 14%;
+        right: 62%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerTextThree {
+
+        width: 95%;
+
+    }
+
+    .leftOverTextContainer {
+        margin-left: 8.5vw;
+
+    }
+
+    .containerParagraph {
+        margin-top: 10vh;
+    }
+
+    .containerParagraphThree {
+
+        margin-top: 0vh;
+    }
+
+    .textOneContainer {
+        font-size: 24px;
+
+    }
+
+
+
+}
+
+@media(min-width:1366px) and (min-height:768px) {
+
+    .containerParagraphTwo {
+
+        margin-top: -10vh;
+
+    }
+
+    .fatherContainer {
+        margin-top: -60vh;
+    }
+
+
+
+}
+
+@media (min-width: 1350px) and (min-height: 850px) {
+    .fatherContainer {
+        margin-top: -55vh;
+        margin-bottom: -45vh;
+    }
+}
