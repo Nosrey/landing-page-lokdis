@@ -10,11 +10,15 @@
 
     .containerAvatar3 {
         display: flex;
-        position: absolute;
-        bottom: -23px;
+        position: relative;
+        bottom: 10px;
+        width: 15vw;
         left: 25px;
         margin-top: 0vh;
-        transform: rotate(-5deg);
+    }
+
+    .containerAvatar3 img {
+        transform: rotate(-20deg);
     }
 
     .containerAvatar3Desk {

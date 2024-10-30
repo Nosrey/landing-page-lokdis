@@ -83,17 +83,19 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
               <div className='phoneView2Bloq1' style={{ margin: '25px 0' }}>
                 {loading && <div className="spinnerBloq1"></div>}
                 <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
-                  {/* url='https://vimeo.com/1023344517' */}
-                  <ReactPlayer
-                    url='https://lokdis.com/multimedia/Video_landing_LokDis.mp4'
-                    controls
-                    playing={true}
-                    loop={true}
-                    muted={true}
-                    onReady={() => setLoading(false)}
-                    width='100%'
-                    height='100%'
-                  />
+                  <div className="phone-content">
+                    {/* url='https://vimeo.com/1023344517' */}
+                    <ReactPlayer
+                      url='https://lokdis.com/multimedia/Video_landing_LokDis.mp4'
+                      controls
+                      playing={true}
+                      loop={true}
+                      muted={true}
+                      onReady={() => setLoading(false)}
+                      width='100%'
+                      height='100%'
+                    />
+                  </div>
                 </div>
               </div>
 
