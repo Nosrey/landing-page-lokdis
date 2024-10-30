@@ -491,11 +491,6 @@ footer {
         display: none;
     }
 
-    .botonPhone {
-        display: block;
-        z-index: 2;
-    }
-
     .rightBloq1 {
         transform: none;
         transition: none;
