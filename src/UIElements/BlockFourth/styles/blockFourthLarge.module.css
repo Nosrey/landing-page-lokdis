@@ -1,0 +1,684 @@
+@media (min-width: 1401px) {
+    @keyframes elipse {
+        0% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+
+        50% {
+            transform: translateY(-20px);
+            /* Subir la elipse */
+        }
+
+        100% {
+            transform: translateY(0);
+            /* Volver a la posición inicial */
+        }
+    }
+
+
+    .fatherContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 820px;
+        margin-top: -65vh;
+
+    }
+
+    .letterContainer {
+        margin-top: 0px;
+    }
+
+    .allMoviles {
+        z-index: 1;
+        width: 450px !important;
+        bottom: 120px;
+        right: 0px;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+        transition: width 0.3s ease;
+    }
+
+    .allMoviles:hover {
+
+        width: 550px !important;
+        cursor: zoom-in;
+    }
+
+    .containerPhotos {
+        width: 35%;
+        margin-left: 100px;
+        margin-top: 120px;
+    }
+
+    .elipseContainer {
+        overflow: visible;
+    }
+
+    .elipseContainer img {
+        width: 450px;
+        height: 250px;
+
+    }
+
+
+    .textTwoContainer {
+        font-size: 35px;
+
+    }
+
+    .paragraphOne,
+    .paragraphSecond {
+        font-size: 1rem;
+    }
+
+    .containerParagraphTwo {
+        margin-top: -02vh;
+
+    }
+
+    .textTwoContainer {
+        font-size: 2rem;
+
+    }
+
+    .containerParagraph {
+        margin-top: -40px;
+    }
+
+    .containerParagraphThree {
+        top: 75%;
+    }
+
+    .containerTextTwoForMoreText {
+        margin-left: 15vw;
+        justify-content: flex-start;
+
+    }
+
+    .containerTextTwo {
+        width: 280px;
+        font-weight: bold;
+    }
+
+    .arrowDown {
+        left: 5%;
+        top: 70%;
+    }
+
+    .textTwoContainer {
+        font-size: 25px;
+
+    }
+
+    .arrowDownSecond {
+        left: 315px;
+        top: 100px;
+    }
+
+    .arrowDownThree {
+        top: 478px;
+        transform: rotate(-65deg);
+    }
+
+}
+
+@media (min-width: 1419px) and (min-height: 890px) {
+    .fatherContainer {
+        margin-top: -60vh;
+    }
+}
+
+@media(min-width:1419px) and (min-height:976px) {
+
+    .container {
+        margin-top: 10%;
+    }
+
+}
+
+@media (min-width: 1501px) {
+
+    .containerTextTwoForMoreText {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .containerTextTwo {
+        width: 340px;
+    }
+
+    .letterContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .allMoviles {
+        z-index: 1;
+        width: 450px !important;
+        bottom: 140px;
+        left: 15px;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+        transition: width 0.3s ease;
+    }
+
+    .allMoviles:hover {
+
+        width: 550px !important;
+        cursor: zoom-in;
+    }
+
+
+    .elipseContainer {
+        display: flex;
+        position: absolute;
+        width: 130%;
+        height: 50%;
+        background-color: transparent;
+        left: -10%;
+        overflow: visible;
+    }
+
+    .fatherContainer {
+        margin-top: -50vh;
+        height: 880px;
+    }
+
+    .textTwoContainer {
+        font-size: 30px;
+
+    }
+
+    .paragraphOne,
+    .paragraphSecond {
+        font-size: 1.2rem;
+    }
+
+    .containerParagraphTwo {
+        margin-top: -02vh;
+    }
+
+    .arrowDownThree {
+        top: 570px !important;
+
+    }
+
+}
+
+
+
+@media (min-width: 1506px) and (max-width: 1606px) and (min-height: 801px) and (max-height: 900px) {
+    .arrowDownSecond {
+        top: 12vh
+    }
+
+    .containerParagraphTwo {
+        top: 0vh;
+    }
+
+    .arrowDown {
+        top: 75vh;
+        left: -2vw;
+    }
+
+    .containerParagraph {
+        left: -5vh;
+        top: 80vh;
+    }
+
+    .arrowDownThree {
+        top: 80vh;
+    }
+
+    .containerParagraphThree {
+        top: 87vh;
+    }
+}
+
+@media (min-width: 1600px) and (max-height: 880px) {
+    .fatherContainer {
+        margin-top: -45vh;
+    }
+
+
+
+    .letterContainer {
+        margin-top: -80px;
+    }
+
+    .containerAvatar2 {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 85px;
+        transform: rotate(-5deg);
+        z-index: 999;
+    }
+
+    .arrowDownThree {
+        left: 415px;
+        top: 545px;
+    }
+
+
+}
+
+
+@media (min-width: 1900px) {
+    .containerAvatar1 {
+        display: none;
+        position: absolute;
+        bottom: 100px;
+        left: 25px;
+        margin-top: 0vh;
+        transform: rotate(-5deg);
+        z-index: 999;
+    }
+
+    .allMoviles {
+        z-index: 1;
+        width: 800px !important;
+        bottom: 120px;
+        right: 0px;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+        transition: width 0.3s ease;
+    }
+
+    .allMoviles:hover {
+
+        width: 950px !important;
+        cursor: zoom-in;
+    }
+
+    .elipseContainer {
+        left: -180px;
+    }
+
+    .elipseContainer img {
+        width: 850px;
+        height: 450px;
+    }
+
+    .letterContainer {
+        margin-top: -250px;
+    }
+
+    .fatherContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 1100px;
+        margin-top: -65vh;
+
+    }
+
+    .containerAvatar2 {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        right: 85px;
+        transform: rotate(-5deg);
+        z-index: 999;
+    }
+
+    .arrowDownSecond {
+        top: 150px !important;
+    }
+
+    .containerParagraphTwo {
+        margin-top: 145px;
+    }
+}
+
+
+@media (min-width: 1910px) and (max-height: 649px) and (min-height: 560px) {
+    .arrowDownSecond {
+        top: -15vh
+    }
+
+    .containerParagraphTwo {
+        top: -25vh;
+    }
+
+    .arrowDown {
+        top: 85vh;
+        left: -2vw;
+    }
+
+    .containerParagraph {
+        left: -5vh;
+        top: 93vh;
+    }
+
+    .arrowDownThree {
+        top: 87vh;
+    }
+
+    .containerParagraphThree {
+        top: 95vh;
+    }
+}
+
+@media (min-width: 1910px) and (max-height: 749px) and (min-height: 650px) {
+    .arrowDownSecond {
+        top: -5vh
+    }
+
+    .containerParagraphTwo {
+        top: -15vh;
+    }
+
+    .arrowDown {
+        top: 83vh;
+        left: -2vw;
+    }
+
+    .containerParagraph {
+        left: -5vh;
+        top: 90vh;
+    }
+
+    .arrowDownThree {
+        top: 83vh;
+    }
+
+    .containerParagraphThree {
+        top: 91vh;
+    }
+}
+
+
+@media (min-width: 1910px) and (max-height: 1000px) and (min-height: 750px) {
+    .fatherContainer {
+        margin-top: -50vh;
+        padding-bottom: 80px;
+    }
+
+    .arrowDownSecond {
+        top: 0vh
+    }
+
+    .containerParagraphTwo {
+        top: -10vh;
+    }
+
+    .arrowDown {
+        top: 77vh;
+        left: 0vw;
+    }
+
+    .containerParagraph {
+        left: -5vh;
+        top: 85vh;
+    }
+
+    .arrowDownThree {
+        top: 80vh;
+    }
+
+    .containerParagraphThree {
+        top: 88vh;
+    }
+}
+
+@media (min-width: 1900px) and (min-height:1000px) {
+    .fatherContainer {
+        margin-top: -60vh;
+    }
+}
+
+@media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1151px) {
+    .arrowDownSecond {
+        top: 10vh
+    }
+
+    .containerParagraphTwo {
+        top: 2vh;
+    }
+
+    .arrowDown {
+        top: 70vh;
+        left: 0vw;
+    }
+
+    .containerParagraph {
+        left: -5vh;
+        top: 78vh;
+    }
+
+    .arrowDownThree {
+        top: 78vh;
+    }
+
+    .containerParagraphThree {
+        top: 82vh;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .containerParagraph {
+        top: 65vh;
+    }
+
+    .containerParagraphThree {
+        top: 67vh;
+    }
+}
+
+@media only screen and (min-width:2400px) and (min-height:1660px) {
+
+
+    .container {
+
+        margin-top: 40vh;
+
+    }
+
+    .imageMovilOne {
+        z-index: 1;
+        width: 75% !important;
+        bottom: 0vh;
+        left: 15%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 0%;
+        right: 14%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: -0%;
+        right: 43%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .arrowDownThree {
+
+        top: 58vh;
+    }
+
+    .containerTextTwoForMoreText {
+
+        margin-left: -22vw;
+        width: 29vw;
+
+    }
+
+    .containerParagraph {
+        top: 85vh;
+    }
+
+    .arrowDown {
+        top: 60vh;
+        left: 5vw;
+    }
+
+    .containerParagraphTwo {
+
+        top: 5vh;
+    }
+
+    .arrowDownSecond {
+        top: 10vh;
+        left: 20vw;
+    }
+
+}
+
+@media screen and (min-width:2000px) and (min-height: 1600px) {
+    .arrowDownSecond {
+        top: 25vh
+    }
+
+    .containerParagraph {
+        top: 65vh;
+    }
+
+    .containerParagraphThree {
+        top: 67vh;
+    }
+
+
+}
+
+
+@media (min-width:2000px) {
+
+    .containerParagraph {
+        top: 80vh;
+    }
+
+    .arrowDown {
+        top: 55vh;
+        left: 2vw;
+    }
+
+    .arrowDownSecond {
+        top: 5vh;
+        left: 25vw;
+    }
+
+    .containerParagraphTwo {
+        top: 0vh;
+    }
+
+    .containerParagraphThree {
+        top: 85vh;
+    }
+
+    .arrowDownThree {
+        top: 62vh
+    }
+
+    .imageMovilOne {
+        top: -4vh;
+        left: 8vw;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 75%;
+        bottom: 4%;
+        right: 17%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 72%;
+        bottom: 3%;
+        right: 44%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+}
+
+@media only screen and (min-width:3900px) {
+
+    .containerParagraph {
+        top: 67vh;
+    }
+
+    .arrowDown {
+        top: 50vh;
+        left: 2vw;
+    }
+
+    .arrowDownSecond {
+        top: 5vh;
+        left: 18vw;
+    }
+
+    .containerParagraphTwo {
+        top: 5vh;
+    }
+
+    .containerParagraphThree {
+        top: 68vh;
+    }
+
+    .elipseContainer {
+        width: 80%;
+        left: 2vw;
+
+    }
+
+    .arrowDownThree {
+        top: 52vh
+    }
+
+    .imageMovilOne {
+        top: -0.5vh;
+        left: 0vw;
+    }
+
+    .containerPhotos img:nth-child(2) {
+        z-index: 2;
+        width: 82%;
+        bottom: 0%;
+        right: 15%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+
+    .containerPhotos img:nth-child(3) {
+        z-index: 3;
+        width: 82%;
+        bottom: 1%;
+        right: 30%;
+        position: relative;
+        animation: elipse 5s ease-in-out infinite;
+
+    }
+}

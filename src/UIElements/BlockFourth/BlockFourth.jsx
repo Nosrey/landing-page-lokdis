@@ -2,9 +2,8 @@
 import styles from './styles/blockFourth.module.css';
 import stylesSmall from './styles/blockFourthSmall.module.css';
 import stylesMedium from './styles/blockFourthMedium.module.css';
-import movilOne from '../Assets/movil-one.png';
-import movilTwo from '../Assets/phone-two-block-4.png';
-import movilThree from '../Assets/phone-three-block-4.png'
+import stylesLarge from './styles/blockFourthLarge.module.css';
+import allMoviles from '../Assets/block-fourth-phones.png';
 import elipse from '../Assets/elipse.png';
 import arrowDown from '../Bloque-3/Images/curvedArrow.gif';
 import arrowUp from '../Bloque-3/Images/curvedArrow3.gif';
@@ -52,40 +51,39 @@ const BlockFourth = ({ language }) => {
 
 
     return (
-        <div className={`${styles.fatherContainer} ${stylesSmall.fatherContainer}  ${stylesMedium.fatherContainer}`} >
-
-            <div className={`${styles.containerAvatar2} ${stylesSmall.containerAvatar2} ${stylesMedium.containerAvatar2}`} >
-                <img src={avatar2} alt="avatar uno" className={`${styles.avatar2} ${styles.avatarStyle} ${stylesSmall.avatar2} ${stylesSmall.avatarStyle} ${stylesMedium.avatar2} ${stylesMedium.avatarStyle}`} />
+        <div className={`${styles.fatherContainer} ${stylesSmall.fatherContainer}  ${stylesMedium.fatherContainer} ${stylesLarge.fatherContainer}`} >
+            <div className={`${styles.containerAvatar2} ${stylesSmall.containerAvatar2} ${stylesMedium.containerAvatar2} ${stylesLarge.containerAvatar2}`} >
+                <img src={avatar2} alt="avatar uno" className={`${styles.avatar2} ${styles.avatarStyle} ${stylesSmall.avatar2} ${stylesSmall.avatarStyle} `} />
             </div>
 
 
-            <div className={`${styles.letterContainer} ${stylesSmall.letterContainer} ${stylesMedium.letterContainer}`} >
+            <div className={`${styles.letterContainer} ${stylesSmall.letterContainer} ${stylesMedium.letterContainer} ${stylesLarge.letterContainer}`} >
 
-                <div className={`${styles.containerTextOne} ${stylesSmall.containerTextOne} ${stylesMedium.containerTextOne}`} >
+                <div className={`${styles.containerTextOne} ${stylesSmall.containerTextOne} ${stylesMedium.containerTextOne} ${stylesLarge.containerTextOne}`} >
 
-                    {language === 'spanish' ? <h2 className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer}`} >Tu ventana al mundo en el momento que elijas</h2> : <p className={`${styles.textOneContainer} ${stylesSmall.textOneContainer}`} >Your window to the world at <span className={`${styles.textOneContainer} ${stylesSmall.textOneContainer}`}> the moment of your choice</span></p>}
+                    {language === 'spanish' ? <h2 className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Tu ventana al mundo en el momento que elijas</h2> : <p className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Your window to the world at <span className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`}> the moment of your choice</span></p>}
 
                 </div>
-                <div className={`${styles.containerTextTwoForMoreText} ${stylesSmall.containerTextTwoForMoreText} ${stylesMedium.containerTextTwoForMoreText}`} >
-                    {language === 'spanish' ? <div className={`${styles.containerTextTwo} ${stylesSmall.containerTextTwo} ${stylesMedium.containerTextTwo}`} >
-                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer}`} >Explora lo que quieras,</span>
+                <div className={`${styles.containerTextTwoForMoreText} ${stylesSmall.containerTextTwoForMoreText} ${stylesMedium.containerTextTwoForMoreText} ${stylesLarge.containerTextTwoForMoreText}`} >
+                    {language === 'spanish' ? <div className={`${styles.containerTextTwo} ${stylesSmall.containerTextTwo} ${stylesMedium.containerTextTwo} ${stylesLarge.containerTextTwo}`} >
+                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer} ${stylesLarge.textTwoContainer}`} >Explora lo que quieras,</span>
                     </div> : null}
-                    {language !== 'spanish' ? <div className={`${styles.containerTextThreee} ${stylesSmall.containerTextThreee} ${stylesMedium.containerTextThreee}`} >
-                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer}`} >Explore where you want,</span>
+                    {language !== 'spanish' ? <div className={`${styles.containerTextThreee} ${stylesSmall.containerTextThreee} ${stylesMedium.containerTextThreee} ${stylesLarge.containerTextThreee}`} >
+                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer} ${stylesLarge.textTwoContainer}`} >Explore where you want,</span>
                     </div> : null}
                 </div>
-                <div className={`${styles.leftOverTextContainer} ${stylesSmall.leftOverTextContainer} ${stylesMedium.leftOverTextContainer}`} >
+                <div className={`${styles.leftOverTextContainer} ${stylesSmall.leftOverTextContainer} ${stylesMedium.leftOverTextContainer} ${stylesLarge.leftOverTextContainer}`} >
 
-                    {language === 'spanish' ? <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer}`} > cuando quieras</span> :
-                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textTwoContainer}`} > when you want</span>}
+                    {language === 'spanish' ? <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textThree} ${stylesLarge.textTwoContainer}`} > cuando quieras</span> :
+                        <span className={`${styles.textTwoContainer} ${stylesSmall.textTwoContainer} ${stylesMedium.textThree} ${stylesLarge.textTwoContainer}`} > when you want</span>}
 
-                    <div className={`${styles.containerTextThree} ${stylesSmall.containerTextThree} ${stylesMedium.containerTextThree}`} >
+                    <div className={`${styles.containerTextThree} ${stylesSmall.containerTextThree} ${stylesMedium.containerTextThree} ${stylesLarge.containerTextThree}`} >
 
-                        {language === 'spanish' ? <p className={`${styles.textThree} ${stylesSmall.textThree} ${stylesMedium.textThree}`}> Busca los lugares que quieres ver en el mapa interactivo del mundo, solicita momentos reales y obtén una perspectiva auténtica en tiempo real.</p> :
-                            <p className={`${styles.textThree} ${stylesSmall.textThree} ${stylesMedium.textThree}`}>
+                        {language === 'spanish' ? <p className={`${styles.textThree} ${stylesSmall.textThree} ${stylesMedium.textThree} ${stylesLarge.textThree}`}> Busca los lugares que quieres ver en el mapa interactivo del mundo, solicita momentos reales y obtén una perspectiva auténtica en tiempo real.</p> :
+                            <p className={`${styles.textThree} ${stylesSmall.textThree} ${stylesMedium.textThree} ${stylesLarge.textThree}`}>
                                 Find the places you want to see on the interactive map, request real moments and get an authentic perspective in real time.
                             </p>}
-                        {language === 'spanish' ? <h2 className={`${styles.textNew} ${stylesSmall.textNew} ${stylesMedium.textNew}`} >¡Descubre con LokDis!</h2> : <h2 className={`${styles.textNew} ${stylesSmall.textNew} ${stylesMedium.textNew}`} >Discover with LokDis!</h2>}
+                        {language === 'spanish' ? <h2 className={`${styles.textNew} ${stylesSmall.textNew} ${stylesMedium.textNew} ${stylesLarge.textNew}`} >¡Descubre con LokDis!</h2> : <h2 className={`${styles.textNew} ${stylesSmall.textNew} ${stylesMedium.textNew} ${stylesLarge.textNew}`} >Discover with LokDis!</h2>}
                     </div>
 
 
@@ -157,50 +155,46 @@ const BlockFourth = ({ language }) => {
 
             </div>
 
-            <div className={`${styles.containerAvatar1} ${stylesSmall.containerAvatar1}`} >
+            <div className={`${styles.containerAvatar1} ${stylesSmall.containerAvatar1} ${stylesMedium.containerAvatar1}`} >
                 <img src={avatar1} alt="avatar uno" className={`${styles.avatar1} ${styles.avatarStyle} ${stylesSmall.avatar1} ${stylesSmall.avatarStyle}`} />
 
             </div>
-            <div className={`${styles.container} ${stylesSmall.container} ${stylesMedium.container} `} >
-                <div className={`${styles.containerParagraph} ${stylesSmall.containerParagraph} ${stylesMedium.containerParagraph}`} >
-                    {language === 'spanish' ? <p className={`${styles.paragraphOne} ${stylesMedium.paragraphOne}`} >En el mapa verás las personas que
-                        están disponibles en la app y sus ubicaciones</p> : <p className={`${styles.paragraphOne} ${stylesMedium.paragraphOne}`} >
+            <div className={`${styles.container} ${stylesSmall.container} ${stylesMedium.container} ${stylesLarge.container} `} >
+                <div className={`${styles.containerParagraph} ${stylesSmall.containerParagraph} ${stylesMedium.containerParagraph} ${stylesLarge.containerParagraph}`} >
+                    {language === 'spanish' ? <p className={`${styles.paragraphOne} ${stylesMedium.paragraphOne} ${stylesLarge.paragraphOne}`} >En el mapa verás las personas que
+                        están disponibles en la app y sus ubicaciones</p> : <p className={`${styles.paragraphOne} ${stylesMedium.paragraphOne} ${stylesLarge.paragraphOne}`} >
                         On the map you will see the people who are available in the app and their locations
                     </p>}
 
                 </div>
-                <img className={`${styles.arrowDown} ${stylesSmall.arrowDown} ${stylesMedium.arrowDown}`} src={arrowDown} alt="flecha abajo" />
-                <div className={`${styles.containerParagraphTwo} ${stylesSmall.containerParagraphTwo} ${stylesMedium.containerParagraphTwo}`} >
-                    {language === 'spanish' ? <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond}`} >
+                <img className={`${styles.arrowDown} ${stylesSmall.arrowDown} ${stylesMedium.arrowDown} ${stylesLarge.arrowDown}`} src={arrowDown} alt="flecha abajo" />
+                <div className={`${styles.containerParagraphTwo} ${stylesSmall.containerParagraphTwo} ${stylesMedium.containerParagraphTwo} ${stylesLarge.containerParagraphTwo}`} >
+                    {language === 'spanish' ? <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond} ${stylesLarge.paragraphSecond}`} >
                         Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
-                    </p> : <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond}`} >You will be able to request real moments
+                    </p> : <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond} ${stylesLarge.paragraphSecond}`} >You will be able to request real moments
                         from people who are in the places you want to see
                     </p>}
                 </div>
-                <div className={`${styles.containerParagraphThree} ${stylesSmall.containerParagraphThree} ${stylesMedium.containerParagraphThree}`} >
-                    {language === 'spanish' ? <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond}`} >
+                <div className={`${styles.containerParagraphThree} ${stylesSmall.containerParagraphThree} ${stylesMedium.containerParagraphThree} ${stylesLarge.containerParagraphThree}`} >
+                    {language === 'spanish' ? <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond}  ${stylesLarge.paragraphSecond}`} >
                         ¡Explora los lugares que quieras, cuando quieras!
                     </p> :
-                        <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond}`} >Explore the places you want when you want</p>}
+                        <p className={`${styles.paragraphSecond} ${stylesMedium.paragraphSecond} ${stylesLarge.paragraphSecond}`} >Explore the places you want when you want</p>}
                 </div>
-                <img className={`${styles.arrowDownThree} ${stylesSmall.arrowDownThree} ${stylesMedium.arrowDownThree}`} src={arrowDown} alt="flecha abajo" />
+                <img className={`${styles.arrowDownThree} ${stylesSmall.arrowDownThree} ${stylesMedium.arrowDownThree} ${stylesLarge.arrowDownThree}`} src={arrowDown} alt="flecha abajo" />
 
-                <img className={`${styles.arrowDownSecond} ${stylesSmall.arrowDownSecond} ${stylesMedium.arrowDownSecond}`} src={arrowDown} alt="flecha abajo" />
+                <img className={`${styles.arrowDownSecond} ${stylesSmall.arrowDownSecond} ${stylesMedium.arrowDownSecond} ${stylesLarge.arrowDownSecond}`} src={arrowDown} alt="flecha abajo" />
 
 
-                <div className={`${styles.containerPhotos} ${stylesSmall.containerPhotos} ${stylesMedium.containerPhotos}`} >
+                <div className={`${styles.containerPhotos} ${stylesSmall.containerPhotos} ${stylesMedium.containerPhotos} ${stylesLarge.containerPhotos}`} >
 
-                    <img className={`${styles.imageMovilOne} ${stylesMedium.imageMovilOne}`} src={movilOne} alt='Movil Uno' />
-                    <img src={movilTwo} alt="Movil Dos" />
-                    <img src={movilThree} alt="Movil Tres" />
-
-                    <div className={styles.elipseContainer} >
+                    <img className={`${styles.allMoviles} ${stylesMedium.allMoviles} ${stylesLarge.allMoviles}`} src={allMoviles} alt='Movil Uno' />
+                    <div className={`${styles.elipseContainer} ${stylesMedium.elipseContainer} ${stylesLarge.elipseContainer}`} >
                         <img className={styles.elipse} src={elipse} alt='Elipse' />
                     </div>
                 </div>
 
             </div>
-
 
 
         </div >

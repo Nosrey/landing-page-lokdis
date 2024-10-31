@@ -8,14 +8,14 @@
     margin-top: -45vh;
     width: 100%;
     position: relative;
-    top: 49vh;
+    top: 55%;
     z-index: 1;
 }
 
 .carrusel2 {
     width: 100%;
     position: relative;
-    top: -35vh;
+    top: -39vh;
     z-index: 1;
 }
 
@@ -108,33 +108,47 @@
 
 @media (max-width: 700px) and (min-width: 501px) {
     .carrusel1 {
-        top: 55vh;
-    }
-}
-
-@media (max-width: 900px) and (max-height: 415px) {
-    .carrusel1 {
-        top: 65vh;
+        top: 85%;
     }
 
     .carrusel2 {
-        top: -45vh;
+        top: -55%
+    }
+}
+
+@media (max-width: 900px) and (max-height: 415px) and (min-width: 701px) {
+    .carrusel1 {
+        top: 78%;
+    }
+
+    .carrusel2 {
+        top: -50%;
     }
 }
 
 @media (max-width: 900px) and (min-width: 701px) and (min-height: 416px) {
     .carrusel1 {
-        top: 52vh;
+        top: 78%;
     }
 
     .carrusel2 {
-        top: -30vh;
+        top: -46%;
     }
 }
 
-@media (max-width: 1100px) and (min-width: 901px) {
+@media (max-width: 1050px) and (min-width: 901px) {
     .carrusel1 {
         top: 55vh;
+    }
+
+    .carrusel2 {
+        top: -42vh;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1051px) {
+    .carrusel1 {
+        top: 62%;
     }
 
     .carrusel2 {
@@ -181,7 +195,7 @@
 
 @media (min-width: 1004px) and (min-height: 748px) {
     .carrusel1 {
-        top: 46vh;
+        top: 50%;
         transform: rotate(0.5deg);
     }
 
@@ -206,12 +220,12 @@
 
 @media(min-width:1366px) and (min-height:600px) {
     .carrusel1 {
-        top: 45vh;
+        top: 57%;
         transform: rotate(-0.5deg);
     }
 
     .carrusel2 {
-        top: -33vh;
+        top: -45%;
         transform: rotate(-0.5deg);
 
     }
@@ -219,84 +233,90 @@
 
 @media(min-width:1366px) and (min-height:768px) {
     .carrusel1 {
-        top: 45vh;
+        top: 52%;
     }
 
     .carrusel2 {
-        top: -29vh;
+        top: -35%;
+    }
+}
+
+@media (min-width:1300px) and (max-width:1400px) and (max-height:750px) {
+    .carrusel2 {
+        top: -44%;
     }
 }
 
 @media (min-width: 1350px) and (min-height: 850px) {
     .carrusel1 {
-        top: 42.5vh;
+        top: 50%;
     }
 
     .carrusel2 {
-        top: -27vh;
+        top: -35%;
     }
 }
 
 @media (min-width: 1419px) and (min-height: 890px) {
     .carrusel1 {
-        top: 41vh
+        top: 48%;
     }
 
     .carrusel2 {
-        top: -28vh;
+        top: -32vh;
     }
 }
 
 @media(min-width:1419px) and (min-height:976px) {
     .carrusel1 {
-        top: 40vh;
+        top: 45%;
     }
 
     .carrusel2 {
-        top: -27vh;
+        top: -29%;
     }
 }
 
 /* Resoluciones grandes */
-@media (min-width: 1501px) {
+@media (min-width: 1501px) and (max-width: 1599px) {
     .carrusel1 {
-        top: 40vh;
+        top: 45%;
         transform: rotate(-0.5deg);
     }
 
     .carrusel2 {
-        top: -24vh;
+        top: -32%;
         transform: rotate(-0.5deg);
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 608px) and (max-height: 707px) {
     .carrusel1 {
-        top: 53vh;
+        top: 57%;
     }
 
     .carrusel2 {
-        top: -38vh;
+        top: -44%;
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 708px) and (max-height: 800px) {
     .carrusel1 {
-        top: 48vh;
+        top: 50%;
     }
 
     .carrusel2 {
-        top: -33vh;
+        top: -40%;
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 801px) and (max-height: 900px) {
     .carrusel1 {
-        top: 43vh;
+        top: 48%;
     }
 
     .carrusel2 {
-        top: -29vh;
+        top: -35%;
     }
 }
 
@@ -310,10 +330,20 @@
     }
 } */
 
-
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-height: 900px) {
     .carrusel1 {
-        top: 45vh;
+        top: 48vh;
+    }
+
+    .carrusel2 {
+        top: -37vh;
+    }
+}
+
+
+@media (min-width: 1600px) and (max-height: 1049px) and (min-height: 901px) {
+    .carrusel1 {
+        top: 48vh;
     }
 
     .carrusel2 {
@@ -325,7 +355,7 @@
 
     .carrusel1 {
 
-        top: 38vh;
+        top: 45vh;
 
     }
 
@@ -337,17 +367,27 @@
 
 @media (min-width: 1821px) and (max-width: 1909px) and (min-height: 868px) {
     .carrusel1 {
-        top: 43vh;
+        top: 50%;
     }
 
     .carrusel2 {
-        top: -29vh;
+        top: -40%;
     }
 }
 
 @media (min-width: 1910px) and (max-height: 630px) and (min-height: 560px) {
     .carrusel1 {
-        top: 63vh;
+        top: 75%;
+    }
+
+    .carrusel2 {
+        top: -53vh;
+    }
+}
+
+@media (min-width: 1910px) and (max-height: 710px) and (min-height: 631px) {
+    .carrusel1 {
+        top: 65%;
     }
 
     .carrusel2 {
@@ -355,9 +395,9 @@
     }
 }
 
-@media (min-width: 1910px) and (max-height: 710px) and (min-height: 631px) {
+@media (min-width: 1910px) and (max-height: 800px) and (min-height: 711px) {
     .carrusel1 {
-        top: 50vh;
+        top: 62%;
     }
 
     .carrusel2 {
@@ -365,40 +405,51 @@
     }
 }
 
-@media (min-width: 1910px) and (max-height: 800px) and (min-height: 711px) {
-    .carrusel1 {
-        top: 50vh;
-    }
-
-    .carrusel2 {
-        top: -38vh;
-    }
-}
-
 @media (min-width: 1910px) and (max-height: 849px) and (min-height: 801px) {
     .carrusel1 {
-        top: 44vh;
+        top: 53%;
     }
 
     .carrusel2 {
-        top: -35vh;
+        top: -40vh;
     }
 }
 
 
 @media (min-width: 1910px) and (max-height: 950px) and (min-height: 850px) {
     .carrusel1 {
-        top: 41vh;
+        top: 51%;
     }
 
     .carrusel2 {
-        top: -33vh;
+        top: -36vh;
     }
 }
 
 @media (min-width: 1910px) and (min-height: 951px) and (max-height: 1099px) {
     .carrusel1 {
-        top: 40vh;
+        top: 47%;
+    }
+
+    .carrusel2 {
+        top: -32vh;
+    }
+}
+
+@media (min-width: 1910px) and (max-height: 1199px) and (min-height: 1100px) {
+    .carrusel1 {
+        top: 42%;
+    }
+
+    .carrusel2 {
+        top: -32vh;
+    }
+}
+
+
+@media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1200px) {
+    .carrusel1 {
+        top: 42%;
     }
 
     .carrusel2 {
@@ -406,36 +457,15 @@
     }
 }
 
-@media (min-width: 1910px) and (max-height: 1199px) and (min-height: 1100px) {
-    .carrusel1 {
-        top: 33vh;
-    }
-
-    .carrusel2 {
-        top: -23vh;
-    }
-}
-
-
-@media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1200px) {
-    .carrusel1 {
-        top: 35vh;
-    }
-
-    .carrusel2 {
-        top: -23vh;
-    }
-}
-
 
 @media screen and (min-width: 2000px) {
     .carrusel1 {
-        top: 33vh;
+        top: 40%;
         transform: rotate(-0.5deg);
     }
 
     .carrusel2 {
-        top: -19vh;
+        top: -29%;
         transform: rotate(-0.5deg);
     }
 }
@@ -446,12 +476,12 @@
 @media screen and (min-width:2600px) and (min-height:1300px) {
 
     .carrusel1 {
-        top: 36vh;
+        top: 42%;
         transform: rotate(-0.5deg);
     }
 
     .carrusel2 {
-        top: -25vh;
+        top: -33vh;
         transform: rotate(-0.5deg);
     }
 
@@ -469,7 +499,7 @@
     }
 
     .carrusel2 {
-        top: -21vh !important;
+        top: -27vh !important;
         transform: rotate(0deg);
     }
 
@@ -486,7 +516,7 @@
     }
 
     .carrusel2 {
-        top: -21vh !important;
+        top: -27vh !important;
         transform: rotate(0deg);
     }
 

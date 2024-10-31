@@ -52,7 +52,7 @@
 
 
     .contenedorLetterBlueContainer {
-        margin-top: -0.5rem;
+        margin-top: -0.8rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -62,17 +62,17 @@
     .thirdText {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         background-color: #00FFD7;
 
     }
 
     .secondTextLeftContainer {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 0rem;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
     }
 
     .leftContainer {
@@ -84,8 +84,8 @@
 
     .textH3 {
         font-family: 'Poppins-Regular';
-        font-size: 2rem;
-        margin-bottom: -5vh;
+        font-size: 1.5rem;
+        margin-bottom: -10vh;
     }
 
     .fourthText {
@@ -176,7 +176,7 @@
 
     .letterParagraph {
         font-size: 2vw;
-        text-align: justify;
+        text-align: left;
     }
 
 
@@ -234,7 +234,7 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 2rem;
-        font-size: 2.35rem;
+        font-size: 2rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -247,7 +247,7 @@
 
 
     .contenedorLetterBlueContainer {
-        margin-top: -0.9rem;
+        margin-top: -1.9rem;
 
     }
 
@@ -263,7 +263,7 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 2rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
@@ -280,19 +280,19 @@
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 2.35rem;
+        font-size: 1.8rem;
         line-height: 0rem;
         margin-top: 25px;
 
     }
 
     .letterParagraph {
-        font-size: 2vw;
-        text-align: justify;
+        font-size: 25px;
+        text-align: left;
     }
 
     .fourthText {
-        font-size: 2vw;
+        font-size: 25px !important;
         font-family: 'Poppins-Regular';
 
     }
@@ -428,14 +428,15 @@
     .leftContainer {
 
         margin-top: 1rem;
-        padding-top: 50px;
+        padding-top: 125px;
+        padding-bottom: 25px;
 
     }
 
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 4rem;
-        font-size: 2.35rem;
+        font-size: 2rem;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -489,25 +490,24 @@
     .leftContainer {
 
         width: 50%;
-        height: 95%;
+        height: 80%;
 
     }
 
     .textH3 {
         font-family: 'Poppins-Regular';
-
         font-size: 2.35rem;
         line-height: 0rem;
         margin-top: 25px;
     }
 
     .letterParagraph {
-        font-size: 1.2rem;
-        text-align: justify;
+        font-size: 2rem !important;
+        text-align: left;
     }
 
     .fourthText {
-        font-size: 0.9rem;
+        font-size: 2rem !important;
         font-family: 'Poppins-Regular';
 
     }
@@ -599,14 +599,13 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 35px;
-
+        font-size: 2rem !important;
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 2rem !important;
         color: #028470;
 
     }
@@ -705,18 +704,18 @@
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 2.35rem;
+        font-size: 2rem;
         line-height: 0rem;
         margin-top: 25px;
     }
 
     .letterParagraph {
-        font-size: 1.2rem;
-        text-align: justify;
+        font-size: 1.5rem !important;
+        text-align: left;
     }
 
     .fourthText {
-        font-size: 0.9rem;
+        font-size: 1.5rem !important;
         font-family: 'Poppins-Regular';
 
     }
@@ -924,7 +923,7 @@
 
     .letterParagraph {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left !important;
     }
 
     .fourthText {
@@ -1283,8 +1282,7 @@
 
     .leftContainer {
 
-        margin-top: 1rem;
-        padding-top: 50px;
+        margin-top: 0rem;
 
     }
 
