@@ -55,7 +55,6 @@ b {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .subtituloPoppins {
@@ -72,7 +71,7 @@ b {
     margin-left: 5vw;
     margin-bottom: 10vh;
     margin-top: 10vh;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
     transition: transform 1.5s ease-out, opacity 0.5s ease-out;
 }
@@ -113,10 +112,11 @@ b {
     color: #ffffff;
 }
 
+
 .arrow1 {
     position: absolute;
-    top: -15vh;
-    right: 25vw;
+    top: -5%;
+    right: 35%;
 }
 
 .arrowImage1 {
@@ -131,14 +131,14 @@ b {
 
 .arrow2 {
     position: absolute;
-    top: 0vh;
-    right: 52vw;
+    top: 15%;
+    right: 72%;
 }
 
 .arrow3 {
     position: absolute;
-    top: 50vh;
-    right: 52vw;
+    top: 45%;
+    right: 76%;
 }
 
 .arrowImage3 {
@@ -146,14 +146,14 @@ b {
 }
 
 .places {
-    width: 50vw;
+    width: 75vw;
 }
 
 .arrow4 {
     position: absolute;
-    top: 105.5vh;
     margin: 0;
-    right: 33vw;
+    top: 92%;
+    right: 49%;
     padding: 0;
 }
 
@@ -180,89 +180,29 @@ b {
     display: none;
 }
 
-/* @media only screen and (min-width:360px) and (min-height:640px) and (max-width:374px) and (max-height:666px) {
 
+@media (max-width: 500px) {
+    .ctnLokdisDesk {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) {
     .fondo3 {
-        margin-top: -4vh;
-        padding-bottom: 55vh;
-        background-position: top;
-        height: 120vh;
-        background-color: transparent;
-    }
-
-    .bloqueCabecera {
-        width: auto;
-        margin: 0 20px;
-        transform: none;
-        transition: none;
-        display: flex;
-        flex-direction: column;
         position: relative;
-        top: -35vh;
-        margin-bottom: -30vh;
     }
 
-    .subtituloPoppins {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        font-weight: 500;
+    .ctnLokdisDesk {
+        left: 1%;
+        top: 70%;
+        position: absolute;
+        transform: rotate(-15deg);
     }
 
-    .textoNormalPoppinsMobile {
-        display: block;
-        font-size: 1.0rem;
-        line-height: 1.8rem;
+    .ctnLokdisDesk img {
+        width: 300px;
     }
-
-    .textoNormalPoppins {
-        display: none;
-    }
-
-    .texto2Bloque3,
-    .textoNormalPoppinsMobile {
-        margin-top: 2rem;
-    }
-
-    .colorGreenTextBloq3 {
-        color: #028470;
-    }
-
-    .texto1Bloque3 {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-        margin-bottom: 35px;
-    }
-
-    .fondoAzulBloque3 {
-        color: #000000;
-        background-color: var(--Color-acento-landing, #00FFD7);
-        display: inline;
-        padding: 0 8px;
-        margin: 5px 0 20px 0;
-        border-radius: 6px;
-        font-weight: 600;
-    }
-
-
-    .placesContainer {
-        display: none;
-    }
-
-    .placesContainerMobile {
-        display: block;
-        margin: 2.5rem 0;
-    }
-
-    .sliderBloq3 {
-        margin-top: -105vh;
-        display: inline-block;
-        width: 85%;
-        height: auto;
-    }
-
-
-
-} */
+}
 
 @media only screen and (min-width:360px) and (min-height:740px) and (max-width:370px) and (max-height:800px) {
     .fondo3 {
@@ -307,7 +247,8 @@ b {
     }
 
     .colorGreenTextBloq3 {
-        color: #028470;
+        font-weight: bold;
+        color: #05a990;
     }
 
     .texto1Bloque3 {
@@ -392,7 +333,8 @@ b {
     }
 
     .colorGreenTextBloq3 {
-        color: #028470;
+        font-weight: bold;
+        color: #05a990;
     }
 
     .texto1Bloque3 {
@@ -477,7 +419,8 @@ b {
     }
 
     .colorGreenTextBloq3 {
-        color: #028470;
+        font-weight: bold;
+        color: #05a990;
     }
 
     .texto1Bloque3 {
@@ -572,7 +515,8 @@ b {
     }
 
     .colorGreenTextBloq3 {
-        color: #028470;
+        font-weight: bold;
+        color: #05a990;
     }
 
     .texto1Bloque3 {
@@ -656,7 +600,8 @@ b {
     }
 
     .colorGreenTextBloq3 {
-        color: #028470;
+        font-weight: bold;
+        color: #05a990;
     }
 
     .texto1Bloque3 {
@@ -700,14 +645,24 @@ b {
         font-size: 8px;
     }
 
+    .arrow1 {
+        top: -10%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
     .arrow3 {
-        top: 35vh;
-        right: 52vw;
+        top: 45%;
+        right: 75%;
     }
 
     .arrow4 {
-        top: 60.5vh;
-        right: 33vw;
+        top: 90%;
+        right: 50%;
     }
 
     .arrowImage4 {
@@ -729,7 +684,7 @@ b {
 
 
 
-    .arrow3 {
+    /* .arrow3 {
         top: 35vh;
         right: 52vw;
     }
@@ -737,7 +692,8 @@ b {
     .arrow4 {
         top: 75.5vh;
         right: 33vw;
-    }
+    } */
+
 
     .arrowImage4 {
         transform: rotate(-110deg);
@@ -755,11 +711,12 @@ b {
     }
 }
 
-@media (max-width: 900px) and (max-height: 415px) {
+@media (max-width: 900px) and (max-height: 415px) and (min-width: 701px) {
     .arrowText3 {
         font-size: 8px;
     }
 
+    /* 
 
     .arrow3 {
         top: 55vh;
@@ -769,6 +726,26 @@ b {
     .arrow4 {
         top: 115.5vh;
         right: 33vw;
+    } */
+
+    .arrow1 {
+        top: -10%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 90%;
+        right: 50%;
     }
 
     .arrowImage4 {
@@ -791,6 +768,26 @@ b {
     .bloqueCabecera {
         margin-top: 10vh;
     }
+
+    .arrow1 {
+        top: -10%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 90%;
+        right: 50%;
+    }
 }
 
 /* @media (min-width: 1350px) and (min-height: 850px) {
@@ -800,9 +797,24 @@ b {
 } */
 
 @media (min-width: 1004px) and (min-height: 748px) and (max-width: 1150px) {
+    .arrow1 {
+        top: -10%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
     .arrow4 {
-        top: 85.5vh;
-        right: 33vw;
+        top: 90%;
+        right: 46%;
     }
 
     .arrowImage4 {
@@ -813,10 +825,26 @@ b {
 }
 
 @media (min-width: 1151px) and (min-height: 748px) and (max-width: 1345px) {
-    .arrow4 {
-        top: 95.5vh;
-        right: 33vw;
+    .arrow1 {
+        top: -10%;
+        right: 35%;
     }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 90%;
+        right: 46%;
+    }
+
 
     .arrowImage4 {
         transform: rotate(-110deg);
@@ -826,62 +854,136 @@ b {
 }
 
 @media (min-width: 1346px) and (min-height: 748px) and (max-width: 1419px) {
-    .arrow4 {
-        top: 95.5vh;
-        right: 31vw;
+    .arrow1 {
+        top: -10%;
+        right: 35%;
     }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 90%;
+        right: 50%;
+    }
+
 }
 
 @media (min-width: 1420px) and (min-height: 880px) and (max-width: 1525px) {
+    .arrow1 {
+        top: -10%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 75%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
     .arrow4 {
-        top: 85.5vh;
-        right: 31vw;
+        top: 90%;
+        right: 50%;
     }
 }
 
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 701px) and (max-height: 750px) {
-    .arrow4 {
-        top: 116vh;
-    }
-
-    .arrow3 {
-        top: 60vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 0vh;
-        right: 50vw;
+        top: 5%;
+        right: 72%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 751px) and (max-height: 800px) {
-    .arrow4 {
-        top: 110vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 801px) and (max-height: 850px) {
-    .arrow4 {
-        top: 100vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 50vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 }
 
 @media (min-width: 1506px) and (max-width: 1606px) and (min-height: 851px) and (max-height: 900px) {
-    .arrow4 {
-        top: 95vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 50vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 }
 
@@ -905,13 +1007,23 @@ b {
 @media (min-width: 1600px) and (max-height: 880px) {
 
     .arrow1 {
-        top: -15vh;
-        right: 25vw;
+        top: -5%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 72%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
     }
 
     .arrow4 {
-        top: 98.5vh;
-        right: 33vw;
+        top: 92%;
+        right: 48%;
     }
 }
 
@@ -920,25 +1032,47 @@ b {
         padding-top: 75vh;
     }
 
+    .arrow1 {
+        top: -5%;
+        right: 35%;
+    }
+
+    .arrow2 {
+        top: 5%;
+        right: 72%;
+    }
+
+    .arrow3 {
+        top: 45%;
+        right: 75%;
+    }
+
     .arrow4 {
-        top: 58.5vh;
-        right: 33vw;
+        top: 92%;
+        right: 48%;
     }
 }
 
 
 @media (min-width: 1910px) and (max-height: 609px) and (min-height: 560px) {
-    .arrow4 {
-        top: 168vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 48vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 
     .fondo3 {
@@ -947,17 +1081,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 649px) and (min-height: 610px) {
-    .arrow4 {
-        top: 158vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 
     .fondo3 {
@@ -966,17 +1107,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 699px) and (min-height: 650px) {
-    .arrow4 {
-        top: 158vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 
     .fondo3 {
@@ -985,17 +1133,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 749px) and (min-height: 700px) {
-    .arrow4 {
-        top: 145vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 
     .fondo3 {
@@ -1004,17 +1159,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 799px) and (min-height: 750px) {
-    .arrow4 {
-        top: 135vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 75%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 48%;
     }
 
     .fondo3 {
@@ -1023,17 +1185,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 849px) and (min-height: 800px) {
-    .arrow4 {
-        top: 125vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1042,17 +1211,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 899px) and (min-height: 850px) {
-    .arrow4 {
-        top: 120vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 80vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1061,17 +1237,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 949px) and (min-height: 900px) {
-    .arrow4 {
-        top: 110vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1080,17 +1263,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 999px) and (min-height: 950px) {
-    .arrow4 {
-        top: 105vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1099,17 +1289,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 1049px) and (min-height: 1000px) {
-    .arrow4 {
-        top: 100vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1119,21 +1316,23 @@ b {
 
 @media (min-width: 1910px) and (max-height: 1099px) and (min-height: 1050px) {
     .arrow1 {
-        top: -5vh;
-        right: 25vw;
-    }
-
-    .arrow4 {
-        top: 95vh;
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1143,21 +1342,23 @@ b {
 
 @media (min-width: 1910px) and (max-height: 1149px) and (min-height: 1100px) {
     .arrow1 {
-        top: -5vh;
-        right: 25vw;
-    }
-
-    .arrow4 {
-        top: 90vh;
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 60vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1167,21 +1368,23 @@ b {
 
 @media (min-width: 1910px) and (max-height: 1199px) and (min-height: 1150px) {
     .arrow1 {
-        top: -5vh;
-        right: 25vw;
-    }
-
-    .arrow4 {
-        top: 90vh;
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 50vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1192,21 +1395,23 @@ b {
 @media (min-width: 1910px) and (max-height: 1249px) and (min-height: 1200px) {
 
     .arrow1 {
-        top: -5vh;
-        right: 25vw;
-    }
-
-    .arrow4 {
-        top: 85vh;
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 50vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {
@@ -1215,22 +1420,24 @@ b {
 }
 
 @media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1250px) {
-    .arrow4 {
-        top: 80vh;
+    .arrow1 {
+        top: -5%;
+        right: 35%;
     }
 
     .arrow2 {
-        top: 10vh;
-        right: 50vw;
-    }
-
-    .arrow1 {
-        top: -5vh;
-        right: 25vw;
+        top: 15%;
+        right: 72%;
     }
 
     .arrow3 {
-        top: 50vh;
+        top: 45%;
+        right: 76%;
+    }
+
+    .arrow4 {
+        top: 92%;
+        right: 49%;
     }
 
     .fondo3 {

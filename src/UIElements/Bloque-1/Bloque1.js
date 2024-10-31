@@ -5,15 +5,36 @@ import ReactPlayer from 'react-player'
 import arrow from './Images/arrow.gif';
 // import phoneSquare from './Images/phoneSquare.png';
 import { useEffect, useRef, useState } from "react";
-import { FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
+import { FaVolumeMute, FaVolumeUp, FaPause, FaPlay } from 'react-icons/fa';
 // import video from '../Assets/video.mp4';
-
 export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const isSpanish = language === "spanish";
   const [loading, setLoading] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [showPlayPause, setShowPlayPause] = useState(false);
 
+
+  // Reference for the container
   const containerRef = useRef(null);
+
+  const hideButtonTimer = useRef(null);
+
+  // Mostrar el botón y cancelar el temporizador de ocultamiento si existe
+  const handleMouseEnter = () => {
+    if (!showPlayPause) setShowPlayPause(true); // Asegurar que se muestra al entrar
+    if (hideButtonTimer.current) {
+      clearTimeout(hideButtonTimer.current);
+      hideButtonTimer.current = null;
+    }
+  };
+
+  // Ocultar el botón después de 1.5 segundos al salir
+  const handleMouseLeave = () => {
+    hideButtonTimer.current = setTimeout(() => {
+      setShowPlayPause(false);
+    }, 1500);
+  };
 
   const redirectUrl = () => {
     if (language === 'spanish') {
@@ -78,34 +99,66 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>
               </p>
               {window.innerWidth <= 500 &&
-                <div className='phoneView2Bloq1' style={{ margin: '25px 0' }}>
-                  {loading && <div className="spinnerBloq1"></div>}
-                  <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
-                    <div className="phone-content">
-                      <ReactPlayer
-                        url='https://vimeo.com/1023344517'
-                        controls={false}
-                        playing={true}
-                        loop={true}
-                        volume={isMuted ? 0 : 1}
-                        onReady={() => setLoading(false)}
-                        width='100%'
-                        height='100%'
-                      />
+                <div
+                  className="cajaTelefono"
+                  onMouseEnter={handleMouseEnter}
+                  onClick={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ margin: '10px auto' }}
+                >
+                  <div className='phoneView2Bloq1' style={{ margin: '0' }}>
+                    {loading && <div className="spinnerBloq1"></div>}
+                    <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
+                      <div className="phone-content">
+                        <ReactPlayer
+                        
+                          url="https://vimeo.com/1023344517"
+                          controls={false}
+                          playing={isPlaying}
+                          loop={true}
+                          volume={isMuted ? 0 : 1}
+                          onReady={() => setLoading(false)}
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
                     </div>
                   </div>
+                  {/* {showPlayPause && ( */}
+                    <button
+                      style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
+                      onClick={() => setIsPlaying(!isPlaying)}
+                      className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
+                    >
+                      {isPlaying ? <FaPause /> : <FaPlay />}
+                    </button>
+                  {/* )} */}
+                  <button
+                    style={{
+                      display: !loading && window.innerWidth <= 500 ? "block" : "none",
+                    }}
+                    onClick={() => setIsMuted(!isMuted)}
+                    className={`botonPhone mute-switch ${isMuted ? "muted" : "unmuted"}`}
+                  >
+                    {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+                  </button>
                 </div>
 
 
 
               }
-              <button
-                style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth <= 500) ? 'block' : 'none' }}
+              {/* <button
+                style={{ margin: '-53px auto 20px auto', display: (!loading && window.innerWidth <= 500) ? 'block' : 'none' }}
                 onClick={() => setIsMuted(!isMuted)}
                 className={`botonPhone mute-switch ${isMuted ? 'muted' : 'unmuted'}`}
               >
+
+
                 {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-              </button>
+
+              </button> */}
+
+
 
 
             </div>
@@ -119,47 +172,52 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
         {/* lado derecho */}
         <div className="columnaSingular rightBloq1" style={{ width: "40%", position: 'relative' }} ref={containerRef}>
-          {/* <img
-            src={phoneView}
-            alt="phoneView"
-            className="phoneView"
-          /> */}
 
-
-          <div className='phoneDeskBloq1'>
-            {loading && <div className="spinnerBloq1"></div>}
-            {window.innerWidth > 500 &&
-
-              <div className="phone-frame" style={{ display: loading ? 'none' : 'block' }}>
-                <ReactPlayer
-                  url='https://vimeo.com/1023344517'
-                  controls={false}
-                  playing={true}
-                  loop={true}
-                  volume={isMuted ? 0 : 1}
-                  onReady={() => setLoading(false)}
-                  width='100%'
-                  height='100%'
-                />
-              </div>
-            }
+          <div
+            className="cajaTelefono"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="phoneDeskBloq1">
+              {loading && <div className="spinnerBloq1"></div>}
+              {window.innerWidth > 500 && (
+                <div
+                  className="phone-frame"
+                  style={{ display: loading ? "none" : "block" }}
+                >
+                  <ReactPlayer
+                    url="https://vimeo.com/1023344517"
+                    controls={false}
+                    playing={isPlaying}
+                    loop={true}
+                    volume={isMuted ? 0 : 1}
+                    onReady={() => setLoading(false)}
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              )}
+            </div>
+            {/* {showPlayPause && ( */}
+              <button
+                style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
+                onClick={() => setIsPlaying(!isPlaying)}
+                className={`botonPhone play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
+              >
+                {isPlaying ? <FaPause /> : <FaPlay />}
+              </button>
+            {/* )} */}
+            <button
+              style={{
+                display: !loading && window.innerWidth > 500 ? "block" : "none",
+              }}
+              onClick={() => setIsMuted(!isMuted)}
+              className={`botonDesk mute-switch ${isMuted ? "muted" : "unmuted"}`}
+            >
+              {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+            </button>
           </div>
 
-          <button
-            style={{ display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
-            onClick={() => setIsMuted(!isMuted)}
-            className={`botonDesk mute-switch ${isMuted ? 'muted' : 'unmuted'}`}
-          >
-            {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-          </button>
-
-          {/* <video
-            autoPlay
-            playsInline
-            className="phoneView"
-            src={video}
-            >
-            </video>           */}
         </div>
       </div>
       <footer>
