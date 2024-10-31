@@ -187,7 +187,8 @@
     }
 
     .fatherContainer {
-        margin-top: -60vh;
+        margin-top: -50vh;
+        height: 880px;
     }
 
     .textTwoContainer {
@@ -205,7 +206,7 @@
     }
 
     .arrowDownThree {
-        top: 520px;
+        top: 570px !important;
 
     }
 
@@ -245,6 +246,8 @@
     .fatherContainer {
         margin-top: -45vh;
     }
+
+
 
     .letterContainer {
         margin-top: -80px;
