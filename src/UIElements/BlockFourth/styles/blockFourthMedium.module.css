@@ -1,7 +1,47 @@
 @media (min-width:500px) and (max-width:831px) {
+    @keyframes elipse {
+        0% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+
+        50% {
+            transform: translateY(-20px);
+            /* Subir la elipse */
+        }
+
+        100% {
+            transform: translateY(0);
+            /* Volver a la posición inicial */
+        }
+    }
+
 
     .fatherContainer {
-        margin-top: -65vh;
+        margin-top: -175px;
+        width: 100%;
+        margin-bottom: -380px;
+    }
+
+    .elipseContainer {
+        width: 100%;
+        overflow: visible;
+        position: absolute;
+        margin-left: 40%;
+        margin-bottom: 20px;
+    }
+
+    .elipseContainer img {
+        width: 70%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 250px;
+        margin-bottom: 120vh;
     }
 
     .containerTextThreee {
@@ -10,12 +50,29 @@
 
     }
 
+    .containerAvatar1 {
+        bottom: 70vh;
+        position: absolute;
+    }
+
+    .containerAvatar1 img {
+        width: 7vw;
+    }
+
+    .containerAvatar2 {
+        top: -35vh;
+    }
+
+    .containerAvatar2 img {
+        width: 7vw;
+    }
+
     .paragraphOne {
-        font-size: 10px;
+        font-size: 1.2vw;
     }
 
     .paragraphSecond {
-        font-size: 10px;
+        font-size: 1.2vw;
     }
 
     .arrowDownSecond {
@@ -39,34 +96,37 @@
 
     .textOneContainer {
         word-wrap: break-word;
-        line-height: 2rem;
+        line-height: 5vh;
         font-family: 'Poppins-Regular';
-        font-size: 1.2rem;
+        font-size: 2vw;
         text-align: left;
         position: relative;
         bottom: 10%;
+        font-weight: bold;
 
     }
 
     .textTwoContainer {
-        font-size: 0.9rem;
+        font-size: 1.8vw;
         font-weight: bold;
+        background-color: #00FFD7;
+        border-radius: 25px;
+        padding: 2px;
     }
 
     .letterContainer {
-
+        margin-bottom: 150vh;
         display: flex;
         align-items: flex-start;
         justify-content: start;
-
     }
 
     .containerTextTwo {
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        margin-left: 8vw;
-        width: 180px;
+        width: 60%;
+        position: relative;
+        left: 7.5vw;
+        background-color: transparent;
+        margin-bottom: 0px;
     }
 
     .containerTextTwoForMoreText {
@@ -77,26 +137,30 @@
     }
 
     .textThree {
-        font-size: 1rem;
+        font-size: 1.5vw;
     }
 
     .imageMovilOne {
         z-index: 1;
-        width: 77% !important;
+        width: 50% !important;
         height: auto;
         bottom: 1%;
-        left: 38%;
+        left: 28%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
 
     }
 
 
+    .containerPhotos {
+        bottom: 5%;
+    }
+
     .containerPhotos img:nth-child(2) {
         z-index: 2;
-        width: 80%;
+        width: 50%;
         bottom: 2%;
-        right: 10%;
+        right: 0%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
 
@@ -104,9 +168,9 @@
 
     .containerPhotos img:nth-child(3) {
         z-index: 3;
-        width: 78%;
+        width: 50%;
         bottom: 3%;
-        right: 62%;
+        right: 30%;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
 
@@ -119,33 +183,34 @@
     }
 
     .leftOverTextContainer {
-        margin-left: 8.5vw;
-
+        margin-left: 8vw;
+        display: flex;
+        flex-direction: column;
     }
 
     .arrowDown {
         position: absolute;
-        top: 90%;
-        left: -2%;
+        top: 70%;
+        left: 4%;
         width: 8%;
-        transform: rotate(-35deg);
+        transform: rotate(-15deg);
         filter: brightness(0);
 
     }
 
     .arrowDownThree {
         position: absolute;
-        top: 89%;
-        left: 54.5%;
+        top: 78%;
+        left: 84.5%;
         width: 8%;
-        transform: rotate(150deg) scaleY(-1);
+        transform: rotate(190deg) scaleY(-1);
         filter: brightness(0);
 
     }
 
     .arrowDownSecond {
         position: absolute;
-        top: 10vh;
+        top: 0vh;
         left: 25vw;
         width: 8%;
         transform: rotate(155deg);
@@ -156,17 +221,17 @@
 
     .containerParagraph {
 
-        margin-top: 15vh;
+        margin-top: 0vh;
     }
 
     .containerParagraphThree {
-        margin-top: 11vh;
+        margin-top: 3vh;
 
     }
 
     .containerParagraphTwo {
 
-        margin-top: -8vh;
+        margin-top: -20vh;
     }
 
 }
@@ -661,12 +726,65 @@
 }
 
 @media (min-width: 1100px) and (max-width:1400px) {
+    @keyframes elipse {
+        0% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+
+        50% {
+            transform: translateY(-20px);
+            /* Subir la elipse */
+        }
+
+        100% {
+            transform: translateY(0);
+            /* Volver a la posición inicial */
+        }
+    }
 
     .fatherContainer {
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 720px;
         margin-top: -65vh;
 
     }
+
+    .containerAvatar1 {
+        bottom: -85px;
+
+    }
+
+    .containerAvatar2 {
+        right: 50px;
+        top: 35px
+    }
+
+    .container {
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    .containerPhotos {
+        width: 35%;
+        margin-left: 120px;
+        margin-top: 160px;
+    }
+
+    .elipseContainer {
+        overflow: visible;
+    }
+
+    .elipseContainer img {
+        width: 350px;
+        height: 200px;
+
+    }
+
+
 
     .containerTextThreee {
         margin-left: 8vw;
@@ -675,8 +793,8 @@
 
     .arrowDown {
         position: absolute;
-        top: 85%;
-        left: -2%;
+        top: 80%;
+        left: 5%;
         width: 8%;
         transform: rotate(-30deg);
         filter: brightness(0);
@@ -688,14 +806,14 @@
         top: 82%;
         left: 54.5%;
         width: 8%;
-        transform: rotate(310deg) scaleY(1);
+        transform: rotate(290deg);
         filter: brightness(0);
 
     }
 
     .arrowDownSecond {
         position: absolute;
-        top: 2vh;
+        top: 155px;
         left: 25vw;
         width: 8%;
         transform: rotate(155deg);
@@ -711,7 +829,7 @@
     }
 
     .containerParagraphTwo {
-        margin-top: -15vh;
+        margin-top: 15vh;
     }
 
 
@@ -732,10 +850,11 @@
     }
 
     .letterContainer {
-
+        margin-top: -25px;
         display: flex;
         align-items: flex-start;
         justify-content: start;
+
 
     }
 
@@ -758,36 +877,22 @@
         font-size: 1.2rem;
     }
 
-    .imageMovilOne {
+    .allMoviles {
         z-index: 1;
-        width: 75% !important;
-        bottom: 12vh;
-        left: 32%;
+        width: 350px !important;
+        bottom: 110px;
+        left: 10px;
         position: relative;
         animation: elipse 5s ease-in-out infinite;
-
+        transition: width 0.3s ease;
     }
 
+    .allMoviles:hover {
 
-    .containerPhotos img:nth-child(2) {
-        z-index: 2;
-        width: 75%;
-        bottom: 13%;
-        right: 14%;
-        position: relative;
-        animation: elipse 5s ease-in-out infinite;
-
+        width: 550px !important;
+        cursor: zoom-in;
     }
 
-    .containerPhotos img:nth-child(3) {
-        z-index: 3;
-        width: 72%;
-        bottom: 14%;
-        right: 62%;
-        position: relative;
-        animation: elipse 5s ease-in-out infinite;
-
-    }
 
     .containerTextThree {
 
@@ -800,8 +905,12 @@
 
     }
 
+    .paragraphOne {
+        font-size: 13px;
+    }
+
     .containerParagraph {
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
 
     .containerParagraphThree {
@@ -814,29 +923,9 @@
 
     }
 
-
-
-}
-
-@media(min-width:1366px) and (min-height:768px) {
-
-    .containerParagraphTwo {
-
-        margin-top: -10vh;
-
-    }
-
-    .fatherContainer {
-        margin-top: -60vh;
+    .paragraphSecond {
+        font-size: 13px;
     }
 
 
-
-}
-
-@media (min-width: 1350px) and (min-height: 850px) {
-    .fatherContainer {
-        margin-top: -55vh;
-        margin-bottom: -45vh;
-    }
 }

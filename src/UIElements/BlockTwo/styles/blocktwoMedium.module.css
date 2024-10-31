@@ -564,17 +564,18 @@
 
         font-size: 1.4rem;
         line-height: 0rem;
+        margin-bottom: -15px;
     }
 
     .letterParagraph {
-        font-size: 0.9rem;
-        text-align: justify;
+        font-size: 1.5rem !important;
+        text-align: left;
         margin-left: -2vw;
         margin-top: 8vh;
     }
 
     .fourthText {
-        font-size: 0.9rem;
+        font-size: 1.5rem !important;
         font-family: 'Poppins-Regular';
 
     }
@@ -809,7 +810,7 @@
 
     .letterParagraph {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left !important;
         margin-left: -2.5vw;
         margin-top: 8vh;
     }
