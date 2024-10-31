@@ -74,7 +74,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
                 </h2>
                 <p className="textoNormalPoppins texto1Bloque3">
-                    {isSpanish ? <>Conecta con<span className='fondoAzulBloque3'>la realidad que te importa</span></> : <>Connect with<span className='fondoAzulBloque3'>the reality that matters to you</span></>}
+                    {isSpanish ? <>Conecta con<span className='fondoAzulBloque3'> la realidad que te importa</span></> : <>Connect with<span className='fondoAzulBloque3'> the reality that matters to you</span></>}
                 </p>
                 <p className="textoNormalPoppins">
                     {isSpanish
@@ -103,6 +103,10 @@ export const Bloque3 = ({ language, setLanguage }) => {
                         return <img key={index} src={image.imgURL} alt={image.imgAlt} style={{ width: '80%' }} />;
                     })}
                 </CustomSlider>
+            </div>
+
+            <div className='ctnLokdisDesk' >
+                <img src={logoLokdis} alt='Logo Lokdis' />
             </div>
 
             <div className="placesContainer">
@@ -148,9 +152,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
             </div>
 
             <div className='ctnLokdis' >
-
                 <img src={logoLokdis} alt='Logo Lokdis' />
-
             </div>
         </div>
     )

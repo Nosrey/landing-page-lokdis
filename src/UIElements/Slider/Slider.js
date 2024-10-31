@@ -117,7 +117,7 @@ function CustomCarousel({ children, isSpanish }) {
         ))}
       </div>
 
-      <button
+      {/* <button
         className="slider__btn-next"
         onClick={(e) => {
           e.preventDefault();
@@ -134,7 +134,7 @@ function CustomCarousel({ children, isSpanish }) {
         }}
       >
         <img src={leftArrowSlider} alt="leftArrowSlider" className="sliderArrow leftSlider" />
-      </button>
+      </button> */}
     </div>
   );
 }
