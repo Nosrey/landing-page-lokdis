@@ -204,6 +204,11 @@
         margin-top: -02vh;
     }
 
+    .arrowDownThree {
+        top: 520px;
+
+    }
+
 }
 
 
@@ -389,9 +394,10 @@
 }
 
 
-@media (min-width: 1910px) and (max-height: 950px) and (min-height: 750px) {
+@media (min-width: 1910px) and (max-height: 1000px) and (min-height: 750px) {
     .fatherContainer {
         margin-top: -50vh;
+        padding-bottom: 80px;
     }
 
     .arrowDownSecond {
