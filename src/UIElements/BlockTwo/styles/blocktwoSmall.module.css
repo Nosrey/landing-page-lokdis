@@ -165,7 +165,7 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: calc(70vw * 1);
+        width: calc(60vw * 1);
         height: calc(55vh * 0.50);
         top: 65%;
         left: 45%;
@@ -183,7 +183,7 @@
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: calc(70vw * 1);
+        width: calc(60vw * 1);
         height: calc(55vh * 0.50);
         top: calc(100% - -13vh);
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
