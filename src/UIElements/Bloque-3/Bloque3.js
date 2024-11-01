@@ -134,7 +134,7 @@ export const Bloque3 = ({ language, setLanguage }) => {
                                 : <>Is it a good time <br />to be in Bordeaux?</>
                             }
                         </p>
-                        <img src={curvedArrow3} alt="curvedArrow" className="arrowbloque2 arrowImage3" />
+                        <img src={curvedArrow} alt="curvedArrow" className="arrowbloque2 arrowImage3" />
                     </div>
                     <div className='arrowBox arrow4'>
                         <img src={curvedArrow2} alt="curvedArrow" className="arrowbloque2 arrowImage4" />
