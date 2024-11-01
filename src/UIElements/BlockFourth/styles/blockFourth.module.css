@@ -336,7 +336,7 @@
     /* display: flex; */
     display: flex;
     position: absolute;
-    bottom: -25px;
+    bottom: -60px;
     left: calc(30vh * 0.5);
     margin-top: 0vh;
     transform: rotate(-5deg);
@@ -347,7 +347,7 @@
     display: flex;
     position: absolute;
     top: 10px;
-    right: 25px;
+    right: 85px;
     margin-top: 15px;
     transform: rotate(-5deg);
     z-index: 999;
