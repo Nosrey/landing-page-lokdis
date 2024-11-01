@@ -34,18 +34,33 @@ function CustomCarousel({ children, isSpanish }) {
         }, 5000)
       );
     }
+    // Limpiar el temporizador al desmontar o reiniciar el temporizador
+    return () => clearTimeout(timeID);
   }, [slideDone]);
+
+  const resetTimer = () => {
+    if (timeID) clearTimeout(timeID);
+    setSlideDone(false);
+    setTimeID(
+      setTimeout(() => {
+        slideNext();
+        setSlideDone(true);
+      }, 5000)
+    );
+  };
 
   const slideNext = () => {
     setActiveIndex((val) => (val >= children.length - 1 ? 0 : val + 1));
+    resetTimer();
   };
 
   const slidePrev = () => {
     setActiveIndex((val) => (val <= 0 ? children.length - 1 : val - 1));
+    resetTimer();
   };
 
   const AutoPlayStop = () => {
-    if (timeID > 0) {
+    if (timeID) {
       clearTimeout(timeID);
       setSlideDone(false);
     }
@@ -57,18 +72,15 @@ function CustomCarousel({ children, isSpanish }) {
     }
   };
 
-  // Manejador para el inicio del toque (touchstart)
   const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
 
-  // Manejador para el fin del toque (touchend)
   const handleTouchEnd = (e) => {
     const touchEndX = e.changedTouches[0].clientX;
     const distance = touchEndX - touchStartX;
 
-    // Determina si es un deslizamiento hacia la derecha o izquierda
-    if (Math.abs(distance) > 50) { // solo reacciona a deslizamientos largos
+    if (Math.abs(distance) > 50) {
       if (distance > 0) {
         slidePrev();
       } else {
@@ -112,29 +124,11 @@ function CustomCarousel({ children, isSpanish }) {
             onClick={(e) => {
               e.preventDefault();
               setActiveIndex(index);
+              resetTimer();
             }}
           ></button>
         ))}
       </div>
-
-      {/* <button
-        className="slider__btn-next"
-        onClick={(e) => {
-          e.preventDefault();
-          slideNext();
-        }}
-      >
-        <img src={rightArrowSlider} alt="rightArrowSlider" className="sliderArrow rightSlider" />
-      </button>
-      <button
-        className="slider__btn-prev"
-        onClick={(e) => {
-          e.preventDefault();
-          slidePrev();
-        }}
-      >
-        <img src={leftArrowSlider} alt="leftArrowSlider" className="sliderArrow leftSlider" />
-      </button> */}
     </div>
   );
 }
