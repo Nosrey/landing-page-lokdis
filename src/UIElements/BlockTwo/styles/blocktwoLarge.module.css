@@ -169,7 +169,7 @@
         z-index: 3;
         position: absolute;
         top: 35%;
-        left: 2%;
+        left: 5%;
 
     }
 
@@ -741,7 +741,7 @@
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 30%;
         top: 58%;
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
@@ -776,7 +776,7 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 70%;
+        width: 60%;
         height: 30%;
         top: 30%;
         left: 50%;
@@ -801,7 +801,7 @@
         z-index: 3;
         position: absolute;
         top: 35%;
-        left: 2%;
+        left: 8%;
 
     }
 
@@ -1377,7 +1377,7 @@
     .boxTwo {
         overflow: hidden;
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 30%;
         top: 58%;
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
@@ -1412,7 +1412,7 @@
         box-shadow: 5px 5px 1px 0px rgb(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
-        width: 70%;
+        width: 60%;
         height: 30%;
         top: 30%;
         left: 50%;
@@ -1437,7 +1437,7 @@
         z-index: 3;
         position: absolute;
         top: 35%;
-        left: 10%;
+        left: 15%;
 
     }
 
