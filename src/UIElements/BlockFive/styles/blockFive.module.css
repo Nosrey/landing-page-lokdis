@@ -56,6 +56,13 @@
     font-size: 20px;
 }
 
+.resaltadoDesktop {
+    background-color: #00FFD7;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    padding: 0 4px;
+}
 
 .buttonCallToAction {
     margin-left: 0%;
@@ -200,6 +207,13 @@
 
 
 @media only screen and (max-width:500px) {
+
+    
+.containerLogo img {
+    width: 100px;
+    margin-top: 0%;
+}
+
 
     .carrousel {
         width: 100%;
