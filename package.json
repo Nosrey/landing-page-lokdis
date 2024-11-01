@@ -1,5 +1,5 @@
 {
-  "homepage": "./registro/build",
+  "homepage": "./www/build",
   "name": "landing-page-lokdis",
   "version": "0.1.0",
   "private": true,
