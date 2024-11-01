@@ -264,7 +264,7 @@
 
     .arrowDownThree {
         left: 415px;
-        top: 545px;
+        top: 535px !important;
     }
 
 
@@ -337,6 +337,9 @@
     .containerParagraphTwo {
         margin-top: 145px;
     }
+
+
+
 }
 
 
@@ -422,7 +425,7 @@
     }
 
     .arrowDownThree {
-        top: 80vh;
+        top: 80vh !important;
     }
 
     .containerParagraphThree {
