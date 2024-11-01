@@ -52,8 +52,7 @@
 .textCarrouselTwo {
     font-family: 'Poppins-Regular';
     font-size: 2.5rem;
-    background: linear-gradient(45deg, #05a990, #75FFE9, #B8FFF4 80%);
-
+    background: #00FFD7;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
