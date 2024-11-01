@@ -13,12 +13,17 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [showPlayPause, setShowPlayPause] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
 
   // Reference for the container
   const containerRef = useRef(null);
 
   const hideButtonTimer = useRef(null);
+
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
 
   // Mostrar el botón y cancelar el temporizador de ocultamiento si existe
   const handleMouseEnter = () => {
@@ -111,7 +116,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                     <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
                       <div className="phone-content">
                         <ReactPlayer
-                        
+
                           url="https://vimeo.com/1023344517"
                           controls={false}
                           playing={isPlaying}
@@ -125,13 +130,13 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                     </div>
                   </div>
                   {/* {showPlayPause && ( */}
-                    <button
-                      style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
-                      onClick={() => setIsPlaying(!isPlaying)}
-                      className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
-                    >
-                      {isPlaying ? <FaPause /> : <FaPlay />}
-                    </button>
+                  <button
+                    style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
+                    onClick={() => setIsPlaying(!isPlaying)}
+                    className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
+                  >
+                    {isPlaying ? <FaPause /> : <FaPlay />}
+                  </button>
                   {/* )} */}
                   <button
                     style={{
@@ -175,14 +180,14 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
           <div
             className="cajaTelefono"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={() => setIsPlaying(true)}
+            onMouseLeave={() => setIsPlaying(false)}
           >
             <div className="phoneDeskBloq1">
               {loading && <div className="spinnerBloq1"></div>}
               {window.innerWidth > 500 && (
                 <div
-                  className="phone-frame"
+                  className={`phone-frame ${isFullscreen ? "fullscreen" : ""}`}
                   style={{ display: loading ? "none" : "block" }}
                 >
                   <ReactPlayer
@@ -198,15 +203,20 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                 </div>
               )}
             </div>
-            {/* {showPlayPause && ( */}
-              <button
-                style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
-                onClick={() => setIsPlaying(!isPlaying)}
-                className={`botonPhone play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
-              >
-                {isPlaying ? <FaPause /> : <FaPlay />}
-              </button>
-            {/* )} */}
+
+            {/* Botón Play/Pausa */}
+            <button
+              style={{
+                margin: "0px auto 10px auto",
+                display: !loading && window.innerWidth > 500 ? "block" : "none",
+              }}
+              onClick={() => setIsPlaying(!isPlaying)}
+              className={`botonPhone play-pause-switch ${isPlaying ? "playing" : "paused"}`}
+            >
+              {isPlaying ? <FaPause /> : <FaPlay />}
+            </button>
+
+            {/* Botón Mute */}
             <button
               style={{
                 display: !loading && window.innerWidth > 500 ? "block" : "none",
@@ -215,6 +225,17 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
               className={`botonDesk mute-switch ${isMuted ? "muted" : "unmuted"}`}
             >
               {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+            </button>
+
+            {/* Botón Pantalla Completa */}
+            <button
+              style={{
+                display: !loading && window.innerWidth > 500 ? "block" : "none",
+              }}
+              onClick={toggleFullscreen}
+              className="botonDesk fullscreen-switch"
+            >
+              {isFullscreen ? "Salir de Pantalla Completa" : "Pantalla Completa"}
             </button>
           </div>
 

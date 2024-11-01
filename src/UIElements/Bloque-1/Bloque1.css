@@ -132,9 +132,7 @@
 .phone-frame {
     margin-top: 20px;
     width: 250px;
-    /* Ajusta según el tamaño deseado */
     height: 500px;
-    /* Ajusta según el tamaño deseado */
     border: 2px solid #2e2e2e;
     border-radius: 36px;
     padding: 6px;
@@ -145,6 +143,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.phone-frame.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0;
+    padding: 0;
 }
 
 .phone-frame::before {
@@ -767,16 +778,7 @@ footer {
         /* Ajusta la altura según sea necesario */
         border: 1px solid #2e2e2e;
         /* Reducido desde 16px */
-        border-radius: 18px;
-        /* Reducido desde 36px */
-        padding: 10px;
-        /* Reducido desde 20px */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 4px rgba(255, 255, 255, 0.1);
-        position: relative;
-        overflow: hidden;
-        background-color: #000;
-        /* Fondo más suave */
-        background-image: linear-gradient(145deg, #000, #000);
+
     }
 
     /* Parte superior - Altavoz */

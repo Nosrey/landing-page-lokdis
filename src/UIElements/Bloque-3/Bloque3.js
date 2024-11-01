@@ -73,9 +73,9 @@ export const Bloque3 = ({ language, setLanguage }) => {
                 <h2 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
                 </h2>
-                <p className="textoNormalPoppins texto1Bloque3">
+                {/* <p className="textoNormalPoppins texto1Bloque3">
                     {isSpanish ? <>Conecta con<span className='fondoAzulBloque3'> la realidad que te importa</span></> : <>Connect with<span className='fondoAzulBloque3'> the reality that matters to you</span></>}
-                </p>
+                </p> */}
                 <p className="textoNormalPoppins">
                     {isSpanish
                         ? 'Explora cualquier rincón del mundo conectando con personas que te muestran lo que están viendo. ¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.'
