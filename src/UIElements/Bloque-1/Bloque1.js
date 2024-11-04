@@ -164,7 +164,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
             </div>
 
             <p className="textoBienvenida">
-              {isSpanish ? "Regístrate, si estás entre las 1000 primeras personas obtendrás 6 meses Premium de LokDis" : "3647 people are already impatient to join this collaborative community"}
+              {isSpanish ? "Conecta y explora cualquier lugar del mundo desde el punto de vista de los lugareños." : "Connect and explore anywhere through the lens of locals."}
             </p>
             <button onClick={redirectUrl} className="boton">{isSpanish ? "¡Únete ahora!" : "Join the waiting list!"}</button>
           </div>

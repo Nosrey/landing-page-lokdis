@@ -26,6 +26,11 @@ h2 {
     display: none;
 }
 
+.colorGreenTextBloq3 {
+    font-weight: bold;
+    color: #05a990;
+}
+
 b {
     font-family: 'Poppins Bold', sans-serif;
     font-size: 42.69px;

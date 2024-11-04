@@ -18,6 +18,13 @@ import movilLargeTwo from '../Assets/movil-two-large.png';
 import movilLargeThre from '../Assets/movil-large-thre.png'
 import avatar1 from '../Assets/avatar1.png';
 import avatar2 from '../Assets/avatar2.png';
+// english phones
+import movilOneEnglish from '../Assets/movilone-design-en.png';
+import movilTwoEnglish from '../Assets/moviltwo-design-en.png';
+import movilThreEnglish from '../Assets/movilthree-design-en.png';
+import movilInclinedOneEnglish from '../Assets/image-incline-one-en.png';
+import movilInclinedTwoEnglish from '../Assets/image-incline-two-en.png';
+import movilInclinedThreEnglish from '../Assets/image-incline-three-en.png';
 
 import { useEffect, useState } from 'react';
 

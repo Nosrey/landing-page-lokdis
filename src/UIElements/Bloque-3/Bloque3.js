@@ -76,8 +76,8 @@ export const Bloque3 = ({ language, setLanguage }) => {
               
                 <p className="textoNormalPoppins">
                     {isSpanish
-                        ? 'Explora cualquier rincón del mundo conectando con personas que te muestran lo que están viendo. ¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.'
-                        : 'Explore any corner of the world by connecting with people who are willing to show you what they are seeing. Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.'
+                        ? <>Explora <span className='colorGreenTextBloq3'>cualquier rincón del mundo</span> conectando con personas que te muestran lo que están viendo. ¿Te gustaría saber cuántas personas hay en la playa o si un evento ya ha comenzado? Descúbrelo con LokDis.</>
+                        : <>Explore <span className='colorGreenTextBloq3'>any corner of the world</span> by connecting with people who are willing to show you what they are seeing. Would you like to know how many people are on the beach or if an event has already started? Find out with LokDis.</>
                     }
                 </p>
                 <p className="textoNormalPoppinsMobile">
