@@ -282,7 +282,7 @@
     color: #ffffff;
     font-family: 'Poppins Regular', sans-serif;
     /* justifica el texto */
-    text-align: justify;
+    text-align: left;
 }
 
 .textoBienvenidaBold {
@@ -441,7 +441,7 @@
 
 .textoPoppinsDefault {
     font-family: 'Poppins Regular', sans-serif;
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
     color: #ffffff;
     margin: 0;

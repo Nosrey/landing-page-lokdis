@@ -272,7 +272,8 @@
 
 
 .containerTextThreee {
-    width: 245px;
+    width: auto;
+    font-weight: bold;
 }
 
 @keyframes elipse {
