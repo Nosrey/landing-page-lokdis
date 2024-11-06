@@ -139,7 +139,7 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
-      {/* 
+
       <div style={{
         position: 'fixed',
         bottom: 0,
@@ -150,7 +150,7 @@ export const Homepage = ({ language, setLanguage }) => {
         zIndex: 100
       }}>
         {`Current screen resolution: ${window.innerWidth} x ${window.innerHeight}`}
-      </div> */}
+      </div>
 
       {/* Componente Navbar */}
       <div

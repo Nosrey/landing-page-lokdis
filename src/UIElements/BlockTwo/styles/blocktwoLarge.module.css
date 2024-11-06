@@ -39,14 +39,15 @@
 
     .firstTextLeftContainer {
         line-height: 2rem;
-        font-size: 2.5vw;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 1.7rem
+        font-size: 30px;
+        font-weight: bold;
     }
 
 
@@ -62,13 +63,13 @@
     .thirdText {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 1.8rem;
+        font-size: 30px;
         background-color: #00FFD7;
 
     }
 
     .secondTextLeftContainer {
-        font-size: 1.8rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 0rem;
@@ -84,18 +85,14 @@
 
     .textH3 {
         font-family: 'Poppins-Regular';
-        font-size: 1.5rem;
+        font-size: 28px;
         margin-bottom: -10vh;
     }
 
-    .fourthText {
-        font-size: 0.9rem;
-        font-family: 'Poppins-Regular';
 
-    }
 
     .additionalText {
-        font-size: 2vw;
+        font-size: 20px;
         text-align: left;
     }
 
@@ -175,14 +172,14 @@
 
 
     .letterParagraph {
-        font-size: 2vw;
+        font-size: 20px;
         text-align: left;
     }
 
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 2vw;
+        font-size: 20px;
         color: #028470;
 
     }
@@ -436,7 +433,7 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 4rem;
-        font-size: 2rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -444,7 +441,7 @@
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 2.0rem
+        font-size: 30px
     }
 
     .containerBlueLetter {
@@ -465,7 +462,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 30px;
         background-color: #00FFD7;
     }
 
@@ -473,7 +470,7 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
@@ -481,11 +478,6 @@
 
     }
 
-
-
-    .secondTextLeftContainerEnglish {
-        font-size: 2.0rem
-    }
 
     .leftContainer {
 
@@ -496,26 +488,15 @@
 
     .textH3 {
         font-family: 'Poppins-Regular';
-        font-size: 2rem;
+        font-size: 30px;
         line-height: 0rem;
         margin-top: 25px;
     }
 
-    .letterParagraph {
-        font-size: 2rem !important;
-        text-align: left;
-        margin-top: -6vh;
-        margin-left: 1vh;
-    }
 
-    .fourthText {
-        font-size: 2rem !important;
-        font-family: 'Poppins-Regular';
-
-    }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 20px;
         text-align: left;
         margin-top: 1.5rem;
     }
@@ -601,13 +582,13 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 2rem !important;
+        font-size: 20px;
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 2rem !important;
+        font-size: 20px;
         color: #028470;
 
     }
