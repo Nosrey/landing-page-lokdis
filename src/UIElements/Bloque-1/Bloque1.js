@@ -13,6 +13,9 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [showPlayPause, setShowPlayPause] = useState(false);
+  const [showExpandButton, setShowExpandButton] = useState(false);
+
+  const [isExpanded, setIsExpanded] = useState(false);
 
 
   // Reference for the container
@@ -22,17 +25,38 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
   // Mostrar el botón y cancelar el temporizador de ocultamiento si existe
   const handleMouseEnter = () => {
-    if (!showPlayPause) setShowPlayPause(true); // Asegurar que se muestra al entrar
+    if (!showPlayPause) {
+      setShowPlayPause(true); // Asegurar que se muestra al entrar
+    }
+    if (!showExpandButton) {
+      setShowExpandButton(true);
+    }
     if (hideButtonTimer.current) {
       clearTimeout(hideButtonTimer.current);
       hideButtonTimer.current = null;
     }
+
+    if (isExpanded) {
+      hideButtonTimer.current = setTimeout(() => {
+        setShowPlayPause(false);
+        setShowExpandButton(false);
+      }, 1500);
+    }
   };
+
+  const expandView = () => {
+    setIsExpanded(!isExpanded)
+    hideButtonTimer.current = setTimeout(() => {
+      setShowPlayPause(false);
+      setShowExpandButton(false);
+    }, 1500);
+  }
 
   // Ocultar el botón después de 1.5 segundos al salir
   const handleMouseLeave = () => {
     hideButtonTimer.current = setTimeout(() => {
       setShowPlayPause(false);
+      setShowExpandButton(false);
     }, 1500);
   };
 
@@ -50,7 +74,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('active');
+            // entry.target.classList.add('active');
           }
         });
       },
@@ -77,7 +101,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
   return (
     <div className="fondo">
 
-      <div className="columnas">
+      <div className="columnas" style={{ position: 'relative' }}>
         <div className="columnaSingular leftBloq1">
 
           {/* lado de contador */}
@@ -91,6 +115,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
           {/* lado izquierdo inferior */}
           <div>
+          
             <div className="cajaVertical">
               <p className="subtitulo">{isSpanish ? "LokDis: Conéctate con la realidad" : "LokDis: Connect with reality"}</p>
               <p className="bloqueVerde">{isSpanish ? "Explora el mundo sin filtros" : "Explore the world without filters"}</p>
@@ -105,14 +130,19 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                   onClick={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   style={{ margin: '10px auto' }}
+
                 >
-                  <div className='phoneView2Bloq1' style={{ margin: '0' }}>
-                    {loading && <div className="spinnerBloq1"></div>}
-                    <div className="phone-frame" style={{ margin: '0', display: loading ? 'none' : 'block' }}>
+                  <div className={`phoneView2Bloq1 ${isExpanded ? "expanded" : ""}`} style={{ margin: '0' }}>
+                    {/* {loading && <div className="spinnerBloq1"></div>} */}
+                    <div className="phone-frame" style={{
+                      margin: '0',
+                      // display: loading ? 'none' : 'block' 
+                    }}>
                       <div className="phone-content">
                         <ReactPlayer
-                        
-                          url="https://vimeo.com/1023344517"
+
+                          // url="https://vimeo.com/1023344517"
+                          url="https://www.dropbox.com/scl/fi/jyhnm0px9pss344ypmq6s/Video-landing_LokDis.mp4?rlkey=nsltkx33u5a73u8gpuej0i2k8&st=e31ju35p&dl=0"
                           controls={false}
                           playing={isPlaying}
                           loop={true}
@@ -121,27 +151,49 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                           width="100%"
                           height="100%"
                         />
+
+                        <button
+                          style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
+                          onClick={() => setIsPlaying(!isPlaying)}
+                          className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
+                        >
+                          {isPlaying ? <FaPause /> : <FaPlay />}
+                        </button>
+                        {/* )} */}
+                        <button
+                          style={{
+                            display: !loading && window.innerWidth <= 500 ? "block" : "none",
+                          }}
+                          onClick={() => setIsMuted(!isMuted)}
+                          className={`botonPhone mute-switch ${isMuted ? "muted" : "unmuted"}`}
+                        >
+                          {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+                        </button>
+
+                        <button
+                          className={`expand-button  ${isExpanded ? 'expand-button-expanded' : ''}`}
+                          onClick={() => expandView()}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                            className="expand-icon"
+                          >
+                            {isExpanded ? (
+                              <path d="M19 13H5v-2h14v2z" /> // Ícono para reducir (línea horizontal)
+                            ) : (
+                              <path d="M9 3H3v6h2V5h4V3zm12 6h-6v2h4v4h2V9zM5 13H3v6h6v-2H5v-4zm14 4h-4v2h6v-6h-2v4z" /> // Ícono estilo "expandir"
+                            )}
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </div>
                   {/* {showPlayPause && ( */}
-                    <button
-                      style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
-                      onClick={() => setIsPlaying(!isPlaying)}
-                      className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
-                    >
-                      {isPlaying ? <FaPause /> : <FaPlay />}
-                    </button>
-                  {/* )} */}
-                  <button
-                    style={{
-                      display: !loading && window.innerWidth <= 500 ? "block" : "none",
-                    }}
-                    onClick={() => setIsMuted(!isMuted)}
-                    className={`botonPhone mute-switch ${isMuted ? "muted" : "unmuted"}`}
-                  >
-                    {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-                  </button>
+
                 </div>
 
 
@@ -171,20 +223,17 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
         </div>
 
         {/* lado derecho */}
-        <div className="columnaSingular rightBloq1" style={{ width: "40%", position: 'relative' }} ref={containerRef}>
+        <div className="columnaSingular rightBloq1" style={{ width: "40%" }} ref={containerRef} onMouseMove={() => {
+          if (isExpanded) {
+            handleMouseEnter();
+          }
+        }}>
 
-          <div
-            className="cajaTelefono"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="phoneDeskBloq1">
+          <div className="cajaTelefono" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className={`phoneDeskBloq1 ${isExpanded ? "expanded" : ""}`}>
               {loading && <div className="spinnerBloq1"></div>}
               {window.innerWidth > 500 && (
-                <div
-                  className="phone-frame"
-                  style={{ display: loading ? "none" : "block" }}
-                >
+                <div className="phone-frame" style={{ display: loading ? "none" : "block" }}>
                   <ReactPlayer
                     url="https://vimeo.com/1023344517"
                     controls={false}
@@ -195,28 +244,49 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                     width="100%"
                     height="100%"
                   />
+                  <button
+                    style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
+                    onClick={() => setIsPlaying(!isPlaying)}
+                    className={`botonPhone play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
+                  >
+                    {isPlaying ? <FaPause /> : <FaPlay />}
+                  </button>
+                  <button
+                    style={{
+                      display: !loading && window.innerWidth > 500 ? "block" : "none",
+                    }}
+                    onClick={() => setIsMuted(!isMuted)}
+                    className={`botonDesk mute-switch ${isMuted ? "muted" : "unmuted"} ${isExpanded ? "mute-expanded" : ""}`}
+                  >
+                    {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+                  </button>
+                  <button
+                    className={`expand-button ${showExpandButton ? 'visible' : 'hidden'} ${isExpanded ? 'expand-button-expanded' : ''}`}
+                    onClick={() => expandView()}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      className="expand-icon"
+                    >
+                      {isExpanded ? (
+                        <path d="M19 13H5v-2h14v2z" /> // Ícono para reducir (línea horizontal)
+                      ) : (
+                        <path d="M9 3H3v6h2V5h4V3zm12 6h-6v2h4v4h2V9zM5 13H3v6h6v-2H5v-4zm14 4h-4v2h6v-6h-2v4z" /> // Ícono estilo "expandir"
+                      )}
+                    </svg>
+                  </button>
+
                 </div>
               )}
+
             </div>
-            {/* {showPlayPause && ( */}
-              <button
-                style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
-                onClick={() => setIsPlaying(!isPlaying)}
-                className={`botonPhone play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
-              >
-                {isPlaying ? <FaPause /> : <FaPlay />}
-              </button>
-            {/* )} */}
-            <button
-              style={{
-                display: !loading && window.innerWidth > 500 ? "block" : "none",
-              }}
-              onClick={() => setIsMuted(!isMuted)}
-              className={`botonDesk mute-switch ${isMuted ? "muted" : "unmuted"}`}
-            >
-              {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-            </button>
+
           </div>
+
 
         </div>
       </div>
