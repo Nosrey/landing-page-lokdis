@@ -139,7 +139,6 @@ export const Homepage = ({ language, setLanguage }) => {
       ref={mainDivRef}
       className={styles.fatherContainer}
     >
-      
       <div style={{
         position: 'fixed',
         bottom: 0,

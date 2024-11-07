@@ -3,7 +3,8 @@ import styles from './styles/blockFourth.module.css';
 import stylesSmall from './styles/blockFourthSmall.module.css';
 import stylesMedium from './styles/blockFourthMedium.module.css';
 import stylesLarge from './styles/blockFourthLarge.module.css';
-import allMoviles from '../Assets/block-fourth-phones.png';
+import allMobiles from '../Assets/block-fourth-phones.png';
+import allMobilesEn from '../Assets/block-fourth-phones-en.png';
 import elipse from '../Assets/elipse.png';
 import arrowDown from '../Bloque-3/Images/curvedArrow.gif';
 import arrowUp from '../Bloque-3/Images/curvedArrow3.gif';
@@ -11,20 +12,17 @@ import movilSmallOne from '../Assets/image-incline-one.png';
 import movilSmallOneNotSelect from '../Assets/image-small-one.png';
 import movilSmallTwo from '../Assets/image-small-two.png';
 import movilSmallTwoNotSelect from '../Assets/image-incline-two.png';
-import movilSmallThre from '../Assets/movil-large-thre.png';
-import movilSmallThreNotSelect from '../Assets/image-incline-three.png';
+import movilSmallThre from '../Assets/movilthree-design-en.png';
+import movilSmallThreNotSelect from '../Assets/movil-three-en-incline.png';
 import movilLargeOne from '../Assets/movilone-design.png';
 import movilLargeTwo from '../Assets/movil-two-large.png';
-import movilLargeThre from '../Assets/movil-large-thre.png'
+import movilLargeThre from '../Assets/movilthree-design-en.png'
 import avatar1 from '../Assets/avatar1.png';
 import avatar2 from '../Assets/avatar2.png';
 // english phones
 import movilOneEnglish from '../Assets/movilone-design-en.png';
 import movilTwoEnglish from '../Assets/moviltwo-design-en.png';
 import movilThreEnglish from '../Assets/movilthree-design-en.png';
-import movilInclinedOneEnglish from '../Assets/image-incline-one-en.png';
-import movilInclinedTwoEnglish from '../Assets/image-incline-two-en.png';
-import movilInclinedThreEnglish from '../Assets/image-incline-three-en.png';
 
 import { useEffect, useState } from 'react';
 
@@ -98,8 +96,6 @@ const BlockFourth = ({ language }) => {
 
             </div>
 
-
-
             <div className={`${styles.containerBannerPhotoMovil} ${stylesSmall.containerBannerPhotoMovil} `} >
 
                 {selectedImage === 'image1' ? <div className={`${styles.containerSmallPhotoMap} ${styles.selected} ${stylesSmall.containerSmallPhotoMap} ${stylesSmall.selected}`} onClick={() => handleToggle('image1')}>
@@ -145,13 +141,13 @@ const BlockFourth = ({ language }) => {
                     On the map you will see the people who are available in the app and their locations
                 </p>) : null}
 
-                {selectedImage === 'image1' ? <img style={{ width: '770px', }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : null}
+                {selectedImage === 'image1' ? (language === 'spanish' ? <img style={{ width: '770px', }} src={movilLargeOne} alt="Imagen grande del movil uno" /> : <img style={{ width: '770px', }} src={movilOneEnglish} alt="Imagen grande del movil uno en ingles" />) : null}
                 {selectedImage === 'image2' ? (language === 'spanish' ? <p className={` ${stylesSmall.paragraphTwoMovilDesign}`} >
                     Podrás pedirle momentos  <span className={styles.remaining} >reales a las personas que estén en los lugares que quieres ver</span>
                 </p> : <p className={` ${stylesSmall.paragraphTwoMovilDesign}`} >You will be able to request real moments
                     from people who are in the places you want to see
                 </p>) : null}
-                {selectedImage === 'image2' ? <img style={{ width: '770px' }} src={movilLargeTwo} alt="Imagen grande del movil dos" /> : null}
+                {selectedImage === 'image2' ? (language === 'spanish' ? <img style={{ width: '770px' }} src={movilLargeTwo} alt="Imagen grande del movil dos" /> : <img style={{ width: '770px' }} src={movilTwoEnglish} alt="Imagen grande del movil dos ingles" />) : null}
 
                 {selectedImage === 'image3' ? (language === 'spanish' ? <p className={`${stylesSmall.paragraphTwoMovilDesign}`} >
                     ¡Explora los lugares que quieras, cuando quieras!
@@ -195,7 +191,7 @@ const BlockFourth = ({ language }) => {
 
                 <div className={`${styles.containerPhotos} ${stylesSmall.containerPhotos} ${stylesMedium.containerPhotos} ${stylesLarge.containerPhotos}`} >
 
-                    <img className={`${styles.allMoviles} ${stylesMedium.allMoviles} ${stylesLarge.allMoviles}`} src={allMoviles} alt='Movil Uno' />
+                    {language === 'spanish' ? < img className={`${styles.allMoviles} ${stylesMedium.allMoviles} ${stylesLarge.allMoviles}`} src={allMobiles} alt='Movil Uno' /> : < img className={`${styles.allMoviles} ${stylesMedium.allMoviles} ${stylesLarge.allMoviles}`} src={allMobilesEn} alt='Movil Uno' />}
                     <div className={`${styles.elipseContainer} ${stylesMedium.elipseContainer} ${stylesLarge.elipseContainer}`} >
                         <img className={styles.elipse} src={elipse} alt='Elipse' />
                     </div>
