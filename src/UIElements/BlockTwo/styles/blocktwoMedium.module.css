@@ -101,7 +101,7 @@
 
     .letterParagraph {
         font-size: 1rem;
-        text-align: justify;
+        text-align: left;
     }
 
     .secondTextLeftContainer,
@@ -253,7 +253,7 @@
 
     .letterParagraph {
         font-size: 1rem;
-        text-align: justify;
+        text-align: left;
     }
 
     .secondTextLeftContainer,
@@ -568,22 +568,23 @@
     }
 
     .letterParagraph {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
         text-align: left;
         margin-left: -2vw;
         margin-top: 8vh;
     }
 
     .fourthText {
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
         font-family: 'Poppins-Regular';
 
     }
 
     .additionalText {
-        font-size: 2vw;
+        font-size: 20px;
         text-align: left;
         margin-top: 1.5rem;
+        margin-left: -5px;
     }
 
     .eyesImage {
@@ -666,14 +667,14 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 2.0vw;
+        font-size: 18px;
 
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 2.0vw;
+        font-size: 18px;
         color: #028470;
 
     }
@@ -768,7 +769,7 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 2rem;
-        font-size: 1.9rem;
+        font-size: 28px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -782,16 +783,16 @@
     .thirdText {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 1.7rem;
+        font-size: 28px;
         line-height: 0px;
     }
 
     .secondTextLeftContainer {
-        font-size: 1.9rem;
+        font-size: 28px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-
+        margin-bottom: 0;
     }
 
     .leftContainer {
@@ -804,15 +805,15 @@
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 1.5rem;
+        font-size: 22px;
         line-height: 0rem;
     }
 
     .letterParagraph {
-        font-size: 1.2rem;
+        font-size: 18px;
         text-align: left !important;
-        margin-left: -2.5vw;
-        margin-top: 8vh;
+        margin-left:  -5px;
+        margin-top: 0px;
     }
 
     .fourthText {
@@ -822,9 +823,9 @@
     }
 
     .additionalText {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 
     .eyesImage {
@@ -906,16 +907,17 @@
 
 
     .letterParagraph {
+        
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 25px;
+        font-size: 18px;
 
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 25px;
+        font-size: 18px;
         color: #028470;
 
     }

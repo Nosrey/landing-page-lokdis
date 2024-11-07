@@ -367,6 +367,7 @@
     font-family: 'Poppins Regular', sans-serif;
     /* justifica el texto */
     text-align: left;
+    font-size: 18px;
 }
 
 .textoBienvenidaBold {
@@ -440,7 +441,7 @@
     color: #00FFD7;
 
     font-family: 'Poppins Regular', sans-serif;
-    font-size: 22px;
+    font-size: 1.7vw;
     font-weight: 400;
     line-height: 1.2rem;
     text-align: center;
@@ -529,7 +530,7 @@
     font-weight: 400;
     color: #ffffff;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 2.5vh;
 }
 
@@ -540,7 +541,7 @@
     line-height: 25px;
     text-align: center;
     color: #ffffff;
-    margin: 15px 0 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 footer {
@@ -744,7 +745,7 @@ footer {
 
     .contador,
     .numberBloq1 {
-        font-size: 0.9rem;
+        font-size: 1.7vw;
     }
 
     .numberBloq1 {
@@ -1009,21 +1010,21 @@ footer {
     }
 
     .subtitulo {
-        font-size: 1rem;
+        font-size: 25px;
     }
 
     .bloqueVerde {
-        font-size: 1rem;
+        font-size: 18px;
         margin-bottom: 5vh;
         line-height: 1.5rem;
     }
 
     .textoPoppinsDefault {
-        font-size: 0.8rem;
+        font-size: 18px;
     }
 
     .textoBienvenida {
-        font-size: 0.8rem;
+        font-size: 16px;
     }
 
     .boton {
