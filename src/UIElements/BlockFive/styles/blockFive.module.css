@@ -146,23 +146,23 @@
     }
 
     .h2Letter {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .h2LetterEnglish {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .paragraph {
-        font-size: 18px;
+        font-size: 16px;
         color: black;
         font-family: 'Poppins-Bold';
     }
 
     .colorCyanBackground {
-
+        font-size: 13px;
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         margin-top: 5vh;
         border-radius: 15px;
         padding: 5px;
@@ -172,11 +172,11 @@
     .colorCyanBackgroundTwo {
 
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         line-height: 4rem;
         border-radius: 15px;
         padding: 5px;
-
+        font-size: 13px;
 
     }
 
@@ -256,24 +256,24 @@
     }
 
     .h2Letter {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 15px;
     }
 
     .h2LetterEnglish {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .paragraph {
-        font-size: 18px;
+        font-size: 16px;
         color: black;
         font-family: 'Poppins-Bold';
     }
 
     .colorCyanBackground {
-
+        font-size: 13px;
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         margin-top: 2vh;
         border-radius: 15px;
         padding: 3px;
@@ -282,9 +282,9 @@
     }
 
     .colorCyanBackgroundTwo {
-
+        font-size: 13px;
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         line-height: 0rem;
         border-radius: 15px;
         padding: 3px;
@@ -360,23 +360,23 @@
     }
 
     .h2Letter {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .h2LetterEnglish {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .paragraph {
-        font-size: 18px;
+        font-size: 16px;
         color: black;
         font-family: 'Poppins-Bold';
     }
 
     .colorCyanBackground {
-
+        font-size: 13px;
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         margin-top: 1vh;
         border-radius: 10px;
         padding: 5px;
@@ -384,9 +384,9 @@
     }
 
     .colorCyanBackgroundTwo {
-
+        font-size: 13px;
         background-color: #00FFD7;
-        width: 58vw;
+        /* width: 58vw; */
         border-radius: 10px;
         padding: 5px;
 
