@@ -107,7 +107,7 @@
     }
 
     .textTwoContainer {
-        font-size: 1.8vw;
+        font-size: 1.3rem;
         font-weight: bold;
         background-color: #00FFD7;
         border-radius: 25px;
@@ -883,7 +883,7 @@
     }
 
     .textThree {
-        font-size: 1.2rem;
+        font-size: 18px;
     }
 
     .allMoviles {
@@ -928,7 +928,7 @@
     }
 
     .textOneContainer {
-        font-size: 24px;
+        font-size: 30px;
 
     }
 

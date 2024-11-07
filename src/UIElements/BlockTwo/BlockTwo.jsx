@@ -67,10 +67,10 @@ const BlockTwo = ({ language }) => {
             <div className={`${styles.leftContainer} ${stylesSmall.leftContainer} ${stylesMedium.leftContainer} ${stylesLarge.leftContainer}`}>
                 <div className={`${styles.defineContainerText} ${stylesSmall.defineContainerText} ${stylesMedium.defineContainerText} ${stylesLarge.defineContainerText} `}>
                     <div className={`${styles.containerTextMoreImage} ${stylesSmall.containerTextMoreImage} ${stylesMedium.containerTextMoreImage} ${stylesLarge.containerTextMoreImage}`}>
-                        {language === 'spanish' ? <h2 className={`${styles.firstTextLeftContainer} ${stylesSmall.firstTextLeftContainer}  ${stylesMedium.firstTextLeftContainer}  ${stylesLarge.firstTextLeftContainer}`}>
+                        {language === 'spanish' ? <h1 className={`${styles.firstTextLeftContainer} ${stylesSmall.firstTextLeftContainer}  ${stylesMedium.firstTextLeftContainer}  ${stylesLarge.firstTextLeftContainer}`}>
                             Una app para descubrir
-                        </h2> : <h2 className={`${styles.firstTextLeftContainerEnglish} ${stylesSmall.firstTextLeftContainerEnglish} ${stylesMedium.firstTextLeftContainerEnglish} ${stylesLarge.firstTextLeftContainerEnglish}`}>
-                            An application to discover                        </h2>}
+                        </h1> : <h1 className={`${styles.firstTextLeftContainerEnglish} ${stylesSmall.firstTextLeftContainerEnglish} ${stylesMedium.firstTextLeftContainerEnglish} ${stylesLarge.firstTextLeftContainerEnglish}`}>
+                            An application to discover                        </h1>}
                         <img className={`${styles.eyesImage} ${stylesSmall.eyesImage} ${stylesMedium.eyesImage} ${stylesLarge.eyesImage}`} src={eyesImage} alt='eyes-small-image' />
                     </div>
                     <div className={`${styles.contenedorLetterBlueContainer} ${stylesSmall.contenedorLetterBlueContainer} ${stylesMedium.contenedorLetterBlueContainer} ${stylesLarge.contenedorLetterBlueContainer}`} >

@@ -70,9 +70,9 @@ export const Bloque3 = ({ language, setLanguage }) => {
     return (
         <div className='fondo3'>
             <div className='bloqueCabecera' ref={containerRef}>
-                <h2 className='subtituloPoppins'>
+                <h1 className='subtituloPoppins'>
                     {isSpanish ? '¿Te cansaste de tanto filtro y postureo en redes sociales?' : 'Are you tired of doing it for the gram?'}
-                </h2>
+                </h1>
               
                 <p className="textoNormalPoppins">
                     {isSpanish

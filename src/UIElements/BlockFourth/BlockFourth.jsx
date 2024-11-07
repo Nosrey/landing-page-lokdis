@@ -68,7 +68,7 @@ const BlockFourth = ({ language }) => {
 
                 <div className={`${styles.containerTextOne} ${stylesSmall.containerTextOne} ${stylesMedium.containerTextOne} ${stylesLarge.containerTextOne}`} >
 
-                    {language === 'spanish' ? <h2 className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Tu ventana al mundo en el momento que elijas</h2> : <p className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Your window to the world at <span className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`}> the moment of your choice</span></p>}
+                    {language === 'spanish' ? <h1 className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Tu ventana al mundo en el momento que elijas</h1> : <h1 className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`} >Your window to the world at <span className={`${styles.textOneContainer} ${stylesSmall.textOneContainer} ${stylesMedium.textOneContainer} ${stylesLarge.textOneContainer}`}> the moment of your choice</span></h1>}
 
                 </div>
                 <div className={`${styles.containerTextTwoForMoreText} ${stylesSmall.containerTextTwoForMoreText} ${stylesMedium.containerTextTwoForMoreText} ${stylesLarge.containerTextTwoForMoreText}`} >

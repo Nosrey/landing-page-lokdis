@@ -117,8 +117,8 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
           <div>
           
             <div className="cajaVertical">
-              <p className="subtitulo">{isSpanish ? "LokDis: Conéctate con la realidad" : "LokDis: Connect with reality"}</p>
-              <p className="bloqueVerde">{isSpanish ? "Explora el mundo sin filtros" : "Explore the world without filters"}</p>
+              <h1 className="subtitulo">{isSpanish ? "LokDis: Conéctate con la realidad" : "LokDis: Connect with reality"}</h1>
+              <h2 className="bloqueVerde">{isSpanish ? "Explora el mundo sin filtros" : "Explore the world without filters"}</h2>
               <p className="textoPoppinsDefault" style={{}}>
                 {isSpanish ? "Descubre LokDis, una app para ver el mundo real en la que podrás solicitar momentos y " : "Discover LokDis, an app to view the real world in which you can request unfiltered moments and "}
                 <span>{isSpanish ? "vivir experiencias auténticas." : "live authentic experiences."}</span>

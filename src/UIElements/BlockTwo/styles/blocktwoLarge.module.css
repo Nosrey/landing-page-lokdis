@@ -39,7 +39,7 @@
 
     .firstTextLeftContainer {
         line-height: 2rem;
-        font-size: 2.5vw;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -62,17 +62,17 @@
     .thirdText {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 1.8rem;
+        font-size: 30px;
         background-color: #00FFD7;
 
     }
 
     .secondTextLeftContainer {
-        font-size: 1.8rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 0rem;
-        margin-bottom: 5px;
+        /* margin-bottom: 5px; */
     }
 
     .leftContainer {
@@ -83,9 +83,12 @@
     }
 
     .textH3 {
+        margin-top: 15px;
         font-family: 'Poppins-Regular';
-        font-size: 1.5rem;
+        font-size: 20px;
         margin-bottom: -10vh;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     .fourthText {
@@ -95,7 +98,7 @@
     }
 
     .additionalText {
-        font-size: 2vw;
+        font-size: 18px;
         text-align: left;
     }
 
@@ -103,7 +106,7 @@
 
         width: 13%;
         position: relative;
-        margin: 8% 13% 5% 0%;
+        margin: 8% 21% 5% 0%;
         transform: rotate(7deg);
 
     }
@@ -175,14 +178,14 @@
 
 
     .letterParagraph {
-        font-size: 2vw;
+        font-size: 18px;
         text-align: left;
     }
 
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 2vw;
+        font-size: 18px;
         color: #028470;
 
     }
@@ -234,14 +237,14 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 2rem;
-        font-size: 2rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
     }
 
     .firstTextLeftContainerEnglish {
-        font-size: 2.0rem
+        font-size: 30px
     }
 
 
@@ -255,7 +258,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 30px;
         background-color: #00FFD7;
     }
 
@@ -263,42 +266,45 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-        margin-bottom: 5px;
+     
 
     }
 
 
 
     .secondTextLeftContainerEnglish {
-        font-size: 2.0rem
+        font-size: 2rem
     }
 
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 1.8rem;
+        font-size: 24px;
         line-height: 0rem;
         margin-top: 25px;
 
     }
 
     .letterParagraph {
-        font-size: 25px;
+        font-size: 18px;
         text-align: left;
+        margin-top: 0;
+        margin-left: -5px;
+        padding-left: 0px;
     }
 
     .fourthText {
-        font-size: 25px !important;
+        font-size: 18px !important;
         font-family: 'Poppins-Regular';
 
     }
 
     .additionalText {
-        font-size: 2.1vw;
+        font-size: 18px;
         text-align: left;
         margin-top: 1.5rem;
     }
@@ -436,7 +442,7 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 4rem;
-        font-size: 2rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -465,7 +471,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 30px;
         background-color: #00FFD7;
     }
 
@@ -473,11 +479,11 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-        margin-bottom: 5px;
+
 
     }
 
@@ -496,38 +502,36 @@
 
     .textH3 {
         font-family: 'Poppins-Regular';
-        font-size: 2rem;
+        font-size: 30px;
         line-height: 0rem;
         margin-top: 25px;
+        padding-bottom: 0;
     }
 
     .letterParagraph {
-        font-size: 2rem !important;
+        font-size: 20px;
         text-align: left;
         margin-top: -6vh;
         margin-left: 1vh;
     }
 
     .fourthText {
-        font-size: 2rem !important;
+        font-size: 18px;
         font-family: 'Poppins-Regular';
 
     }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 20px;
         text-align: left;
-        margin-top: 1.5rem;
+        margin-top: 20px;
     }
 
     .eyesImage {
-
         width: 13%;
-
         position: relative;
         margin: 7% 20% 5% 0%;
         transform: rotate(7deg);
-
     }
 
     .boxTwo {
@@ -601,13 +605,13 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 2rem !important;
+        font-size: 20px;
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 2rem !important;
+        font-size:20px;
         color: #028470;
 
     }
@@ -645,16 +649,16 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 4rem;
-        font-size: 2.35rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
 
     }
 
-    .firstTextLeftContainerEnglish {
-        font-size: 2.0rem
-    }
+    /* .firstTextLeftContainerEnglish {
+        font-size: 30px
+    } */
 
     .containerBlueLetter {
         display: flex;
@@ -674,7 +678,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 30px;
         background-color: #00FFD7;
     }
 
@@ -682,11 +686,11 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 30px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-        margin-bottom: 5px;
+
 
     }
 
@@ -705,25 +709,22 @@
 
     .textH3 {
         font-family: 'Poppins-Regular';
-
-        font-size: 2rem;
+        font-size: 30px;
         line-height: 0rem;
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     .letterParagraph {
-        font-size: 1.5rem !important;
+
         text-align: left;
     }
 
     .fourthText {
-        font-size: 1.5rem !important;
         font-family: 'Poppins-Regular';
-
     }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 20px;
         text-align: left;
         margin-top: 1.5rem;
     }
@@ -809,14 +810,14 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 35px;
-
+        font-size: 20px;
+        margin-left: 0;
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
         color: #028470;
 
     }
@@ -848,7 +849,7 @@
     }
 
     .leftContainer {
-
+    
         margin-top: 5rem;
         padding-top: 50px;
 
@@ -857,11 +858,11 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 4rem;
-        font-size: 2.35rem;
+        font-size: 40px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
-
-
+        padding-left: 26px;
+        padding-left: 15px;
     }
 
     .firstTextLeftContainerEnglish {
@@ -886,7 +887,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 40px;
         background-color: #00FFD7;
     }
 
@@ -894,11 +895,11 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 40px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-        margin-bottom: 5px;
+     
 
     }
 
@@ -918,7 +919,7 @@
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 2.35rem;
+        font-size: 30px;
         line-height: 0rem;
         margin-top: 25px;
     }
@@ -935,7 +936,7 @@
     }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 25px;
         text-align: left;
         margin-top: 1.5rem;
     }
@@ -1019,16 +1020,17 @@
 
 
     .letterParagraph {
+        margin-top: 60px;
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
 
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
         color: #028470;
 
     }
@@ -1050,7 +1052,7 @@
     }
 
     .leftContainer {
-
+        align-items: flex-start;
         margin-top: 0rem;
 
     }
@@ -1118,7 +1120,9 @@
 
     .letterParagraph {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
     .fourthText {
@@ -1128,7 +1132,8 @@
     }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 25px;
+        margin-left: 20px;
         text-align: left;
         margin-top: 1.5rem;
     }
@@ -1214,15 +1219,23 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
 
+    }
 
+    .containerLetterParagraph {
+        
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        text-align: left;
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
         color: #028470;
+
     }
 }
 
@@ -1230,6 +1243,8 @@
     .firstContainer {
         padding-top: 5vh;
     }
+
+
 
     .containerBlueLetter {
         width: 40%;
@@ -1291,7 +1306,7 @@
     .firstTextLeftContainer,
     .firstTextLeftContainerEnglish {
         line-height: 6rem;
-        font-size: 2.35rem;
+        font-size: 40px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
 
@@ -1310,7 +1325,7 @@
     .thirdTextEnglish {
         font-family: 'Poppins-Regular';
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 40px;
         background-color: #00FFD7;
     }
 
@@ -1318,18 +1333,18 @@
 
     .secondTextLeftContainer,
     .secondTextLeftContainerEnglish {
-        font-size: 2.35rem;
+        font-size: 40px;
         font-family: 'Poppins-Regular';
         font-weight: bold;
         line-height: 1rem;
-        margin-bottom: 5px;
+ 
 
     }
 
 
 
     .secondTextLeftContainerEnglish {
-        font-size: 2.0rem
+        font-size: 40px;
     }
 
     .leftContainer {
@@ -1342,14 +1357,16 @@
     .textH3 {
         font-family: 'Poppins-Regular';
 
-        font-size: 2.35rem;
+        font-size: 30px;
         line-height: 0rem;
         margin-top: 25px;
     }
 
     .letterParagraph {
-        font-size: 1.2rem;
-        text-align: justify;
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 10px;
     }
 
     .fourthText {
@@ -1359,8 +1376,9 @@
     }
 
     .additionalText {
-        font-size: 35px;
+        font-size: 25px;
         text-align: left;
+        margin-left: 10px;
         margin-top: 1.5rem;
     }
 
@@ -1445,18 +1463,24 @@
     .letterParagraph {
         user-select: none;
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
 
 
     }
 
     .fourthText {
         font-family: 'Poppins-Regular';
-        font-size: 35px;
+        font-size: 20px;
         color: #028470;
 
     }
 
+}
+
+@media (min-width: 1821px) and (max-width: 2100px) and (min-height: 1001px) and (max-height: 1400px) {
+    .letterParagraph {
+        margin-top: 80px;
+    }
 }
 
 @media (min-width: 1910px) and (max-height: 1300px) and (min-height: 1001px) {
@@ -1465,7 +1489,6 @@
         width: 85%;
 
     }
-
     .containerTextMoreImage {
         margin-top: -10px;
     }
@@ -1553,7 +1576,8 @@
 
     .letterParagraph {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
+        margin-top: 80px;
     }
 
     .fourthText {
@@ -1758,7 +1782,7 @@
 
     .letterParagraph {
         font-size: 2.35vw;
-        text-align: justify;
+        text-align: left;
     }
 
     .fourthText {
