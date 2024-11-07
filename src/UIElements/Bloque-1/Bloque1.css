@@ -745,12 +745,13 @@ footer {
 
     .contador,
     .numberBloq1 {
-        font-size: 1.7vw;
+        font-size: 12px;
+        
     }
 
     .numberBloq1 {
-        font-size: 1.1rem;
-        margin-right: 0;
+        font-size: 16px;
+        margin-right: 4px;
     }
 }
 

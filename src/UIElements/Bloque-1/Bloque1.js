@@ -142,7 +142,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                         <ReactPlayer
 
                           // url="https://vimeo.com/1023344517"
-                          url="https://www.dropbox.com/scl/fi/jyhnm0px9pss344ypmq6s/Video-landing_LokDis.mp4?rlkey=nsltkx33u5a73u8gpuej0i2k8&st=e31ju35p&dl=0"
+                          url="https://www.dropbox.com/scl/fi/fdmzr5312g5hkyi0f58j9/Video-LokDis_definitivo.mp4?rlkey=mr936fje7ju63kpfo1ffah1dp&st=esfp6foo&dl=0"
                           controls={false}
                           playing={isPlaying}
                           loop={true}
@@ -235,7 +235,9 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
               {window.innerWidth > 500 && (
                 <div className="phone-frame" style={{ display: loading ? "none" : "block" }}>
                   <ReactPlayer
-                    url="https://vimeo.com/1023344517"
+                    // url="https://vimeo.com/1023344517"
+                    url="https://vimeo.com/1027437799?share=copy"
+                    
                     controls={false}
                     playing={isPlaying}
                     loop={true}
