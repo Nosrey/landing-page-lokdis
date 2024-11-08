@@ -143,53 +143,28 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
                           // url="https://vimeo.com/1023344517"
                           // url="https://www.dropbox.com/scl/fi/fdmzr5312g5hkyi0f58j9/Video-LokDis_definitivo.mp4?rlkey=mr936fje7ju63kpfo1ffah1dp&st=esfp6foo&dl=0"
-                          url="https://nosrey135.wistia.com/medias/8czh5mxvbh"
+                          url="https://streamable.com/djprdq"
                           controls={false}
-                          playing={isPlaying}
+                          playing={true}
+                          muted={true}
                           loop={true}
                           volume={isMuted ? 0 : 1}
                           onReady={() => setLoading(false)}
                           width="100%"
                           height="100%"
                         />
+                        {/* <iframe
+                        src="https://streamable.com/djprdq"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen
+                        title="video"
+                      ></iframe> */}
 
-                        {/* <button
-                          style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
-                          onClick={() => setIsPlaying(!isPlaying)}
-                          className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
-                        >
-                          {isPlaying ? <FaPause /> : <FaPlay />}
-                        </button> */}
-                        {/* )} */}
-                        <button
-                          style={{
-                            display: !loading && window.innerWidth <= 500 ? "block" : "none",
-                          }}
-                          onClick={() => setIsMuted(!isMuted)}
-                          className={`botonPhone mute-switch ${isMuted ? "muted" : "unmuted"}`}
-                        >
-                          {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-                        </button>
 
-                        <button
-                          className={`expand-button  ${isExpanded ? 'expand-button-expanded' : ''}`}
-                          onClick={() => expandView()}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                            className="expand-icon"
-                          >
-                            {isExpanded ? (
-                              <path d="M19 13H5v-2h14v2z" /> // Ícono para reducir (línea horizontal)
-                            ) : (
-                              <path d="M9 3H3v6h2V5h4V3zm12 6h-6v2h4v4h2V9zM5 13H3v6h6v-2H5v-4zm14 4h-4v2h6v-6h-2v4z" /> // Ícono estilo "expandir"
-                            )}
-                          </svg>
-                        </button>
+                    
                       </div>
                     </div>
                   </div>
