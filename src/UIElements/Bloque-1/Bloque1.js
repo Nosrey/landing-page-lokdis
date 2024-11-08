@@ -142,7 +142,8 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                         <ReactPlayer
 
                           // url="https://vimeo.com/1023344517"
-                          url="https://www.dropbox.com/scl/fi/fdmzr5312g5hkyi0f58j9/Video-LokDis_definitivo.mp4?rlkey=mr936fje7ju63kpfo1ffah1dp&st=esfp6foo&dl=0"
+                          // url="https://www.dropbox.com/scl/fi/fdmzr5312g5hkyi0f58j9/Video-LokDis_definitivo.mp4?rlkey=mr936fje7ju63kpfo1ffah1dp&st=esfp6foo&dl=0"
+                          url="https://nosrey135.wistia.com/medias/8czh5mxvbh"
                           controls={false}
                           playing={isPlaying}
                           loop={true}
@@ -152,13 +153,13 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                           height="100%"
                         />
 
-                        <button
+                        {/* <button
                           style={{ margin: '0px auto 10px auto', display: !loading && window.innerWidth <= 500 ? "block" : "none" }}
                           onClick={() => setIsPlaying(!isPlaying)}
                           className={`botonPhone botonPlayMobile botonPlay play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
                         >
                           {isPlaying ? <FaPause /> : <FaPlay />}
-                        </button>
+                        </button> */}
                         {/* )} */}
                         <button
                           style={{
