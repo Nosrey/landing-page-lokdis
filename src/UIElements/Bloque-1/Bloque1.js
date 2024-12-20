@@ -212,7 +212,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                 <div className="phone-frame" style={{ display: loading ? "none" : "block" }}>
                   <ReactPlayer
                     // url="https://vimeo.com/1023344517"
-                    url="https://vimeo.com/1027437799?share=copy"
+                    url="https://streamable.com/djprdq"
                     
                     controls={false}
                     playing={isPlaying}
@@ -222,7 +222,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                     width="100%"
                     height="100%"
                   />
-                  <button
+                  {/* <button
                     style={{ margin: '0px auto 10px auto', display: (!loading && window.innerWidth > 500) ? 'block' : 'none' }}
                     onClick={() => setIsPlaying(!isPlaying)}
                     className={`botonPhone play-pause-switch ${isPlaying ? 'playing' : 'paused'} ${showPlayPause ? 'visible' : 'hidden'}`}
@@ -256,7 +256,7 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
                         <path d="M9 3H3v6h2V5h4V3zm12 6h-6v2h4v4h2V9zM5 13H3v6h6v-2H5v-4zm14 4h-4v2h6v-6h-2v4z" /> // Ícono estilo "expandir"
                       )}
                     </svg>
-                  </button>
+                  </button> */}
 
                 </div>
               )}
