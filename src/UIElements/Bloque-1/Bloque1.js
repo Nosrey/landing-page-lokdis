@@ -207,9 +207,8 @@ export const Bloque1 = ({ language, setLanguage, numberOfPerson }) => {
 
           <div className="cajaTelefono" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className={`phoneDeskBloq1 ${isExpanded ? "expanded" : ""}`}>
-              {loading && <div className="spinnerBloq1"></div>}
               {window.innerWidth > 500 && (
-                <div className="phone-frame" style={{ display: loading ? "none" : "block" }}>
+                <div className="phone-frame">
                   <ReactPlayer
                     // url="https://vimeo.com/1023344517"
                     url="https://streamable.com/djprdq"
